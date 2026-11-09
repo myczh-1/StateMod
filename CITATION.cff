@@ -6,3 +6,5 @@ authors:
 type: software
 license: MIT
 abstract: "Research evidence and code for frozen-model external judgment and side-KV control, including local successes and failed generalization checks."
+repository-code: "https://github.com/myczh-1/StateMod"
+url: "https://github.com/myczh-1/StateMod"

@@ -16,11 +16,11 @@ Snapshot prepared 2026-11-09. Author **myczh** and **MIT** license for project-o
 | Licensing / attribution | PASS for this scope | MIT choice confirmed; Apache attribution retained; no unverified external code vendored |
 | Full fresh GPU reproduction | NOT RUN | No new research experiment authorized or needed for this preparation |
 | Large raw tensor download availability | PARTIAL | Historical manifests and summaries available; not all raw arrays bundled; no public download service |
-| GitHub creation / push / public release | PENDING AUTHOR CONFIRMATION | Nothing has been uploaded by this preparation |
+| Public repository creation / push | AUTHORIZED 2026-11-09 | Author approved this reviewed scope; no tagged GitHub Release authorized |
 
 Detailed machine-readable checks: [PUBLICATION_AUDIT.json](reproducibility/PUBLICATION_AUDIT.json). File integrity: [manifest.json](manifest.json).
 
-## Proposed public scope
+## Approved public scope
 
 - English/Chinese report and README, evidence audit, methods, limitations, related-work comparison.
 - Synthetic task contracts, frozen prompts/configurations, archived generated code/Token IDs/scores and step summaries, including all exported failures.
@@ -28,12 +28,12 @@ Detailed machine-readable checks: [PUBLICATION_AUDIT.json](reproducibility/PUBLI
 - Small 8B/14B judgment modules, original 8B side Bank, selected Cloud11/12 hidden-state arrays for offline replay.
 - No main-model weights, SSH details/credentials, private conversations, transport archives or cloud deployment scripts.
 
-## Proposed repository
+## Repository
 
 `myczh-1/StateMod`
 
 Description: **External conditional control of frozen language models: code, local successes, generalization failures, and failure analysis.**
 
-Recommended visibility: public after explicit approval of this scope. No GitHub Release is created at this step. The attachment expressly requires confirmation of repository, public scope and contents before creation or push.
+Visibility: public, explicitly approved by the author on 2026-11-09. No GitHub Release is created at this step.
 
-The snapshot is ready for that review as a research report with **partial reproducibility**, not as a validated product or fully rerun benchmark release.
+The approved snapshot is a research report with **partial reproducibility**, not a validated product or fully rerun benchmark release. The machine-readable publication audit records the earlier preparation checkpoint; its pending-authorization note is historical.

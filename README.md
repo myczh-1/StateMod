@@ -63,4 +63,4 @@ The V Bank adds side attention slots and computational work. The judgment module
 
 [Method](docs/METHODOLOGY.md) · [Limitations](docs/LIMITATIONS.md) · [Related work and attribution](docs/RELATED_WORK.md) · [Artifact availability](reproducibility/ARTIFACT_MANIFEST.md)
 
-Author: **myczh**. Project-owned code and documentation use MIT; third-party terms remain applicable. This local preparation is not a published release.
+Author: **myczh**. Project-owned code and documentation use MIT; third-party terms remain applicable. Public research snapshot; no tagged GitHub Release has been created.

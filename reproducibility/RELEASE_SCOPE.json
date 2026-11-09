@@ -1,12 +1,14 @@
 {
   "author": "myczh",
   "project_license": "MIT",
-  "proposal_repository": "myczh-1/StateMod",
-  "remote_created": false,
-  "pushed": false,
   "release_created": false,
   "scope": "Cloud02\u201312 research report, provenance, selected artifacts and offline replay",
   "reproducibility": "verified offline reconstruction; partial model reproduction; some large evidence only",
   "base_model_weights_included": false,
-  "publication_requires_author_confirmation": true
+  "publication_requires_author_confirmation": true,
+  "repository": "myczh-1/StateMod",
+  "repository_url": "https://github.com/myczh-1/StateMod",
+  "visibility": "public",
+  "publication_authorized": true,
+  "authorization_date": "2026-11-09"
 }
