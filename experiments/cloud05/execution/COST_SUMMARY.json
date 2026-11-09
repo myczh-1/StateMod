@@ -1,0 +1,21 @@
+{
+  "model": {
+    "wall_seconds": 467.93552470207214,
+    "peak_allocated": 33003929088,
+    "peak_reserved": 33088864256,
+    "condition_output_tokens": 1534,
+    "condition_records": 64,
+    "archived_text_reference_count": 0,
+    "payload_bytes": 9877016,
+    "active_side_slots_per_layer": 36,
+    "active_layers": 14,
+    "judgment_bytes": 283323
+  },
+  "job_wall_seconds": 489.1573145389557,
+  "observed_launch_to_shutdown_seconds": 890.047446012497,
+  "job_end_to_verified_transfer_seconds": 400.1682958602905,
+  "archive_bytes": 3134945280,
+  "bill_not_independently_verified": true,
+  "production_latency_benchmark": false,
+  "transport_handoff": true
+}

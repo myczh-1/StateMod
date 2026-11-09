@@ -1,0 +1,8 @@
+{
+  "python_builtin_isascii_exists": false,
+  "python_str_isascii_exists": true,
+  "str_isascii_allowed_by_scorer": true,
+  "python_builtin_reduce_exists": false,
+  "new_model_forward": false,
+  "generated_code_repaired": false
+}

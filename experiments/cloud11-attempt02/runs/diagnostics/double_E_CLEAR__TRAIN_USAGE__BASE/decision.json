@@ -1,0 +1,19 @@
+{
+  "id": "double_E_CLEAR__TRAIN_USAGE__BASE",
+  "hidden": {
+    "max_abs": 0.25,
+    "rms": 0.011897732191618715,
+    "relative_l2": 0.0097249140557205,
+    "exact": false
+  },
+  "logits": {
+    "max_abs": 0.5625,
+    "rms": 0.12865812140759905,
+    "relative_l2": 0.024648326992108234,
+    "exact": false
+  },
+  "top1_changed": false,
+  "selected_logp_error": 0.02190555573684,
+  "behavior_gate": false,
+  "finite": true
+}

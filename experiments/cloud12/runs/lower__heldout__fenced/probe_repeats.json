@@ -1,0 +1,8 @@
+{
+  "independent": true,
+  "checkpoint_unchanged": true,
+  "repeated_logits_exact": true,
+  "repeated_hidden_exact": true,
+  "repeated_kv_exact": true,
+  "hooks_removed": true
+}

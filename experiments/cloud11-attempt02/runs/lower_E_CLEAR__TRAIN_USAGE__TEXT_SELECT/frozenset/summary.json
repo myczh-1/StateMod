@@ -1,0 +1,60 @@
+{
+  "token_ids": [
+    69,
+    299,
+    18549,
+    295,
+    151645
+  ],
+  "name_token_count": 4,
+  "total_token_count": 5,
+  "type_logp": -1.6295563939896174e-07,
+  "type_eos_logp": -5.457022993477204e-07,
+  "steps": [
+    {
+      "token": 69,
+      "cached_top1": 69,
+      "cached_logp": -1.5636582360986794e-07,
+      "native_length": 282,
+      "input_length": 282,
+      "bank_calls": 0,
+      "rank": 1
+    },
+    {
+      "token": 299,
+      "cached_top1": 299,
+      "cached_logp": -1.1993523944566559e-09,
+      "native_length": 283,
+      "input_length": 283,
+      "bank_calls": 0,
+      "rank": 1
+    },
+    {
+      "token": 18549,
+      "cached_top1": 18549,
+      "cached_logp": -5.354265461098305e-09,
+      "native_length": 284,
+      "input_length": 284,
+      "bank_calls": 0,
+      "rank": 1
+    },
+    {
+      "token": 295,
+      "cached_top1": 295,
+      "cached_logp": -3.619793353882838e-11,
+      "native_length": 285,
+      "input_length": 285,
+      "bank_calls": 0,
+      "rank": 1
+    },
+    {
+      "token": 151645,
+      "cached_top1": 151645,
+      "cached_logp": -3.8274665994875865e-07,
+      "native_length": 286,
+      "input_length": 286,
+      "bank_calls": 0,
+      "rank": 1
+    }
+  ]
+}

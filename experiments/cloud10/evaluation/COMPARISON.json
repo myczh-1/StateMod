@@ -1,0 +1,380 @@
+{
+  "cloud08": {
+    "model": "Qwen3-8B",
+    "dtype": "float32",
+    "summary": {
+      "code": {
+        "BASE": {
+          "E": {
+            "planned": 4,
+            "completed": 4,
+            "functional": 4,
+            "joint": 0,
+            "format_ok": 4,
+            "covered": 4
+          },
+          "N": {
+            "planned": 4,
+            "completed": 4,
+            "functional": 4,
+            "joint": 4,
+            "format_ok": 4,
+            "covered": 4
+          }
+        },
+        "TEXT_CODE": {
+          "E": {
+            "planned": 4,
+            "completed": 4,
+            "functional": 4,
+            "joint": 4,
+            "format_ok": 4,
+            "covered": 4
+          },
+          "N": {
+            "planned": 4,
+            "completed": 4,
+            "functional": 0,
+            "joint": 0,
+            "format_ok": 4,
+            "covered": 4
+          }
+        }
+      },
+      "select": {
+        "completed": 8,
+        "valid": 8,
+        "correct": 6,
+        "N_correct": 2,
+        "E_correct": 4,
+        "natural_candidate_disagreement": [],
+        "invalid": []
+      },
+      "pairs": [
+        {
+          "id": "double_E_CLEAR",
+          "category": "E",
+          "base_functional": true,
+          "text_functional": true,
+          "base_joint": false,
+          "text_joint": true,
+          "regression": false,
+          "new_E_joint": true
+        },
+        {
+          "id": "double_N_CLEAR",
+          "category": "N",
+          "base_functional": true,
+          "text_functional": false,
+          "base_joint": true,
+          "text_joint": false,
+          "regression": true,
+          "new_E_joint": false
+        },
+        {
+          "id": "lower_E_CLEAR",
+          "category": "E",
+          "base_functional": true,
+          "text_functional": true,
+          "base_joint": false,
+          "text_joint": true,
+          "regression": false,
+          "new_E_joint": true
+        },
+        {
+          "id": "lower_N_CLEAR",
+          "category": "N",
+          "base_functional": true,
+          "text_functional": false,
+          "base_joint": true,
+          "text_joint": false,
+          "regression": true,
+          "new_E_joint": false
+        },
+        {
+          "id": "integer_octal_text_E_CLEAR",
+          "category": "E",
+          "base_functional": true,
+          "text_functional": true,
+          "base_joint": false,
+          "text_joint": true,
+          "regression": false,
+          "new_E_joint": true
+        },
+        {
+          "id": "integer_octal_text_N_CLEAR",
+          "category": "N",
+          "base_functional": true,
+          "text_functional": false,
+          "base_joint": true,
+          "text_joint": false,
+          "regression": true,
+          "new_E_joint": false
+        },
+        {
+          "id": "boolean_complement_E_CLEAR",
+          "category": "E",
+          "base_functional": true,
+          "text_functional": true,
+          "base_joint": false,
+          "text_joint": true,
+          "regression": false,
+          "new_E_joint": true
+        },
+        {
+          "id": "boolean_complement_N_CLEAR",
+          "category": "N",
+          "base_functional": true,
+          "text_functional": false,
+          "base_joint": true,
+          "text_joint": false,
+          "regression": true,
+          "new_E_joint": false
+        }
+      ],
+      "N_new_regressions": [
+        "double_N_CLEAR",
+        "lower_N_CLEAR",
+        "integer_octal_text_N_CLEAR",
+        "boolean_complement_N_CLEAR"
+      ],
+      "new_E_joint": 4
+    },
+    "decision": {
+      "status": "TEXT_REFERENCE_NOT_READY",
+      "complete": true,
+      "baseline_coverage_ready": true,
+      "selection_reference": "SELECT_REFERENCE_NOT_READY",
+      "code_reference": "CODE_REFERENCE_NOT_READY",
+      "bank_tested": false,
+      "module_tested": false,
+      "independent_confirmation": false,
+      "automatic_next_stage": false
+    },
+    "comparison": "Descriptive only: model size AND dtype differ. No new 8B generation authorized."
+  },
+  "cloud09": {
+    "status": "STOP_NUMERICAL",
+    "formal_outputs_completed": 0,
+    "engineering_detail": {
+      "status": "STOP_NUMERICAL",
+      "source": "Frozen engineering probe only; no task generation",
+      "engineering": [
+        {
+          "step": 0,
+          "rms": 0.0,
+          "max_abs": 0.0,
+          "relative_l2": 0.0,
+          "cached_top1": {
+            "id": 73594,
+            "token": "```",
+            "margin": 1.75
+          },
+          "fresh_top1": {
+            "id": 73594,
+            "token": "```",
+            "margin": 1.75
+          },
+          "same_top1": true,
+          "repeat_exact": true
+        },
+        {
+          "step": 1,
+          "rms": 0.09729142494995731,
+          "max_abs": 0.75,
+          "relative_l2": 0.011861717496544983,
+          "cached_top1": {
+            "id": 6530,
+            "token": "Ġcollect",
+            "margin": 24.875
+          },
+          "fresh_top1": {
+            "id": 6530,
+            "token": "Ġcollect",
+            "margin": 24.875
+          },
+          "same_top1": true,
+          "repeat_exact": true
+        }
+      ],
+      "rms_limit": 0.05,
+      "formal_outputs": {
+        "TEXT_SELECT": {
+          "planned": 8,
+          "completed": 0,
+          "status": "NOT_RUN"
+        },
+        "BASE_CODE": {
+          "planned": 8,
+          "completed": 0,
+          "status": "NOT_RUN"
+        },
+        "TEXT_CODE": {
+          "planned": 8,
+          "completed": 0,
+          "status": "NOT_RUN"
+        },
+        "candidate_paths": {
+          "planned": 16,
+          "completed": 0,
+          "status": "NOT_RUN"
+        }
+      },
+      "root_cause": "NOT_DETERMINED: path dependence observed; precision versus implementation not isolated",
+      "threshold_changed": false,
+      "model_rerun": false,
+      "model_ability_conclusion": "NOT_EVALUATED"
+    },
+    "history_unchanged": true
+  },
+  "cloud10": {
+    "summary": {
+      "code": {
+        "BASE": {
+          "E": {
+            "planned": 4,
+            "completed": 4,
+            "functional": 4,
+            "joint": 0,
+            "format_ok": 4,
+            "covered": 4
+          },
+          "N": {
+            "planned": 4,
+            "completed": 4,
+            "functional": 2,
+            "joint": 2,
+            "format_ok": 4,
+            "covered": 4
+          }
+        },
+        "TEXT_CODE": {
+          "E": {
+            "planned": 4,
+            "completed": 4,
+            "functional": 4,
+            "joint": 4,
+            "format_ok": 4,
+            "covered": 4
+          },
+          "N": {
+            "planned": 4,
+            "completed": 4,
+            "functional": 4,
+            "joint": 4,
+            "format_ok": 4,
+            "covered": 4
+          }
+        }
+      },
+      "select": {
+        "completed": 8,
+        "valid": 8,
+        "correct": 8,
+        "N_correct": 4,
+        "E_correct": 4,
+        "natural_candidate_disagreement": [],
+        "invalid": []
+      },
+      "pairs": [
+        {
+          "id": "double_E_CLEAR",
+          "category": "E",
+          "base_functional": true,
+          "text_functional": true,
+          "base_joint": false,
+          "text_joint": true,
+          "regression": false,
+          "new_E_joint": true
+        },
+        {
+          "id": "double_N_CLEAR",
+          "category": "N",
+          "base_functional": false,
+          "text_functional": true,
+          "base_joint": false,
+          "text_joint": true,
+          "regression": false,
+          "new_E_joint": false
+        },
+        {
+          "id": "lower_E_CLEAR",
+          "category": "E",
+          "base_functional": true,
+          "text_functional": true,
+          "base_joint": false,
+          "text_joint": true,
+          "regression": false,
+          "new_E_joint": true
+        },
+        {
+          "id": "lower_N_CLEAR",
+          "category": "N",
+          "base_functional": true,
+          "text_functional": true,
+          "base_joint": true,
+          "text_joint": true,
+          "regression": false,
+          "new_E_joint": false
+        },
+        {
+          "id": "integer_octal_text_E_CLEAR",
+          "category": "E",
+          "base_functional": true,
+          "text_functional": true,
+          "base_joint": false,
+          "text_joint": true,
+          "regression": false,
+          "new_E_joint": true
+        },
+        {
+          "id": "integer_octal_text_N_CLEAR",
+          "category": "N",
+          "base_functional": false,
+          "text_functional": true,
+          "base_joint": false,
+          "text_joint": true,
+          "regression": false,
+          "new_E_joint": false
+        },
+        {
+          "id": "boolean_complement_E_CLEAR",
+          "category": "E",
+          "base_functional": true,
+          "text_functional": true,
+          "base_joint": false,
+          "text_joint": true,
+          "regression": false,
+          "new_E_joint": true
+        },
+        {
+          "id": "boolean_complement_N_CLEAR",
+          "category": "N",
+          "base_functional": true,
+          "text_functional": true,
+          "base_joint": true,
+          "text_joint": true,
+          "regression": false,
+          "new_E_joint": false
+        }
+      ],
+      "N_new_regressions": [],
+      "new_E_joint": 4
+    },
+    "decision": {
+      "status": "TEXT_REFERENCE_NOT_READY",
+      "complete": true,
+      "baseline_coverage_ready": false,
+      "selection_reference": "SELECT_REFERENCE_READY",
+      "code_reference": "CODE_REFERENCE_NOT_READY",
+      "bank_tested": false,
+      "module_tested": false,
+      "independent_confirmation": false,
+      "automatic_next_stage": false,
+      "primary_path": "CACHED",
+      "fresh_is_behavior_gate": false,
+      "old_cloud09_status": "STOP_NUMERICAL"
+    }
+  },
+  "size_only_causal_claim": false
+}

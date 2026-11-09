@@ -1,0 +1,11 @@
+{
+  "bytes": 10240,
+  "sha256": "b6d2b193fe6591324afb26b9469c97e7f72ccde56fefae83ee94c82527806cf3",
+  "job": {
+    "status": "STOP_ENGINEERING",
+    "error": "AssertionError('STOP_ENGINEERING preflight')",
+    "traceback": "Traceback (most recent call last):\n  File \"[REMOTE_PATH]\", line 19, in main\n    assert preflight['passed'],'STOP_ENGINEERING preflight'\n           ~~~~~~~~~^^^^^^^^^^\nAssertionError: STOP_ENGINEERING preflight\n"
+  },
+  "watchdog_deadline": 1794155599.8831906,
+  "safe_to_shutdown": true
+}

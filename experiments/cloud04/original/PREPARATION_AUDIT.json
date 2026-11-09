@@ -1,0 +1,22 @@
+{
+  "status": "PREPARED_NOT_RUN",
+  "local_cpu_synthetic_tests": 10,
+  "gold_contracts_passed": 32,
+  "synthetic_outcomes_not_experiment_evidence": true,
+  "protected_files": 4164,
+  "old_files_changed": [],
+  "main_model_forward": false,
+  "server_connected": false,
+  "bank_compiled": false,
+  "bank_unchanged": true,
+  "judgment_unchanged": true,
+  "threshold_unchanged": true,
+  "local_python": "3.11.15",
+  "package": {
+    "sha256": "5ed7c419083a19140562eda2d559c5bca92bbaa06e3b77cc58a82c355f05a929",
+    "bytes": 10666127,
+    "file_count": 41,
+    "contains_main_model_weights": false,
+    "contains_frozen_8B_bank": true
+  }
+}

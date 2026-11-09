@@ -1,0 +1,154 @@
+{
+  "descriptive_only": true,
+  "scores_changed": false,
+  "model_forwards": 0,
+  "generated_code_reexecuted": false,
+  "rows": [
+    {
+      "id": "double_N_W_LIFECYCLE",
+      "frozen_functional": false,
+      "code": "def collect_doubles(numbers): return type('Result', (object,), {'__iter__': lambda s: map(lambda x: x*2, numbers), 'add': lambda s, x: None, 'remove': lambda s, x: None})()",
+      "failure_reasons": [
+        {
+          "kind": "CALL_EXECUTION_ERROR",
+          "case": 0,
+          "detail": "NameError(\"name 'object' is not defined\")"
+        },
+        {
+          "kind": "CALL_EXECUTION_ERROR",
+          "case": 1,
+          "detail": "NameError(\"name 'object' is not defined\")"
+        },
+        {
+          "kind": "CALL_EXECUTION_ERROR",
+          "case": 2,
+          "detail": "NameError(\"name 'object' is not defined\")"
+        }
+      ],
+      "diagnostic": "SANDBOX_OBJECT_MISSING_AND_STUB_MUTATION",
+      "explanation": "Observed NameError is from omitted object builtin. Independently, add/remove lambdas return None without changing state and iteration lacks deduplication. Do not relabel as passing or rerun with patched builtins."
+    },
+    {
+      "id": "increment_N_W_LIFECYCLE",
+      "frozen_functional": false,
+      "code": "def collect_increments(numbers): return type('X', (set,), {'add': set.add, 'remove': set.remove})(x+1 for x in numbers)",
+      "failure_reasons": [
+        {
+          "kind": "MEMBER_COMPUTATION_OR_TYPE",
+          "case": 0,
+          "actual": "X()",
+          "expected": []
+        },
+        {
+          "kind": "MEMBER_COMPUTATION_OR_TYPE",
+          "case": 1,
+          "actual": "X({3, -2})",
+          "expected": [
+            3,
+            -2
+          ]
+        },
+        {
+          "kind": "MEMBER_COMPUTATION_OR_TYPE",
+          "case": 2,
+          "actual": "X({0, 1, 1000000000001})",
+          "expected": [
+            1,
+            0,
+            1000000000001
+          ]
+        }
+      ],
+      "diagnostic": "EXACT_BUILTIN_CONTAINER_RESTRICTION",
+      "saved_output_review": [
+        {
+          "case": 0,
+          "saved_members_match": true,
+          "saved_member_types_match": true,
+          "recorded_mutation_pass": true,
+          "recorded_input_unchanged": true
+        },
+        {
+          "case": 1,
+          "saved_members_match": true,
+          "saved_member_types_match": true,
+          "recorded_mutation_pass": true,
+          "recorded_input_unchanged": true
+        },
+        {
+          "case": 2,
+          "saved_members_match": true,
+          "saved_member_types_match": true,
+          "recorded_mutation_pass": true,
+          "recorded_input_unchanged": true
+        }
+      ],
+      "explanation": "The frozen scorer requires type(value) in (set,frozenset,list,tuple). A lawful set subclass is rejected before member comparison. This review does not change scores."
+    },
+    {
+      "id": "lower_N_W_LIFECYCLE",
+      "frozen_functional": false,
+      "code": "def collect_lowercase(words): return type('X', (set,), {'add': set.add, 'remove': set.remove})([word.lower() for word in words])",
+      "failure_reasons": [
+        {
+          "kind": "MEMBER_COMPUTATION_OR_TYPE",
+          "case": 0,
+          "actual": "X()",
+          "expected": []
+        },
+        {
+          "kind": "MEMBER_COMPUTATION_OR_TYPE",
+          "case": 1,
+          "actual": "X({'', 'bb', 'aa'})",
+          "expected": [
+            "aa",
+            "bb",
+            ""
+          ]
+        },
+        {
+          "kind": "MEMBER_COMPUTATION_OR_TYPE",
+          "case": 2,
+          "actual": "X({'xyz', '中文', 'abc'})",
+          "expected": [
+            "xyz",
+            "中文",
+            "abc"
+          ]
+        }
+      ],
+      "diagnostic": "EXACT_BUILTIN_CONTAINER_RESTRICTION",
+      "saved_output_review": [
+        {
+          "case": 0,
+          "saved_members_match": true,
+          "saved_member_types_match": true,
+          "recorded_mutation_pass": true,
+          "recorded_input_unchanged": true
+        },
+        {
+          "case": 1,
+          "saved_members_match": true,
+          "saved_member_types_match": true,
+          "recorded_mutation_pass": true,
+          "recorded_input_unchanged": true
+        },
+        {
+          "case": 2,
+          "saved_members_match": true,
+          "saved_member_types_match": true,
+          "recorded_mutation_pass": true,
+          "recorded_input_unchanged": true
+        }
+      ],
+      "explanation": "The frozen scorer requires type(value) in (set,frozenset,list,tuple). A lawful set subclass is rejected before member comparison. This review does not change scores."
+    },
+    {
+      "id": "negative_N_W_LIFECYCLE",
+      "frozen_functional": true,
+      "code": "def collect_negatives(numbers): return type('X', (set,), {'add':lambda s,v:s.add(-v), 'remove':lambda s,v:s.remove(-v)})() | { -n for n in numbers }",
+      "failure_reasons": [],
+      "diagnostic": "FROZEN_CONTRACT_PASSED"
+    }
+  ]
+}

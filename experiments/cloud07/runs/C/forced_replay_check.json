@@ -1,0 +1,12 @@
+{
+  "NATURAL_OFF_OFF_SET": {
+    "tokens": true,
+    "logits_exact": true,
+    "cache": true
+  },
+  "NATURAL_ON_ON_FRO": {
+    "tokens": true,
+    "logits_exact": true,
+    "cache": true
+  }
+}

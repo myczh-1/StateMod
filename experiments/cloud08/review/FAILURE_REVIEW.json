@@ -1,0 +1,791 @@
+[
+  {
+    "task": "double_N_CLEAR",
+    "condition": "TEXT_CODE",
+    "code": "def collect_doubles(numbers): return frozenset(num * 2 for num in numbers)",
+    "failure_reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "trials": [
+      {
+        "case": 0,
+        "case_role": "empty",
+        "args": [
+          []
+        ],
+        "expected": [],
+        "output": "frozenset()",
+        "output_type": "frozenset",
+        "exact_frozenset": true,
+        "member_shape": true,
+        "unique": true,
+        "values_correct": true,
+        "input_unchanged": true,
+        "mutability": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        },
+        "error": null
+      },
+      {
+        "case": 1,
+        "case_role": "duplicates",
+        "args": [
+          [
+            -2,
+            2,
+            2
+          ]
+        ],
+        "expected": [
+          -4,
+          4
+        ],
+        "output": "frozenset({-4, 4})",
+        "output_type": "frozenset",
+        "exact_frozenset": true,
+        "member_shape": true,
+        "unique": true,
+        "values_correct": true,
+        "input_unchanged": true,
+        "mutability": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        },
+        "error": null
+      },
+      {
+        "case": 2,
+        "case_role": "boundary",
+        "args": [
+          [
+            0,
+            -1,
+            100
+          ]
+        ],
+        "expected": [
+          0,
+          -2,
+          200
+        ],
+        "output": "frozenset({0, -2, 200})",
+        "output_type": "frozenset",
+        "exact_frozenset": true,
+        "member_shape": true,
+        "unique": true,
+        "values_correct": true,
+        "input_unchanged": true,
+        "mutability": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        },
+        "error": null
+      }
+    ]
+  },
+  {
+    "task": "double_N_CLEAR",
+    "condition": "TEXT_SELECT",
+    "kind": "TYPE_SELECTION",
+    "expected": "set",
+    "actual": "frozenset",
+    "candidates": {
+      "frozenset": {
+        "token_ids": [
+          69,
+          299,
+          18549,
+          295,
+          151645
+        ],
+        "name_token_count": 4,
+        "total_token_count": 5,
+        "type_logp": -0.1226238580055712,
+        "fresh_type_logp": -0.12262385560279523,
+        "type_eos_logp": -0.12262389009022007,
+        "fresh_type_eos_logp": -0.12262388768720785,
+        "steps": [
+          {
+            "token": 69,
+            "cached_top1": 69,
+            "fresh_top1": 69,
+            "cached_logp": -0.12231977288320563,
+            "fresh_logp": -0.12231977288320563,
+            "metrics": {
+              "max_abs": 0.0,
+              "rms": 0.0,
+              "relative_l2": 0.0,
+              "exact": true
+            },
+            "native_length": 293,
+            "fresh_length": 293,
+            "bank_calls": 0,
+            "logp_error": 0.0,
+            "rank": 1
+          },
+          {
+            "token": 299,
+            "cached_top1": 299,
+            "fresh_top1": 299,
+            "cached_logp": -0.00030408365122925246,
+            "fresh_logp": -0.0003040812484401819,
+            "metrics": {
+              "max_abs": 2.6702880859375e-05,
+              "rms": 4.977600869158653e-06,
+              "relative_l2": 1.1369060592071871e-06,
+              "exact": false
+            },
+            "native_length": 294,
+            "fresh_length": 294,
+            "bank_calls": 0,
+            "logp_error": 2.4027890705748123e-09,
+            "rank": 1
+          },
+          {
+            "token": 18549,
+            "cached_top1": 18549,
+            "fresh_top1": 18549,
+            "cached_logp": -1.4710999074744716e-09,
+            "fresh_logp": -1.471113008106143e-09,
+            "metrics": {
+              "max_abs": 3.4332275390625e-05,
+              "rms": 6.521057675473612e-06,
+              "relative_l2": 1.5052159596054898e-06,
+              "exact": false
+            },
+            "native_length": 295,
+            "fresh_length": 295,
+            "bank_calls": 0,
+            "logp_error": 1.3100631671344898e-14,
+            "rank": 1
+          },
+          {
+            "token": 295,
+            "cached_top1": 295,
+            "fresh_top1": 295,
+            "cached_logp": -3.641531520770447e-14,
+            "fresh_logp": -3.641531520770447e-14,
+            "metrics": {
+              "max_abs": 7.009506225585938e-05,
+              "rms": 1.254899428949072e-05,
+              "relative_l2": 1.99587894982057e-06,
+              "exact": false
+            },
+            "native_length": 296,
+            "fresh_length": 296,
+            "bank_calls": 0,
+            "logp_error": 0.0,
+            "rank": 1
+          },
+          {
+            "token": 151645,
+            "cached_top1": 151645,
+            "fresh_top1": 151645,
+            "cached_logp": -3.208464886704602e-08,
+            "fresh_logp": -3.2084412611593956e-08,
+            "metrics": {
+              "max_abs": 2.2411346435546875e-05,
+              "rms": 4.477119930018701e-06,
+              "relative_l2": 1.2266602416097074e-06,
+              "exact": false
+            },
+            "native_length": 297,
+            "fresh_length": 297,
+            "bank_calls": 0,
+            "logp_error": 2.362554520632589e-13,
+            "rank": 1
+          }
+        ]
+      },
+      "set": {
+        "token_ids": [
+          746,
+          151645
+        ],
+        "name_token_count": 1,
+        "total_token_count": 2,
+        "type_logp": -2.161653116389065,
+        "fresh_type_logp": -2.161653116389065,
+        "type_eos_logp": -2.1616532608505006,
+        "fresh_type_eos_logp": -2.1616532608512062,
+        "steps": [
+          {
+            "token": 746,
+            "cached_top1": 69,
+            "fresh_top1": 69,
+            "cached_logp": -2.161653116389065,
+            "fresh_logp": -2.161653116389065,
+            "metrics": {
+              "max_abs": 0.0,
+              "rms": 0.0,
+              "relative_l2": 0.0,
+              "exact": true
+            },
+            "native_length": 293,
+            "fresh_length": 293,
+            "bank_calls": 0,
+            "logp_error": 0.0,
+            "rank": 2
+          },
+          {
+            "token": 151645,
+            "cached_top1": 151645,
+            "fresh_top1": 151645,
+            "cached_logp": -1.444614357042235e-07,
+            "fresh_logp": -1.4446214113983145e-07,
+            "metrics": {
+              "max_abs": 2.47955322265625e-05,
+              "rms": 5.3752480981454826e-06,
+              "relative_l2": 1.4122194175735216e-06,
+              "exact": false
+            },
+            "native_length": 294,
+            "fresh_length": 294,
+            "bank_calls": 0,
+            "logp_error": 7.05435607938173e-13,
+            "rank": 1
+          }
+        ]
+      }
+    }
+  },
+  {
+    "task": "lower_N_CLEAR",
+    "condition": "TEXT_CODE",
+    "code": "def collect_lowercase(words): return frozenset(word.lower() for word in words)",
+    "failure_reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "trials": [
+      {
+        "case": 0,
+        "case_role": "empty",
+        "args": [
+          []
+        ],
+        "expected": [],
+        "output": "frozenset()",
+        "output_type": "frozenset",
+        "exact_frozenset": true,
+        "member_shape": true,
+        "unique": true,
+        "values_correct": true,
+        "input_unchanged": true,
+        "mutability": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        },
+        "error": null
+      },
+      {
+        "case": 1,
+        "case_role": "duplicates",
+        "args": [
+          [
+            "Aa",
+            "BB",
+            "aa",
+            ""
+          ]
+        ],
+        "expected": [
+          "aa",
+          "bb",
+          ""
+        ],
+        "output": "frozenset({'', 'bb', 'aa'})",
+        "output_type": "frozenset",
+        "exact_frozenset": true,
+        "member_shape": true,
+        "unique": true,
+        "values_correct": true,
+        "input_unchanged": true,
+        "mutability": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        },
+        "error": null
+      },
+      {
+        "case": 2,
+        "case_role": "boundary",
+        "args": [
+          [
+            "XyZ",
+            "中文",
+            "ABC"
+          ]
+        ],
+        "expected": [
+          "xyz",
+          "中文",
+          "abc"
+        ],
+        "output": "frozenset({'xyz', '中文', 'abc'})",
+        "output_type": "frozenset",
+        "exact_frozenset": true,
+        "member_shape": true,
+        "unique": true,
+        "values_correct": true,
+        "input_unchanged": true,
+        "mutability": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        },
+        "error": null
+      }
+    ]
+  },
+  {
+    "task": "lower_N_CLEAR",
+    "condition": "TEXT_SELECT",
+    "kind": "TYPE_SELECTION",
+    "expected": "set",
+    "actual": "frozenset",
+    "candidates": {
+      "frozenset": {
+        "token_ids": [
+          69,
+          299,
+          18549,
+          295,
+          151645
+        ],
+        "name_token_count": 4,
+        "total_token_count": 5,
+        "type_logp": -0.646064484414486,
+        "fresh_type_logp": -0.646064482682146,
+        "type_eos_logp": -0.6460645141682966,
+        "fresh_type_eos_logp": -0.646064512435903,
+        "steps": [
+          {
+            "token": 69,
+            "cached_top1": 69,
+            "fresh_top1": 69,
+            "cached_logp": -0.6458336762534732,
+            "fresh_logp": -0.6458336762534732,
+            "metrics": {
+              "max_abs": 0.0,
+              "rms": 0.0,
+              "relative_l2": 0.0,
+              "exact": true
+            },
+            "native_length": 291,
+            "fresh_length": 291,
+            "bank_calls": 0,
+            "logp_error": 0.0,
+            "rank": 1
+          },
+          {
+            "token": 299,
+            "cached_top1": 299,
+            "fresh_top1": 299,
+            "cached_logp": -0.0002308070692244552,
+            "fresh_logp": -0.00023080533687284098,
+            "metrics": {
+              "max_abs": 2.956390380859375e-05,
+              "rms": 5.2142781276876825e-06,
+              "relative_l2": 1.2277369062825649e-06,
+              "exact": false
+            },
+            "native_length": 292,
+            "fresh_length": 292,
+            "bank_calls": 0,
+            "logp_error": 1.7323516142094854e-09,
+            "rank": 1
+          },
+          {
+            "token": 18549,
+            "cached_top1": 18549,
+            "fresh_top1": 18549,
+            "cached_logp": -1.0916840758748688e-09,
+            "fresh_logp": -1.0916956221943123e-09,
+            "metrics": {
+              "max_abs": 3.552436828613281e-05,
+              "rms": 7.201898597175876e-06,
+              "relative_l2": 1.695844825574055e-06,
+              "exact": false
+            },
+            "native_length": 293,
+            "fresh_length": 293,
+            "bank_calls": 0,
+            "logp_error": 1.1546319443487124e-14,
+            "rank": 1
+          },
+          {
+            "token": 295,
+            "cached_top1": 295,
+            "fresh_top1": 295,
+            "cached_logp": -1.0436096431475927e-13,
+            "fresh_logp": -1.0436096431475927e-13,
+            "metrics": {
+              "max_abs": 3.9577484130859375e-05,
+              "rms": 7.904469830417878e-06,
+              "relative_l2": 1.309444818722409e-06,
+              "exact": false
+            },
+            "native_length": 294,
+            "fresh_length": 294,
+            "bank_calls": 0,
+            "logp_error": 0.0,
+            "rank": 1
+          },
+          {
+            "token": 151645,
+            "cached_top1": 151645,
+            "fresh_top1": 151645,
+            "cached_logp": -2.9753810527945086e-08,
+            "fresh_logp": -2.975375701519689e-08,
+            "metrics": {
+              "max_abs": 2.2530555725097656e-05,
+              "rms": 4.935091147981868e-06,
+              "relative_l2": 1.3534919557212886e-06,
+              "exact": false
+            },
+            "native_length": 295,
+            "fresh_length": 295,
+            "bank_calls": 0,
+            "logp_error": 5.3512748195437047e-14,
+            "rank": 1
+          }
+        ]
+      },
+      "set": {
+        "token_ids": [
+          746,
+          151645
+        ],
+        "name_token_count": 1,
+        "total_token_count": 2,
+        "type_logp": -0.742810910140192,
+        "fresh_type_logp": -0.742810910140192,
+        "type_eos_logp": -0.7428110184379813,
+        "fresh_type_eos_logp": -0.7428110184379084,
+        "steps": [
+          {
+            "token": 746,
+            "cached_top1": 69,
+            "fresh_top1": 69,
+            "cached_logp": -0.742810910140192,
+            "fresh_logp": -0.742810910140192,
+            "metrics": {
+              "max_abs": 0.0,
+              "rms": 0.0,
+              "relative_l2": 0.0,
+              "exact": true
+            },
+            "native_length": 291,
+            "fresh_length": 291,
+            "bank_calls": 0,
+            "logp_error": 0.0,
+            "rank": 2
+          },
+          {
+            "token": 151645,
+            "cached_top1": 151645,
+            "fresh_top1": 151645,
+            "cached_logp": -1.0829778931186529e-07,
+            "fresh_logp": -1.0829771648124276e-07,
+            "metrics": {
+              "max_abs": 2.384185791015625e-05,
+              "rms": 5.412540431301686e-06,
+              "relative_l2": 1.4274635478083857e-06,
+              "exact": false
+            },
+            "native_length": 292,
+            "fresh_length": 292,
+            "bank_calls": 0,
+            "logp_error": 7.283062252741595e-14,
+            "rank": 1
+          }
+        ]
+      }
+    }
+  },
+  {
+    "task": "integer_octal_text_N_CLEAR",
+    "condition": "TEXT_CODE",
+    "code": "def collect_octal_strings(numbers): return frozenset(oct(n) for n in numbers) if all(n >= 0 for n in numbers) else set(oct(n) for n in numbers)",
+    "failure_reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "trials": [
+      {
+        "case": 0,
+        "case_role": "empty",
+        "args": [
+          []
+        ],
+        "expected": [],
+        "output": "frozenset()",
+        "output_type": "frozenset",
+        "exact_frozenset": true,
+        "member_shape": true,
+        "unique": true,
+        "values_correct": true,
+        "input_unchanged": true,
+        "mutability": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        },
+        "error": null
+      },
+      {
+        "case": 1,
+        "case_role": "duplicates",
+        "args": [
+          [
+            0,
+            8,
+            8,
+            15
+          ]
+        ],
+        "expected": [
+          "0o0",
+          "0o10",
+          "0o17"
+        ],
+        "output": "frozenset({'0o17', '0o10', '0o0'})",
+        "output_type": "frozenset",
+        "exact_frozenset": true,
+        "member_shape": true,
+        "unique": true,
+        "values_correct": true,
+        "input_unchanged": true,
+        "mutability": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        },
+        "error": null
+      },
+      {
+        "case": 2,
+        "case_role": "boundary",
+        "args": [
+          [
+            1,
+            7,
+            64
+          ]
+        ],
+        "expected": [
+          "0o1",
+          "0o7",
+          "0o100"
+        ],
+        "output": "frozenset({'0o7', '0o1', '0o100'})",
+        "output_type": "frozenset",
+        "exact_frozenset": true,
+        "member_shape": true,
+        "unique": true,
+        "values_correct": true,
+        "input_unchanged": true,
+        "mutability": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        },
+        "error": null
+      }
+    ]
+  },
+  {
+    "task": "boolean_complement_N_CLEAR",
+    "condition": "TEXT_CODE",
+    "code": "def collect_inverted_flags(flags): return frozenset(not flag for flag in flags)",
+    "failure_reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "trials": [
+      {
+        "case": 0,
+        "case_role": "empty",
+        "args": [
+          []
+        ],
+        "expected": [],
+        "output": "frozenset()",
+        "output_type": "frozenset",
+        "exact_frozenset": true,
+        "member_shape": true,
+        "unique": true,
+        "values_correct": true,
+        "input_unchanged": true,
+        "mutability": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        },
+        "error": null
+      },
+      {
+        "case": 1,
+        "case_role": "duplicates",
+        "args": [
+          [
+            true,
+            true,
+            false
+          ]
+        ],
+        "expected": [
+          false,
+          true
+        ],
+        "output": "frozenset({False, True})",
+        "output_type": "frozenset",
+        "exact_frozenset": true,
+        "member_shape": true,
+        "unique": true,
+        "values_correct": true,
+        "input_unchanged": true,
+        "mutability": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        },
+        "error": null
+      },
+      {
+        "case": 2,
+        "case_role": "boundary",
+        "args": [
+          [
+            false,
+            false
+          ]
+        ],
+        "expected": [
+          true
+        ],
+        "output": "frozenset({True})",
+        "output_type": "frozenset",
+        "exact_frozenset": true,
+        "member_shape": true,
+        "unique": true,
+        "values_correct": true,
+        "input_unchanged": true,
+        "mutability": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        },
+        "error": null
+      }
+    ]
+  }
+]

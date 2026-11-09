@@ -1,0 +1,8 @@
+{
+  "time": 1794193710.471581,
+  "reason": "All collected evidence and archive SHA verified; scoring runs locally after shutdown",
+  "delete_or_release": false,
+  "returncode": 0,
+  "stdout": "",
+  "stderr": "Connection to [PRIVATE_HOST] closed by remote host.\n"
+}

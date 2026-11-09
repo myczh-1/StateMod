@@ -1,0 +1,9 @@
+{
+  "status": "CAPTURE_COMPLETE",
+  "reference_mismatches": [],
+  "covered": 16,
+  "planned_states": 16,
+  "bank_calls": 0,
+  "module_fitted": false,
+  "base_functional_gate": false
+}

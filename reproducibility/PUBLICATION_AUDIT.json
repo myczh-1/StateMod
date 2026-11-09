@@ -1,0 +1,74 @@
+{
+  "scope": "Publication preparation only; no research-model inference or fitting",
+  "selected_original_files_rehashed": 10934,
+  "source_changes": [],
+  "export_mismatches": [],
+  "privacy_scan": {
+    "method": "private-path, credential-pattern and email scan plus structured sensitive-key review; not a proof against all possible secrets",
+    "findings": []
+  },
+  "python_syntax_errors": [],
+  "files_over_50MiB": [],
+  "inventory_at_scan": {
+    "files": 10980,
+    "bytes": 81473685
+  },
+  "artifacts": {
+    "artifacts/judgment_8b.npz": {
+      "source_sha256": "3a35f380d49fdbf9d76832d252554c8f9c55b715ed1fc7a3ad3d47ccda6bace7",
+      "current_sha256": "3a35f380d49fdbf9d76832d252554c8f9c55b715ed1fc7a3ad3d47ccda6bace7"
+    },
+    "artifacts/judgment_14b.npz": {
+      "source_sha256": "e4c6beb1c4398085b6e292e6b3e966b35ca1469796d8a771ff481a01833896d5",
+      "current_sha256": "e4c6beb1c4398085b6e292e6b3e966b35ca1469796d8a771ff481a01833896d5"
+    },
+    "artifacts/cloud11_states.npz": {
+      "source_sha256": "b6d2160e06420ff8ef1bcbb7342c582804806c5dfb97d1f63aef9aed197da17e",
+      "current_sha256": "b6d2160e06420ff8ef1bcbb7342c582804806c5dfb97d1f63aef9aed197da17e"
+    },
+    "artifacts/cloud12_layer_values.npz": {
+      "source_sha256": "02e9482e23bc5a077feafc16788417ff983aff12ab8c619a5070e0f52c6cc269",
+      "current_sha256": "02e9482e23bc5a077feafc16788417ff983aff12ab8c619a5070e0f52c6cc269"
+    },
+    "artifacts/bank_8b.npz": {
+      "source_sha256": "19fd69d23b1bc164ff7e548499a96b507fe7e8f0084487abe55e2a15686db11e",
+      "current_sha256": "19fd69d23b1bc164ff7e548499a96b507fe7e8f0084487abe55e2a15686db11e"
+    }
+  },
+  "offline_reconstruction": {
+    "cloud11_agreement_train": "8/8",
+    "cloud11_agreement_reference": "7/8",
+    "cloud11_max_probability_error": 2.0816681711721685e-17,
+    "cloud12_cells_reproduced": 8,
+    "score_counts": [
+      "cloud03",
+      "cloud04",
+      "cloud05",
+      "cloud05-rescore01",
+      "cloud06",
+      "cloud08",
+      "cloud10"
+    ],
+    "rescoring_performed": false
+  },
+  "tests": {
+    "passed": 9,
+    "failed": 0,
+    "kind": "5 offline/scorer fixtures and 4 random tiny CPU Qwen3 architecture tests; no base model weights loaded"
+  },
+  "local_environment": {
+    "python": "3.11.15",
+    "packages": {
+      "numpy": "2.4.6",
+      "psutil": "7.2.2",
+      "torch": "2.14.1",
+      "transformers": "4.57.6"
+    }
+  },
+  "limits": [
+    "No fresh full-GPU reproduction",
+    "No new whole-model SHA audit; historical model manifests retained",
+    "Large tensor inventories are historical; not all objects bundled",
+    "No GitHub upload authorized yet"
+  ]
+}

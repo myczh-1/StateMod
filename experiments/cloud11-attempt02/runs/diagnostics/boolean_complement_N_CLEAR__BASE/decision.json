@@ -1,0 +1,19 @@
+{
+  "id": "boolean_complement_N_CLEAR__BASE",
+  "hidden": {
+    "max_abs": 0.25,
+    "rms": 0.014389554709244783,
+    "relative_l2": 0.011920438781390914,
+    "exact": false
+  },
+  "logits": {
+    "max_abs": 0.4140625,
+    "rms": 0.08781911281815029,
+    "relative_l2": 0.016799460594277057,
+    "exact": false
+  },
+  "top1_changed": false,
+  "selected_logp_error": 0.11194922010496619,
+  "behavior_gate": false,
+  "finite": true
+}

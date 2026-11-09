@@ -1,0 +1,21 @@
+{
+  "status": "PREPARED_NOT_RUN",
+  "source_files": 34,
+  "protected_files": 11575,
+  "old_files_changed": [],
+  "tests": 17,
+  "bank_unchanged": true,
+  "module_unchanged": true,
+  "threshold_unchanged": true,
+  "remote_connections": 0,
+  "main_model_forward": false,
+  "runtime_environment_verified": false,
+  "package": {
+    "sha256": "fc2c14830c139133d0cb149fda3377fc2b08af284ac07325b6bf508d2a07e561",
+    "bytes": 10889049,
+    "file_count": 35,
+    "contains_main_model_weights": false,
+    "contains_frozen_bank": true,
+    "contains_frozen_judgment": true
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "time": 1793784580.182288,
+  "reason": "GPU work finished; increase immutable archive transfer concurrency from 8 to 16 to reduce idle billing. Only our local monitor and its SSH dd children are stopped. No remote model process or experimental source changed.",
+  "parent": {
+    "pid": 38284,
+    "cmd": [
+      "/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/Resources/Python.app/Contents/MacOS/Python",
+      "-B",
+      "v-conditional-cloud03/execution/resume_monitor.py"
+    ]
+  },
+  "children": [
+    {
+      "pid": 72614,
+      "cmd": [
+        "ssh",
+        "-o",
+        "BatchMode=yes",
+        "-o",
+        "ConnectTimeout=10",
+        "-o",
+        "Compression=no",
+        "[HOST_ALIAS]",
+        "dd if=[REMOTE_PATH] bs=4194304 skip=56 count=1 status=none"
+      ]
+    },
+    {
+      "pid": 72709,
+      "cmd": [
+        "ssh",
+        "-o",
+        "BatchMode=yes",
+        "-o",
+        "ConnectTimeout=10",
+        "-o",
+        "Compression=no",
+        "[HOST_ALIAS]",
+        "dd if=[REMOTE_PATH] bs=4194304 skip=60 count=1 status=none"
+      ]
+    },
+    {
+      "pid": 73227,
+      "cmd": [
+        "ssh",
+        "-o",
+        "BatchMode=yes",
+        "-o",
+        "ConnectTimeout=10",
+        "-o",
+        "Compression=no",
+        "[HOST_ALIAS]",
+        "dd if=[REMOTE_PATH] bs=4194304 skip=65 count=1 status=none"
+      ]
+    },
+    {
+      "pid": 73463,
+      "cmd": [
+        "ssh",
+        "-o",
+        "BatchMode=yes",
+        "-o",
+        "ConnectTimeout=10",
+        "-o",
+        "Compression=no",
+        "[HOST_ALIAS]",
+        "dd if=[REMOTE_PATH] bs=4194304 skip=67 count=1 status=none"
+      ]
+    },
+    {
+      "pid": 73474,
+      "cmd": [
+        "ssh",
+        "-o",
+        "BatchMode=yes",
+        "-o",
+        "ConnectTimeout=10",
+        "-o",
+        "Compression=no",
+        "[HOST_ALIAS]",
+        "dd if=[REMOTE_PATH] bs=4194304 skip=68 count=1 status=none"
+      ]
+    },
+    {
+      "pid": 73887,
+      "cmd": [
+        "ssh",
+        "-o",
+        "BatchMode=yes",
+        "-o",
+        "ConnectTimeout=10",
+        "-o",
+        "Compression=no",
+        "[HOST_ALIAS]",
+        "dd if=[REMOTE_PATH] bs=4194304 skip=69 count=1 status=none"
+      ]
+    },
+    {
+      "pid": 75978,
+      "cmd": [
+        "ssh",
+        "-o",
+        "BatchMode=yes",
+        "-o",
+        "ConnectTimeout=10",
+        "-o",
+        "Compression=no",
+        "[HOST_ALIAS]",
+        "dd if=[REMOTE_PATH] bs=4194304 skip=70 count=1 status=none"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "audited_steps": 1797,
+  "probes": 16,
+  "max_logits_rms": 4.5054512082554054e-05,
+  "max_selected_logp_error": 2.3736710756838697e-05,
+  "max_readout_p_error": 3.853463847597327e-06,
+  "readonly_logits_exact": true,
+  "readonly_cache_exact": true,
+  "checkpoint_unchanged": true,
+  "independent_caches": true,
+  "hooks_clean": true,
+  "cached_fresh_action_agreement": 16,
+  "attention_active_predictions": 18,
+  "attention_layer_checks": 252,
+  "max_attention_probability_error": 8.971420706882505e-07,
+  "max_attention_output_rms": 2.8519214427091054e-07
+}

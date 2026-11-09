@@ -1,0 +1,234 @@
+{
+  "time": 1793796142.688328,
+  "controller_pid": 43969,
+  "children": [
+    {
+      "pid": 41342,
+      "command": [
+        "ssh",
+        "-o",
+        "BatchMode=yes",
+        "-o",
+        "ConnectTimeout=10",
+        "-o",
+        "Compression=no",
+        "[HOST_ALIAS]",
+        "dd if=[REMOTE_PATH] bs=4194304 skip=56 count=1 status=none"
+      ]
+    },
+    {
+      "pid": 41545,
+      "command": [
+        "ssh",
+        "-o",
+        "BatchMode=yes",
+        "-o",
+        "ConnectTimeout=10",
+        "-o",
+        "Compression=no",
+        "[HOST_ALIAS]",
+        "dd if=[REMOTE_PATH] bs=4194304 skip=59 count=1 status=none"
+      ]
+    },
+    {
+      "pid": 43125,
+      "command": [
+        "ssh",
+        "-o",
+        "BatchMode=yes",
+        "-o",
+        "ConnectTimeout=10",
+        "-o",
+        "Compression=no",
+        "[HOST_ALIAS]",
+        "dd if=[REMOTE_PATH] bs=4194304 skip=64 count=1 status=none"
+      ]
+    },
+    {
+      "pid": 44305,
+      "command": [
+        "ssh",
+        "-o",
+        "BatchMode=yes",
+        "-o",
+        "ConnectTimeout=10",
+        "-o",
+        "Compression=no",
+        "[HOST_ALIAS]",
+        "dd if=[REMOTE_PATH] bs=4194304 skip=66 count=1 status=none"
+      ]
+    },
+    {
+      "pid": 46672,
+      "command": [
+        "ssh",
+        "-o",
+        "BatchMode=yes",
+        "-o",
+        "ConnectTimeout=10",
+        "-o",
+        "Compression=no",
+        "[HOST_ALIAS]",
+        "dd if=[REMOTE_PATH] bs=4194304 skip=68 count=1 status=none"
+      ]
+    },
+    {
+      "pid": 46763,
+      "command": [
+        "ssh",
+        "-o",
+        "BatchMode=yes",
+        "-o",
+        "ConnectTimeout=10",
+        "-o",
+        "Compression=no",
+        "[HOST_ALIAS]",
+        "dd if=[REMOTE_PATH] bs=4194304 skip=69 count=1 status=none"
+      ]
+    },
+    {
+      "pid": 48570,
+      "command": [
+        "ssh",
+        "-o",
+        "BatchMode=yes",
+        "-o",
+        "ConnectTimeout=10",
+        "-o",
+        "Compression=no",
+        "[HOST_ALIAS]",
+        "dd if=[REMOTE_PATH] bs=4194304 skip=71 count=1 status=none"
+      ]
+    },
+    {
+      "pid": 49287,
+      "command": [
+        "ssh",
+        "-o",
+        "BatchMode=yes",
+        "-o",
+        "ConnectTimeout=10",
+        "-o",
+        "Compression=no",
+        "[HOST_ALIAS]",
+        "dd if=[REMOTE_PATH] bs=4194304 skip=74 count=1 status=none"
+      ]
+    },
+    {
+      "pid": 50441,
+      "command": [
+        "ssh",
+        "-o",
+        "BatchMode=yes",
+        "-o",
+        "ConnectTimeout=10",
+        "-o",
+        "Compression=no",
+        "[HOST_ALIAS]",
+        "dd if=[REMOTE_PATH] bs=4194304 skip=75 count=1 status=none"
+      ]
+    },
+    {
+      "pid": 51280,
+      "command": [
+        "ssh",
+        "-o",
+        "BatchMode=yes",
+        "-o",
+        "ConnectTimeout=10",
+        "-o",
+        "Compression=no",
+        "[HOST_ALIAS]",
+        "dd if=[REMOTE_PATH] bs=4194304 skip=77 count=1 status=none"
+      ]
+    },
+    {
+      "pid": 51821,
+      "command": [
+        "ssh",
+        "-o",
+        "BatchMode=yes",
+        "-o",
+        "ConnectTimeout=10",
+        "-o",
+        "Compression=no",
+        "[HOST_ALIAS]",
+        "dd if=[REMOTE_PATH] bs=4194304 skip=78 count=1 status=none"
+      ]
+    },
+    {
+      "pid": 52245,
+      "command": [
+        "ssh",
+        "-o",
+        "BatchMode=yes",
+        "-o",
+        "ConnectTimeout=10",
+        "-o",
+        "Compression=no",
+        "[HOST_ALIAS]",
+        "dd if=[REMOTE_PATH] bs=4194304 skip=80 count=1 status=none"
+      ]
+    },
+    {
+      "pid": 55566,
+      "command": [
+        "ssh",
+        "-o",
+        "BatchMode=yes",
+        "-o",
+        "ConnectTimeout=10",
+        "-o",
+        "Compression=no",
+        "[HOST_ALIAS]",
+        "dd if=[REMOTE_PATH] bs=4194304 skip=81 count=1 status=none"
+      ]
+    },
+    {
+      "pid": 56063,
+      "command": [
+        "ssh",
+        "-o",
+        "BatchMode=yes",
+        "-o",
+        "ConnectTimeout=10",
+        "-o",
+        "Compression=no",
+        "[HOST_ALIAS]",
+        "dd if=[REMOTE_PATH] bs=4194304 skip=84 count=1 status=none"
+      ]
+    },
+    {
+      "pid": 56469,
+      "command": [
+        "ssh",
+        "-o",
+        "BatchMode=yes",
+        "-o",
+        "ConnectTimeout=10",
+        "-o",
+        "Compression=no",
+        "[HOST_ALIAS]",
+        "dd if=[REMOTE_PATH] bs=4194304 skip=86 count=1 status=none"
+      ]
+    },
+    {
+      "pid": 56613,
+      "command": [
+        "ssh",
+        "-o",
+        "BatchMode=yes",
+        "-o",
+        "ConnectTimeout=10",
+        "-o",
+        "Compression=no",
+        "[HOST_ALIAS]",
+        "dd if=[REMOTE_PATH] bs=4194304 skip=87 count=1 status=none"
+      ]
+    }
+  ],
+  "reason": "Slow/stalled transfer connections; resume identical immutable archive bytes with bounded workers and IPQoS=none",
+  "model_job_complete": true,
+  "model_restarted": false,
+  "archive_sha": "c2e15df2fcbb1a7938b16971322ac160bca2751943d74dc7a6161969146e0da9"
+}

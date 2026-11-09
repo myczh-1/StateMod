@@ -1,0 +1,844 @@
+[
+  {
+    "id": "ascii_text_predicate_E_W_INTERFACE",
+    "condition": "BASE",
+    "stop": "EOS",
+    "status": "EXECUTED",
+    "code": "def collect_ascii_flags(words): return set(isascii(s) for s in words)",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      }
+    ]
+  },
+  {
+    "id": "ascii_text_predicate_E_W_INTERFACE",
+    "condition": "MANUAL_V",
+    "stop": "EOS",
+    "status": "EXECUTED",
+    "code": "def collect_ascii_flags(words): return frozenset(isascii(s) for s in words)",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      }
+    ]
+  },
+  {
+    "id": "ascii_text_predicate_E_W_INTERFACE",
+    "condition": "MODULE_V",
+    "stop": "EOS",
+    "status": "EXECUTED",
+    "code": "def collect_ascii_flags(words): return frozenset(isascii(s) for s in words)",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      }
+    ]
+  },
+  {
+    "id": "ascii_text_predicate_E_W_INTERFACE",
+    "condition": "TEXT_CODE",
+    "stop": "EOS",
+    "status": "EXECUTED",
+    "code": "def collect_ascii_flags(words): return frozenset(isascii(s) for s in words)",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      }
+    ]
+  },
+  {
+    "id": "ascii_text_predicate_E_W_USAGE",
+    "condition": "BASE",
+    "stop": "EOS",
+    "status": "EXECUTED",
+    "code": "def collect_ascii_flags(words): return set(isascii(s) for s in words)",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      }
+    ]
+  },
+  {
+    "id": "ascii_text_predicate_E_W_USAGE",
+    "condition": "MANUAL_V",
+    "stop": "EOS",
+    "status": "EXECUTED",
+    "code": "def collect_ascii_flags(words): return frozenset(isascii(s) for s in words)",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      }
+    ]
+  },
+  {
+    "id": "ascii_text_predicate_E_W_USAGE",
+    "condition": "MODULE_V",
+    "stop": "EOS",
+    "status": "EXECUTED",
+    "code": "def collect_ascii_flags(words): return frozenset(isascii(s) for s in words)",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      }
+    ]
+  },
+  {
+    "id": "ascii_text_predicate_E_W_USAGE",
+    "condition": "TEXT_CODE",
+    "stop": "EOS",
+    "status": "EXECUTED",
+    "code": "def collect_ascii_flags(words): return frozenset(isascii(s) for s in words)",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      }
+    ]
+  },
+  {
+    "id": "ascii_text_predicate_N_W_INTERFACE",
+    "condition": "BASE",
+    "stop": "EOS",
+    "status": "EXECUTED",
+    "code": "def collect_ascii_flags(words): return set().add(*map(str.isascii, words)).remove('') or set()",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 0,
+        "detail": "TypeError('set.add() takes exactly one argument (0 given)')"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "TypeError('set.add() takes exactly one argument (3 given)')"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "TypeError('set.add() takes exactly one argument (4 given)')"
+      }
+    ]
+  },
+  {
+    "id": "ascii_text_predicate_N_W_INTERFACE",
+    "condition": "MANUAL_V",
+    "stop": "EOS",
+    "status": "EXECUTED",
+    "code": "def collect_ascii_flags(words): return set().add(*map(str.isascii, words)).remove('') or set()",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 0,
+        "detail": "TypeError('set.add() takes exactly one argument (0 given)')"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "TypeError('set.add() takes exactly one argument (3 given)')"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "TypeError('set.add() takes exactly one argument (4 given)')"
+      }
+    ]
+  },
+  {
+    "id": "ascii_text_predicate_N_W_INTERFACE",
+    "condition": "MODULE_V",
+    "stop": "EOS",
+    "status": "EXECUTED",
+    "code": "def collect_ascii_flags(words): return set().add(*map(str.isascii, words)).remove('') or set()",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 0,
+        "detail": "TypeError('set.add() takes exactly one argument (0 given)')"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "TypeError('set.add() takes exactly one argument (3 given)')"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "TypeError('set.add() takes exactly one argument (4 given)')"
+      }
+    ]
+  },
+  {
+    "id": "ascii_text_predicate_N_W_INTERFACE",
+    "condition": "TEXT_CODE",
+    "stop": "EOS",
+    "status": "EXECUTED",
+    "code": "def collect_ascii_flags(words): return frozenset( (isascii(s) for s in words) ) if all(isascii(s) for s in words) else set( (isascii(s) for s in words) )",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      }
+    ]
+  },
+  {
+    "id": "ascii_text_predicate_N_W_USAGE",
+    "condition": "BASE",
+    "stop": "EOS",
+    "status": "EXECUTED",
+    "code": "def collect_ascii_flags(words): return set().union(*[set([isascii(w)]) for w in words])",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      }
+    ]
+  },
+  {
+    "id": "ascii_text_predicate_N_W_USAGE",
+    "condition": "MANUAL_V",
+    "stop": "EOS",
+    "status": "EXECUTED",
+    "code": "def collect_ascii_flags(words): return set().union(*[set([isascii(w)]) for w in words])",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      }
+    ]
+  },
+  {
+    "id": "ascii_text_predicate_N_W_USAGE",
+    "condition": "MODULE_V",
+    "stop": "EOS",
+    "status": "EXECUTED",
+    "code": "def collect_ascii_flags(words): return set().union(*[set([isascii(w)]) for w in words])",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      }
+    ]
+  },
+  {
+    "id": "ascii_text_predicate_N_W_USAGE",
+    "condition": "TEXT_CODE",
+    "stop": "EOS",
+    "status": "EXECUTED",
+    "code": "def collect_ascii_flags(words): return set([isascii(s) for s in words])",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      }
+    ]
+  },
+  {
+    "id": "boolean_complement_N_W_INTERFACE",
+    "condition": "BASE",
+    "stop": "EOS",
+    "status": "EXECUTED",
+    "code": "def collect_inverted_flags(flags): return set().add(*[not f for f in flags]).remove(*[not f for f in flags]) or set()",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 0,
+        "detail": "TypeError('set.add() takes exactly one argument (0 given)')"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "TypeError('set.add() takes exactly one argument (3 given)')"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "TypeError('set.add() takes exactly one argument (2 given)')"
+      }
+    ]
+  },
+  {
+    "id": "boolean_complement_N_W_INTERFACE",
+    "condition": "MANUAL_V",
+    "stop": "EOS",
+    "status": "EXECUTED",
+    "code": "def collect_inverted_flags(flags): return set().add(*[not f for f in flags]).remove(*[not f for f in flags]) or set()",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 0,
+        "detail": "TypeError('set.add() takes exactly one argument (0 given)')"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "TypeError('set.add() takes exactly one argument (3 given)')"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "TypeError('set.add() takes exactly one argument (2 given)')"
+      }
+    ]
+  },
+  {
+    "id": "boolean_complement_N_W_INTERFACE",
+    "condition": "MODULE_V",
+    "stop": "EOS",
+    "status": "EXECUTED",
+    "code": "def collect_inverted_flags(flags): return set().add(*[not f for f in flags]).remove(*[not f for f in flags]) or set()",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 0,
+        "detail": "TypeError('set.add() takes exactly one argument (0 given)')"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "TypeError('set.add() takes exactly one argument (3 given)')"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "TypeError('set.add() takes exactly one argument (2 given)')"
+      }
+    ]
+  },
+  {
+    "id": "boolean_complement_N_W_INTERFACE",
+    "condition": "TEXT_CODE",
+    "stop": "EOS",
+    "status": "EXECUTED",
+    "code": "def collect_inverted_flags(flags): return frozenset(not f for f in flags) if all(f is False for f in flags) else set(not f for f in flags)",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ]
+  },
+  {
+    "id": "boolean_complement_N_W_USAGE",
+    "condition": "MODULE_V",
+    "stop": "EOS",
+    "status": "EXECUTED",
+    "code": "def collect_inverted_flags(flags): return frozenset(not flag for flag in flags)",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ]
+  },
+  {
+    "id": "boolean_complement_N_W_USAGE",
+    "condition": "TEXT_CODE",
+    "stop": "EOS",
+    "status": "EXECUTED",
+    "code": "def collect_inverted_flags(flags): return frozenset(not flag for flag in flags)",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ]
+  },
+  {
+    "id": "integer_octal_text_N_W_INTERFACE",
+    "condition": "BASE",
+    "stop": "EOS",
+    "status": "EXECUTED",
+    "code": "def collect_octal_strings(numbers): return set(oct(n) for n in numbers).add('').remove('')",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 0,
+        "detail": "AttributeError(\"'NoneType' object has no attribute 'remove'\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "AttributeError(\"'NoneType' object has no attribute 'remove'\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "AttributeError(\"'NoneType' object has no attribute 'remove'\")"
+      }
+    ]
+  },
+  {
+    "id": "integer_octal_text_N_W_INTERFACE",
+    "condition": "MANUAL_V",
+    "stop": "EOS",
+    "status": "EXECUTED",
+    "code": "def collect_octal_strings(numbers): return set(oct(n) for n in numbers).add('').remove('')",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 0,
+        "detail": "AttributeError(\"'NoneType' object has no attribute 'remove'\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "AttributeError(\"'NoneType' object has no attribute 'remove'\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "AttributeError(\"'NoneType' object has no attribute 'remove'\")"
+      }
+    ]
+  },
+  {
+    "id": "integer_octal_text_N_W_INTERFACE",
+    "condition": "MODULE_V",
+    "stop": "EOS",
+    "status": "EXECUTED",
+    "code": "def collect_octal_strings(numbers): return set(oct(n) for n in numbers).add('').remove('')",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 0,
+        "detail": "AttributeError(\"'NoneType' object has no attribute 'remove'\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "AttributeError(\"'NoneType' object has no attribute 'remove'\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "AttributeError(\"'NoneType' object has no attribute 'remove'\")"
+      }
+    ]
+  },
+  {
+    "id": "integer_octal_text_N_W_INTERFACE",
+    "condition": "TEXT_CODE",
+    "stop": "EOS",
+    "status": "EXECUTED",
+    "code": "def collect_octal_strings(numbers): return set(oct(n) for n in numbers) if numbers else frozenset()",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ]
+  },
+  {
+    "id": "integer_octal_text_N_W_USAGE",
+    "condition": "MODULE_V",
+    "stop": "EOS",
+    "status": "EXECUTED",
+    "code": "def collect_octal_strings(numbers): return frozenset(oct(n) for n in numbers)",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ]
+  },
+  {
+    "id": "literal_a_occurrences_E_W_INTERFACE",
+    "condition": "MANUAL_V",
+    "stop": "EOS",
+    "status": "DEFINITION_EXECUTION_ERROR",
+    "code": "def collect_a_counts(words): return frozenset(count := 0 for word in words for count in (count + 1 if c == 'a' else 0 for c in word))",
+    "reasons": [
+      {
+        "kind": "EXECUTION_OR_SUPPORT",
+        "reason": "DEFINITION_EXECUTION_ERROR",
+        "detail": "SyntaxError(\"assignment expression cannot rebind comprehension iteration variable 'count'\")"
+      }
+    ]
+  },
+  {
+    "id": "literal_a_occurrences_E_W_INTERFACE",
+    "condition": "MODULE_V",
+    "stop": "EOS",
+    "status": "DEFINITION_EXECUTION_ERROR",
+    "code": "def collect_a_counts(words): return frozenset(count := 0 for word in words for count in (count + 1 if c == 'a' else 0 for c in word))",
+    "reasons": [
+      {
+        "kind": "EXECUTION_OR_SUPPORT",
+        "reason": "DEFINITION_EXECUTION_ERROR",
+        "detail": "SyntaxError(\"assignment expression cannot rebind comprehension iteration variable 'count'\")"
+      }
+    ]
+  },
+  {
+    "id": "literal_a_occurrences_E_W_USAGE",
+    "condition": "BASE",
+    "stop": "EOS",
+    "status": "EXECUTED",
+    "code": "def collect_a_counts(words): return set(sum((s.count('a') for s in words), ())) ",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "TypeError('can only concatenate tuple (not \"int\") to tuple')"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "TypeError('can only concatenate tuple (not \"int\") to tuple')"
+      }
+    ]
+  },
+  {
+    "id": "literal_a_occurrences_E_W_USAGE",
+    "condition": "MANUAL_V",
+    "stop": "EOS",
+    "status": "EXECUTED",
+    "code": "def collect_a_counts(words): return frozenset(sum([s.count('a') for s in words], []))",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "TypeError('can only concatenate list (not \"int\") to list')"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "TypeError('can only concatenate list (not \"int\") to list')"
+      }
+    ]
+  },
+  {
+    "id": "literal_a_occurrences_E_W_USAGE",
+    "condition": "MODULE_V",
+    "stop": "EOS",
+    "status": "EXECUTED",
+    "code": "def collect_a_counts(words): return frozenset(sum([s.count('a') for s in words], []))",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "TypeError('can only concatenate list (not \"int\") to list')"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "TypeError('can only concatenate list (not \"int\") to list')"
+      }
+    ]
+  },
+  {
+    "id": "literal_a_occurrences_N_W_INTERFACE",
+    "condition": "BASE",
+    "stop": "EOS",
+    "status": "EXECUTED",
+    "code": "def collect_a_counts(words): return reduce(lambda s, w: s.add(w.count('a')) or s, words, set()).remove(0)",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 0,
+        "detail": "NameError(\"name 'reduce' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'reduce' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'reduce' is not defined\")"
+      }
+    ]
+  },
+  {
+    "id": "literal_a_occurrences_N_W_INTERFACE",
+    "condition": "MANUAL_V",
+    "stop": "EOS",
+    "status": "EXECUTED",
+    "code": "def collect_a_counts(words): return reduce(lambda s, w: s.add(w.count('a')) or s, words, set()).remove(0)",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 0,
+        "detail": "NameError(\"name 'reduce' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'reduce' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'reduce' is not defined\")"
+      }
+    ]
+  },
+  {
+    "id": "literal_a_occurrences_N_W_INTERFACE",
+    "condition": "MODULE_V",
+    "stop": "EOS",
+    "status": "EXECUTED",
+    "code": "def collect_a_counts(words): return reduce(lambda s, w: s.add(w.count('a')) or s, words, set()).remove(0)",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 0,
+        "detail": "NameError(\"name 'reduce' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'reduce' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'reduce' is not defined\")"
+      }
+    ]
+  },
+  {
+    "id": "literal_a_occurrences_N_W_INTERFACE",
+    "condition": "TEXT_CODE",
+    "stop": "EOS",
+    "status": "EXECUTED",
+    "code": "def collect_a_counts(words): return frozenset({word.count('a') for word in words}) if all(word.count('a') == word.count('A') for word in words) else set({word.count('a') for word in words})",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ]
+  },
+  {
+    "id": "literal_a_occurrences_N_W_USAGE",
+    "condition": "BASE",
+    "stop": "TRUNCATED",
+    "status": "TRUNCATED",
+    "code": "def collect_a_counts(words): return type('Result', (object,), {'members': set(), 'add': lambda self, x: self.members.add(x), 'remove': lambda self, x: self.members.discard(x)})().members.update({sum(1 for c in word if c == 'a') for word in words}) or type('Result', (object,), {'members': set({sum(1 for c in word if c == 'a') for word",
+    "reasons": [
+      {
+        "kind": "FORMAT",
+        "reason": "TRUNCATED",
+        "detail": null
+      }
+    ]
+  },
+  {
+    "id": "literal_a_occurrences_N_W_USAGE",
+    "condition": "MANUAL_V",
+    "stop": "TRUNCATED",
+    "status": "TRUNCATED",
+    "code": "def collect_a_counts(words): return type('Result', (object,), {'members': set(), 'add': lambda self, x: self.members.add(x), 'remove': lambda self, x: self.members.discard(x)})().members.update({sum(1 for c in word if c == 'a') for word in words}) or type('Result', (object,), {'members': set({sum(1 for c in word if c == 'a') for word",
+    "reasons": [
+      {
+        "kind": "FORMAT",
+        "reason": "TRUNCATED",
+        "detail": null
+      }
+    ]
+  },
+  {
+    "id": "literal_a_occurrences_N_W_USAGE",
+    "condition": "MODULE_V",
+    "stop": "TRUNCATED",
+    "status": "TRUNCATED",
+    "code": "def collect_a_counts(words): return type('Result', (object,), {'members': set(), 'add': lambda self, x: self.members.add(x), 'remove': lambda self, x: self.members.discard(x)})().members.update({sum(1 for c in word if c == 'a') for word in words}) or type('Result', (object,), {'members': set({sum(1 for c in word if c == 'a') for word",
+    "reasons": [
+      {
+        "kind": "FORMAT",
+        "reason": "TRUNCATED",
+        "detail": null
+      }
+    ]
+  }
+]

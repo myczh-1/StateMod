@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "checks": {
+    "version_torch": true,
+    "version_transformers": true,
+    "version_tokenizers": true,
+    "version_safetensors": true,
+    "version_numpy": true,
+    "version_psutil": true,
+    "python_path": true,
+    "shutdown_available": true,
+    "fresh_output": true,
+    "disk": true,
+    "bank.npz": true,
+    "judgment.npz": true,
+    "cached_model_files": true,
+    "gpu_exclusive": true,
+    "gpu_memory": true,
+    "host_memory": true
+  },
+  "details": {
+    "torch": {
+      "expected": "2.8.0+cu128",
+      "actual": "2.8.0+cu128"
+    },
+    "transformers": {
+      "expected": "4.57.6",
+      "actual": "4.57.6"
+    },
+    "tokenizers": {
+      "expected": "0.22.2",
+      "actual": "0.22.2"
+    },
+    "safetensors": {
+      "expected": "0.8.0",
+      "actual": "0.8.0"
+    },
+    "numpy": {
+      "expected": "2.4.6",
+      "actual": "2.4.6"
+    },
+    "psutil": {
+      "expected": "7.2.2",
+      "actual": "7.2.2"
+    },
+    "free_disk_bytes": 17297473536,
+    "gpu_pids": "",
+    "gpu": "0, NVIDIA vGPU-48GB, 48519, 49140, 570.124.04",
+    "available_host_bytes": 96217464832
+  },
+  "errors": [],
+  "safe_to_shutdown": true,
+  "model_forward": false,
+  "installed_packages": false
+}

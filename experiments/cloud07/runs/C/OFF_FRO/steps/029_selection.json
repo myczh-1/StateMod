@@ -1,0 +1,20 @@
+{
+  "numerical": {
+    "max_abs": 3.4332275390625e-05,
+    "rms": 7.808439107644447e-06,
+    "relative_l2": 1.664842672754948e-06,
+    "exact": false
+  },
+  "selected_logp_error": 1.0681622693558407e-09,
+  "token": 421,
+  "fresh_token": 421,
+  "bank_calls": 0,
+  "trace": [],
+  "native_length": 169,
+  "fresh_length": 169,
+  "step": 29,
+  "actual_token": 421,
+  "forced": false,
+  "actual_token_logp_error": 1.0681622693558407e-09,
+  "state": "BANK_OFF"
+}

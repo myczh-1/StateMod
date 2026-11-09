@@ -1,0 +1,57 @@
+{
+  "descriptive_only": true,
+  "scores_not_changed": true,
+  "conditions": {
+    "BASE": {
+      "N_list_add_interface_only": [
+        "dna_reverse_complement_N_W3",
+        "dna_reverse_complement_N_W4",
+        "integral_float_predicate_N_W3",
+        "modal_member_selection_N_W4",
+        "python_literal_representation_N_W3",
+        "python_literal_representation_N_W4"
+      ],
+      "N_exact_frozenset": []
+    },
+    "TEXT_CODE": {
+      "N_list_add_interface_only": [],
+      "N_exact_frozenset": [
+        "centered_text_padding_N_W3",
+        "dna_reverse_complement_N_W3",
+        "dna_reverse_complement_N_W4",
+        "least_significant_one_value_N_W3",
+        "least_significant_one_value_N_W4",
+        "modal_member_selection_N_W3",
+        "modal_member_selection_N_W4",
+        "python_literal_representation_N_W3",
+        "python_literal_representation_N_W4",
+        "run_length_expansion_N_W3",
+        "run_length_expansion_N_W4",
+        "tab_stop_expansion_N_W4"
+      ]
+    },
+    "MANUAL_V": {
+      "N_list_add_interface_only": [
+        "dna_reverse_complement_N_W3",
+        "dna_reverse_complement_N_W4",
+        "integral_float_predicate_N_W3",
+        "modal_member_selection_N_W4",
+        "python_literal_representation_N_W3",
+        "python_literal_representation_N_W4"
+      ],
+      "N_exact_frozenset": []
+    },
+    "MODULE_V": {
+      "N_list_add_interface_only": [
+        "dna_reverse_complement_N_W3",
+        "integral_float_predicate_N_W3",
+        "python_literal_representation_N_W3"
+      ],
+      "N_exact_frozenset": [
+        "least_significant_one_value_N_W4",
+        "modal_member_selection_N_W4",
+        "python_literal_representation_N_W4"
+      ]
+    }
+  }
+}

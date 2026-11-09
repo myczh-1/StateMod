@@ -1,0 +1,17 @@
+{
+  "sha256": "e4c6beb1c4398085b6e292e6b3e966b35ca1469796d8a771ff481a01833896d5",
+  "threshold": 0.5,
+  "train_ids": [
+    "double_E_CLEAR__TRAIN_USAGE",
+    "double_N_CLEAR__TRAIN_USAGE",
+    "lower_E_CLEAR__TRAIN_USAGE",
+    "lower_N_CLEAR__TRAIN_USAGE",
+    "integer_octal_text_E_CLEAR__TRAIN_USAGE",
+    "integer_octal_text_N_CLEAR__TRAIN_USAGE",
+    "boolean_complement_E_CLEAR__TRAIN_USAGE",
+    "boolean_complement_N_CLEAR__TRAIN_USAGE"
+  ],
+  "reference_evaluated": false,
+  "steps": 256,
+  "seed": 42916
+}

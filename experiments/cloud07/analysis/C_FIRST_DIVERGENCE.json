@@ -1,0 +1,23 @@
+[
+  {
+    "a": "OFF_FRO",
+    "b": "ON_FRO",
+    "first_different_token_zero_based": 36,
+    "output_tokens_identical": false,
+    "full_text_a": "```python\ndef collect_a_counts(words): return frozenset(count := 0 for word in words for count in (count + 1 if c == 'a' else count for c in word))\n```",
+    "full_text_b": "```python\ndef collect_a_counts(words): return frozenset(count := 0 for word in words for count in (count + 1 if c == 'a' else 0 for c in word))\n```",
+    "same_token_history": true,
+    "a_token": 1760,
+    "b_token": 220,
+    "margin_a_token_minus_b_token_at_a": 0.16097640991210938,
+    "margin_a_token_minus_b_token_at_b": -0.09648513793945312
+  },
+  {
+    "a": "OFF_SET",
+    "b": "ON_SET",
+    "first_different_token_zero_based": null,
+    "output_tokens_identical": true,
+    "full_text_a": "```python\ndef collect_a_counts(words): return set({sum(1 for c in word if c == 'a') for word in words})\n```",
+    "full_text_b": "```python\ndef collect_a_counts(words): return set({sum(1 for c in word if c == 'a') for word in words})\n```"
+  }
+]

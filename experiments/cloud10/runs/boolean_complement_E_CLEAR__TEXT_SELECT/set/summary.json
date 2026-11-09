@@ -1,0 +1,30 @@
+{
+  "token_ids": [
+    746,
+    151645
+  ],
+  "name_token_count": 1,
+  "total_token_count": 2,
+  "type_logp": -17.000000043468955,
+  "type_eos_logp": -17.00000270056041,
+  "steps": [
+    {
+      "token": 746,
+      "cached_top1": 69,
+      "cached_logp": -17.000000043468955,
+      "native_length": 296,
+      "input_length": 296,
+      "bank_calls": 0,
+      "rank": 2
+    },
+    {
+      "token": 151645,
+      "cached_top1": 151645,
+      "cached_logp": -2.65709145552134e-06,
+      "native_length": 297,
+      "input_length": 297,
+      "bank_calls": 0,
+      "rank": 1
+    }
+  ]
+}

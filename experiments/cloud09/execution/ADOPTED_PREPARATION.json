@@ -1,0 +1,6 @@
+{
+  "stdout": "ADOPTED_PREPARED_DIRECTORY\n",
+  "host": "[HOST_ALIAS]",
+  "remote": "[REMOTE_PATH]",
+  "files_overwritten": false
+}

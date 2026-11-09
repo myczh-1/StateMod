@@ -1,0 +1,2592 @@
+[
+  {
+    "task_id": "double_E_CLEAR__TRAIN_USAGE",
+    "condition": "BASE",
+    "result": {
+      "status": "EXECUTED",
+      "format_ok": true,
+      "executable": true,
+      "values_correct": true,
+      "mutability_correct": null,
+      "functional": true,
+      "exact_frozenset": false,
+      "joint": false,
+      "code": "def collect_doubles(numbers):\n    return list({n * 2 for n in numbers})",
+      "ast": "Module(body=[FunctionDef(name='collect_doubles', args=arguments(posonlyargs=[], args=[arg(arg='numbers', lineno=1, col_offset=20, end_lineno=1, end_col_offset=27)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=Call(func=Name(id='list', ctx=Load(), lineno=2, col_offset=11, end_lineno=2, end_col_offset=15), args=[SetComp(elt=BinOp(left=Name(id='n', ctx=Load(), lineno=2, col_offset=17, end_lineno=2, end_col_offset=18), op=Mult(), right=Constant(value=2, lineno=2, col_offset=21, end_lineno=2, end_col_offset=22), lineno=2, col_offset=17, end_lineno=2, end_col_offset=22), generators=[comprehension(target=Name(id='n', ctx=Store(), lineno=2, col_offset=27, end_lineno=2, end_col_offset=28), iter=Name(id='numbers', ctx=Load(), lineno=2, col_offset=32, end_lineno=2, end_col_offset=39), ifs=[], is_async=0)], lineno=2, col_offset=16, end_lineno=2, end_col_offset=40)], keywords=[], lineno=2, col_offset=11, end_lineno=2, end_col_offset=41), lineno=2, col_offset=4, end_lineno=2, end_col_offset=41)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=41)], type_ignores=[])",
+      "structure": {
+        "return_count": 1,
+        "loop_count": 0,
+        "branch_count": 0
+      },
+      "trials": [
+        {
+          "case": 0,
+          "case_role": "empty",
+          "args": [
+            []
+          ],
+          "expected": [],
+          "output": "[]",
+          "output_type": "list",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": null,
+          "error": null
+        },
+        {
+          "case": 1,
+          "case_role": "duplicates",
+          "args": [
+            [
+              -2,
+              2,
+              2
+            ]
+          ],
+          "expected": [
+            -4,
+            4
+          ],
+          "output": "[-4, 4]",
+          "output_type": "list",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": null,
+          "error": null
+        },
+        {
+          "case": 2,
+          "case_role": "boundary",
+          "args": [
+            [
+              0,
+              -1,
+              100
+            ]
+          ],
+          "expected": [
+            0,
+            -2,
+            200
+          ],
+          "output": "[0, -2, 200]",
+          "output_type": "list",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": null,
+          "error": null
+        }
+      ],
+      "failure_reasons": [],
+      "stdout": "",
+      "process": {
+        "exit_code": 0,
+        "stdout": "{\"status\": \"EXECUTED\", \"format_ok\": true, \"executable\": true, \"values_correct\": true, \"mutability_correct\": null, \"functional\": true, \"exact_frozenset\": false, \"joint\": false, \"code\": \"def collect_doubles(numbers):\\n    return list({n * 2 for n in numbers})\", \"ast\": \"Module(body=[FunctionDef(name='collect_doubles', args=arguments(posonlyargs=[], args=[arg(arg='numbers', lineno=1, col_offset=20, end_lineno=1, end_col_offset=27)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=Call(func=Name(id='list', ctx=Load(), lineno=2, col_offset=11, end_lineno=2, end_col_offset=15), args=[SetComp(elt=BinOp(left=Name(id='n', ctx=Load(), lineno=2, col_offset=17, end_lineno=2, end_col_offset=18), op=Mult(), right=Constant(value=2, lineno=2, col_offset=21, end_lineno=2, end_col_offset=22), lineno=2, col_offset=17, end_lineno=2, end_col_offset=22), generators=[comprehension(target=Name(id='n', ctx=Store(), lineno=2, col_offset=27, end_lineno=2, end_col_offset=28), iter=Name(id='numbers', ctx=Load(), lineno=2, col_offset=32, end_lineno=2, end_col_offset=39), ifs=[], is_async=0)], lineno=2, col_offset=16, end_lineno=2, end_col_offset=40)], keywords=[], lineno=2, col_offset=11, end_lineno=2, end_col_offset=41), lineno=2, col_offset=4, end_lineno=2, end_col_offset=41)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=41)], type_ignores=[])\", \"structure\": {\"return_count\": 1, \"loop_count\": 0, \"branch_count\": 0}, \"trials\": [{\"case\": 0, \"case_role\": \"empty\", \"args\": [[]], \"expected\": [], \"output\": \"[]\", \"output_type\": \"list\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": null, \"error\": null}, {\"case\": 1, \"case_role\": \"duplicates\", \"args\": [[-2, 2, 2]], \"expected\": [-4, 4], \"output\": \"[-4, 4]\", \"output_type\": \"list\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": null, \"error\": null}, {\"case\": 2, \"case_role\": \"boundary\", \"args\": [[0, -1, 100]], \"expected\": [0, -2, 200], \"output\": \"[0, -2, 200]\", \"output_type\": \"list\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": null, \"error\": null}], \"failure_reasons\": [], \"stdout\": \"\"}\n",
+        "stderr": ""
+      }
+    }
+  },
+  {
+    "task_id": "double_N_CLEAR__TRAIN_USAGE",
+    "condition": "BASE",
+    "result": {
+      "status": "EXECUTED",
+      "format_ok": true,
+      "executable": true,
+      "values_correct": true,
+      "mutability_correct": true,
+      "functional": true,
+      "exact_frozenset": false,
+      "joint": true,
+      "code": "def collect_doubles(numbers):\n    return {n * 2 for n in numbers}",
+      "ast": "Module(body=[FunctionDef(name='collect_doubles', args=arguments(posonlyargs=[], args=[arg(arg='numbers', lineno=1, col_offset=20, end_lineno=1, end_col_offset=27)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=SetComp(elt=BinOp(left=Name(id='n', ctx=Load(), lineno=2, col_offset=12, end_lineno=2, end_col_offset=13), op=Mult(), right=Constant(value=2, lineno=2, col_offset=16, end_lineno=2, end_col_offset=17), lineno=2, col_offset=12, end_lineno=2, end_col_offset=17), generators=[comprehension(target=Name(id='n', ctx=Store(), lineno=2, col_offset=22, end_lineno=2, end_col_offset=23), iter=Name(id='numbers', ctx=Load(), lineno=2, col_offset=27, end_lineno=2, end_col_offset=34), ifs=[], is_async=0)], lineno=2, col_offset=11, end_lineno=2, end_col_offset=35), lineno=2, col_offset=4, end_lineno=2, end_col_offset=35)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=35)], type_ignores=[])",
+      "structure": {
+        "return_count": 1,
+        "loop_count": 0,
+        "branch_count": 0
+      },
+      "trials": [
+        {
+          "case": 0,
+          "case_role": "empty",
+          "args": [
+            []
+          ],
+          "expected": [],
+          "output": "set()",
+          "output_type": "set",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": {
+            "passed": true,
+            "add_query_ok": true,
+            "remove_restore_ok": true,
+            "marker": 987654321,
+            "error": null
+          },
+          "error": null
+        },
+        {
+          "case": 1,
+          "case_role": "duplicates",
+          "args": [
+            [
+              -2,
+              2,
+              2
+            ]
+          ],
+          "expected": [
+            -4,
+            4
+          ],
+          "output": "{-4, 4}",
+          "output_type": "set",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": {
+            "passed": true,
+            "add_query_ok": true,
+            "remove_restore_ok": true,
+            "marker": 987654321,
+            "error": null
+          },
+          "error": null
+        },
+        {
+          "case": 2,
+          "case_role": "boundary",
+          "args": [
+            [
+              0,
+              -1,
+              100
+            ]
+          ],
+          "expected": [
+            0,
+            -2,
+            200
+          ],
+          "output": "{0, -2, 200}",
+          "output_type": "set",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": {
+            "passed": true,
+            "add_query_ok": true,
+            "remove_restore_ok": true,
+            "marker": 987654321,
+            "error": null
+          },
+          "error": null
+        }
+      ],
+      "failure_reasons": [],
+      "stdout": "",
+      "process": {
+        "exit_code": 0,
+        "stdout": "{\"status\": \"EXECUTED\", \"format_ok\": true, \"executable\": true, \"values_correct\": true, \"mutability_correct\": true, \"functional\": true, \"exact_frozenset\": false, \"joint\": true, \"code\": \"def collect_doubles(numbers):\\n    return {n * 2 for n in numbers}\", \"ast\": \"Module(body=[FunctionDef(name='collect_doubles', args=arguments(posonlyargs=[], args=[arg(arg='numbers', lineno=1, col_offset=20, end_lineno=1, end_col_offset=27)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=SetComp(elt=BinOp(left=Name(id='n', ctx=Load(), lineno=2, col_offset=12, end_lineno=2, end_col_offset=13), op=Mult(), right=Constant(value=2, lineno=2, col_offset=16, end_lineno=2, end_col_offset=17), lineno=2, col_offset=12, end_lineno=2, end_col_offset=17), generators=[comprehension(target=Name(id='n', ctx=Store(), lineno=2, col_offset=22, end_lineno=2, end_col_offset=23), iter=Name(id='numbers', ctx=Load(), lineno=2, col_offset=27, end_lineno=2, end_col_offset=34), ifs=[], is_async=0)], lineno=2, col_offset=11, end_lineno=2, end_col_offset=35), lineno=2, col_offset=4, end_lineno=2, end_col_offset=35)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=35)], type_ignores=[])\", \"structure\": {\"return_count\": 1, \"loop_count\": 0, \"branch_count\": 0}, \"trials\": [{\"case\": 0, \"case_role\": \"empty\", \"args\": [[]], \"expected\": [], \"output\": \"set()\", \"output_type\": \"set\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": {\"passed\": true, \"add_query_ok\": true, \"remove_restore_ok\": true, \"marker\": 987654321, \"error\": null}, \"error\": null}, {\"case\": 1, \"case_role\": \"duplicates\", \"args\": [[-2, 2, 2]], \"expected\": [-4, 4], \"output\": \"{-4, 4}\", \"output_type\": \"set\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": {\"passed\": true, \"add_query_ok\": true, \"remove_restore_ok\": true, \"marker\": 987654321, \"error\": null}, \"error\": null}, {\"case\": 2, \"case_role\": \"boundary\", \"args\": [[0, -1, 100]], \"expected\": [0, -2, 200], \"output\": \"{0, -2, 200}\", \"output_type\": \"set\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": {\"passed\": true, \"add_query_ok\": true, \"remove_restore_ok\": true, \"marker\": 987654321, \"error\": null}, \"error\": null}], \"failure_reasons\": [], \"stdout\": \"\"}\n",
+        "stderr": ""
+      }
+    }
+  },
+  {
+    "task_id": "lower_E_CLEAR__TRAIN_USAGE",
+    "condition": "BASE",
+    "result": {
+      "status": "EXECUTED",
+      "format_ok": true,
+      "executable": true,
+      "values_correct": true,
+      "mutability_correct": null,
+      "functional": true,
+      "exact_frozenset": false,
+      "joint": false,
+      "code": "def collect_lowercase(words):\n    return list({word.lower() for word in words})",
+      "ast": "Module(body=[FunctionDef(name='collect_lowercase', args=arguments(posonlyargs=[], args=[arg(arg='words', lineno=1, col_offset=22, end_lineno=1, end_col_offset=27)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=Call(func=Name(id='list', ctx=Load(), lineno=2, col_offset=11, end_lineno=2, end_col_offset=15), args=[SetComp(elt=Call(func=Attribute(value=Name(id='word', ctx=Load(), lineno=2, col_offset=17, end_lineno=2, end_col_offset=21), attr='lower', ctx=Load(), lineno=2, col_offset=17, end_lineno=2, end_col_offset=27), args=[], keywords=[], lineno=2, col_offset=17, end_lineno=2, end_col_offset=29), generators=[comprehension(target=Name(id='word', ctx=Store(), lineno=2, col_offset=34, end_lineno=2, end_col_offset=38), iter=Name(id='words', ctx=Load(), lineno=2, col_offset=42, end_lineno=2, end_col_offset=47), ifs=[], is_async=0)], lineno=2, col_offset=16, end_lineno=2, end_col_offset=48)], keywords=[], lineno=2, col_offset=11, end_lineno=2, end_col_offset=49), lineno=2, col_offset=4, end_lineno=2, end_col_offset=49)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=49)], type_ignores=[])",
+      "structure": {
+        "return_count": 1,
+        "loop_count": 0,
+        "branch_count": 0
+      },
+      "trials": [
+        {
+          "case": 0,
+          "case_role": "empty",
+          "args": [
+            []
+          ],
+          "expected": [],
+          "output": "[]",
+          "output_type": "list",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": null,
+          "error": null
+        },
+        {
+          "case": 1,
+          "case_role": "duplicates",
+          "args": [
+            [
+              "Aa",
+              "BB",
+              "aa",
+              ""
+            ]
+          ],
+          "expected": [
+            "aa",
+            "bb",
+            ""
+          ],
+          "output": "['', 'bb', 'aa']",
+          "output_type": "list",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": null,
+          "error": null
+        },
+        {
+          "case": 2,
+          "case_role": "boundary",
+          "args": [
+            [
+              "XyZ",
+              "中文",
+              "ABC"
+            ]
+          ],
+          "expected": [
+            "xyz",
+            "中文",
+            "abc"
+          ],
+          "output": "['xyz', '中文', 'abc']",
+          "output_type": "list",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": null,
+          "error": null
+        }
+      ],
+      "failure_reasons": [],
+      "stdout": "",
+      "process": {
+        "exit_code": 0,
+        "stdout": "{\"status\": \"EXECUTED\", \"format_ok\": true, \"executable\": true, \"values_correct\": true, \"mutability_correct\": null, \"functional\": true, \"exact_frozenset\": false, \"joint\": false, \"code\": \"def collect_lowercase(words):\\n    return list({word.lower() for word in words})\", \"ast\": \"Module(body=[FunctionDef(name='collect_lowercase', args=arguments(posonlyargs=[], args=[arg(arg='words', lineno=1, col_offset=22, end_lineno=1, end_col_offset=27)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=Call(func=Name(id='list', ctx=Load(), lineno=2, col_offset=11, end_lineno=2, end_col_offset=15), args=[SetComp(elt=Call(func=Attribute(value=Name(id='word', ctx=Load(), lineno=2, col_offset=17, end_lineno=2, end_col_offset=21), attr='lower', ctx=Load(), lineno=2, col_offset=17, end_lineno=2, end_col_offset=27), args=[], keywords=[], lineno=2, col_offset=17, end_lineno=2, end_col_offset=29), generators=[comprehension(target=Name(id='word', ctx=Store(), lineno=2, col_offset=34, end_lineno=2, end_col_offset=38), iter=Name(id='words', ctx=Load(), lineno=2, col_offset=42, end_lineno=2, end_col_offset=47), ifs=[], is_async=0)], lineno=2, col_offset=16, end_lineno=2, end_col_offset=48)], keywords=[], lineno=2, col_offset=11, end_lineno=2, end_col_offset=49), lineno=2, col_offset=4, end_lineno=2, end_col_offset=49)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=49)], type_ignores=[])\", \"structure\": {\"return_count\": 1, \"loop_count\": 0, \"branch_count\": 0}, \"trials\": [{\"case\": 0, \"case_role\": \"empty\", \"args\": [[]], \"expected\": [], \"output\": \"[]\", \"output_type\": \"list\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": null, \"error\": null}, {\"case\": 1, \"case_role\": \"duplicates\", \"args\": [[\"Aa\", \"BB\", \"aa\", \"\"]], \"expected\": [\"aa\", \"bb\", \"\"], \"output\": \"['', 'bb', 'aa']\", \"output_type\": \"list\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": null, \"error\": null}, {\"case\": 2, \"case_role\": \"boundary\", \"args\": [[\"XyZ\", \"中文\", \"ABC\"]], \"expected\": [\"xyz\", \"中文\", \"abc\"], \"output\": \"['xyz', '中文', 'abc']\", \"output_type\": \"list\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": null, \"error\": null}], \"failure_reasons\": [], \"stdout\": \"\"}\n",
+        "stderr": ""
+      }
+    }
+  },
+  {
+    "task_id": "lower_N_CLEAR__TRAIN_USAGE",
+    "condition": "BASE",
+    "result": {
+      "status": "EXECUTED",
+      "format_ok": true,
+      "executable": true,
+      "values_correct": true,
+      "mutability_correct": true,
+      "functional": true,
+      "exact_frozenset": false,
+      "joint": true,
+      "code": "def collect_lowercase(words):\n    return set(word.lower() for word in words)",
+      "ast": "Module(body=[FunctionDef(name='collect_lowercase', args=arguments(posonlyargs=[], args=[arg(arg='words', lineno=1, col_offset=22, end_lineno=1, end_col_offset=27)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=Call(func=Name(id='set', ctx=Load(), lineno=2, col_offset=11, end_lineno=2, end_col_offset=14), args=[GeneratorExp(elt=Call(func=Attribute(value=Name(id='word', ctx=Load(), lineno=2, col_offset=15, end_lineno=2, end_col_offset=19), attr='lower', ctx=Load(), lineno=2, col_offset=15, end_lineno=2, end_col_offset=25), args=[], keywords=[], lineno=2, col_offset=15, end_lineno=2, end_col_offset=27), generators=[comprehension(target=Name(id='word', ctx=Store(), lineno=2, col_offset=32, end_lineno=2, end_col_offset=36), iter=Name(id='words', ctx=Load(), lineno=2, col_offset=40, end_lineno=2, end_col_offset=45), ifs=[], is_async=0)], lineno=2, col_offset=14, end_lineno=2, end_col_offset=46)], keywords=[], lineno=2, col_offset=11, end_lineno=2, end_col_offset=46), lineno=2, col_offset=4, end_lineno=2, end_col_offset=46)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=46)], type_ignores=[])",
+      "structure": {
+        "return_count": 1,
+        "loop_count": 0,
+        "branch_count": 0
+      },
+      "trials": [
+        {
+          "case": 0,
+          "case_role": "empty",
+          "args": [
+            []
+          ],
+          "expected": [],
+          "output": "set()",
+          "output_type": "set",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": {
+            "passed": true,
+            "add_query_ok": true,
+            "remove_restore_ok": true,
+            "marker": "__new_member__",
+            "error": null
+          },
+          "error": null
+        },
+        {
+          "case": 1,
+          "case_role": "duplicates",
+          "args": [
+            [
+              "Aa",
+              "BB",
+              "aa",
+              ""
+            ]
+          ],
+          "expected": [
+            "aa",
+            "bb",
+            ""
+          ],
+          "output": "{'', 'bb', 'aa'}",
+          "output_type": "set",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": {
+            "passed": true,
+            "add_query_ok": true,
+            "remove_restore_ok": true,
+            "marker": "__new_member__",
+            "error": null
+          },
+          "error": null
+        },
+        {
+          "case": 2,
+          "case_role": "boundary",
+          "args": [
+            [
+              "XyZ",
+              "中文",
+              "ABC"
+            ]
+          ],
+          "expected": [
+            "xyz",
+            "中文",
+            "abc"
+          ],
+          "output": "{'xyz', '中文', 'abc'}",
+          "output_type": "set",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": {
+            "passed": true,
+            "add_query_ok": true,
+            "remove_restore_ok": true,
+            "marker": "__new_member__",
+            "error": null
+          },
+          "error": null
+        }
+      ],
+      "failure_reasons": [],
+      "stdout": "",
+      "process": {
+        "exit_code": 0,
+        "stdout": "{\"status\": \"EXECUTED\", \"format_ok\": true, \"executable\": true, \"values_correct\": true, \"mutability_correct\": true, \"functional\": true, \"exact_frozenset\": false, \"joint\": true, \"code\": \"def collect_lowercase(words):\\n    return set(word.lower() for word in words)\", \"ast\": \"Module(body=[FunctionDef(name='collect_lowercase', args=arguments(posonlyargs=[], args=[arg(arg='words', lineno=1, col_offset=22, end_lineno=1, end_col_offset=27)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=Call(func=Name(id='set', ctx=Load(), lineno=2, col_offset=11, end_lineno=2, end_col_offset=14), args=[GeneratorExp(elt=Call(func=Attribute(value=Name(id='word', ctx=Load(), lineno=2, col_offset=15, end_lineno=2, end_col_offset=19), attr='lower', ctx=Load(), lineno=2, col_offset=15, end_lineno=2, end_col_offset=25), args=[], keywords=[], lineno=2, col_offset=15, end_lineno=2, end_col_offset=27), generators=[comprehension(target=Name(id='word', ctx=Store(), lineno=2, col_offset=32, end_lineno=2, end_col_offset=36), iter=Name(id='words', ctx=Load(), lineno=2, col_offset=40, end_lineno=2, end_col_offset=45), ifs=[], is_async=0)], lineno=2, col_offset=14, end_lineno=2, end_col_offset=46)], keywords=[], lineno=2, col_offset=11, end_lineno=2, end_col_offset=46), lineno=2, col_offset=4, end_lineno=2, end_col_offset=46)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=46)], type_ignores=[])\", \"structure\": {\"return_count\": 1, \"loop_count\": 0, \"branch_count\": 0}, \"trials\": [{\"case\": 0, \"case_role\": \"empty\", \"args\": [[]], \"expected\": [], \"output\": \"set()\", \"output_type\": \"set\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": {\"passed\": true, \"add_query_ok\": true, \"remove_restore_ok\": true, \"marker\": \"__new_member__\", \"error\": null}, \"error\": null}, {\"case\": 1, \"case_role\": \"duplicates\", \"args\": [[\"Aa\", \"BB\", \"aa\", \"\"]], \"expected\": [\"aa\", \"bb\", \"\"], \"output\": \"{'', 'bb', 'aa'}\", \"output_type\": \"set\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": {\"passed\": true, \"add_query_ok\": true, \"remove_restore_ok\": true, \"marker\": \"__new_member__\", \"error\": null}, \"error\": null}, {\"case\": 2, \"case_role\": \"boundary\", \"args\": [[\"XyZ\", \"中文\", \"ABC\"]], \"expected\": [\"xyz\", \"中文\", \"abc\"], \"output\": \"{'xyz', '中文', 'abc'}\", \"output_type\": \"set\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": {\"passed\": true, \"add_query_ok\": true, \"remove_restore_ok\": true, \"marker\": \"__new_member__\", \"error\": null}, \"error\": null}], \"failure_reasons\": [], \"stdout\": \"\"}\n",
+        "stderr": ""
+      }
+    }
+  },
+  {
+    "task_id": "integer_octal_text_E_CLEAR__TRAIN_USAGE",
+    "condition": "BASE",
+    "result": {
+      "status": "EXECUTED",
+      "format_ok": true,
+      "executable": true,
+      "values_correct": true,
+      "mutability_correct": null,
+      "functional": true,
+      "exact_frozenset": false,
+      "joint": false,
+      "code": "def collect_octal_strings(numbers):\n    return list({oct(n) for n in numbers})",
+      "ast": "Module(body=[FunctionDef(name='collect_octal_strings', args=arguments(posonlyargs=[], args=[arg(arg='numbers', lineno=1, col_offset=26, end_lineno=1, end_col_offset=33)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=Call(func=Name(id='list', ctx=Load(), lineno=2, col_offset=11, end_lineno=2, end_col_offset=15), args=[SetComp(elt=Call(func=Name(id='oct', ctx=Load(), lineno=2, col_offset=17, end_lineno=2, end_col_offset=20), args=[Name(id='n', ctx=Load(), lineno=2, col_offset=21, end_lineno=2, end_col_offset=22)], keywords=[], lineno=2, col_offset=17, end_lineno=2, end_col_offset=23), generators=[comprehension(target=Name(id='n', ctx=Store(), lineno=2, col_offset=28, end_lineno=2, end_col_offset=29), iter=Name(id='numbers', ctx=Load(), lineno=2, col_offset=33, end_lineno=2, end_col_offset=40), ifs=[], is_async=0)], lineno=2, col_offset=16, end_lineno=2, end_col_offset=41)], keywords=[], lineno=2, col_offset=11, end_lineno=2, end_col_offset=42), lineno=2, col_offset=4, end_lineno=2, end_col_offset=42)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=42)], type_ignores=[])",
+      "structure": {
+        "return_count": 1,
+        "loop_count": 0,
+        "branch_count": 0
+      },
+      "trials": [
+        {
+          "case": 0,
+          "case_role": "empty",
+          "args": [
+            []
+          ],
+          "expected": [],
+          "output": "[]",
+          "output_type": "list",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": null,
+          "error": null
+        },
+        {
+          "case": 1,
+          "case_role": "duplicates",
+          "args": [
+            [
+              0,
+              8,
+              8,
+              15
+            ]
+          ],
+          "expected": [
+            "0o0",
+            "0o10",
+            "0o17"
+          ],
+          "output": "['0o17', '0o10', '0o0']",
+          "output_type": "list",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": null,
+          "error": null
+        },
+        {
+          "case": 2,
+          "case_role": "boundary",
+          "args": [
+            [
+              1,
+              7,
+              64
+            ]
+          ],
+          "expected": [
+            "0o1",
+            "0o7",
+            "0o100"
+          ],
+          "output": "['0o7', '0o1', '0o100']",
+          "output_type": "list",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": null,
+          "error": null
+        }
+      ],
+      "failure_reasons": [],
+      "stdout": "",
+      "process": {
+        "exit_code": 0,
+        "stdout": "{\"status\": \"EXECUTED\", \"format_ok\": true, \"executable\": true, \"values_correct\": true, \"mutability_correct\": null, \"functional\": true, \"exact_frozenset\": false, \"joint\": false, \"code\": \"def collect_octal_strings(numbers):\\n    return list({oct(n) for n in numbers})\", \"ast\": \"Module(body=[FunctionDef(name='collect_octal_strings', args=arguments(posonlyargs=[], args=[arg(arg='numbers', lineno=1, col_offset=26, end_lineno=1, end_col_offset=33)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=Call(func=Name(id='list', ctx=Load(), lineno=2, col_offset=11, end_lineno=2, end_col_offset=15), args=[SetComp(elt=Call(func=Name(id='oct', ctx=Load(), lineno=2, col_offset=17, end_lineno=2, end_col_offset=20), args=[Name(id='n', ctx=Load(), lineno=2, col_offset=21, end_lineno=2, end_col_offset=22)], keywords=[], lineno=2, col_offset=17, end_lineno=2, end_col_offset=23), generators=[comprehension(target=Name(id='n', ctx=Store(), lineno=2, col_offset=28, end_lineno=2, end_col_offset=29), iter=Name(id='numbers', ctx=Load(), lineno=2, col_offset=33, end_lineno=2, end_col_offset=40), ifs=[], is_async=0)], lineno=2, col_offset=16, end_lineno=2, end_col_offset=41)], keywords=[], lineno=2, col_offset=11, end_lineno=2, end_col_offset=42), lineno=2, col_offset=4, end_lineno=2, end_col_offset=42)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=42)], type_ignores=[])\", \"structure\": {\"return_count\": 1, \"loop_count\": 0, \"branch_count\": 0}, \"trials\": [{\"case\": 0, \"case_role\": \"empty\", \"args\": [[]], \"expected\": [], \"output\": \"[]\", \"output_type\": \"list\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": null, \"error\": null}, {\"case\": 1, \"case_role\": \"duplicates\", \"args\": [[0, 8, 8, 15]], \"expected\": [\"0o0\", \"0o10\", \"0o17\"], \"output\": \"['0o17', '0o10', '0o0']\", \"output_type\": \"list\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": null, \"error\": null}, {\"case\": 2, \"case_role\": \"boundary\", \"args\": [[1, 7, 64]], \"expected\": [\"0o1\", \"0o7\", \"0o100\"], \"output\": \"['0o7', '0o1', '0o100']\", \"output_type\": \"list\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": null, \"error\": null}], \"failure_reasons\": [], \"stdout\": \"\"}\n",
+        "stderr": ""
+      }
+    }
+  },
+  {
+    "task_id": "integer_octal_text_N_CLEAR__TRAIN_USAGE",
+    "condition": "BASE",
+    "result": {
+      "status": "EXECUTED",
+      "format_ok": true,
+      "executable": true,
+      "values_correct": false,
+      "mutability_correct": true,
+      "functional": false,
+      "exact_frozenset": false,
+      "joint": false,
+      "code": "def collect_octal_strings(numbers):\n    return {oct(n).replace('0o', '') for n in numbers}",
+      "ast": "Module(body=[FunctionDef(name='collect_octal_strings', args=arguments(posonlyargs=[], args=[arg(arg='numbers', lineno=1, col_offset=26, end_lineno=1, end_col_offset=33)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=SetComp(elt=Call(func=Attribute(value=Call(func=Name(id='oct', ctx=Load(), lineno=2, col_offset=12, end_lineno=2, end_col_offset=15), args=[Name(id='n', ctx=Load(), lineno=2, col_offset=16, end_lineno=2, end_col_offset=17)], keywords=[], lineno=2, col_offset=12, end_lineno=2, end_col_offset=18), attr='replace', ctx=Load(), lineno=2, col_offset=12, end_lineno=2, end_col_offset=26), args=[Constant(value='0o', lineno=2, col_offset=27, end_lineno=2, end_col_offset=31), Constant(value='', lineno=2, col_offset=33, end_lineno=2, end_col_offset=35)], keywords=[], lineno=2, col_offset=12, end_lineno=2, end_col_offset=36), generators=[comprehension(target=Name(id='n', ctx=Store(), lineno=2, col_offset=41, end_lineno=2, end_col_offset=42), iter=Name(id='numbers', ctx=Load(), lineno=2, col_offset=46, end_lineno=2, end_col_offset=53), ifs=[], is_async=0)], lineno=2, col_offset=11, end_lineno=2, end_col_offset=54), lineno=2, col_offset=4, end_lineno=2, end_col_offset=54)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=54)], type_ignores=[])",
+      "structure": {
+        "return_count": 1,
+        "loop_count": 0,
+        "branch_count": 0
+      },
+      "trials": [
+        {
+          "case": 0,
+          "case_role": "empty",
+          "args": [
+            []
+          ],
+          "expected": [],
+          "output": "set()",
+          "output_type": "set",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": {
+            "passed": true,
+            "add_query_ok": true,
+            "remove_restore_ok": true,
+            "marker": "__new_member__",
+            "error": null
+          },
+          "error": null
+        },
+        {
+          "case": 1,
+          "case_role": "duplicates",
+          "args": [
+            [
+              0,
+              8,
+              8,
+              15
+            ]
+          ],
+          "expected": [
+            "0o0",
+            "0o10",
+            "0o17"
+          ],
+          "output": "{'10', '17', '0'}",
+          "output_type": "set",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": false,
+          "input_unchanged": true,
+          "mutability": {
+            "passed": true,
+            "add_query_ok": true,
+            "remove_restore_ok": true,
+            "marker": "__new_member__",
+            "error": null
+          },
+          "error": null
+        },
+        {
+          "case": 2,
+          "case_role": "boundary",
+          "args": [
+            [
+              1,
+              7,
+              64
+            ]
+          ],
+          "expected": [
+            "0o1",
+            "0o7",
+            "0o100"
+          ],
+          "output": "{'100', '7', '1'}",
+          "output_type": "set",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": false,
+          "input_unchanged": true,
+          "mutability": {
+            "passed": true,
+            "add_query_ok": true,
+            "remove_restore_ok": true,
+            "marker": "__new_member__",
+            "error": null
+          },
+          "error": null
+        }
+      ],
+      "failure_reasons": [
+        {
+          "kind": "MEMBER_COMPUTATION_OR_TYPE",
+          "case": 1,
+          "actual": "{'10', '17', '0'}",
+          "expected": [
+            "0o0",
+            "0o10",
+            "0o17"
+          ]
+        },
+        {
+          "kind": "MEMBER_COMPUTATION_OR_TYPE",
+          "case": 2,
+          "actual": "{'100', '7', '1'}",
+          "expected": [
+            "0o1",
+            "0o7",
+            "0o100"
+          ]
+        }
+      ],
+      "stdout": "",
+      "process": {
+        "exit_code": 0,
+        "stdout": "{\"status\": \"EXECUTED\", \"format_ok\": true, \"executable\": true, \"values_correct\": false, \"mutability_correct\": true, \"functional\": false, \"exact_frozenset\": false, \"joint\": false, \"code\": \"def collect_octal_strings(numbers):\\n    return {oct(n).replace('0o', '') for n in numbers}\", \"ast\": \"Module(body=[FunctionDef(name='collect_octal_strings', args=arguments(posonlyargs=[], args=[arg(arg='numbers', lineno=1, col_offset=26, end_lineno=1, end_col_offset=33)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=SetComp(elt=Call(func=Attribute(value=Call(func=Name(id='oct', ctx=Load(), lineno=2, col_offset=12, end_lineno=2, end_col_offset=15), args=[Name(id='n', ctx=Load(), lineno=2, col_offset=16, end_lineno=2, end_col_offset=17)], keywords=[], lineno=2, col_offset=12, end_lineno=2, end_col_offset=18), attr='replace', ctx=Load(), lineno=2, col_offset=12, end_lineno=2, end_col_offset=26), args=[Constant(value='0o', lineno=2, col_offset=27, end_lineno=2, end_col_offset=31), Constant(value='', lineno=2, col_offset=33, end_lineno=2, end_col_offset=35)], keywords=[], lineno=2, col_offset=12, end_lineno=2, end_col_offset=36), generators=[comprehension(target=Name(id='n', ctx=Store(), lineno=2, col_offset=41, end_lineno=2, end_col_offset=42), iter=Name(id='numbers', ctx=Load(), lineno=2, col_offset=46, end_lineno=2, end_col_offset=53), ifs=[], is_async=0)], lineno=2, col_offset=11, end_lineno=2, end_col_offset=54), lineno=2, col_offset=4, end_lineno=2, end_col_offset=54)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=54)], type_ignores=[])\", \"structure\": {\"return_count\": 1, \"loop_count\": 0, \"branch_count\": 0}, \"trials\": [{\"case\": 0, \"case_role\": \"empty\", \"args\": [[]], \"expected\": [], \"output\": \"set()\", \"output_type\": \"set\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": {\"passed\": true, \"add_query_ok\": true, \"remove_restore_ok\": true, \"marker\": \"__new_member__\", \"error\": null}, \"error\": null}, {\"case\": 1, \"case_role\": \"duplicates\", \"args\": [[0, 8, 8, 15]], \"expected\": [\"0o0\", \"0o10\", \"0o17\"], \"output\": \"{'10', '17', '0'}\", \"output_type\": \"set\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": false, \"input_unchanged\": true, \"mutability\": {\"passed\": true, \"add_query_ok\": true, \"remove_restore_ok\": true, \"marker\": \"__new_member__\", \"error\": null}, \"error\": null}, {\"case\": 2, \"case_role\": \"boundary\", \"args\": [[1, 7, 64]], \"expected\": [\"0o1\", \"0o7\", \"0o100\"], \"output\": \"{'100', '7', '1'}\", \"output_type\": \"set\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": false, \"input_unchanged\": true, \"mutability\": {\"passed\": true, \"add_query_ok\": true, \"remove_restore_ok\": true, \"marker\": \"__new_member__\", \"error\": null}, \"error\": null}], \"failure_reasons\": [{\"kind\": \"MEMBER_COMPUTATION_OR_TYPE\", \"case\": 1, \"actual\": \"{'10', '17', '0'}\", \"expected\": [\"0o0\", \"0o10\", \"0o17\"]}, {\"kind\": \"MEMBER_COMPUTATION_OR_TYPE\", \"case\": 2, \"actual\": \"{'100', '7', '1'}\", \"expected\": [\"0o1\", \"0o7\", \"0o100\"]}], \"stdout\": \"\"}\n",
+        "stderr": ""
+      }
+    }
+  },
+  {
+    "task_id": "boolean_complement_E_CLEAR__TRAIN_USAGE",
+    "condition": "BASE",
+    "result": {
+      "status": "EXECUTED",
+      "format_ok": true,
+      "executable": true,
+      "values_correct": true,
+      "mutability_correct": null,
+      "functional": true,
+      "exact_frozenset": false,
+      "joint": false,
+      "code": "def collect_inverted_flags(flags):\n    return list({not flag for flag in flags})",
+      "ast": "Module(body=[FunctionDef(name='collect_inverted_flags', args=arguments(posonlyargs=[], args=[arg(arg='flags', lineno=1, col_offset=27, end_lineno=1, end_col_offset=32)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=Call(func=Name(id='list', ctx=Load(), lineno=2, col_offset=11, end_lineno=2, end_col_offset=15), args=[SetComp(elt=UnaryOp(op=Not(), operand=Name(id='flag', ctx=Load(), lineno=2, col_offset=21, end_lineno=2, end_col_offset=25), lineno=2, col_offset=17, end_lineno=2, end_col_offset=25), generators=[comprehension(target=Name(id='flag', ctx=Store(), lineno=2, col_offset=30, end_lineno=2, end_col_offset=34), iter=Name(id='flags', ctx=Load(), lineno=2, col_offset=38, end_lineno=2, end_col_offset=43), ifs=[], is_async=0)], lineno=2, col_offset=16, end_lineno=2, end_col_offset=44)], keywords=[], lineno=2, col_offset=11, end_lineno=2, end_col_offset=45), lineno=2, col_offset=4, end_lineno=2, end_col_offset=45)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=45)], type_ignores=[])",
+      "structure": {
+        "return_count": 1,
+        "loop_count": 0,
+        "branch_count": 0
+      },
+      "trials": [
+        {
+          "case": 0,
+          "case_role": "empty",
+          "args": [
+            []
+          ],
+          "expected": [],
+          "output": "[]",
+          "output_type": "list",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": null,
+          "error": null
+        },
+        {
+          "case": 1,
+          "case_role": "duplicates",
+          "args": [
+            [
+              true,
+              true,
+              false
+            ]
+          ],
+          "expected": [
+            false,
+            true
+          ],
+          "output": "[False, True]",
+          "output_type": "list",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": null,
+          "error": null
+        },
+        {
+          "case": 2,
+          "case_role": "boundary",
+          "args": [
+            [
+              false,
+              false
+            ]
+          ],
+          "expected": [
+            true
+          ],
+          "output": "[True]",
+          "output_type": "list",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": null,
+          "error": null
+        }
+      ],
+      "failure_reasons": [],
+      "stdout": "",
+      "process": {
+        "exit_code": 0,
+        "stdout": "{\"status\": \"EXECUTED\", \"format_ok\": true, \"executable\": true, \"values_correct\": true, \"mutability_correct\": null, \"functional\": true, \"exact_frozenset\": false, \"joint\": false, \"code\": \"def collect_inverted_flags(flags):\\n    return list({not flag for flag in flags})\", \"ast\": \"Module(body=[FunctionDef(name='collect_inverted_flags', args=arguments(posonlyargs=[], args=[arg(arg='flags', lineno=1, col_offset=27, end_lineno=1, end_col_offset=32)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=Call(func=Name(id='list', ctx=Load(), lineno=2, col_offset=11, end_lineno=2, end_col_offset=15), args=[SetComp(elt=UnaryOp(op=Not(), operand=Name(id='flag', ctx=Load(), lineno=2, col_offset=21, end_lineno=2, end_col_offset=25), lineno=2, col_offset=17, end_lineno=2, end_col_offset=25), generators=[comprehension(target=Name(id='flag', ctx=Store(), lineno=2, col_offset=30, end_lineno=2, end_col_offset=34), iter=Name(id='flags', ctx=Load(), lineno=2, col_offset=38, end_lineno=2, end_col_offset=43), ifs=[], is_async=0)], lineno=2, col_offset=16, end_lineno=2, end_col_offset=44)], keywords=[], lineno=2, col_offset=11, end_lineno=2, end_col_offset=45), lineno=2, col_offset=4, end_lineno=2, end_col_offset=45)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=45)], type_ignores=[])\", \"structure\": {\"return_count\": 1, \"loop_count\": 0, \"branch_count\": 0}, \"trials\": [{\"case\": 0, \"case_role\": \"empty\", \"args\": [[]], \"expected\": [], \"output\": \"[]\", \"output_type\": \"list\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": null, \"error\": null}, {\"case\": 1, \"case_role\": \"duplicates\", \"args\": [[true, true, false]], \"expected\": [false, true], \"output\": \"[False, True]\", \"output_type\": \"list\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": null, \"error\": null}, {\"case\": 2, \"case_role\": \"boundary\", \"args\": [[false, false]], \"expected\": [true], \"output\": \"[True]\", \"output_type\": \"list\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": null, \"error\": null}], \"failure_reasons\": [], \"stdout\": \"\"}\n",
+        "stderr": ""
+      }
+    }
+  },
+  {
+    "task_id": "boolean_complement_N_CLEAR__TRAIN_USAGE",
+    "condition": "BASE",
+    "result": {
+      "status": "EXECUTED",
+      "format_ok": true,
+      "executable": true,
+      "values_correct": true,
+      "mutability_correct": true,
+      "functional": true,
+      "exact_frozenset": false,
+      "joint": true,
+      "code": "def collect_inverted_flags(flags):\n    return {not flag for flag in flags}",
+      "ast": "Module(body=[FunctionDef(name='collect_inverted_flags', args=arguments(posonlyargs=[], args=[arg(arg='flags', lineno=1, col_offset=27, end_lineno=1, end_col_offset=32)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=SetComp(elt=UnaryOp(op=Not(), operand=Name(id='flag', ctx=Load(), lineno=2, col_offset=16, end_lineno=2, end_col_offset=20), lineno=2, col_offset=12, end_lineno=2, end_col_offset=20), generators=[comprehension(target=Name(id='flag', ctx=Store(), lineno=2, col_offset=25, end_lineno=2, end_col_offset=29), iter=Name(id='flags', ctx=Load(), lineno=2, col_offset=33, end_lineno=2, end_col_offset=38), ifs=[], is_async=0)], lineno=2, col_offset=11, end_lineno=2, end_col_offset=39), lineno=2, col_offset=4, end_lineno=2, end_col_offset=39)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=39)], type_ignores=[])",
+      "structure": {
+        "return_count": 1,
+        "loop_count": 0,
+        "branch_count": 0
+      },
+      "trials": [
+        {
+          "case": 0,
+          "case_role": "empty",
+          "args": [
+            []
+          ],
+          "expected": [],
+          "output": "set()",
+          "output_type": "set",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": {
+            "passed": true,
+            "add_query_ok": true,
+            "remove_restore_ok": true,
+            "marker": 987654321,
+            "error": null
+          },
+          "error": null
+        },
+        {
+          "case": 1,
+          "case_role": "duplicates",
+          "args": [
+            [
+              true,
+              true,
+              false
+            ]
+          ],
+          "expected": [
+            false,
+            true
+          ],
+          "output": "{False, True}",
+          "output_type": "set",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": {
+            "passed": true,
+            "add_query_ok": true,
+            "remove_restore_ok": true,
+            "marker": 987654321,
+            "error": null
+          },
+          "error": null
+        },
+        {
+          "case": 2,
+          "case_role": "boundary",
+          "args": [
+            [
+              false,
+              false
+            ]
+          ],
+          "expected": [
+            true
+          ],
+          "output": "{True}",
+          "output_type": "set",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": {
+            "passed": true,
+            "add_query_ok": true,
+            "remove_restore_ok": true,
+            "marker": 987654321,
+            "error": null
+          },
+          "error": null
+        }
+      ],
+      "failure_reasons": [],
+      "stdout": "",
+      "process": {
+        "exit_code": 0,
+        "stdout": "{\"status\": \"EXECUTED\", \"format_ok\": true, \"executable\": true, \"values_correct\": true, \"mutability_correct\": true, \"functional\": true, \"exact_frozenset\": false, \"joint\": true, \"code\": \"def collect_inverted_flags(flags):\\n    return {not flag for flag in flags}\", \"ast\": \"Module(body=[FunctionDef(name='collect_inverted_flags', args=arguments(posonlyargs=[], args=[arg(arg='flags', lineno=1, col_offset=27, end_lineno=1, end_col_offset=32)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=SetComp(elt=UnaryOp(op=Not(), operand=Name(id='flag', ctx=Load(), lineno=2, col_offset=16, end_lineno=2, end_col_offset=20), lineno=2, col_offset=12, end_lineno=2, end_col_offset=20), generators=[comprehension(target=Name(id='flag', ctx=Store(), lineno=2, col_offset=25, end_lineno=2, end_col_offset=29), iter=Name(id='flags', ctx=Load(), lineno=2, col_offset=33, end_lineno=2, end_col_offset=38), ifs=[], is_async=0)], lineno=2, col_offset=11, end_lineno=2, end_col_offset=39), lineno=2, col_offset=4, end_lineno=2, end_col_offset=39)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=39)], type_ignores=[])\", \"structure\": {\"return_count\": 1, \"loop_count\": 0, \"branch_count\": 0}, \"trials\": [{\"case\": 0, \"case_role\": \"empty\", \"args\": [[]], \"expected\": [], \"output\": \"set()\", \"output_type\": \"set\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": {\"passed\": true, \"add_query_ok\": true, \"remove_restore_ok\": true, \"marker\": 987654321, \"error\": null}, \"error\": null}, {\"case\": 1, \"case_role\": \"duplicates\", \"args\": [[true, true, false]], \"expected\": [false, true], \"output\": \"{False, True}\", \"output_type\": \"set\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": {\"passed\": true, \"add_query_ok\": true, \"remove_restore_ok\": true, \"marker\": 987654321, \"error\": null}, \"error\": null}, {\"case\": 2, \"case_role\": \"boundary\", \"args\": [[false, false]], \"expected\": [true], \"output\": \"{True}\", \"output_type\": \"set\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": {\"passed\": true, \"add_query_ok\": true, \"remove_restore_ok\": true, \"marker\": 987654321, \"error\": null}, \"error\": null}], \"failure_reasons\": [], \"stdout\": \"\"}\n",
+        "stderr": ""
+      }
+    }
+  },
+  {
+    "task_id": "double_E_CLEAR",
+    "condition": "BASE",
+    "result": {
+      "status": "EXECUTED",
+      "format_ok": true,
+      "executable": true,
+      "values_correct": true,
+      "mutability_correct": null,
+      "functional": true,
+      "exact_frozenset": false,
+      "joint": false,
+      "code": "def collect_doubles(numbers):\n    return set(x * 2 for x in numbers)",
+      "ast": "Module(body=[FunctionDef(name='collect_doubles', args=arguments(posonlyargs=[], args=[arg(arg='numbers', lineno=1, col_offset=20, end_lineno=1, end_col_offset=27)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=Call(func=Name(id='set', ctx=Load(), lineno=2, col_offset=11, end_lineno=2, end_col_offset=14), args=[GeneratorExp(elt=BinOp(left=Name(id='x', ctx=Load(), lineno=2, col_offset=15, end_lineno=2, end_col_offset=16), op=Mult(), right=Constant(value=2, lineno=2, col_offset=19, end_lineno=2, end_col_offset=20), lineno=2, col_offset=15, end_lineno=2, end_col_offset=20), generators=[comprehension(target=Name(id='x', ctx=Store(), lineno=2, col_offset=25, end_lineno=2, end_col_offset=26), iter=Name(id='numbers', ctx=Load(), lineno=2, col_offset=30, end_lineno=2, end_col_offset=37), ifs=[], is_async=0)], lineno=2, col_offset=14, end_lineno=2, end_col_offset=38)], keywords=[], lineno=2, col_offset=11, end_lineno=2, end_col_offset=38), lineno=2, col_offset=4, end_lineno=2, end_col_offset=38)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=38)], type_ignores=[])",
+      "structure": {
+        "return_count": 1,
+        "loop_count": 0,
+        "branch_count": 0
+      },
+      "trials": [
+        {
+          "case": 0,
+          "case_role": "empty",
+          "args": [
+            []
+          ],
+          "expected": [],
+          "output": "set()",
+          "output_type": "set",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": null,
+          "error": null
+        },
+        {
+          "case": 1,
+          "case_role": "duplicates",
+          "args": [
+            [
+              -2,
+              2,
+              2
+            ]
+          ],
+          "expected": [
+            -4,
+            4
+          ],
+          "output": "{-4, 4}",
+          "output_type": "set",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": null,
+          "error": null
+        },
+        {
+          "case": 2,
+          "case_role": "boundary",
+          "args": [
+            [
+              0,
+              -1,
+              100
+            ]
+          ],
+          "expected": [
+            0,
+            -2,
+            200
+          ],
+          "output": "{0, -2, 200}",
+          "output_type": "set",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": null,
+          "error": null
+        }
+      ],
+      "failure_reasons": [],
+      "stdout": "",
+      "process": {
+        "exit_code": 0,
+        "stdout": "{\"status\": \"EXECUTED\", \"format_ok\": true, \"executable\": true, \"values_correct\": true, \"mutability_correct\": null, \"functional\": true, \"exact_frozenset\": false, \"joint\": false, \"code\": \"def collect_doubles(numbers):\\n    return set(x * 2 for x in numbers)\", \"ast\": \"Module(body=[FunctionDef(name='collect_doubles', args=arguments(posonlyargs=[], args=[arg(arg='numbers', lineno=1, col_offset=20, end_lineno=1, end_col_offset=27)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=Call(func=Name(id='set', ctx=Load(), lineno=2, col_offset=11, end_lineno=2, end_col_offset=14), args=[GeneratorExp(elt=BinOp(left=Name(id='x', ctx=Load(), lineno=2, col_offset=15, end_lineno=2, end_col_offset=16), op=Mult(), right=Constant(value=2, lineno=2, col_offset=19, end_lineno=2, end_col_offset=20), lineno=2, col_offset=15, end_lineno=2, end_col_offset=20), generators=[comprehension(target=Name(id='x', ctx=Store(), lineno=2, col_offset=25, end_lineno=2, end_col_offset=26), iter=Name(id='numbers', ctx=Load(), lineno=2, col_offset=30, end_lineno=2, end_col_offset=37), ifs=[], is_async=0)], lineno=2, col_offset=14, end_lineno=2, end_col_offset=38)], keywords=[], lineno=2, col_offset=11, end_lineno=2, end_col_offset=38), lineno=2, col_offset=4, end_lineno=2, end_col_offset=38)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=38)], type_ignores=[])\", \"structure\": {\"return_count\": 1, \"loop_count\": 0, \"branch_count\": 0}, \"trials\": [{\"case\": 0, \"case_role\": \"empty\", \"args\": [[]], \"expected\": [], \"output\": \"set()\", \"output_type\": \"set\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": null, \"error\": null}, {\"case\": 1, \"case_role\": \"duplicates\", \"args\": [[-2, 2, 2]], \"expected\": [-4, 4], \"output\": \"{-4, 4}\", \"output_type\": \"set\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": null, \"error\": null}, {\"case\": 2, \"case_role\": \"boundary\", \"args\": [[0, -1, 100]], \"expected\": [0, -2, 200], \"output\": \"{0, -2, 200}\", \"output_type\": \"set\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": null, \"error\": null}], \"failure_reasons\": [], \"stdout\": \"\"}\n",
+        "stderr": ""
+      }
+    }
+  },
+  {
+    "task_id": "double_N_CLEAR",
+    "condition": "BASE",
+    "result": {
+      "status": "EXECUTED",
+      "format_ok": true,
+      "executable": true,
+      "values_correct": true,
+      "mutability_correct": false,
+      "functional": false,
+      "exact_frozenset": false,
+      "joint": false,
+      "code": "def collect_doubles(numbers):\n    return list({n * 2 for n in numbers})",
+      "ast": "Module(body=[FunctionDef(name='collect_doubles', args=arguments(posonlyargs=[], args=[arg(arg='numbers', lineno=1, col_offset=20, end_lineno=1, end_col_offset=27)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=Call(func=Name(id='list', ctx=Load(), lineno=2, col_offset=11, end_lineno=2, end_col_offset=15), args=[SetComp(elt=BinOp(left=Name(id='n', ctx=Load(), lineno=2, col_offset=17, end_lineno=2, end_col_offset=18), op=Mult(), right=Constant(value=2, lineno=2, col_offset=21, end_lineno=2, end_col_offset=22), lineno=2, col_offset=17, end_lineno=2, end_col_offset=22), generators=[comprehension(target=Name(id='n', ctx=Store(), lineno=2, col_offset=27, end_lineno=2, end_col_offset=28), iter=Name(id='numbers', ctx=Load(), lineno=2, col_offset=32, end_lineno=2, end_col_offset=39), ifs=[], is_async=0)], lineno=2, col_offset=16, end_lineno=2, end_col_offset=40)], keywords=[], lineno=2, col_offset=11, end_lineno=2, end_col_offset=41), lineno=2, col_offset=4, end_lineno=2, end_col_offset=41)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=41)], type_ignores=[])",
+      "structure": {
+        "return_count": 1,
+        "loop_count": 0,
+        "branch_count": 0
+      },
+      "trials": [
+        {
+          "case": 0,
+          "case_role": "empty",
+          "args": [
+            []
+          ],
+          "expected": [],
+          "output": "[]",
+          "output_type": "list",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": {
+            "passed": false,
+            "marker": 987654321,
+            "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+          },
+          "error": null
+        },
+        {
+          "case": 1,
+          "case_role": "duplicates",
+          "args": [
+            [
+              -2,
+              2,
+              2
+            ]
+          ],
+          "expected": [
+            -4,
+            4
+          ],
+          "output": "[-4, 4]",
+          "output_type": "list",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": {
+            "passed": false,
+            "marker": 987654321,
+            "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+          },
+          "error": null
+        },
+        {
+          "case": 2,
+          "case_role": "boundary",
+          "args": [
+            [
+              0,
+              -1,
+              100
+            ]
+          ],
+          "expected": [
+            0,
+            -2,
+            200
+          ],
+          "output": "[0, -2, 200]",
+          "output_type": "list",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": {
+            "passed": false,
+            "marker": 987654321,
+            "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+          },
+          "error": null
+        }
+      ],
+      "failure_reasons": [
+        {
+          "kind": "MUTABILITY",
+          "case": 0,
+          "detail": {
+            "passed": false,
+            "marker": 987654321,
+            "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+          }
+        },
+        {
+          "kind": "MUTABILITY",
+          "case": 1,
+          "detail": {
+            "passed": false,
+            "marker": 987654321,
+            "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+          }
+        },
+        {
+          "kind": "MUTABILITY",
+          "case": 2,
+          "detail": {
+            "passed": false,
+            "marker": 987654321,
+            "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+          }
+        }
+      ],
+      "stdout": "",
+      "process": {
+        "exit_code": 0,
+        "stdout": "{\"status\": \"EXECUTED\", \"format_ok\": true, \"executable\": true, \"values_correct\": true, \"mutability_correct\": false, \"functional\": false, \"exact_frozenset\": false, \"joint\": false, \"code\": \"def collect_doubles(numbers):\\n    return list({n * 2 for n in numbers})\", \"ast\": \"Module(body=[FunctionDef(name='collect_doubles', args=arguments(posonlyargs=[], args=[arg(arg='numbers', lineno=1, col_offset=20, end_lineno=1, end_col_offset=27)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=Call(func=Name(id='list', ctx=Load(), lineno=2, col_offset=11, end_lineno=2, end_col_offset=15), args=[SetComp(elt=BinOp(left=Name(id='n', ctx=Load(), lineno=2, col_offset=17, end_lineno=2, end_col_offset=18), op=Mult(), right=Constant(value=2, lineno=2, col_offset=21, end_lineno=2, end_col_offset=22), lineno=2, col_offset=17, end_lineno=2, end_col_offset=22), generators=[comprehension(target=Name(id='n', ctx=Store(), lineno=2, col_offset=27, end_lineno=2, end_col_offset=28), iter=Name(id='numbers', ctx=Load(), lineno=2, col_offset=32, end_lineno=2, end_col_offset=39), ifs=[], is_async=0)], lineno=2, col_offset=16, end_lineno=2, end_col_offset=40)], keywords=[], lineno=2, col_offset=11, end_lineno=2, end_col_offset=41), lineno=2, col_offset=4, end_lineno=2, end_col_offset=41)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=41)], type_ignores=[])\", \"structure\": {\"return_count\": 1, \"loop_count\": 0, \"branch_count\": 0}, \"trials\": [{\"case\": 0, \"case_role\": \"empty\", \"args\": [[]], \"expected\": [], \"output\": \"[]\", \"output_type\": \"list\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": {\"passed\": false, \"marker\": 987654321, \"error\": \"AttributeError(\\\"'list' object has no attribute 'add'\\\")\"}, \"error\": null}, {\"case\": 1, \"case_role\": \"duplicates\", \"args\": [[-2, 2, 2]], \"expected\": [-4, 4], \"output\": \"[-4, 4]\", \"output_type\": \"list\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": {\"passed\": false, \"marker\": 987654321, \"error\": \"AttributeError(\\\"'list' object has no attribute 'add'\\\")\"}, \"error\": null}, {\"case\": 2, \"case_role\": \"boundary\", \"args\": [[0, -1, 100]], \"expected\": [0, -2, 200], \"output\": \"[0, -2, 200]\", \"output_type\": \"list\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": {\"passed\": false, \"marker\": 987654321, \"error\": \"AttributeError(\\\"'list' object has no attribute 'add'\\\")\"}, \"error\": null}], \"failure_reasons\": [{\"kind\": \"MUTABILITY\", \"case\": 0, \"detail\": {\"passed\": false, \"marker\": 987654321, \"error\": \"AttributeError(\\\"'list' object has no attribute 'add'\\\")\"}}, {\"kind\": \"MUTABILITY\", \"case\": 1, \"detail\": {\"passed\": false, \"marker\": 987654321, \"error\": \"AttributeError(\\\"'list' object has no attribute 'add'\\\")\"}}, {\"kind\": \"MUTABILITY\", \"case\": 2, \"detail\": {\"passed\": false, \"marker\": 987654321, \"error\": \"AttributeError(\\\"'list' object has no attribute 'add'\\\")\"}}], \"stdout\": \"\"}\n",
+        "stderr": ""
+      }
+    }
+  },
+  {
+    "task_id": "lower_E_CLEAR",
+    "condition": "BASE",
+    "result": {
+      "status": "EXECUTED",
+      "format_ok": true,
+      "executable": true,
+      "values_correct": true,
+      "mutability_correct": null,
+      "functional": true,
+      "exact_frozenset": false,
+      "joint": false,
+      "code": "def collect_lowercase(words):\n    return set(word.lower() for word in words)",
+      "ast": "Module(body=[FunctionDef(name='collect_lowercase', args=arguments(posonlyargs=[], args=[arg(arg='words', lineno=1, col_offset=22, end_lineno=1, end_col_offset=27)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=Call(func=Name(id='set', ctx=Load(), lineno=2, col_offset=11, end_lineno=2, end_col_offset=14), args=[GeneratorExp(elt=Call(func=Attribute(value=Name(id='word', ctx=Load(), lineno=2, col_offset=15, end_lineno=2, end_col_offset=19), attr='lower', ctx=Load(), lineno=2, col_offset=15, end_lineno=2, end_col_offset=25), args=[], keywords=[], lineno=2, col_offset=15, end_lineno=2, end_col_offset=27), generators=[comprehension(target=Name(id='word', ctx=Store(), lineno=2, col_offset=32, end_lineno=2, end_col_offset=36), iter=Name(id='words', ctx=Load(), lineno=2, col_offset=40, end_lineno=2, end_col_offset=45), ifs=[], is_async=0)], lineno=2, col_offset=14, end_lineno=2, end_col_offset=46)], keywords=[], lineno=2, col_offset=11, end_lineno=2, end_col_offset=46), lineno=2, col_offset=4, end_lineno=2, end_col_offset=46)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=46)], type_ignores=[])",
+      "structure": {
+        "return_count": 1,
+        "loop_count": 0,
+        "branch_count": 0
+      },
+      "trials": [
+        {
+          "case": 0,
+          "case_role": "empty",
+          "args": [
+            []
+          ],
+          "expected": [],
+          "output": "set()",
+          "output_type": "set",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": null,
+          "error": null
+        },
+        {
+          "case": 1,
+          "case_role": "duplicates",
+          "args": [
+            [
+              "Aa",
+              "BB",
+              "aa",
+              ""
+            ]
+          ],
+          "expected": [
+            "aa",
+            "bb",
+            ""
+          ],
+          "output": "{'', 'bb', 'aa'}",
+          "output_type": "set",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": null,
+          "error": null
+        },
+        {
+          "case": 2,
+          "case_role": "boundary",
+          "args": [
+            [
+              "XyZ",
+              "中文",
+              "ABC"
+            ]
+          ],
+          "expected": [
+            "xyz",
+            "中文",
+            "abc"
+          ],
+          "output": "{'xyz', '中文', 'abc'}",
+          "output_type": "set",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": null,
+          "error": null
+        }
+      ],
+      "failure_reasons": [],
+      "stdout": "",
+      "process": {
+        "exit_code": 0,
+        "stdout": "{\"status\": \"EXECUTED\", \"format_ok\": true, \"executable\": true, \"values_correct\": true, \"mutability_correct\": null, \"functional\": true, \"exact_frozenset\": false, \"joint\": false, \"code\": \"def collect_lowercase(words):\\n    return set(word.lower() for word in words)\", \"ast\": \"Module(body=[FunctionDef(name='collect_lowercase', args=arguments(posonlyargs=[], args=[arg(arg='words', lineno=1, col_offset=22, end_lineno=1, end_col_offset=27)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=Call(func=Name(id='set', ctx=Load(), lineno=2, col_offset=11, end_lineno=2, end_col_offset=14), args=[GeneratorExp(elt=Call(func=Attribute(value=Name(id='word', ctx=Load(), lineno=2, col_offset=15, end_lineno=2, end_col_offset=19), attr='lower', ctx=Load(), lineno=2, col_offset=15, end_lineno=2, end_col_offset=25), args=[], keywords=[], lineno=2, col_offset=15, end_lineno=2, end_col_offset=27), generators=[comprehension(target=Name(id='word', ctx=Store(), lineno=2, col_offset=32, end_lineno=2, end_col_offset=36), iter=Name(id='words', ctx=Load(), lineno=2, col_offset=40, end_lineno=2, end_col_offset=45), ifs=[], is_async=0)], lineno=2, col_offset=14, end_lineno=2, end_col_offset=46)], keywords=[], lineno=2, col_offset=11, end_lineno=2, end_col_offset=46), lineno=2, col_offset=4, end_lineno=2, end_col_offset=46)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=46)], type_ignores=[])\", \"structure\": {\"return_count\": 1, \"loop_count\": 0, \"branch_count\": 0}, \"trials\": [{\"case\": 0, \"case_role\": \"empty\", \"args\": [[]], \"expected\": [], \"output\": \"set()\", \"output_type\": \"set\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": null, \"error\": null}, {\"case\": 1, \"case_role\": \"duplicates\", \"args\": [[\"Aa\", \"BB\", \"aa\", \"\"]], \"expected\": [\"aa\", \"bb\", \"\"], \"output\": \"{'', 'bb', 'aa'}\", \"output_type\": \"set\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": null, \"error\": null}, {\"case\": 2, \"case_role\": \"boundary\", \"args\": [[\"XyZ\", \"中文\", \"ABC\"]], \"expected\": [\"xyz\", \"中文\", \"abc\"], \"output\": \"{'xyz', '中文', 'abc'}\", \"output_type\": \"set\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": null, \"error\": null}], \"failure_reasons\": [], \"stdout\": \"\"}\n",
+        "stderr": ""
+      }
+    }
+  },
+  {
+    "task_id": "lower_N_CLEAR",
+    "condition": "BASE",
+    "result": {
+      "status": "EXECUTED",
+      "format_ok": true,
+      "executable": true,
+      "values_correct": true,
+      "mutability_correct": true,
+      "functional": true,
+      "exact_frozenset": false,
+      "joint": true,
+      "code": "def collect_lowercase(words):\n    return set(word.lower() for word in words)",
+      "ast": "Module(body=[FunctionDef(name='collect_lowercase', args=arguments(posonlyargs=[], args=[arg(arg='words', lineno=1, col_offset=22, end_lineno=1, end_col_offset=27)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=Call(func=Name(id='set', ctx=Load(), lineno=2, col_offset=11, end_lineno=2, end_col_offset=14), args=[GeneratorExp(elt=Call(func=Attribute(value=Name(id='word', ctx=Load(), lineno=2, col_offset=15, end_lineno=2, end_col_offset=19), attr='lower', ctx=Load(), lineno=2, col_offset=15, end_lineno=2, end_col_offset=25), args=[], keywords=[], lineno=2, col_offset=15, end_lineno=2, end_col_offset=27), generators=[comprehension(target=Name(id='word', ctx=Store(), lineno=2, col_offset=32, end_lineno=2, end_col_offset=36), iter=Name(id='words', ctx=Load(), lineno=2, col_offset=40, end_lineno=2, end_col_offset=45), ifs=[], is_async=0)], lineno=2, col_offset=14, end_lineno=2, end_col_offset=46)], keywords=[], lineno=2, col_offset=11, end_lineno=2, end_col_offset=46), lineno=2, col_offset=4, end_lineno=2, end_col_offset=46)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=46)], type_ignores=[])",
+      "structure": {
+        "return_count": 1,
+        "loop_count": 0,
+        "branch_count": 0
+      },
+      "trials": [
+        {
+          "case": 0,
+          "case_role": "empty",
+          "args": [
+            []
+          ],
+          "expected": [],
+          "output": "set()",
+          "output_type": "set",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": {
+            "passed": true,
+            "add_query_ok": true,
+            "remove_restore_ok": true,
+            "marker": "__new_member__",
+            "error": null
+          },
+          "error": null
+        },
+        {
+          "case": 1,
+          "case_role": "duplicates",
+          "args": [
+            [
+              "Aa",
+              "BB",
+              "aa",
+              ""
+            ]
+          ],
+          "expected": [
+            "aa",
+            "bb",
+            ""
+          ],
+          "output": "{'', 'bb', 'aa'}",
+          "output_type": "set",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": {
+            "passed": true,
+            "add_query_ok": true,
+            "remove_restore_ok": true,
+            "marker": "__new_member__",
+            "error": null
+          },
+          "error": null
+        },
+        {
+          "case": 2,
+          "case_role": "boundary",
+          "args": [
+            [
+              "XyZ",
+              "中文",
+              "ABC"
+            ]
+          ],
+          "expected": [
+            "xyz",
+            "中文",
+            "abc"
+          ],
+          "output": "{'xyz', '中文', 'abc'}",
+          "output_type": "set",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": {
+            "passed": true,
+            "add_query_ok": true,
+            "remove_restore_ok": true,
+            "marker": "__new_member__",
+            "error": null
+          },
+          "error": null
+        }
+      ],
+      "failure_reasons": [],
+      "stdout": "",
+      "process": {
+        "exit_code": 0,
+        "stdout": "{\"status\": \"EXECUTED\", \"format_ok\": true, \"executable\": true, \"values_correct\": true, \"mutability_correct\": true, \"functional\": true, \"exact_frozenset\": false, \"joint\": true, \"code\": \"def collect_lowercase(words):\\n    return set(word.lower() for word in words)\", \"ast\": \"Module(body=[FunctionDef(name='collect_lowercase', args=arguments(posonlyargs=[], args=[arg(arg='words', lineno=1, col_offset=22, end_lineno=1, end_col_offset=27)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=Call(func=Name(id='set', ctx=Load(), lineno=2, col_offset=11, end_lineno=2, end_col_offset=14), args=[GeneratorExp(elt=Call(func=Attribute(value=Name(id='word', ctx=Load(), lineno=2, col_offset=15, end_lineno=2, end_col_offset=19), attr='lower', ctx=Load(), lineno=2, col_offset=15, end_lineno=2, end_col_offset=25), args=[], keywords=[], lineno=2, col_offset=15, end_lineno=2, end_col_offset=27), generators=[comprehension(target=Name(id='word', ctx=Store(), lineno=2, col_offset=32, end_lineno=2, end_col_offset=36), iter=Name(id='words', ctx=Load(), lineno=2, col_offset=40, end_lineno=2, end_col_offset=45), ifs=[], is_async=0)], lineno=2, col_offset=14, end_lineno=2, end_col_offset=46)], keywords=[], lineno=2, col_offset=11, end_lineno=2, end_col_offset=46), lineno=2, col_offset=4, end_lineno=2, end_col_offset=46)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=46)], type_ignores=[])\", \"structure\": {\"return_count\": 1, \"loop_count\": 0, \"branch_count\": 0}, \"trials\": [{\"case\": 0, \"case_role\": \"empty\", \"args\": [[]], \"expected\": [], \"output\": \"set()\", \"output_type\": \"set\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": {\"passed\": true, \"add_query_ok\": true, \"remove_restore_ok\": true, \"marker\": \"__new_member__\", \"error\": null}, \"error\": null}, {\"case\": 1, \"case_role\": \"duplicates\", \"args\": [[\"Aa\", \"BB\", \"aa\", \"\"]], \"expected\": [\"aa\", \"bb\", \"\"], \"output\": \"{'', 'bb', 'aa'}\", \"output_type\": \"set\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": {\"passed\": true, \"add_query_ok\": true, \"remove_restore_ok\": true, \"marker\": \"__new_member__\", \"error\": null}, \"error\": null}, {\"case\": 2, \"case_role\": \"boundary\", \"args\": [[\"XyZ\", \"中文\", \"ABC\"]], \"expected\": [\"xyz\", \"中文\", \"abc\"], \"output\": \"{'xyz', '中文', 'abc'}\", \"output_type\": \"set\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": {\"passed\": true, \"add_query_ok\": true, \"remove_restore_ok\": true, \"marker\": \"__new_member__\", \"error\": null}, \"error\": null}], \"failure_reasons\": [], \"stdout\": \"\"}\n",
+        "stderr": ""
+      }
+    }
+  },
+  {
+    "task_id": "integer_octal_text_E_CLEAR",
+    "condition": "BASE",
+    "result": {
+      "status": "EXECUTED",
+      "format_ok": true,
+      "executable": true,
+      "values_correct": true,
+      "mutability_correct": null,
+      "functional": true,
+      "exact_frozenset": false,
+      "joint": false,
+      "code": "def collect_octal_strings(numbers):\n    return {oct(n) for n in numbers}",
+      "ast": "Module(body=[FunctionDef(name='collect_octal_strings', args=arguments(posonlyargs=[], args=[arg(arg='numbers', lineno=1, col_offset=26, end_lineno=1, end_col_offset=33)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=SetComp(elt=Call(func=Name(id='oct', ctx=Load(), lineno=2, col_offset=12, end_lineno=2, end_col_offset=15), args=[Name(id='n', ctx=Load(), lineno=2, col_offset=16, end_lineno=2, end_col_offset=17)], keywords=[], lineno=2, col_offset=12, end_lineno=2, end_col_offset=18), generators=[comprehension(target=Name(id='n', ctx=Store(), lineno=2, col_offset=23, end_lineno=2, end_col_offset=24), iter=Name(id='numbers', ctx=Load(), lineno=2, col_offset=28, end_lineno=2, end_col_offset=35), ifs=[], is_async=0)], lineno=2, col_offset=11, end_lineno=2, end_col_offset=36), lineno=2, col_offset=4, end_lineno=2, end_col_offset=36)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=36)], type_ignores=[])",
+      "structure": {
+        "return_count": 1,
+        "loop_count": 0,
+        "branch_count": 0
+      },
+      "trials": [
+        {
+          "case": 0,
+          "case_role": "empty",
+          "args": [
+            []
+          ],
+          "expected": [],
+          "output": "set()",
+          "output_type": "set",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": null,
+          "error": null
+        },
+        {
+          "case": 1,
+          "case_role": "duplicates",
+          "args": [
+            [
+              0,
+              8,
+              8,
+              15
+            ]
+          ],
+          "expected": [
+            "0o0",
+            "0o10",
+            "0o17"
+          ],
+          "output": "{'0o17', '0o10', '0o0'}",
+          "output_type": "set",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": null,
+          "error": null
+        },
+        {
+          "case": 2,
+          "case_role": "boundary",
+          "args": [
+            [
+              1,
+              7,
+              64
+            ]
+          ],
+          "expected": [
+            "0o1",
+            "0o7",
+            "0o100"
+          ],
+          "output": "{'0o7', '0o1', '0o100'}",
+          "output_type": "set",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": null,
+          "error": null
+        }
+      ],
+      "failure_reasons": [],
+      "stdout": "",
+      "process": {
+        "exit_code": 0,
+        "stdout": "{\"status\": \"EXECUTED\", \"format_ok\": true, \"executable\": true, \"values_correct\": true, \"mutability_correct\": null, \"functional\": true, \"exact_frozenset\": false, \"joint\": false, \"code\": \"def collect_octal_strings(numbers):\\n    return {oct(n) for n in numbers}\", \"ast\": \"Module(body=[FunctionDef(name='collect_octal_strings', args=arguments(posonlyargs=[], args=[arg(arg='numbers', lineno=1, col_offset=26, end_lineno=1, end_col_offset=33)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=SetComp(elt=Call(func=Name(id='oct', ctx=Load(), lineno=2, col_offset=12, end_lineno=2, end_col_offset=15), args=[Name(id='n', ctx=Load(), lineno=2, col_offset=16, end_lineno=2, end_col_offset=17)], keywords=[], lineno=2, col_offset=12, end_lineno=2, end_col_offset=18), generators=[comprehension(target=Name(id='n', ctx=Store(), lineno=2, col_offset=23, end_lineno=2, end_col_offset=24), iter=Name(id='numbers', ctx=Load(), lineno=2, col_offset=28, end_lineno=2, end_col_offset=35), ifs=[], is_async=0)], lineno=2, col_offset=11, end_lineno=2, end_col_offset=36), lineno=2, col_offset=4, end_lineno=2, end_col_offset=36)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=36)], type_ignores=[])\", \"structure\": {\"return_count\": 1, \"loop_count\": 0, \"branch_count\": 0}, \"trials\": [{\"case\": 0, \"case_role\": \"empty\", \"args\": [[]], \"expected\": [], \"output\": \"set()\", \"output_type\": \"set\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": null, \"error\": null}, {\"case\": 1, \"case_role\": \"duplicates\", \"args\": [[0, 8, 8, 15]], \"expected\": [\"0o0\", \"0o10\", \"0o17\"], \"output\": \"{'0o17', '0o10', '0o0'}\", \"output_type\": \"set\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": null, \"error\": null}, {\"case\": 2, \"case_role\": \"boundary\", \"args\": [[1, 7, 64]], \"expected\": [\"0o1\", \"0o7\", \"0o100\"], \"output\": \"{'0o7', '0o1', '0o100'}\", \"output_type\": \"set\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": null, \"error\": null}], \"failure_reasons\": [], \"stdout\": \"\"}\n",
+        "stderr": ""
+      }
+    }
+  },
+  {
+    "task_id": "integer_octal_text_N_CLEAR",
+    "condition": "BASE",
+    "result": {
+      "status": "EXECUTED",
+      "format_ok": true,
+      "executable": true,
+      "values_correct": false,
+      "mutability_correct": true,
+      "functional": false,
+      "exact_frozenset": false,
+      "joint": false,
+      "code": "def collect_octal_strings(numbers):\n    return {oct(n).removeprefix('0o') for n in numbers}",
+      "ast": "Module(body=[FunctionDef(name='collect_octal_strings', args=arguments(posonlyargs=[], args=[arg(arg='numbers', lineno=1, col_offset=26, end_lineno=1, end_col_offset=33)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=SetComp(elt=Call(func=Attribute(value=Call(func=Name(id='oct', ctx=Load(), lineno=2, col_offset=12, end_lineno=2, end_col_offset=15), args=[Name(id='n', ctx=Load(), lineno=2, col_offset=16, end_lineno=2, end_col_offset=17)], keywords=[], lineno=2, col_offset=12, end_lineno=2, end_col_offset=18), attr='removeprefix', ctx=Load(), lineno=2, col_offset=12, end_lineno=2, end_col_offset=31), args=[Constant(value='0o', lineno=2, col_offset=32, end_lineno=2, end_col_offset=36)], keywords=[], lineno=2, col_offset=12, end_lineno=2, end_col_offset=37), generators=[comprehension(target=Name(id='n', ctx=Store(), lineno=2, col_offset=42, end_lineno=2, end_col_offset=43), iter=Name(id='numbers', ctx=Load(), lineno=2, col_offset=47, end_lineno=2, end_col_offset=54), ifs=[], is_async=0)], lineno=2, col_offset=11, end_lineno=2, end_col_offset=55), lineno=2, col_offset=4, end_lineno=2, end_col_offset=55)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=55)], type_ignores=[])",
+      "structure": {
+        "return_count": 1,
+        "loop_count": 0,
+        "branch_count": 0
+      },
+      "trials": [
+        {
+          "case": 0,
+          "case_role": "empty",
+          "args": [
+            []
+          ],
+          "expected": [],
+          "output": "set()",
+          "output_type": "set",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": {
+            "passed": true,
+            "add_query_ok": true,
+            "remove_restore_ok": true,
+            "marker": "__new_member__",
+            "error": null
+          },
+          "error": null
+        },
+        {
+          "case": 1,
+          "case_role": "duplicates",
+          "args": [
+            [
+              0,
+              8,
+              8,
+              15
+            ]
+          ],
+          "expected": [
+            "0o0",
+            "0o10",
+            "0o17"
+          ],
+          "output": "{'10', '17', '0'}",
+          "output_type": "set",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": false,
+          "input_unchanged": true,
+          "mutability": {
+            "passed": true,
+            "add_query_ok": true,
+            "remove_restore_ok": true,
+            "marker": "__new_member__",
+            "error": null
+          },
+          "error": null
+        },
+        {
+          "case": 2,
+          "case_role": "boundary",
+          "args": [
+            [
+              1,
+              7,
+              64
+            ]
+          ],
+          "expected": [
+            "0o1",
+            "0o7",
+            "0o100"
+          ],
+          "output": "{'100', '7', '1'}",
+          "output_type": "set",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": false,
+          "input_unchanged": true,
+          "mutability": {
+            "passed": true,
+            "add_query_ok": true,
+            "remove_restore_ok": true,
+            "marker": "__new_member__",
+            "error": null
+          },
+          "error": null
+        }
+      ],
+      "failure_reasons": [
+        {
+          "kind": "MEMBER_COMPUTATION_OR_TYPE",
+          "case": 1,
+          "actual": "{'10', '17', '0'}",
+          "expected": [
+            "0o0",
+            "0o10",
+            "0o17"
+          ]
+        },
+        {
+          "kind": "MEMBER_COMPUTATION_OR_TYPE",
+          "case": 2,
+          "actual": "{'100', '7', '1'}",
+          "expected": [
+            "0o1",
+            "0o7",
+            "0o100"
+          ]
+        }
+      ],
+      "stdout": "",
+      "process": {
+        "exit_code": 0,
+        "stdout": "{\"status\": \"EXECUTED\", \"format_ok\": true, \"executable\": true, \"values_correct\": false, \"mutability_correct\": true, \"functional\": false, \"exact_frozenset\": false, \"joint\": false, \"code\": \"def collect_octal_strings(numbers):\\n    return {oct(n).removeprefix('0o') for n in numbers}\", \"ast\": \"Module(body=[FunctionDef(name='collect_octal_strings', args=arguments(posonlyargs=[], args=[arg(arg='numbers', lineno=1, col_offset=26, end_lineno=1, end_col_offset=33)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=SetComp(elt=Call(func=Attribute(value=Call(func=Name(id='oct', ctx=Load(), lineno=2, col_offset=12, end_lineno=2, end_col_offset=15), args=[Name(id='n', ctx=Load(), lineno=2, col_offset=16, end_lineno=2, end_col_offset=17)], keywords=[], lineno=2, col_offset=12, end_lineno=2, end_col_offset=18), attr='removeprefix', ctx=Load(), lineno=2, col_offset=12, end_lineno=2, end_col_offset=31), args=[Constant(value='0o', lineno=2, col_offset=32, end_lineno=2, end_col_offset=36)], keywords=[], lineno=2, col_offset=12, end_lineno=2, end_col_offset=37), generators=[comprehension(target=Name(id='n', ctx=Store(), lineno=2, col_offset=42, end_lineno=2, end_col_offset=43), iter=Name(id='numbers', ctx=Load(), lineno=2, col_offset=47, end_lineno=2, end_col_offset=54), ifs=[], is_async=0)], lineno=2, col_offset=11, end_lineno=2, end_col_offset=55), lineno=2, col_offset=4, end_lineno=2, end_col_offset=55)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=55)], type_ignores=[])\", \"structure\": {\"return_count\": 1, \"loop_count\": 0, \"branch_count\": 0}, \"trials\": [{\"case\": 0, \"case_role\": \"empty\", \"args\": [[]], \"expected\": [], \"output\": \"set()\", \"output_type\": \"set\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": {\"passed\": true, \"add_query_ok\": true, \"remove_restore_ok\": true, \"marker\": \"__new_member__\", \"error\": null}, \"error\": null}, {\"case\": 1, \"case_role\": \"duplicates\", \"args\": [[0, 8, 8, 15]], \"expected\": [\"0o0\", \"0o10\", \"0o17\"], \"output\": \"{'10', '17', '0'}\", \"output_type\": \"set\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": false, \"input_unchanged\": true, \"mutability\": {\"passed\": true, \"add_query_ok\": true, \"remove_restore_ok\": true, \"marker\": \"__new_member__\", \"error\": null}, \"error\": null}, {\"case\": 2, \"case_role\": \"boundary\", \"args\": [[1, 7, 64]], \"expected\": [\"0o1\", \"0o7\", \"0o100\"], \"output\": \"{'100', '7', '1'}\", \"output_type\": \"set\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": false, \"input_unchanged\": true, \"mutability\": {\"passed\": true, \"add_query_ok\": true, \"remove_restore_ok\": true, \"marker\": \"__new_member__\", \"error\": null}, \"error\": null}], \"failure_reasons\": [{\"kind\": \"MEMBER_COMPUTATION_OR_TYPE\", \"case\": 1, \"actual\": \"{'10', '17', '0'}\", \"expected\": [\"0o0\", \"0o10\", \"0o17\"]}, {\"kind\": \"MEMBER_COMPUTATION_OR_TYPE\", \"case\": 2, \"actual\": \"{'100', '7', '1'}\", \"expected\": [\"0o1\", \"0o7\", \"0o100\"]}], \"stdout\": \"\"}\n",
+        "stderr": ""
+      }
+    }
+  },
+  {
+    "task_id": "boolean_complement_E_CLEAR",
+    "condition": "BASE",
+    "result": {
+      "status": "EXECUTED",
+      "format_ok": true,
+      "executable": true,
+      "values_correct": true,
+      "mutability_correct": null,
+      "functional": true,
+      "exact_frozenset": false,
+      "joint": false,
+      "code": "def collect_inverted_flags(flags):\n    return list({not flag for flag in flags})",
+      "ast": "Module(body=[FunctionDef(name='collect_inverted_flags', args=arguments(posonlyargs=[], args=[arg(arg='flags', lineno=1, col_offset=27, end_lineno=1, end_col_offset=32)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=Call(func=Name(id='list', ctx=Load(), lineno=2, col_offset=11, end_lineno=2, end_col_offset=15), args=[SetComp(elt=UnaryOp(op=Not(), operand=Name(id='flag', ctx=Load(), lineno=2, col_offset=21, end_lineno=2, end_col_offset=25), lineno=2, col_offset=17, end_lineno=2, end_col_offset=25), generators=[comprehension(target=Name(id='flag', ctx=Store(), lineno=2, col_offset=30, end_lineno=2, end_col_offset=34), iter=Name(id='flags', ctx=Load(), lineno=2, col_offset=38, end_lineno=2, end_col_offset=43), ifs=[], is_async=0)], lineno=2, col_offset=16, end_lineno=2, end_col_offset=44)], keywords=[], lineno=2, col_offset=11, end_lineno=2, end_col_offset=45), lineno=2, col_offset=4, end_lineno=2, end_col_offset=45)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=45)], type_ignores=[])",
+      "structure": {
+        "return_count": 1,
+        "loop_count": 0,
+        "branch_count": 0
+      },
+      "trials": [
+        {
+          "case": 0,
+          "case_role": "empty",
+          "args": [
+            []
+          ],
+          "expected": [],
+          "output": "[]",
+          "output_type": "list",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": null,
+          "error": null
+        },
+        {
+          "case": 1,
+          "case_role": "duplicates",
+          "args": [
+            [
+              true,
+              true,
+              false
+            ]
+          ],
+          "expected": [
+            false,
+            true
+          ],
+          "output": "[False, True]",
+          "output_type": "list",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": null,
+          "error": null
+        },
+        {
+          "case": 2,
+          "case_role": "boundary",
+          "args": [
+            [
+              false,
+              false
+            ]
+          ],
+          "expected": [
+            true
+          ],
+          "output": "[True]",
+          "output_type": "list",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": null,
+          "error": null
+        }
+      ],
+      "failure_reasons": [],
+      "stdout": "",
+      "process": {
+        "exit_code": 0,
+        "stdout": "{\"status\": \"EXECUTED\", \"format_ok\": true, \"executable\": true, \"values_correct\": true, \"mutability_correct\": null, \"functional\": true, \"exact_frozenset\": false, \"joint\": false, \"code\": \"def collect_inverted_flags(flags):\\n    return list({not flag for flag in flags})\", \"ast\": \"Module(body=[FunctionDef(name='collect_inverted_flags', args=arguments(posonlyargs=[], args=[arg(arg='flags', lineno=1, col_offset=27, end_lineno=1, end_col_offset=32)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=Call(func=Name(id='list', ctx=Load(), lineno=2, col_offset=11, end_lineno=2, end_col_offset=15), args=[SetComp(elt=UnaryOp(op=Not(), operand=Name(id='flag', ctx=Load(), lineno=2, col_offset=21, end_lineno=2, end_col_offset=25), lineno=2, col_offset=17, end_lineno=2, end_col_offset=25), generators=[comprehension(target=Name(id='flag', ctx=Store(), lineno=2, col_offset=30, end_lineno=2, end_col_offset=34), iter=Name(id='flags', ctx=Load(), lineno=2, col_offset=38, end_lineno=2, end_col_offset=43), ifs=[], is_async=0)], lineno=2, col_offset=16, end_lineno=2, end_col_offset=44)], keywords=[], lineno=2, col_offset=11, end_lineno=2, end_col_offset=45), lineno=2, col_offset=4, end_lineno=2, end_col_offset=45)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=45)], type_ignores=[])\", \"structure\": {\"return_count\": 1, \"loop_count\": 0, \"branch_count\": 0}, \"trials\": [{\"case\": 0, \"case_role\": \"empty\", \"args\": [[]], \"expected\": [], \"output\": \"[]\", \"output_type\": \"list\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": null, \"error\": null}, {\"case\": 1, \"case_role\": \"duplicates\", \"args\": [[true, true, false]], \"expected\": [false, true], \"output\": \"[False, True]\", \"output_type\": \"list\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": null, \"error\": null}, {\"case\": 2, \"case_role\": \"boundary\", \"args\": [[false, false]], \"expected\": [true], \"output\": \"[True]\", \"output_type\": \"list\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": null, \"error\": null}], \"failure_reasons\": [], \"stdout\": \"\"}\n",
+        "stderr": ""
+      }
+    }
+  },
+  {
+    "task_id": "boolean_complement_N_CLEAR",
+    "condition": "BASE",
+    "result": {
+      "status": "EXECUTED",
+      "format_ok": true,
+      "executable": true,
+      "values_correct": true,
+      "mutability_correct": true,
+      "functional": true,
+      "exact_frozenset": false,
+      "joint": true,
+      "code": "def collect_inverted_flags(flags):\n    return set(not flag for flag in flags)",
+      "ast": "Module(body=[FunctionDef(name='collect_inverted_flags', args=arguments(posonlyargs=[], args=[arg(arg='flags', lineno=1, col_offset=27, end_lineno=1, end_col_offset=32)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=Call(func=Name(id='set', ctx=Load(), lineno=2, col_offset=11, end_lineno=2, end_col_offset=14), args=[GeneratorExp(elt=UnaryOp(op=Not(), operand=Name(id='flag', ctx=Load(), lineno=2, col_offset=19, end_lineno=2, end_col_offset=23), lineno=2, col_offset=15, end_lineno=2, end_col_offset=23), generators=[comprehension(target=Name(id='flag', ctx=Store(), lineno=2, col_offset=28, end_lineno=2, end_col_offset=32), iter=Name(id='flags', ctx=Load(), lineno=2, col_offset=36, end_lineno=2, end_col_offset=41), ifs=[], is_async=0)], lineno=2, col_offset=14, end_lineno=2, end_col_offset=42)], keywords=[], lineno=2, col_offset=11, end_lineno=2, end_col_offset=42), lineno=2, col_offset=4, end_lineno=2, end_col_offset=42)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=42)], type_ignores=[])",
+      "structure": {
+        "return_count": 1,
+        "loop_count": 0,
+        "branch_count": 0
+      },
+      "trials": [
+        {
+          "case": 0,
+          "case_role": "empty",
+          "args": [
+            []
+          ],
+          "expected": [],
+          "output": "set()",
+          "output_type": "set",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": {
+            "passed": true,
+            "add_query_ok": true,
+            "remove_restore_ok": true,
+            "marker": 987654321,
+            "error": null
+          },
+          "error": null
+        },
+        {
+          "case": 1,
+          "case_role": "duplicates",
+          "args": [
+            [
+              true,
+              true,
+              false
+            ]
+          ],
+          "expected": [
+            false,
+            true
+          ],
+          "output": "{False, True}",
+          "output_type": "set",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": {
+            "passed": true,
+            "add_query_ok": true,
+            "remove_restore_ok": true,
+            "marker": 987654321,
+            "error": null
+          },
+          "error": null
+        },
+        {
+          "case": 2,
+          "case_role": "boundary",
+          "args": [
+            [
+              false,
+              false
+            ]
+          ],
+          "expected": [
+            true
+          ],
+          "output": "{True}",
+          "output_type": "set",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": {
+            "passed": true,
+            "add_query_ok": true,
+            "remove_restore_ok": true,
+            "marker": 987654321,
+            "error": null
+          },
+          "error": null
+        }
+      ],
+      "failure_reasons": [],
+      "stdout": "",
+      "process": {
+        "exit_code": 0,
+        "stdout": "{\"status\": \"EXECUTED\", \"format_ok\": true, \"executable\": true, \"values_correct\": true, \"mutability_correct\": true, \"functional\": true, \"exact_frozenset\": false, \"joint\": true, \"code\": \"def collect_inverted_flags(flags):\\n    return set(not flag for flag in flags)\", \"ast\": \"Module(body=[FunctionDef(name='collect_inverted_flags', args=arguments(posonlyargs=[], args=[arg(arg='flags', lineno=1, col_offset=27, end_lineno=1, end_col_offset=32)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=Call(func=Name(id='set', ctx=Load(), lineno=2, col_offset=11, end_lineno=2, end_col_offset=14), args=[GeneratorExp(elt=UnaryOp(op=Not(), operand=Name(id='flag', ctx=Load(), lineno=2, col_offset=19, end_lineno=2, end_col_offset=23), lineno=2, col_offset=15, end_lineno=2, end_col_offset=23), generators=[comprehension(target=Name(id='flag', ctx=Store(), lineno=2, col_offset=28, end_lineno=2, end_col_offset=32), iter=Name(id='flags', ctx=Load(), lineno=2, col_offset=36, end_lineno=2, end_col_offset=41), ifs=[], is_async=0)], lineno=2, col_offset=14, end_lineno=2, end_col_offset=42)], keywords=[], lineno=2, col_offset=11, end_lineno=2, end_col_offset=42), lineno=2, col_offset=4, end_lineno=2, end_col_offset=42)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=42)], type_ignores=[])\", \"structure\": {\"return_count\": 1, \"loop_count\": 0, \"branch_count\": 0}, \"trials\": [{\"case\": 0, \"case_role\": \"empty\", \"args\": [[]], \"expected\": [], \"output\": \"set()\", \"output_type\": \"set\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": {\"passed\": true, \"add_query_ok\": true, \"remove_restore_ok\": true, \"marker\": 987654321, \"error\": null}, \"error\": null}, {\"case\": 1, \"case_role\": \"duplicates\", \"args\": [[true, true, false]], \"expected\": [false, true], \"output\": \"{False, True}\", \"output_type\": \"set\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": {\"passed\": true, \"add_query_ok\": true, \"remove_restore_ok\": true, \"marker\": 987654321, \"error\": null}, \"error\": null}, {\"case\": 2, \"case_role\": \"boundary\", \"args\": [[false, false]], \"expected\": [true], \"output\": \"{True}\", \"output_type\": \"set\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": {\"passed\": true, \"add_query_ok\": true, \"remove_restore_ok\": true, \"marker\": 987654321, \"error\": null}, \"error\": null}], \"failure_reasons\": [], \"stdout\": \"\"}\n",
+        "stderr": ""
+      }
+    }
+  },
+  {
+    "task_id": "double_E_CLEAR",
+    "condition": "ARCHIVED_TEXT_CODE",
+    "result": {
+      "status": "EXECUTED",
+      "format_ok": true,
+      "executable": true,
+      "values_correct": true,
+      "mutability_correct": null,
+      "functional": true,
+      "exact_frozenset": true,
+      "joint": true,
+      "code": "def collect_doubles(numbers):\n    return frozenset(x * 2 for x in numbers)",
+      "ast": "Module(body=[FunctionDef(name='collect_doubles', args=arguments(posonlyargs=[], args=[arg(arg='numbers', lineno=1, col_offset=20, end_lineno=1, end_col_offset=27)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=Call(func=Name(id='frozenset', ctx=Load(), lineno=2, col_offset=11, end_lineno=2, end_col_offset=20), args=[GeneratorExp(elt=BinOp(left=Name(id='x', ctx=Load(), lineno=2, col_offset=21, end_lineno=2, end_col_offset=22), op=Mult(), right=Constant(value=2, lineno=2, col_offset=25, end_lineno=2, end_col_offset=26), lineno=2, col_offset=21, end_lineno=2, end_col_offset=26), generators=[comprehension(target=Name(id='x', ctx=Store(), lineno=2, col_offset=31, end_lineno=2, end_col_offset=32), iter=Name(id='numbers', ctx=Load(), lineno=2, col_offset=36, end_lineno=2, end_col_offset=43), ifs=[], is_async=0)], lineno=2, col_offset=20, end_lineno=2, end_col_offset=44)], keywords=[], lineno=2, col_offset=11, end_lineno=2, end_col_offset=44), lineno=2, col_offset=4, end_lineno=2, end_col_offset=44)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=44)], type_ignores=[])",
+      "structure": {
+        "return_count": 1,
+        "loop_count": 0,
+        "branch_count": 0
+      },
+      "trials": [
+        {
+          "case": 0,
+          "case_role": "empty",
+          "args": [
+            []
+          ],
+          "expected": [],
+          "output": "frozenset()",
+          "output_type": "frozenset",
+          "exact_frozenset": true,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": null,
+          "error": null
+        },
+        {
+          "case": 1,
+          "case_role": "duplicates",
+          "args": [
+            [
+              -2,
+              2,
+              2
+            ]
+          ],
+          "expected": [
+            -4,
+            4
+          ],
+          "output": "frozenset({-4, 4})",
+          "output_type": "frozenset",
+          "exact_frozenset": true,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": null,
+          "error": null
+        },
+        {
+          "case": 2,
+          "case_role": "boundary",
+          "args": [
+            [
+              0,
+              -1,
+              100
+            ]
+          ],
+          "expected": [
+            0,
+            -2,
+            200
+          ],
+          "output": "frozenset({0, -2, 200})",
+          "output_type": "frozenset",
+          "exact_frozenset": true,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": null,
+          "error": null
+        }
+      ],
+      "failure_reasons": [],
+      "stdout": "",
+      "process": {
+        "exit_code": 0,
+        "stdout": "{\"status\": \"EXECUTED\", \"format_ok\": true, \"executable\": true, \"values_correct\": true, \"mutability_correct\": null, \"functional\": true, \"exact_frozenset\": true, \"joint\": true, \"code\": \"def collect_doubles(numbers):\\n    return frozenset(x * 2 for x in numbers)\", \"ast\": \"Module(body=[FunctionDef(name='collect_doubles', args=arguments(posonlyargs=[], args=[arg(arg='numbers', lineno=1, col_offset=20, end_lineno=1, end_col_offset=27)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=Call(func=Name(id='frozenset', ctx=Load(), lineno=2, col_offset=11, end_lineno=2, end_col_offset=20), args=[GeneratorExp(elt=BinOp(left=Name(id='x', ctx=Load(), lineno=2, col_offset=21, end_lineno=2, end_col_offset=22), op=Mult(), right=Constant(value=2, lineno=2, col_offset=25, end_lineno=2, end_col_offset=26), lineno=2, col_offset=21, end_lineno=2, end_col_offset=26), generators=[comprehension(target=Name(id='x', ctx=Store(), lineno=2, col_offset=31, end_lineno=2, end_col_offset=32), iter=Name(id='numbers', ctx=Load(), lineno=2, col_offset=36, end_lineno=2, end_col_offset=43), ifs=[], is_async=0)], lineno=2, col_offset=20, end_lineno=2, end_col_offset=44)], keywords=[], lineno=2, col_offset=11, end_lineno=2, end_col_offset=44), lineno=2, col_offset=4, end_lineno=2, end_col_offset=44)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=44)], type_ignores=[])\", \"structure\": {\"return_count\": 1, \"loop_count\": 0, \"branch_count\": 0}, \"trials\": [{\"case\": 0, \"case_role\": \"empty\", \"args\": [[]], \"expected\": [], \"output\": \"frozenset()\", \"output_type\": \"frozenset\", \"exact_frozenset\": true, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": null, \"error\": null}, {\"case\": 1, \"case_role\": \"duplicates\", \"args\": [[-2, 2, 2]], \"expected\": [-4, 4], \"output\": \"frozenset({-4, 4})\", \"output_type\": \"frozenset\", \"exact_frozenset\": true, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": null, \"error\": null}, {\"case\": 2, \"case_role\": \"boundary\", \"args\": [[0, -1, 100]], \"expected\": [0, -2, 200], \"output\": \"frozenset({0, -2, 200})\", \"output_type\": \"frozenset\", \"exact_frozenset\": true, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": null, \"error\": null}], \"failure_reasons\": [], \"stdout\": \"\"}\n",
+        "stderr": ""
+      }
+    }
+  },
+  {
+    "task_id": "double_N_CLEAR",
+    "condition": "ARCHIVED_TEXT_CODE",
+    "result": {
+      "status": "EXECUTED",
+      "format_ok": true,
+      "executable": true,
+      "values_correct": true,
+      "mutability_correct": true,
+      "functional": true,
+      "exact_frozenset": false,
+      "joint": true,
+      "code": "def collect_doubles(numbers):\n    return set(x * 2 for x in numbers)",
+      "ast": "Module(body=[FunctionDef(name='collect_doubles', args=arguments(posonlyargs=[], args=[arg(arg='numbers', lineno=1, col_offset=20, end_lineno=1, end_col_offset=27)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=Call(func=Name(id='set', ctx=Load(), lineno=2, col_offset=11, end_lineno=2, end_col_offset=14), args=[GeneratorExp(elt=BinOp(left=Name(id='x', ctx=Load(), lineno=2, col_offset=15, end_lineno=2, end_col_offset=16), op=Mult(), right=Constant(value=2, lineno=2, col_offset=19, end_lineno=2, end_col_offset=20), lineno=2, col_offset=15, end_lineno=2, end_col_offset=20), generators=[comprehension(target=Name(id='x', ctx=Store(), lineno=2, col_offset=25, end_lineno=2, end_col_offset=26), iter=Name(id='numbers', ctx=Load(), lineno=2, col_offset=30, end_lineno=2, end_col_offset=37), ifs=[], is_async=0)], lineno=2, col_offset=14, end_lineno=2, end_col_offset=38)], keywords=[], lineno=2, col_offset=11, end_lineno=2, end_col_offset=38), lineno=2, col_offset=4, end_lineno=2, end_col_offset=38)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=38)], type_ignores=[])",
+      "structure": {
+        "return_count": 1,
+        "loop_count": 0,
+        "branch_count": 0
+      },
+      "trials": [
+        {
+          "case": 0,
+          "case_role": "empty",
+          "args": [
+            []
+          ],
+          "expected": [],
+          "output": "set()",
+          "output_type": "set",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": {
+            "passed": true,
+            "add_query_ok": true,
+            "remove_restore_ok": true,
+            "marker": 987654321,
+            "error": null
+          },
+          "error": null
+        },
+        {
+          "case": 1,
+          "case_role": "duplicates",
+          "args": [
+            [
+              -2,
+              2,
+              2
+            ]
+          ],
+          "expected": [
+            -4,
+            4
+          ],
+          "output": "{-4, 4}",
+          "output_type": "set",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": {
+            "passed": true,
+            "add_query_ok": true,
+            "remove_restore_ok": true,
+            "marker": 987654321,
+            "error": null
+          },
+          "error": null
+        },
+        {
+          "case": 2,
+          "case_role": "boundary",
+          "args": [
+            [
+              0,
+              -1,
+              100
+            ]
+          ],
+          "expected": [
+            0,
+            -2,
+            200
+          ],
+          "output": "{0, -2, 200}",
+          "output_type": "set",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": {
+            "passed": true,
+            "add_query_ok": true,
+            "remove_restore_ok": true,
+            "marker": 987654321,
+            "error": null
+          },
+          "error": null
+        }
+      ],
+      "failure_reasons": [],
+      "stdout": "",
+      "process": {
+        "exit_code": 0,
+        "stdout": "{\"status\": \"EXECUTED\", \"format_ok\": true, \"executable\": true, \"values_correct\": true, \"mutability_correct\": true, \"functional\": true, \"exact_frozenset\": false, \"joint\": true, \"code\": \"def collect_doubles(numbers):\\n    return set(x * 2 for x in numbers)\", \"ast\": \"Module(body=[FunctionDef(name='collect_doubles', args=arguments(posonlyargs=[], args=[arg(arg='numbers', lineno=1, col_offset=20, end_lineno=1, end_col_offset=27)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=Call(func=Name(id='set', ctx=Load(), lineno=2, col_offset=11, end_lineno=2, end_col_offset=14), args=[GeneratorExp(elt=BinOp(left=Name(id='x', ctx=Load(), lineno=2, col_offset=15, end_lineno=2, end_col_offset=16), op=Mult(), right=Constant(value=2, lineno=2, col_offset=19, end_lineno=2, end_col_offset=20), lineno=2, col_offset=15, end_lineno=2, end_col_offset=20), generators=[comprehension(target=Name(id='x', ctx=Store(), lineno=2, col_offset=25, end_lineno=2, end_col_offset=26), iter=Name(id='numbers', ctx=Load(), lineno=2, col_offset=30, end_lineno=2, end_col_offset=37), ifs=[], is_async=0)], lineno=2, col_offset=14, end_lineno=2, end_col_offset=38)], keywords=[], lineno=2, col_offset=11, end_lineno=2, end_col_offset=38), lineno=2, col_offset=4, end_lineno=2, end_col_offset=38)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=38)], type_ignores=[])\", \"structure\": {\"return_count\": 1, \"loop_count\": 0, \"branch_count\": 0}, \"trials\": [{\"case\": 0, \"case_role\": \"empty\", \"args\": [[]], \"expected\": [], \"output\": \"set()\", \"output_type\": \"set\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": {\"passed\": true, \"add_query_ok\": true, \"remove_restore_ok\": true, \"marker\": 987654321, \"error\": null}, \"error\": null}, {\"case\": 1, \"case_role\": \"duplicates\", \"args\": [[-2, 2, 2]], \"expected\": [-4, 4], \"output\": \"{-4, 4}\", \"output_type\": \"set\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": {\"passed\": true, \"add_query_ok\": true, \"remove_restore_ok\": true, \"marker\": 987654321, \"error\": null}, \"error\": null}, {\"case\": 2, \"case_role\": \"boundary\", \"args\": [[0, -1, 100]], \"expected\": [0, -2, 200], \"output\": \"{0, -2, 200}\", \"output_type\": \"set\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": {\"passed\": true, \"add_query_ok\": true, \"remove_restore_ok\": true, \"marker\": 987654321, \"error\": null}, \"error\": null}], \"failure_reasons\": [], \"stdout\": \"\"}\n",
+        "stderr": ""
+      }
+    }
+  },
+  {
+    "task_id": "lower_E_CLEAR",
+    "condition": "ARCHIVED_TEXT_CODE",
+    "result": {
+      "status": "EXECUTED",
+      "format_ok": true,
+      "executable": true,
+      "values_correct": true,
+      "mutability_correct": null,
+      "functional": true,
+      "exact_frozenset": true,
+      "joint": true,
+      "code": "def collect_lowercase(words):\n    return frozenset(word.lower() for word in words)",
+      "ast": "Module(body=[FunctionDef(name='collect_lowercase', args=arguments(posonlyargs=[], args=[arg(arg='words', lineno=1, col_offset=22, end_lineno=1, end_col_offset=27)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=Call(func=Name(id='frozenset', ctx=Load(), lineno=2, col_offset=11, end_lineno=2, end_col_offset=20), args=[GeneratorExp(elt=Call(func=Attribute(value=Name(id='word', ctx=Load(), lineno=2, col_offset=21, end_lineno=2, end_col_offset=25), attr='lower', ctx=Load(), lineno=2, col_offset=21, end_lineno=2, end_col_offset=31), args=[], keywords=[], lineno=2, col_offset=21, end_lineno=2, end_col_offset=33), generators=[comprehension(target=Name(id='word', ctx=Store(), lineno=2, col_offset=38, end_lineno=2, end_col_offset=42), iter=Name(id='words', ctx=Load(), lineno=2, col_offset=46, end_lineno=2, end_col_offset=51), ifs=[], is_async=0)], lineno=2, col_offset=20, end_lineno=2, end_col_offset=52)], keywords=[], lineno=2, col_offset=11, end_lineno=2, end_col_offset=52), lineno=2, col_offset=4, end_lineno=2, end_col_offset=52)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=52)], type_ignores=[])",
+      "structure": {
+        "return_count": 1,
+        "loop_count": 0,
+        "branch_count": 0
+      },
+      "trials": [
+        {
+          "case": 0,
+          "case_role": "empty",
+          "args": [
+            []
+          ],
+          "expected": [],
+          "output": "frozenset()",
+          "output_type": "frozenset",
+          "exact_frozenset": true,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": null,
+          "error": null
+        },
+        {
+          "case": 1,
+          "case_role": "duplicates",
+          "args": [
+            [
+              "Aa",
+              "BB",
+              "aa",
+              ""
+            ]
+          ],
+          "expected": [
+            "aa",
+            "bb",
+            ""
+          ],
+          "output": "frozenset({'', 'bb', 'aa'})",
+          "output_type": "frozenset",
+          "exact_frozenset": true,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": null,
+          "error": null
+        },
+        {
+          "case": 2,
+          "case_role": "boundary",
+          "args": [
+            [
+              "XyZ",
+              "中文",
+              "ABC"
+            ]
+          ],
+          "expected": [
+            "xyz",
+            "中文",
+            "abc"
+          ],
+          "output": "frozenset({'xyz', '中文', 'abc'})",
+          "output_type": "frozenset",
+          "exact_frozenset": true,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": null,
+          "error": null
+        }
+      ],
+      "failure_reasons": [],
+      "stdout": "",
+      "process": {
+        "exit_code": 0,
+        "stdout": "{\"status\": \"EXECUTED\", \"format_ok\": true, \"executable\": true, \"values_correct\": true, \"mutability_correct\": null, \"functional\": true, \"exact_frozenset\": true, \"joint\": true, \"code\": \"def collect_lowercase(words):\\n    return frozenset(word.lower() for word in words)\", \"ast\": \"Module(body=[FunctionDef(name='collect_lowercase', args=arguments(posonlyargs=[], args=[arg(arg='words', lineno=1, col_offset=22, end_lineno=1, end_col_offset=27)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=Call(func=Name(id='frozenset', ctx=Load(), lineno=2, col_offset=11, end_lineno=2, end_col_offset=20), args=[GeneratorExp(elt=Call(func=Attribute(value=Name(id='word', ctx=Load(), lineno=2, col_offset=21, end_lineno=2, end_col_offset=25), attr='lower', ctx=Load(), lineno=2, col_offset=21, end_lineno=2, end_col_offset=31), args=[], keywords=[], lineno=2, col_offset=21, end_lineno=2, end_col_offset=33), generators=[comprehension(target=Name(id='word', ctx=Store(), lineno=2, col_offset=38, end_lineno=2, end_col_offset=42), iter=Name(id='words', ctx=Load(), lineno=2, col_offset=46, end_lineno=2, end_col_offset=51), ifs=[], is_async=0)], lineno=2, col_offset=20, end_lineno=2, end_col_offset=52)], keywords=[], lineno=2, col_offset=11, end_lineno=2, end_col_offset=52), lineno=2, col_offset=4, end_lineno=2, end_col_offset=52)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=52)], type_ignores=[])\", \"structure\": {\"return_count\": 1, \"loop_count\": 0, \"branch_count\": 0}, \"trials\": [{\"case\": 0, \"case_role\": \"empty\", \"args\": [[]], \"expected\": [], \"output\": \"frozenset()\", \"output_type\": \"frozenset\", \"exact_frozenset\": true, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": null, \"error\": null}, {\"case\": 1, \"case_role\": \"duplicates\", \"args\": [[\"Aa\", \"BB\", \"aa\", \"\"]], \"expected\": [\"aa\", \"bb\", \"\"], \"output\": \"frozenset({'', 'bb', 'aa'})\", \"output_type\": \"frozenset\", \"exact_frozenset\": true, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": null, \"error\": null}, {\"case\": 2, \"case_role\": \"boundary\", \"args\": [[\"XyZ\", \"中文\", \"ABC\"]], \"expected\": [\"xyz\", \"中文\", \"abc\"], \"output\": \"frozenset({'xyz', '中文', 'abc'})\", \"output_type\": \"frozenset\", \"exact_frozenset\": true, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": null, \"error\": null}], \"failure_reasons\": [], \"stdout\": \"\"}\n",
+        "stderr": ""
+      }
+    }
+  },
+  {
+    "task_id": "lower_N_CLEAR",
+    "condition": "ARCHIVED_TEXT_CODE",
+    "result": {
+      "status": "EXECUTED",
+      "format_ok": true,
+      "executable": true,
+      "values_correct": true,
+      "mutability_correct": true,
+      "functional": true,
+      "exact_frozenset": false,
+      "joint": true,
+      "code": "def collect_lowercase(words):\n    return set(word.lower() for word in words)",
+      "ast": "Module(body=[FunctionDef(name='collect_lowercase', args=arguments(posonlyargs=[], args=[arg(arg='words', lineno=1, col_offset=22, end_lineno=1, end_col_offset=27)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=Call(func=Name(id='set', ctx=Load(), lineno=2, col_offset=11, end_lineno=2, end_col_offset=14), args=[GeneratorExp(elt=Call(func=Attribute(value=Name(id='word', ctx=Load(), lineno=2, col_offset=15, end_lineno=2, end_col_offset=19), attr='lower', ctx=Load(), lineno=2, col_offset=15, end_lineno=2, end_col_offset=25), args=[], keywords=[], lineno=2, col_offset=15, end_lineno=2, end_col_offset=27), generators=[comprehension(target=Name(id='word', ctx=Store(), lineno=2, col_offset=32, end_lineno=2, end_col_offset=36), iter=Name(id='words', ctx=Load(), lineno=2, col_offset=40, end_lineno=2, end_col_offset=45), ifs=[], is_async=0)], lineno=2, col_offset=14, end_lineno=2, end_col_offset=46)], keywords=[], lineno=2, col_offset=11, end_lineno=2, end_col_offset=46), lineno=2, col_offset=4, end_lineno=2, end_col_offset=46)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=46)], type_ignores=[])",
+      "structure": {
+        "return_count": 1,
+        "loop_count": 0,
+        "branch_count": 0
+      },
+      "trials": [
+        {
+          "case": 0,
+          "case_role": "empty",
+          "args": [
+            []
+          ],
+          "expected": [],
+          "output": "set()",
+          "output_type": "set",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": {
+            "passed": true,
+            "add_query_ok": true,
+            "remove_restore_ok": true,
+            "marker": "__new_member__",
+            "error": null
+          },
+          "error": null
+        },
+        {
+          "case": 1,
+          "case_role": "duplicates",
+          "args": [
+            [
+              "Aa",
+              "BB",
+              "aa",
+              ""
+            ]
+          ],
+          "expected": [
+            "aa",
+            "bb",
+            ""
+          ],
+          "output": "{'', 'bb', 'aa'}",
+          "output_type": "set",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": {
+            "passed": true,
+            "add_query_ok": true,
+            "remove_restore_ok": true,
+            "marker": "__new_member__",
+            "error": null
+          },
+          "error": null
+        },
+        {
+          "case": 2,
+          "case_role": "boundary",
+          "args": [
+            [
+              "XyZ",
+              "中文",
+              "ABC"
+            ]
+          ],
+          "expected": [
+            "xyz",
+            "中文",
+            "abc"
+          ],
+          "output": "{'xyz', '中文', 'abc'}",
+          "output_type": "set",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": {
+            "passed": true,
+            "add_query_ok": true,
+            "remove_restore_ok": true,
+            "marker": "__new_member__",
+            "error": null
+          },
+          "error": null
+        }
+      ],
+      "failure_reasons": [],
+      "stdout": "",
+      "process": {
+        "exit_code": 0,
+        "stdout": "{\"status\": \"EXECUTED\", \"format_ok\": true, \"executable\": true, \"values_correct\": true, \"mutability_correct\": true, \"functional\": true, \"exact_frozenset\": false, \"joint\": true, \"code\": \"def collect_lowercase(words):\\n    return set(word.lower() for word in words)\", \"ast\": \"Module(body=[FunctionDef(name='collect_lowercase', args=arguments(posonlyargs=[], args=[arg(arg='words', lineno=1, col_offset=22, end_lineno=1, end_col_offset=27)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=Call(func=Name(id='set', ctx=Load(), lineno=2, col_offset=11, end_lineno=2, end_col_offset=14), args=[GeneratorExp(elt=Call(func=Attribute(value=Name(id='word', ctx=Load(), lineno=2, col_offset=15, end_lineno=2, end_col_offset=19), attr='lower', ctx=Load(), lineno=2, col_offset=15, end_lineno=2, end_col_offset=25), args=[], keywords=[], lineno=2, col_offset=15, end_lineno=2, end_col_offset=27), generators=[comprehension(target=Name(id='word', ctx=Store(), lineno=2, col_offset=32, end_lineno=2, end_col_offset=36), iter=Name(id='words', ctx=Load(), lineno=2, col_offset=40, end_lineno=2, end_col_offset=45), ifs=[], is_async=0)], lineno=2, col_offset=14, end_lineno=2, end_col_offset=46)], keywords=[], lineno=2, col_offset=11, end_lineno=2, end_col_offset=46), lineno=2, col_offset=4, end_lineno=2, end_col_offset=46)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=46)], type_ignores=[])\", \"structure\": {\"return_count\": 1, \"loop_count\": 0, \"branch_count\": 0}, \"trials\": [{\"case\": 0, \"case_role\": \"empty\", \"args\": [[]], \"expected\": [], \"output\": \"set()\", \"output_type\": \"set\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": {\"passed\": true, \"add_query_ok\": true, \"remove_restore_ok\": true, \"marker\": \"__new_member__\", \"error\": null}, \"error\": null}, {\"case\": 1, \"case_role\": \"duplicates\", \"args\": [[\"Aa\", \"BB\", \"aa\", \"\"]], \"expected\": [\"aa\", \"bb\", \"\"], \"output\": \"{'', 'bb', 'aa'}\", \"output_type\": \"set\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": {\"passed\": true, \"add_query_ok\": true, \"remove_restore_ok\": true, \"marker\": \"__new_member__\", \"error\": null}, \"error\": null}, {\"case\": 2, \"case_role\": \"boundary\", \"args\": [[\"XyZ\", \"中文\", \"ABC\"]], \"expected\": [\"xyz\", \"中文\", \"abc\"], \"output\": \"{'xyz', '中文', 'abc'}\", \"output_type\": \"set\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": {\"passed\": true, \"add_query_ok\": true, \"remove_restore_ok\": true, \"marker\": \"__new_member__\", \"error\": null}, \"error\": null}], \"failure_reasons\": [], \"stdout\": \"\"}\n",
+        "stderr": ""
+      }
+    }
+  },
+  {
+    "task_id": "integer_octal_text_E_CLEAR",
+    "condition": "ARCHIVED_TEXT_CODE",
+    "result": {
+      "status": "EXECUTED",
+      "format_ok": true,
+      "executable": true,
+      "values_correct": true,
+      "mutability_correct": null,
+      "functional": true,
+      "exact_frozenset": true,
+      "joint": true,
+      "code": "def collect_octal_strings(numbers):\n    return frozenset(oct(n) for n in numbers)",
+      "ast": "Module(body=[FunctionDef(name='collect_octal_strings', args=arguments(posonlyargs=[], args=[arg(arg='numbers', lineno=1, col_offset=26, end_lineno=1, end_col_offset=33)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=Call(func=Name(id='frozenset', ctx=Load(), lineno=2, col_offset=11, end_lineno=2, end_col_offset=20), args=[GeneratorExp(elt=Call(func=Name(id='oct', ctx=Load(), lineno=2, col_offset=21, end_lineno=2, end_col_offset=24), args=[Name(id='n', ctx=Load(), lineno=2, col_offset=25, end_lineno=2, end_col_offset=26)], keywords=[], lineno=2, col_offset=21, end_lineno=2, end_col_offset=27), generators=[comprehension(target=Name(id='n', ctx=Store(), lineno=2, col_offset=32, end_lineno=2, end_col_offset=33), iter=Name(id='numbers', ctx=Load(), lineno=2, col_offset=37, end_lineno=2, end_col_offset=44), ifs=[], is_async=0)], lineno=2, col_offset=20, end_lineno=2, end_col_offset=45)], keywords=[], lineno=2, col_offset=11, end_lineno=2, end_col_offset=45), lineno=2, col_offset=4, end_lineno=2, end_col_offset=45)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=45)], type_ignores=[])",
+      "structure": {
+        "return_count": 1,
+        "loop_count": 0,
+        "branch_count": 0
+      },
+      "trials": [
+        {
+          "case": 0,
+          "case_role": "empty",
+          "args": [
+            []
+          ],
+          "expected": [],
+          "output": "frozenset()",
+          "output_type": "frozenset",
+          "exact_frozenset": true,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": null,
+          "error": null
+        },
+        {
+          "case": 1,
+          "case_role": "duplicates",
+          "args": [
+            [
+              0,
+              8,
+              8,
+              15
+            ]
+          ],
+          "expected": [
+            "0o0",
+            "0o10",
+            "0o17"
+          ],
+          "output": "frozenset({'0o17', '0o10', '0o0'})",
+          "output_type": "frozenset",
+          "exact_frozenset": true,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": null,
+          "error": null
+        },
+        {
+          "case": 2,
+          "case_role": "boundary",
+          "args": [
+            [
+              1,
+              7,
+              64
+            ]
+          ],
+          "expected": [
+            "0o1",
+            "0o7",
+            "0o100"
+          ],
+          "output": "frozenset({'0o7', '0o1', '0o100'})",
+          "output_type": "frozenset",
+          "exact_frozenset": true,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": null,
+          "error": null
+        }
+      ],
+      "failure_reasons": [],
+      "stdout": "",
+      "process": {
+        "exit_code": 0,
+        "stdout": "{\"status\": \"EXECUTED\", \"format_ok\": true, \"executable\": true, \"values_correct\": true, \"mutability_correct\": null, \"functional\": true, \"exact_frozenset\": true, \"joint\": true, \"code\": \"def collect_octal_strings(numbers):\\n    return frozenset(oct(n) for n in numbers)\", \"ast\": \"Module(body=[FunctionDef(name='collect_octal_strings', args=arguments(posonlyargs=[], args=[arg(arg='numbers', lineno=1, col_offset=26, end_lineno=1, end_col_offset=33)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=Call(func=Name(id='frozenset', ctx=Load(), lineno=2, col_offset=11, end_lineno=2, end_col_offset=20), args=[GeneratorExp(elt=Call(func=Name(id='oct', ctx=Load(), lineno=2, col_offset=21, end_lineno=2, end_col_offset=24), args=[Name(id='n', ctx=Load(), lineno=2, col_offset=25, end_lineno=2, end_col_offset=26)], keywords=[], lineno=2, col_offset=21, end_lineno=2, end_col_offset=27), generators=[comprehension(target=Name(id='n', ctx=Store(), lineno=2, col_offset=32, end_lineno=2, end_col_offset=33), iter=Name(id='numbers', ctx=Load(), lineno=2, col_offset=37, end_lineno=2, end_col_offset=44), ifs=[], is_async=0)], lineno=2, col_offset=20, end_lineno=2, end_col_offset=45)], keywords=[], lineno=2, col_offset=11, end_lineno=2, end_col_offset=45), lineno=2, col_offset=4, end_lineno=2, end_col_offset=45)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=45)], type_ignores=[])\", \"structure\": {\"return_count\": 1, \"loop_count\": 0, \"branch_count\": 0}, \"trials\": [{\"case\": 0, \"case_role\": \"empty\", \"args\": [[]], \"expected\": [], \"output\": \"frozenset()\", \"output_type\": \"frozenset\", \"exact_frozenset\": true, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": null, \"error\": null}, {\"case\": 1, \"case_role\": \"duplicates\", \"args\": [[0, 8, 8, 15]], \"expected\": [\"0o0\", \"0o10\", \"0o17\"], \"output\": \"frozenset({'0o17', '0o10', '0o0'})\", \"output_type\": \"frozenset\", \"exact_frozenset\": true, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": null, \"error\": null}, {\"case\": 2, \"case_role\": \"boundary\", \"args\": [[1, 7, 64]], \"expected\": [\"0o1\", \"0o7\", \"0o100\"], \"output\": \"frozenset({'0o7', '0o1', '0o100'})\", \"output_type\": \"frozenset\", \"exact_frozenset\": true, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": null, \"error\": null}], \"failure_reasons\": [], \"stdout\": \"\"}\n",
+        "stderr": ""
+      }
+    }
+  },
+  {
+    "task_id": "integer_octal_text_N_CLEAR",
+    "condition": "ARCHIVED_TEXT_CODE",
+    "result": {
+      "status": "EXECUTED",
+      "format_ok": true,
+      "executable": true,
+      "values_correct": true,
+      "mutability_correct": true,
+      "functional": true,
+      "exact_frozenset": false,
+      "joint": true,
+      "code": "def collect_octal_strings(numbers):\n    return set(oct(n) for n in numbers)",
+      "ast": "Module(body=[FunctionDef(name='collect_octal_strings', args=arguments(posonlyargs=[], args=[arg(arg='numbers', lineno=1, col_offset=26, end_lineno=1, end_col_offset=33)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=Call(func=Name(id='set', ctx=Load(), lineno=2, col_offset=11, end_lineno=2, end_col_offset=14), args=[GeneratorExp(elt=Call(func=Name(id='oct', ctx=Load(), lineno=2, col_offset=15, end_lineno=2, end_col_offset=18), args=[Name(id='n', ctx=Load(), lineno=2, col_offset=19, end_lineno=2, end_col_offset=20)], keywords=[], lineno=2, col_offset=15, end_lineno=2, end_col_offset=21), generators=[comprehension(target=Name(id='n', ctx=Store(), lineno=2, col_offset=26, end_lineno=2, end_col_offset=27), iter=Name(id='numbers', ctx=Load(), lineno=2, col_offset=31, end_lineno=2, end_col_offset=38), ifs=[], is_async=0)], lineno=2, col_offset=14, end_lineno=2, end_col_offset=39)], keywords=[], lineno=2, col_offset=11, end_lineno=2, end_col_offset=39), lineno=2, col_offset=4, end_lineno=2, end_col_offset=39)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=39)], type_ignores=[])",
+      "structure": {
+        "return_count": 1,
+        "loop_count": 0,
+        "branch_count": 0
+      },
+      "trials": [
+        {
+          "case": 0,
+          "case_role": "empty",
+          "args": [
+            []
+          ],
+          "expected": [],
+          "output": "set()",
+          "output_type": "set",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": {
+            "passed": true,
+            "add_query_ok": true,
+            "remove_restore_ok": true,
+            "marker": "__new_member__",
+            "error": null
+          },
+          "error": null
+        },
+        {
+          "case": 1,
+          "case_role": "duplicates",
+          "args": [
+            [
+              0,
+              8,
+              8,
+              15
+            ]
+          ],
+          "expected": [
+            "0o0",
+            "0o10",
+            "0o17"
+          ],
+          "output": "{'0o17', '0o10', '0o0'}",
+          "output_type": "set",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": {
+            "passed": true,
+            "add_query_ok": true,
+            "remove_restore_ok": true,
+            "marker": "__new_member__",
+            "error": null
+          },
+          "error": null
+        },
+        {
+          "case": 2,
+          "case_role": "boundary",
+          "args": [
+            [
+              1,
+              7,
+              64
+            ]
+          ],
+          "expected": [
+            "0o1",
+            "0o7",
+            "0o100"
+          ],
+          "output": "{'0o7', '0o1', '0o100'}",
+          "output_type": "set",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": {
+            "passed": true,
+            "add_query_ok": true,
+            "remove_restore_ok": true,
+            "marker": "__new_member__",
+            "error": null
+          },
+          "error": null
+        }
+      ],
+      "failure_reasons": [],
+      "stdout": "",
+      "process": {
+        "exit_code": 0,
+        "stdout": "{\"status\": \"EXECUTED\", \"format_ok\": true, \"executable\": true, \"values_correct\": true, \"mutability_correct\": true, \"functional\": true, \"exact_frozenset\": false, \"joint\": true, \"code\": \"def collect_octal_strings(numbers):\\n    return set(oct(n) for n in numbers)\", \"ast\": \"Module(body=[FunctionDef(name='collect_octal_strings', args=arguments(posonlyargs=[], args=[arg(arg='numbers', lineno=1, col_offset=26, end_lineno=1, end_col_offset=33)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=Call(func=Name(id='set', ctx=Load(), lineno=2, col_offset=11, end_lineno=2, end_col_offset=14), args=[GeneratorExp(elt=Call(func=Name(id='oct', ctx=Load(), lineno=2, col_offset=15, end_lineno=2, end_col_offset=18), args=[Name(id='n', ctx=Load(), lineno=2, col_offset=19, end_lineno=2, end_col_offset=20)], keywords=[], lineno=2, col_offset=15, end_lineno=2, end_col_offset=21), generators=[comprehension(target=Name(id='n', ctx=Store(), lineno=2, col_offset=26, end_lineno=2, end_col_offset=27), iter=Name(id='numbers', ctx=Load(), lineno=2, col_offset=31, end_lineno=2, end_col_offset=38), ifs=[], is_async=0)], lineno=2, col_offset=14, end_lineno=2, end_col_offset=39)], keywords=[], lineno=2, col_offset=11, end_lineno=2, end_col_offset=39), lineno=2, col_offset=4, end_lineno=2, end_col_offset=39)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=39)], type_ignores=[])\", \"structure\": {\"return_count\": 1, \"loop_count\": 0, \"branch_count\": 0}, \"trials\": [{\"case\": 0, \"case_role\": \"empty\", \"args\": [[]], \"expected\": [], \"output\": \"set()\", \"output_type\": \"set\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": {\"passed\": true, \"add_query_ok\": true, \"remove_restore_ok\": true, \"marker\": \"__new_member__\", \"error\": null}, \"error\": null}, {\"case\": 1, \"case_role\": \"duplicates\", \"args\": [[0, 8, 8, 15]], \"expected\": [\"0o0\", \"0o10\", \"0o17\"], \"output\": \"{'0o17', '0o10', '0o0'}\", \"output_type\": \"set\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": {\"passed\": true, \"add_query_ok\": true, \"remove_restore_ok\": true, \"marker\": \"__new_member__\", \"error\": null}, \"error\": null}, {\"case\": 2, \"case_role\": \"boundary\", \"args\": [[1, 7, 64]], \"expected\": [\"0o1\", \"0o7\", \"0o100\"], \"output\": \"{'0o7', '0o1', '0o100'}\", \"output_type\": \"set\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": {\"passed\": true, \"add_query_ok\": true, \"remove_restore_ok\": true, \"marker\": \"__new_member__\", \"error\": null}, \"error\": null}], \"failure_reasons\": [], \"stdout\": \"\"}\n",
+        "stderr": ""
+      }
+    }
+  },
+  {
+    "task_id": "boolean_complement_E_CLEAR",
+    "condition": "ARCHIVED_TEXT_CODE",
+    "result": {
+      "status": "EXECUTED",
+      "format_ok": true,
+      "executable": true,
+      "values_correct": true,
+      "mutability_correct": null,
+      "functional": true,
+      "exact_frozenset": true,
+      "joint": true,
+      "code": "def collect_inverted_flags(flags):\n    return frozenset(not flag for flag in flags)",
+      "ast": "Module(body=[FunctionDef(name='collect_inverted_flags', args=arguments(posonlyargs=[], args=[arg(arg='flags', lineno=1, col_offset=27, end_lineno=1, end_col_offset=32)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=Call(func=Name(id='frozenset', ctx=Load(), lineno=2, col_offset=11, end_lineno=2, end_col_offset=20), args=[GeneratorExp(elt=UnaryOp(op=Not(), operand=Name(id='flag', ctx=Load(), lineno=2, col_offset=25, end_lineno=2, end_col_offset=29), lineno=2, col_offset=21, end_lineno=2, end_col_offset=29), generators=[comprehension(target=Name(id='flag', ctx=Store(), lineno=2, col_offset=34, end_lineno=2, end_col_offset=38), iter=Name(id='flags', ctx=Load(), lineno=2, col_offset=42, end_lineno=2, end_col_offset=47), ifs=[], is_async=0)], lineno=2, col_offset=20, end_lineno=2, end_col_offset=48)], keywords=[], lineno=2, col_offset=11, end_lineno=2, end_col_offset=48), lineno=2, col_offset=4, end_lineno=2, end_col_offset=48)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=48)], type_ignores=[])",
+      "structure": {
+        "return_count": 1,
+        "loop_count": 0,
+        "branch_count": 0
+      },
+      "trials": [
+        {
+          "case": 0,
+          "case_role": "empty",
+          "args": [
+            []
+          ],
+          "expected": [],
+          "output": "frozenset()",
+          "output_type": "frozenset",
+          "exact_frozenset": true,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": null,
+          "error": null
+        },
+        {
+          "case": 1,
+          "case_role": "duplicates",
+          "args": [
+            [
+              true,
+              true,
+              false
+            ]
+          ],
+          "expected": [
+            false,
+            true
+          ],
+          "output": "frozenset({False, True})",
+          "output_type": "frozenset",
+          "exact_frozenset": true,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": null,
+          "error": null
+        },
+        {
+          "case": 2,
+          "case_role": "boundary",
+          "args": [
+            [
+              false,
+              false
+            ]
+          ],
+          "expected": [
+            true
+          ],
+          "output": "frozenset({True})",
+          "output_type": "frozenset",
+          "exact_frozenset": true,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": null,
+          "error": null
+        }
+      ],
+      "failure_reasons": [],
+      "stdout": "",
+      "process": {
+        "exit_code": 0,
+        "stdout": "{\"status\": \"EXECUTED\", \"format_ok\": true, \"executable\": true, \"values_correct\": true, \"mutability_correct\": null, \"functional\": true, \"exact_frozenset\": true, \"joint\": true, \"code\": \"def collect_inverted_flags(flags):\\n    return frozenset(not flag for flag in flags)\", \"ast\": \"Module(body=[FunctionDef(name='collect_inverted_flags', args=arguments(posonlyargs=[], args=[arg(arg='flags', lineno=1, col_offset=27, end_lineno=1, end_col_offset=32)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=Call(func=Name(id='frozenset', ctx=Load(), lineno=2, col_offset=11, end_lineno=2, end_col_offset=20), args=[GeneratorExp(elt=UnaryOp(op=Not(), operand=Name(id='flag', ctx=Load(), lineno=2, col_offset=25, end_lineno=2, end_col_offset=29), lineno=2, col_offset=21, end_lineno=2, end_col_offset=29), generators=[comprehension(target=Name(id='flag', ctx=Store(), lineno=2, col_offset=34, end_lineno=2, end_col_offset=38), iter=Name(id='flags', ctx=Load(), lineno=2, col_offset=42, end_lineno=2, end_col_offset=47), ifs=[], is_async=0)], lineno=2, col_offset=20, end_lineno=2, end_col_offset=48)], keywords=[], lineno=2, col_offset=11, end_lineno=2, end_col_offset=48), lineno=2, col_offset=4, end_lineno=2, end_col_offset=48)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=48)], type_ignores=[])\", \"structure\": {\"return_count\": 1, \"loop_count\": 0, \"branch_count\": 0}, \"trials\": [{\"case\": 0, \"case_role\": \"empty\", \"args\": [[]], \"expected\": [], \"output\": \"frozenset()\", \"output_type\": \"frozenset\", \"exact_frozenset\": true, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": null, \"error\": null}, {\"case\": 1, \"case_role\": \"duplicates\", \"args\": [[true, true, false]], \"expected\": [false, true], \"output\": \"frozenset({False, True})\", \"output_type\": \"frozenset\", \"exact_frozenset\": true, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": null, \"error\": null}, {\"case\": 2, \"case_role\": \"boundary\", \"args\": [[false, false]], \"expected\": [true], \"output\": \"frozenset({True})\", \"output_type\": \"frozenset\", \"exact_frozenset\": true, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": null, \"error\": null}], \"failure_reasons\": [], \"stdout\": \"\"}\n",
+        "stderr": ""
+      }
+    }
+  },
+  {
+    "task_id": "boolean_complement_N_CLEAR",
+    "condition": "ARCHIVED_TEXT_CODE",
+    "result": {
+      "status": "EXECUTED",
+      "format_ok": true,
+      "executable": true,
+      "values_correct": true,
+      "mutability_correct": true,
+      "functional": true,
+      "exact_frozenset": false,
+      "joint": true,
+      "code": "def collect_inverted_flags(flags):\n    return set(not flag for flag in flags)",
+      "ast": "Module(body=[FunctionDef(name='collect_inverted_flags', args=arguments(posonlyargs=[], args=[arg(arg='flags', lineno=1, col_offset=27, end_lineno=1, end_col_offset=32)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=Call(func=Name(id='set', ctx=Load(), lineno=2, col_offset=11, end_lineno=2, end_col_offset=14), args=[GeneratorExp(elt=UnaryOp(op=Not(), operand=Name(id='flag', ctx=Load(), lineno=2, col_offset=19, end_lineno=2, end_col_offset=23), lineno=2, col_offset=15, end_lineno=2, end_col_offset=23), generators=[comprehension(target=Name(id='flag', ctx=Store(), lineno=2, col_offset=28, end_lineno=2, end_col_offset=32), iter=Name(id='flags', ctx=Load(), lineno=2, col_offset=36, end_lineno=2, end_col_offset=41), ifs=[], is_async=0)], lineno=2, col_offset=14, end_lineno=2, end_col_offset=42)], keywords=[], lineno=2, col_offset=11, end_lineno=2, end_col_offset=42), lineno=2, col_offset=4, end_lineno=2, end_col_offset=42)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=42)], type_ignores=[])",
+      "structure": {
+        "return_count": 1,
+        "loop_count": 0,
+        "branch_count": 0
+      },
+      "trials": [
+        {
+          "case": 0,
+          "case_role": "empty",
+          "args": [
+            []
+          ],
+          "expected": [],
+          "output": "set()",
+          "output_type": "set",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": {
+            "passed": true,
+            "add_query_ok": true,
+            "remove_restore_ok": true,
+            "marker": 987654321,
+            "error": null
+          },
+          "error": null
+        },
+        {
+          "case": 1,
+          "case_role": "duplicates",
+          "args": [
+            [
+              true,
+              true,
+              false
+            ]
+          ],
+          "expected": [
+            false,
+            true
+          ],
+          "output": "{False, True}",
+          "output_type": "set",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": {
+            "passed": true,
+            "add_query_ok": true,
+            "remove_restore_ok": true,
+            "marker": 987654321,
+            "error": null
+          },
+          "error": null
+        },
+        {
+          "case": 2,
+          "case_role": "boundary",
+          "args": [
+            [
+              false,
+              false
+            ]
+          ],
+          "expected": [
+            true
+          ],
+          "output": "{True}",
+          "output_type": "set",
+          "exact_frozenset": false,
+          "member_shape": true,
+          "unique": true,
+          "values_correct": true,
+          "input_unchanged": true,
+          "mutability": {
+            "passed": true,
+            "add_query_ok": true,
+            "remove_restore_ok": true,
+            "marker": 987654321,
+            "error": null
+          },
+          "error": null
+        }
+      ],
+      "failure_reasons": [],
+      "stdout": "",
+      "process": {
+        "exit_code": 0,
+        "stdout": "{\"status\": \"EXECUTED\", \"format_ok\": true, \"executable\": true, \"values_correct\": true, \"mutability_correct\": true, \"functional\": true, \"exact_frozenset\": false, \"joint\": true, \"code\": \"def collect_inverted_flags(flags):\\n    return set(not flag for flag in flags)\", \"ast\": \"Module(body=[FunctionDef(name='collect_inverted_flags', args=arguments(posonlyargs=[], args=[arg(arg='flags', lineno=1, col_offset=27, end_lineno=1, end_col_offset=32)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=Call(func=Name(id='set', ctx=Load(), lineno=2, col_offset=11, end_lineno=2, end_col_offset=14), args=[GeneratorExp(elt=UnaryOp(op=Not(), operand=Name(id='flag', ctx=Load(), lineno=2, col_offset=19, end_lineno=2, end_col_offset=23), lineno=2, col_offset=15, end_lineno=2, end_col_offset=23), generators=[comprehension(target=Name(id='flag', ctx=Store(), lineno=2, col_offset=28, end_lineno=2, end_col_offset=32), iter=Name(id='flags', ctx=Load(), lineno=2, col_offset=36, end_lineno=2, end_col_offset=41), ifs=[], is_async=0)], lineno=2, col_offset=14, end_lineno=2, end_col_offset=42)], keywords=[], lineno=2, col_offset=11, end_lineno=2, end_col_offset=42), lineno=2, col_offset=4, end_lineno=2, end_col_offset=42)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=42)], type_ignores=[])\", \"structure\": {\"return_count\": 1, \"loop_count\": 0, \"branch_count\": 0}, \"trials\": [{\"case\": 0, \"case_role\": \"empty\", \"args\": [[]], \"expected\": [], \"output\": \"set()\", \"output_type\": \"set\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": {\"passed\": true, \"add_query_ok\": true, \"remove_restore_ok\": true, \"marker\": 987654321, \"error\": null}, \"error\": null}, {\"case\": 1, \"case_role\": \"duplicates\", \"args\": [[true, true, false]], \"expected\": [false, true], \"output\": \"{False, True}\", \"output_type\": \"set\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": {\"passed\": true, \"add_query_ok\": true, \"remove_restore_ok\": true, \"marker\": 987654321, \"error\": null}, \"error\": null}, {\"case\": 2, \"case_role\": \"boundary\", \"args\": [[false, false]], \"expected\": [true], \"output\": \"{True}\", \"output_type\": \"set\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": {\"passed\": true, \"add_query_ok\": true, \"remove_restore_ok\": true, \"marker\": 987654321, \"error\": null}, \"error\": null}], \"failure_reasons\": [], \"stdout\": \"\"}\n",
+        "stderr": ""
+      }
+    }
+  }
+]

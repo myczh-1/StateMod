@@ -1,0 +1,15 @@
+{
+  "status": "CAPABILITY_LIMITED",
+  "engineering_complete": true,
+  "complete_matrix": true,
+  "simple_baseline_stable": false,
+  "matcher_stable": false,
+  "manual_V_stable": false,
+  "module_V_stable": false,
+  "statistical_units": 4,
+  "independent_confirmation": true,
+  "threshold_changed": false,
+  "bank_compiled": false,
+  "module_trained": false,
+  "all_historical_statuses_preserved": true
+}

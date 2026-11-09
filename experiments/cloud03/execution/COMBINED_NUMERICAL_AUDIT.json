@@ -1,0 +1,16 @@
+{
+  "probe_count": 16,
+  "step_count": 508,
+  "attention_predictions": 16,
+  "max_logits_rms": 1.1223441226985847e-05,
+  "max_selected_token_logp_error": 7.915491996968171e-06,
+  "max_attention_output_rms": 3.118894111502046e-07,
+  "max_attention_probability_error": 8.190713758349233e-07,
+  "max_readout_probability_replay_error": 1.1102230246251565e-16,
+  "readonly_logits_exact": true,
+  "readonly_cache_exact": true,
+  "checkpoint_unchanged": true,
+  "independent_probe_cache": true,
+  "judgment_replay_agreement": 16,
+  "actual_bank_layer_calls": 224
+}

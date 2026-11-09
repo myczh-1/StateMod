@@ -1,0 +1,10 @@
+{
+  "bytes": 432896000,
+  "sha256": "c46d664bb1f47a6a209f55325c92c1a7f3bafcb19dbbfe1b36f52c336b196d22",
+  "job": {
+    "returncode": 0,
+    "status": "MODEL_JOB_FINISHED"
+  },
+  "watchdog_deadline": 1794133366.0819871,
+  "safe_to_shutdown": true
+}

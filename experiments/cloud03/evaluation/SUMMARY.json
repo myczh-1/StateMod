@@ -1,0 +1,132 @@
+{
+  "BASE": {
+    "E": {
+      "planned": 8,
+      "completed": 8,
+      "not_run": 0,
+      "functional": 8,
+      "exact_frozenset": 0,
+      "joint": 0,
+      "regression": [],
+      "new_joint": [],
+      "actual_bank_tasks": 0
+    },
+    "N": {
+      "planned": 8,
+      "completed": 8,
+      "not_run": 0,
+      "functional": 8,
+      "exact_frozenset": 0,
+      "joint": 8,
+      "regression": [],
+      "new_joint": [],
+      "actual_bank_tasks": 0
+    }
+  },
+  "TEXT_CODE": {
+    "E": {
+      "planned": 8,
+      "completed": 8,
+      "not_run": 0,
+      "functional": 8,
+      "exact_frozenset": 8,
+      "joint": 8,
+      "regression": [],
+      "new_joint": [
+        "double_E_W2",
+        "increment_E_W2",
+        "lower_E_W2",
+        "negative_E_W2",
+        "square_E_W1",
+        "square_E_W2",
+        "strip_E_W1",
+        "strip_E_W2"
+      ],
+      "actual_bank_tasks": 0
+    },
+    "N": {
+      "planned": 8,
+      "completed": 8,
+      "not_run": 0,
+      "functional": 2,
+      "exact_frozenset": 4,
+      "joint": 2,
+      "regression": [
+        "double_N_W2",
+        "increment_N_W2",
+        "lower_N_W2",
+        "negative_N_W2",
+        "square_N_W2",
+        "strip_N_W2"
+      ],
+      "new_joint": [],
+      "actual_bank_tasks": 0
+    }
+  },
+  "MANUAL_V": {
+    "E": {
+      "planned": 8,
+      "completed": 8,
+      "not_run": 0,
+      "functional": 8,
+      "exact_frozenset": 8,
+      "joint": 8,
+      "regression": [],
+      "new_joint": [
+        "double_E_W2",
+        "increment_E_W2",
+        "lower_E_W2",
+        "negative_E_W2",
+        "square_E_W1",
+        "square_E_W2",
+        "strip_E_W1",
+        "strip_E_W2"
+      ],
+      "actual_bank_tasks": 8
+    },
+    "N": {
+      "planned": 8,
+      "completed": 8,
+      "not_run": 0,
+      "functional": 8,
+      "exact_frozenset": 0,
+      "joint": 8,
+      "regression": [],
+      "new_joint": [],
+      "actual_bank_tasks": 0
+    }
+  },
+  "MODULE_V": {
+    "E": {
+      "planned": 8,
+      "completed": 8,
+      "not_run": 0,
+      "functional": 8,
+      "exact_frozenset": 8,
+      "joint": 8,
+      "regression": [],
+      "new_joint": [
+        "double_E_W2",
+        "increment_E_W2",
+        "lower_E_W2",
+        "negative_E_W2",
+        "square_E_W1",
+        "square_E_W2",
+        "strip_E_W1",
+        "strip_E_W2"
+      ],
+      "actual_bank_tasks": 8
+    },
+    "N": {
+      "planned": 8,
+      "completed": 8,
+      "not_run": 0,
+      "functional": 8,
+      "exact_frozenset": 0,
+      "joint": 8,
+      "regression": [],
+      "new_joint": [],
+      "actual_bank_tasks": 0
+    }
+  }
+}

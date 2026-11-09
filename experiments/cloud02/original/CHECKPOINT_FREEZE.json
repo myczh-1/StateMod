@@ -1,0 +1,28 @@
+{
+  "time": 1793779187.50627,
+  "path": "[LOCAL_PATH]",
+  "sha256": "3a35f380d49fdbf9d76832d252554c8f9c55b715ed1fc7a3ad3d47ccda6bace7",
+  "training_ids": [
+    "double_E_W1",
+    "double_N_W1",
+    "increment_E_W1",
+    "increment_N_W1",
+    "lower_E_W1",
+    "lower_N_W1",
+    "negative_E_W1",
+    "negative_N_W1"
+  ],
+  "training_teacher_targets": [
+    0.9999641277230813,
+    9.685476915127889e-15,
+    0.9999744495480126,
+    7.953610170182626e-15,
+    0.9999578080100717,
+    4.840923392838237e-14,
+    0.9999865965107354,
+    7.54184245113644e-15
+  ],
+  "heldout_evaluated": false,
+  "contract_labels_used_in_fit": false,
+  "preprocess_training_only": true
+}

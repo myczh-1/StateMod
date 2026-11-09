@@ -1,0 +1,7 @@
+{
+  "start": 1794151998.253713,
+  "end": 1794151999.884236,
+  "status": "STOP_ENGINEERING",
+  "error": "AssertionError('STOP_ENGINEERING preflight')",
+  "traceback": "Traceback (most recent call last):\n  File \"[REMOTE_PATH]\", line 19, in main\n    assert preflight['passed'],'STOP_ENGINEERING preflight'\n           ~~~~~~~~~^^^^^^^^^^\nAssertionError: STOP_ENGINEERING preflight\n"
+}

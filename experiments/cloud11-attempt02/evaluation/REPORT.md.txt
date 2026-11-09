@@ -1,0 +1,14 @@
+# Cloud11 判断迁移
+
+状态：`TEACHER_FIDELITY_NOT_ESTABLISHED`。
+
+{
+  "training_executed": true,
+  "teacher_agreement": 7,
+  "reference_total": 8,
+  "teacher_rejects_preserved": 3,
+  "teacher_enables_preserved": 4,
+  "V_eligible": false
+}
+
+BASE 功能成绩不作为拟合准入；Fresh差异单列。未编译或运行V。全部为已见四族的开发验证。

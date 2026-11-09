@@ -1,0 +1,5 @@
+# Cloud07 初步分离结果
+
+轨迹 28/28。A：WORDING_DISAMBIGUATION_EFFECT_OBSERVED。
+
+B、C逐题结果见对应JSON；强制构造器分支不计自然生成成绩。未运行不计零成功。

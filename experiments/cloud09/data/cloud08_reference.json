@@ -1,0 +1,154 @@
+{
+  "model": "Qwen3-8B",
+  "dtype": "float32",
+  "summary": {
+    "code": {
+      "BASE": {
+        "E": {
+          "planned": 4,
+          "completed": 4,
+          "functional": 4,
+          "joint": 0,
+          "format_ok": 4,
+          "covered": 4
+        },
+        "N": {
+          "planned": 4,
+          "completed": 4,
+          "functional": 4,
+          "joint": 4,
+          "format_ok": 4,
+          "covered": 4
+        }
+      },
+      "TEXT_CODE": {
+        "E": {
+          "planned": 4,
+          "completed": 4,
+          "functional": 4,
+          "joint": 4,
+          "format_ok": 4,
+          "covered": 4
+        },
+        "N": {
+          "planned": 4,
+          "completed": 4,
+          "functional": 0,
+          "joint": 0,
+          "format_ok": 4,
+          "covered": 4
+        }
+      }
+    },
+    "select": {
+      "completed": 8,
+      "valid": 8,
+      "correct": 6,
+      "N_correct": 2,
+      "E_correct": 4,
+      "natural_candidate_disagreement": [],
+      "invalid": []
+    },
+    "pairs": [
+      {
+        "id": "double_E_CLEAR",
+        "category": "E",
+        "base_functional": true,
+        "text_functional": true,
+        "base_joint": false,
+        "text_joint": true,
+        "regression": false,
+        "new_E_joint": true
+      },
+      {
+        "id": "double_N_CLEAR",
+        "category": "N",
+        "base_functional": true,
+        "text_functional": false,
+        "base_joint": true,
+        "text_joint": false,
+        "regression": true,
+        "new_E_joint": false
+      },
+      {
+        "id": "lower_E_CLEAR",
+        "category": "E",
+        "base_functional": true,
+        "text_functional": true,
+        "base_joint": false,
+        "text_joint": true,
+        "regression": false,
+        "new_E_joint": true
+      },
+      {
+        "id": "lower_N_CLEAR",
+        "category": "N",
+        "base_functional": true,
+        "text_functional": false,
+        "base_joint": true,
+        "text_joint": false,
+        "regression": true,
+        "new_E_joint": false
+      },
+      {
+        "id": "integer_octal_text_E_CLEAR",
+        "category": "E",
+        "base_functional": true,
+        "text_functional": true,
+        "base_joint": false,
+        "text_joint": true,
+        "regression": false,
+        "new_E_joint": true
+      },
+      {
+        "id": "integer_octal_text_N_CLEAR",
+        "category": "N",
+        "base_functional": true,
+        "text_functional": false,
+        "base_joint": true,
+        "text_joint": false,
+        "regression": true,
+        "new_E_joint": false
+      },
+      {
+        "id": "boolean_complement_E_CLEAR",
+        "category": "E",
+        "base_functional": true,
+        "text_functional": true,
+        "base_joint": false,
+        "text_joint": true,
+        "regression": false,
+        "new_E_joint": true
+      },
+      {
+        "id": "boolean_complement_N_CLEAR",
+        "category": "N",
+        "base_functional": true,
+        "text_functional": false,
+        "base_joint": true,
+        "text_joint": false,
+        "regression": true,
+        "new_E_joint": false
+      }
+    ],
+    "N_new_regressions": [
+      "double_N_CLEAR",
+      "lower_N_CLEAR",
+      "integer_octal_text_N_CLEAR",
+      "boolean_complement_N_CLEAR"
+    ],
+    "new_E_joint": 4
+  },
+  "decision": {
+    "status": "TEXT_REFERENCE_NOT_READY",
+    "complete": true,
+    "baseline_coverage_ready": true,
+    "selection_reference": "SELECT_REFERENCE_NOT_READY",
+    "code_reference": "CODE_REFERENCE_NOT_READY",
+    "bank_tested": false,
+    "module_tested": false,
+    "independent_confirmation": false,
+    "automatic_next_stage": false
+  },
+  "comparison": "Descriptive only: model size AND dtype differ. No new 8B generation authorized."
+}

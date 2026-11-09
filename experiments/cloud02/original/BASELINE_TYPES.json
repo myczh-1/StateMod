@@ -1,0 +1,182 @@
+{
+  "counts": {
+    "E": {
+      "set": 10,
+      "list": 2
+    },
+    "N": {
+      "set": 12,
+      "list": 0
+    }
+  },
+  "rows": [
+    {
+      "id": "double_E_W1",
+      "category": "E",
+      "types": [
+        "set"
+      ]
+    },
+    {
+      "id": "double_E_W2",
+      "category": "E",
+      "types": [
+        "list"
+      ]
+    },
+    {
+      "id": "double_N_W1",
+      "category": "N",
+      "types": [
+        "set"
+      ]
+    },
+    {
+      "id": "double_N_W2",
+      "category": "N",
+      "types": [
+        "set"
+      ]
+    },
+    {
+      "id": "increment_E_W1",
+      "category": "E",
+      "types": [
+        "set"
+      ]
+    },
+    {
+      "id": "increment_E_W2",
+      "category": "E",
+      "types": [
+        "set"
+      ]
+    },
+    {
+      "id": "increment_N_W1",
+      "category": "N",
+      "types": [
+        "set"
+      ]
+    },
+    {
+      "id": "increment_N_W2",
+      "category": "N",
+      "types": [
+        "set"
+      ]
+    },
+    {
+      "id": "lower_E_W1",
+      "category": "E",
+      "types": [
+        "set"
+      ]
+    },
+    {
+      "id": "lower_E_W2",
+      "category": "E",
+      "types": [
+        "set"
+      ]
+    },
+    {
+      "id": "lower_N_W1",
+      "category": "N",
+      "types": [
+        "set"
+      ]
+    },
+    {
+      "id": "lower_N_W2",
+      "category": "N",
+      "types": [
+        "set"
+      ]
+    },
+    {
+      "id": "negative_E_W1",
+      "category": "E",
+      "types": [
+        "set"
+      ]
+    },
+    {
+      "id": "negative_E_W2",
+      "category": "E",
+      "types": [
+        "set"
+      ]
+    },
+    {
+      "id": "negative_N_W1",
+      "category": "N",
+      "types": [
+        "set"
+      ]
+    },
+    {
+      "id": "negative_N_W2",
+      "category": "N",
+      "types": [
+        "set"
+      ]
+    },
+    {
+      "id": "square_E_W1",
+      "category": "E",
+      "types": [
+        "set"
+      ]
+    },
+    {
+      "id": "square_E_W2",
+      "category": "E",
+      "types": [
+        "list"
+      ]
+    },
+    {
+      "id": "square_N_W1",
+      "category": "N",
+      "types": [
+        "set"
+      ]
+    },
+    {
+      "id": "square_N_W2",
+      "category": "N",
+      "types": [
+        "set"
+      ]
+    },
+    {
+      "id": "strip_E_W1",
+      "category": "E",
+      "types": [
+        "set"
+      ]
+    },
+    {
+      "id": "strip_E_W2",
+      "category": "E",
+      "types": [
+        "set"
+      ]
+    },
+    {
+      "id": "strip_N_W1",
+      "category": "N",
+      "types": [
+        "set"
+      ]
+    },
+    {
+      "id": "strip_N_W2",
+      "category": "N",
+      "types": [
+        "set"
+      ]
+    }
+  ]
+}

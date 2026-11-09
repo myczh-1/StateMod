@@ -1,0 +1,11 @@
+{
+  "status": "DEVELOPMENT_8B_MODULE_V_LOOP_SUPPORTED",
+  "report": "execution/FINAL_REPORT.md",
+  "run_manifest_sha": "6defc99b5aff413e34b846cd8b7a30133eae6f054670fb09058e5676e92b0b1a",
+  "preparation_freeze_preserved": true,
+  "judgment_unchanged": true,
+  "threshold": 0.5,
+  "shutdown_command_returncode": 0,
+  "ssh_after_shutdown": "Connection refused",
+  "independent_confirmation": false
+}

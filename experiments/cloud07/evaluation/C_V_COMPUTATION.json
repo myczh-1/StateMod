@@ -1,0 +1,971 @@
+{
+  "rows": [
+    {
+      "condition": "NATURAL_OFF",
+      "functional": true,
+      "joint": false,
+      "exact_frozenset": false,
+      "code": "def collect_a_counts(words): return set({sum(1 for c in word if c == 'a') for word in words})",
+      "failures": [],
+      "forced": false
+    },
+    {
+      "condition": "NATURAL_ON",
+      "functional": false,
+      "joint": false,
+      "exact_frozenset": null,
+      "code": "def collect_a_counts(words): return frozenset(count := 0 for word in words for count in (count + 1 if c == 'a' else 0 for c in word))",
+      "failures": [
+        {
+          "kind": "EXECUTION_OR_SUPPORT",
+          "reason": "DEFINITION_EXECUTION_ERROR",
+          "detail": "SyntaxError(\"assignment expression cannot rebind comprehension iteration variable 'count'\")"
+        }
+      ],
+      "forced": false
+    },
+    {
+      "condition": "OFF_FRO",
+      "functional": false,
+      "joint": false,
+      "exact_frozenset": null,
+      "code": "def collect_a_counts(words): return frozenset(count := 0 for word in words for count in (count + 1 if c == 'a' else count for c in word))",
+      "failures": [
+        {
+          "kind": "EXECUTION_OR_SUPPORT",
+          "reason": "DEFINITION_EXECUTION_ERROR",
+          "detail": "SyntaxError(\"assignment expression cannot rebind comprehension iteration variable 'count'\")"
+        }
+      ],
+      "forced": true
+    },
+    {
+      "condition": "OFF_SET",
+      "functional": true,
+      "joint": false,
+      "exact_frozenset": false,
+      "code": "def collect_a_counts(words): return set({sum(1 for c in word if c == 'a') for word in words})",
+      "failures": [],
+      "forced": true
+    },
+    {
+      "condition": "ON_FRO",
+      "functional": false,
+      "joint": false,
+      "exact_frozenset": null,
+      "code": "def collect_a_counts(words): return frozenset(count := 0 for word in words for count in (count + 1 if c == 'a' else 0 for c in word))",
+      "failures": [
+        {
+          "kind": "EXECUTION_OR_SUPPORT",
+          "reason": "DEFINITION_EXECUTION_ERROR",
+          "detail": "SyntaxError(\"assignment expression cannot rebind comprehension iteration variable 'count'\")"
+        }
+      ],
+      "forced": true
+    },
+    {
+      "condition": "ON_SET",
+      "functional": true,
+      "joint": false,
+      "exact_frozenset": false,
+      "code": "def collect_a_counts(words): return set({sum(1 for c in word if c == 'a') for word in words})",
+      "failures": [],
+      "forced": true
+    }
+  ],
+  "same_history_comparisons": [
+    {
+      "constructor": "SET",
+      "same_history": true,
+      "logits": {
+        "max_abs": 2.1323933601379395,
+        "rms": 0.3840289632550681,
+        "relative_l2": 0.08245322538742107,
+        "exact": false
+      },
+      "off_top1": 2306,
+      "on_top1": 2306,
+      "cache_layers": {
+        "0_keys": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "0_values": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "1_keys": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "1_values": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "2_keys": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "2_values": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "3_keys": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "3_values": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "4_keys": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "4_values": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "5_keys": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "5_values": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "6_keys": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "6_values": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "7_keys": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "7_values": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "8_keys": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "8_values": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "9_keys": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "9_values": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "10_keys": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "10_values": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "11_keys": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "11_values": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "12_keys": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "12_values": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "13_keys": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "13_values": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "14_keys": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "14_values": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "15_keys": {
+          "max_abs": 1.0270193219184875,
+          "rms": 0.01192111606683557,
+          "relative_l2": 0.006338324432047486,
+          "exact": false
+        },
+        "15_values": {
+          "max_abs": 0.23184560239315033,
+          "rms": 0.004597913921645717,
+          "relative_l2": 0.009426931970931194,
+          "exact": false
+        },
+        "16_keys": {
+          "max_abs": 1.7940099239349365,
+          "rms": 0.013832723394074514,
+          "relative_l2": 0.00783510537362555,
+          "exact": false
+        },
+        "16_values": {
+          "max_abs": 0.3712276518344879,
+          "rms": 0.0074929300040097275,
+          "relative_l2": 0.011786042739996616,
+          "exact": false
+        },
+        "17_keys": {
+          "max_abs": 0.949385404586792,
+          "rms": 0.012124262112583006,
+          "relative_l2": 0.006426400452485262,
+          "exact": false
+        },
+        "17_values": {
+          "max_abs": 0.3098449409008026,
+          "rms": 0.006431750358060488,
+          "relative_l2": 0.010935040255942479,
+          "exact": false
+        },
+        "18_keys": {
+          "max_abs": 0.7431061267852783,
+          "rms": 0.01377227819901046,
+          "relative_l2": 0.007454761607420493,
+          "exact": false
+        },
+        "18_values": {
+          "max_abs": 0.25929269194602966,
+          "rms": 0.006306741423645406,
+          "relative_l2": 0.008899932696950642,
+          "exact": false
+        },
+        "19_keys": {
+          "max_abs": 0.7350181341171265,
+          "rms": 0.011840717871168497,
+          "relative_l2": 0.00609017646587067,
+          "exact": false
+        },
+        "19_values": {
+          "max_abs": 0.37897706031799316,
+          "rms": 0.008883364127919161,
+          "relative_l2": 0.013268707074457327,
+          "exact": false
+        },
+        "20_keys": {
+          "max_abs": 1.9665929675102234,
+          "rms": 0.021516534822227987,
+          "relative_l2": 0.011311774303297984,
+          "exact": false
+        },
+        "20_values": {
+          "max_abs": 0.7428129613399506,
+          "rms": 0.011135771107077325,
+          "relative_l2": 0.016794350026750258,
+          "exact": false
+        },
+        "21_keys": {
+          "max_abs": 1.1380248069763184,
+          "rms": 0.016584740388307383,
+          "relative_l2": 0.008558277198258088,
+          "exact": false
+        },
+        "21_values": {
+          "max_abs": 0.7311335504055023,
+          "rms": 0.013894634713985722,
+          "relative_l2": 0.018479441389169866,
+          "exact": false
+        },
+        "22_keys": {
+          "max_abs": 3.3245749473571777,
+          "rms": 0.025891051960551935,
+          "relative_l2": 0.013167848129693982,
+          "exact": false
+        },
+        "22_values": {
+          "max_abs": 1.2829046249389648,
+          "rms": 0.024289822561197702,
+          "relative_l2": 0.025980022017338147,
+          "exact": false
+        },
+        "23_keys": {
+          "max_abs": 1.0347278115805238,
+          "rms": 0.019669245707879986,
+          "relative_l2": 0.008934416721523638,
+          "exact": false
+        },
+        "23_values": {
+          "max_abs": 0.9925953149795532,
+          "rms": 0.01839848480487493,
+          "relative_l2": 0.019194098796532524,
+          "exact": false
+        },
+        "24_keys": {
+          "max_abs": 1.8738939762115479,
+          "rms": 0.022115704745749077,
+          "relative_l2": 0.011706967214637464,
+          "exact": false
+        },
+        "24_values": {
+          "max_abs": 1.2009270191192627,
+          "rms": 0.026522566291614,
+          "relative_l2": 0.02009821003514708,
+          "exact": false
+        },
+        "25_keys": {
+          "max_abs": 1.445325255393982,
+          "rms": 0.028084576889176968,
+          "relative_l2": 0.013840200386596021,
+          "exact": false
+        },
+        "25_values": {
+          "max_abs": 2.119296669960022,
+          "rms": 0.04030041951084036,
+          "relative_l2": 0.0334908510211937,
+          "exact": false
+        },
+        "26_keys": {
+          "max_abs": 1.3212127387523651,
+          "rms": 0.028477677872524344,
+          "relative_l2": 0.016275916602124102,
+          "exact": false
+        },
+        "26_values": {
+          "max_abs": 2.013458013534546,
+          "rms": 0.046089127530594035,
+          "relative_l2": 0.03170209282437905,
+          "exact": false
+        },
+        "27_keys": {
+          "max_abs": 2.0966956615448,
+          "rms": 0.03417059037322142,
+          "relative_l2": 0.020328553554359727,
+          "exact": false
+        },
+        "27_values": {
+          "max_abs": 3.1024688482284546,
+          "rms": 0.05865199420558567,
+          "relative_l2": 0.035902434418187655,
+          "exact": false
+        },
+        "28_keys": {
+          "max_abs": 2.4167317748069763,
+          "rms": 0.036685088720565945,
+          "relative_l2": 0.020502911952951987,
+          "exact": false
+        },
+        "28_values": {
+          "max_abs": 3.3314309120178223,
+          "rms": 0.06732200955230927,
+          "relative_l2": 0.0386015871868908,
+          "exact": false
+        },
+        "29_keys": {
+          "max_abs": 2.026144027709961,
+          "rms": 0.037266886847569264,
+          "relative_l2": 0.020808665732566616,
+          "exact": false
+        },
+        "29_values": {
+          "max_abs": 3.9093974828720093,
+          "rms": 0.09160039028156478,
+          "relative_l2": 0.03407784112740916,
+          "exact": false
+        },
+        "30_keys": {
+          "max_abs": 2.3201151117682457,
+          "rms": 0.037187722006848514,
+          "relative_l2": 0.01872335190204168,
+          "exact": false
+        },
+        "30_values": {
+          "max_abs": 6.894408702850342,
+          "rms": 0.12579982033384532,
+          "relative_l2": 0.04623129751844981,
+          "exact": false
+        },
+        "31_keys": {
+          "max_abs": 2.495685577392578,
+          "rms": 0.03964964613798811,
+          "relative_l2": 0.021644163639477947,
+          "exact": false
+        },
+        "31_values": {
+          "max_abs": 5.796324968338013,
+          "rms": 0.12477265103381632,
+          "relative_l2": 0.03716404704475654,
+          "exact": false
+        },
+        "32_keys": {
+          "max_abs": 1.861875295639038,
+          "rms": 0.035580101923088615,
+          "relative_l2": 0.01953640729508219,
+          "exact": false
+        },
+        "32_values": {
+          "max_abs": 8.10331130027771,
+          "rms": 0.16487392547212074,
+          "relative_l2": 0.04090979102739139,
+          "exact": false
+        },
+        "33_keys": {
+          "max_abs": 3.053263545036316,
+          "rms": 0.03822347503851086,
+          "relative_l2": 0.022354771243899906,
+          "exact": false
+        },
+        "33_values": {
+          "max_abs": 11.0778169631958,
+          "rms": 0.2009587912965365,
+          "relative_l2": 0.033576871189410995,
+          "exact": false
+        },
+        "34_keys": {
+          "max_abs": 2.463920682668686,
+          "rms": 0.041882816022291415,
+          "relative_l2": 0.02236844187411311,
+          "exact": false
+        },
+        "34_values": {
+          "max_abs": 9.522046089172363,
+          "rms": 0.207967809625257,
+          "relative_l2": 0.04019518531134173,
+          "exact": false
+        },
+        "35_keys": {
+          "max_abs": 5.358152389526367,
+          "rms": 0.04435312055632136,
+          "relative_l2": 0.019190586757670925,
+          "exact": false
+        },
+        "35_values": {
+          "max_abs": 6.56132960319519,
+          "rms": 0.14838223913094603,
+          "relative_l2": 0.0470531710117391,
+          "exact": false
+        }
+      }
+    },
+    {
+      "constructor": "FRO",
+      "same_history": true,
+      "logits": {
+        "max_abs": 1.7596583366394043,
+        "rms": 0.4640948845420702,
+        "relative_l2": 0.09751504713842099,
+        "exact": false
+      },
+      "off_top1": 11512,
+      "on_top1": 11512,
+      "cache_layers": {
+        "0_keys": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "0_values": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "1_keys": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "1_values": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "2_keys": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "2_values": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "3_keys": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "3_values": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "4_keys": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "4_values": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "5_keys": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "5_values": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "6_keys": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "6_values": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "7_keys": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "7_values": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "8_keys": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "8_values": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "9_keys": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "9_values": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "10_keys": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "10_values": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "11_keys": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "11_values": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "12_keys": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "12_values": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "13_keys": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "13_values": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "14_keys": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "14_values": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "relative_l2": 0.0,
+          "exact": true
+        },
+        "15_keys": {
+          "max_abs": 1.0270193219184875,
+          "rms": 0.011842943970830633,
+          "relative_l2": 0.006292408167004642,
+          "exact": false
+        },
+        "15_values": {
+          "max_abs": 0.23184560239315033,
+          "rms": 0.00456776334123947,
+          "relative_l2": 0.00937875269171877,
+          "exact": false
+        },
+        "16_keys": {
+          "max_abs": 1.7940099239349365,
+          "rms": 0.013784837757950598,
+          "relative_l2": 0.00779872867765428,
+          "exact": false
+        },
+        "16_values": {
+          "max_abs": 0.3712276518344879,
+          "rms": 0.007460090651517647,
+          "relative_l2": 0.011752371169545158,
+          "exact": false
+        },
+        "17_keys": {
+          "max_abs": 0.949385404586792,
+          "rms": 0.012129888326071292,
+          "relative_l2": 0.006428041938760621,
+          "exact": false
+        },
+        "17_values": {
+          "max_abs": 0.3098449409008026,
+          "rms": 0.00642047884463649,
+          "relative_l2": 0.010940374376741639,
+          "exact": false
+        },
+        "18_keys": {
+          "max_abs": 0.7431061267852783,
+          "rms": 0.013794318369817536,
+          "relative_l2": 0.00746155664794022,
+          "exact": false
+        },
+        "18_values": {
+          "max_abs": 0.25929269194602966,
+          "rms": 0.006364956715020796,
+          "relative_l2": 0.008998517924558825,
+          "exact": false
+        },
+        "19_keys": {
+          "max_abs": 0.7350181341171265,
+          "rms": 0.011912928252370914,
+          "relative_l2": 0.006123742486583899,
+          "exact": false
+        },
+        "19_values": {
+          "max_abs": 0.37897706031799316,
+          "rms": 0.00895215715480436,
+          "relative_l2": 0.013361808539201527,
+          "exact": false
+        },
+        "20_keys": {
+          "max_abs": 1.9665929675102234,
+          "rms": 0.021684340789506703,
+          "relative_l2": 0.011396189150882427,
+          "exact": false
+        },
+        "20_values": {
+          "max_abs": 0.7428129613399506,
+          "rms": 0.011189328463795766,
+          "relative_l2": 0.016872380722847243,
+          "exact": false
+        },
+        "21_keys": {
+          "max_abs": 1.1380248069763184,
+          "rms": 0.01665045810293503,
+          "relative_l2": 0.008589076356761783,
+          "exact": false
+        },
+        "21_values": {
+          "max_abs": 0.7311335504055023,
+          "rms": 0.013974642150984276,
+          "relative_l2": 0.01856735758171904,
+          "exact": false
+        },
+        "22_keys": {
+          "max_abs": 3.3245749473571777,
+          "rms": 0.026068020163998045,
+          "relative_l2": 0.013241099212928284,
+          "exact": false
+        },
+        "22_values": {
+          "max_abs": 1.2829046249389648,
+          "rms": 0.024520305483201242,
+          "relative_l2": 0.02621854314610167,
+          "exact": false
+        },
+        "23_keys": {
+          "max_abs": 1.0347278115805238,
+          "rms": 0.02016158038610568,
+          "relative_l2": 0.00915100309875359,
+          "exact": false
+        },
+        "23_values": {
+          "max_abs": 0.9925953149795532,
+          "rms": 0.018629897981990707,
+          "relative_l2": 0.01941268885056973,
+          "exact": false
+        },
+        "24_keys": {
+          "max_abs": 1.8738939762115479,
+          "rms": 0.0223770405893622,
+          "relative_l2": 0.011840248392115376,
+          "exact": false
+        },
+        "24_values": {
+          "max_abs": 1.2009270191192627,
+          "rms": 0.026669157089166375,
+          "relative_l2": 0.020127000129480134,
+          "exact": false
+        },
+        "25_keys": {
+          "max_abs": 1.445325255393982,
+          "rms": 0.0281232797846812,
+          "relative_l2": 0.013852842583820172,
+          "exact": false
+        },
+        "25_values": {
+          "max_abs": 2.119296669960022,
+          "rms": 0.04021136034009574,
+          "relative_l2": 0.03333718120099882,
+          "exact": false
+        },
+        "26_keys": {
+          "max_abs": 1.3212127387523651,
+          "rms": 0.029093069749147254,
+          "relative_l2": 0.01662354743858885,
+          "exact": false
+        },
+        "26_values": {
+          "max_abs": 2.013458013534546,
+          "rms": 0.046944559048156705,
+          "relative_l2": 0.03214386124520285,
+          "exact": false
+        },
+        "27_keys": {
+          "max_abs": 2.0966956615448,
+          "rms": 0.03453413183008703,
+          "relative_l2": 0.020538638053935625,
+          "exact": false
+        },
+        "27_values": {
+          "max_abs": 3.1024688482284546,
+          "rms": 0.05886400720171026,
+          "relative_l2": 0.035908695765852865,
+          "exact": false
+        },
+        "28_keys": {
+          "max_abs": 2.4167317748069763,
+          "rms": 0.036732040451283504,
+          "relative_l2": 0.020522310773334242,
+          "exact": false
+        },
+        "28_values": {
+          "max_abs": 3.3314309120178223,
+          "rms": 0.067445883157081,
+          "relative_l2": 0.038586305144060314,
+          "exact": false
+        },
+        "29_keys": {
+          "max_abs": 2.026144027709961,
+          "rms": 0.037674865234609965,
+          "relative_l2": 0.021033162068434766,
+          "exact": false
+        },
+        "29_values": {
+          "max_abs": 3.9093974828720093,
+          "rms": 0.0920527690440929,
+          "relative_l2": 0.03403306111164649,
+          "exact": false
+        },
+        "30_keys": {
+          "max_abs": 2.3201151117682457,
+          "rms": 0.037515177405966035,
+          "relative_l2": 0.018891129647117286,
+          "exact": false
+        },
+        "30_values": {
+          "max_abs": 6.894408702850342,
+          "rms": 0.12620302465403377,
+          "relative_l2": 0.04628085814207011,
+          "exact": false
+        },
+        "31_keys": {
+          "max_abs": 2.495685577392578,
+          "rms": 0.03995437394741576,
+          "relative_l2": 0.021813960452719203,
+          "exact": false
+        },
+        "31_values": {
+          "max_abs": 5.796324968338013,
+          "rms": 0.12582756024943773,
+          "relative_l2": 0.03733338760585864,
+          "exact": false
+        },
+        "32_keys": {
+          "max_abs": 1.861875295639038,
+          "rms": 0.035875390549187335,
+          "relative_l2": 0.019695964409680675,
+          "exact": false
+        },
+        "32_values": {
+          "max_abs": 8.10331130027771,
+          "rms": 0.16634858117224585,
+          "relative_l2": 0.04107948864529042,
+          "exact": false
+        },
+        "33_keys": {
+          "max_abs": 3.053263545036316,
+          "rms": 0.038134940453333974,
+          "relative_l2": 0.022309757984293136,
+          "exact": false
+        },
+        "33_values": {
+          "max_abs": 8.023702621459961,
+          "rms": 0.19993140037146387,
+          "relative_l2": 0.03320813397517401,
+          "exact": false
+        },
+        "34_keys": {
+          "max_abs": 2.463920682668686,
+          "rms": 0.042021797754276474,
+          "relative_l2": 0.02243997781314679,
+          "exact": false
+        },
+        "34_values": {
+          "max_abs": 9.522046089172363,
+          "rms": 0.2125036071230841,
+          "relative_l2": 0.04079354906999809,
+          "exact": false
+        },
+        "35_keys": {
+          "max_abs": 5.358152389526367,
+          "rms": 0.04735476555274857,
+          "relative_l2": 0.020462095518886305,
+          "exact": false
+        },
+        "35_values": {
+          "max_abs": 14.683013916015625,
+          "rms": 0.19829841093463205,
+          "relative_l2": 0.062424398313634805,
+          "exact": false
+        }
+      }
+    }
+  ],
+  "forced_branches_not_natural_success": true
+}

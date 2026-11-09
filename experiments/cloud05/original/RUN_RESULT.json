@@ -1,0 +1,11 @@
+{
+  "status": "SIMPLE_BASELINE_NOT_STABLE",
+  "report": "execution/FINAL_REPORT.md",
+  "matrix_completed": 64,
+  "machine_shutdown_command_succeeded": true,
+  "post_shutdown_connection_refused": true,
+  "billing_verified": false,
+  "results_verified": true,
+  "frozen_artifacts_unchanged": true,
+  "execution_controller_sha256": "5252f36112fb6cbe32a3ea9cc31bfa2eb9bbafeaf8730f20dc65af824a9e1d44"
+}

@@ -1,0 +1,2210 @@
+[
+  {
+    "id": "tab_stop_expansion_E_W3",
+    "family": "tab_stop_expansion",
+    "wording": "W3",
+    "category": "E",
+    "function_name": "collect_tab_views",
+    "member_type": "str",
+    "prompt": "编写 Python 函数 collect_tab_views(texts)，texts 是字符串列表。对每个字符串执行 Python 的 expandtabs(4)，按每四列一个制表位展开制表符，保留换行等其他字符，收集处理后的字符串。\n这个返回值交给下游后，只用来判断成员是否存在。整个使用期间不需要往里面放新成员，也不需要从里面移走成员。允许但不要求容器具备编辑能力。\n结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。",
+    "gold": "def collect_tab_views(texts):\n    return frozenset(text.expandtabs(4) for text in texts)\n",
+    "tests": [
+      {
+        "role": "empty",
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "role": "duplicates",
+        "args": [
+          [
+            "a\tb",
+            "a\tb",
+            "ab\tc"
+          ]
+        ],
+        "expected": [
+          "a   b",
+          "ab  c"
+        ]
+      },
+      {
+        "role": "boundary",
+        "args": [
+          [
+            "\t",
+            "abcd\tX",
+            "a\n\tb",
+            ""
+          ]
+        ],
+        "expected": [
+          "    ",
+          "abcd    X",
+          "a\n    b",
+          ""
+        ]
+      },
+      {
+        "role": "ordinary",
+        "args": [
+          [
+            "plain",
+            "xy\tz"
+          ]
+        ],
+        "expected": [
+          "plain",
+          "xy  z"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tab_stop_expansion_N_W3",
+    "family": "tab_stop_expansion",
+    "wording": "W3",
+    "category": "N",
+    "function_name": "collect_tab_views",
+    "member_type": "str",
+    "prompt": "编写 Python 函数 collect_tab_views(texts)，texts 是字符串列表。对每个字符串执行 Python 的 expandtabs(4)，按每四列一个制表位展开制表符，保留换行等其他字符，收集处理后的字符串。\n这个返回值交给下游后，要先判断成员是否存在，再往里面放新成员，并从里面移走成员。上述编辑必须在同一个返回对象上完成。\n结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。",
+    "gold": "def collect_tab_views(texts):\n    return set(text.expandtabs(4) for text in texts)\n",
+    "tests": [
+      {
+        "role": "empty",
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "role": "duplicates",
+        "args": [
+          [
+            "a\tb",
+            "a\tb",
+            "ab\tc"
+          ]
+        ],
+        "expected": [
+          "a   b",
+          "ab  c"
+        ]
+      },
+      {
+        "role": "boundary",
+        "args": [
+          [
+            "\t",
+            "abcd\tX",
+            "a\n\tb",
+            ""
+          ]
+        ],
+        "expected": [
+          "    ",
+          "abcd    X",
+          "a\n    b",
+          ""
+        ]
+      },
+      {
+        "role": "ordinary",
+        "args": [
+          [
+            "plain",
+            "xy\tz"
+          ]
+        ],
+        "expected": [
+          "plain",
+          "xy  z"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tab_stop_expansion_E_W4",
+    "family": "tab_stop_expansion",
+    "wording": "W4",
+    "category": "E",
+    "function_name": "collect_tab_views",
+    "member_type": "str",
+    "prompt": "编写 Python 函数 collect_tab_views(texts)，texts 是字符串列表。对每个字符串执行 Python 的 expandtabs(4)，按每四列一个制表位展开制表符，保留换行等其他字符，收集处理后的字符串。\n生命周期约定：读取完毕后，调用方不会继续对返回对象执行成员插入和删除；允许容器本身具备这种能力。\n结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。",
+    "gold": "def collect_tab_views(texts):\n    return frozenset(text.expandtabs(4) for text in texts)\n",
+    "tests": [
+      {
+        "role": "empty",
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "role": "duplicates",
+        "args": [
+          [
+            "a\tb",
+            "a\tb",
+            "ab\tc"
+          ]
+        ],
+        "expected": [
+          "a   b",
+          "ab  c"
+        ]
+      },
+      {
+        "role": "boundary",
+        "args": [
+          [
+            "\t",
+            "abcd\tX",
+            "a\n\tb",
+            ""
+          ]
+        ],
+        "expected": [
+          "    ",
+          "abcd    X",
+          "a\n    b",
+          ""
+        ]
+      },
+      {
+        "role": "ordinary",
+        "args": [
+          [
+            "plain",
+            "xy\tz"
+          ]
+        ],
+        "expected": [
+          "plain",
+          "xy  z"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tab_stop_expansion_N_W4",
+    "family": "tab_stop_expansion",
+    "wording": "W4",
+    "category": "N",
+    "function_name": "collect_tab_views",
+    "member_type": "str",
+    "prompt": "编写 Python 函数 collect_tab_views(texts)，texts 是字符串列表。对每个字符串执行 Python 的 expandtabs(4)，按每四列一个制表位展开制表符，保留换行等其他字符，收集处理后的字符串。\n生命周期约定：读取完毕后，调用方会继续对返回对象执行成员插入和删除；操作必须保留对象身份。\n结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。",
+    "gold": "def collect_tab_views(texts):\n    return set(text.expandtabs(4) for text in texts)\n",
+    "tests": [
+      {
+        "role": "empty",
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "role": "duplicates",
+        "args": [
+          [
+            "a\tb",
+            "a\tb",
+            "ab\tc"
+          ]
+        ],
+        "expected": [
+          "a   b",
+          "ab  c"
+        ]
+      },
+      {
+        "role": "boundary",
+        "args": [
+          [
+            "\t",
+            "abcd\tX",
+            "a\n\tb",
+            ""
+          ]
+        ],
+        "expected": [
+          "    ",
+          "abcd    X",
+          "a\n    b",
+          ""
+        ]
+      },
+      {
+        "role": "ordinary",
+        "args": [
+          [
+            "plain",
+            "xy\tz"
+          ]
+        ],
+        "expected": [
+          "plain",
+          "xy  z"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "python_literal_representation_E_W3",
+    "family": "python_literal_representation",
+    "wording": "W3",
+    "category": "E",
+    "function_name": "collect_literal_views",
+    "member_type": "str",
+    "prompt": "编写 Python 函数 collect_literal_views(texts)，texts 是字符串列表。对每个元素调用 Python 内置 repr，收集得到的字符串表示；引号、反斜杠和转义序列都是结果的一部分，不要调用 eval。\n这个返回值交给下游后，只用来判断成员是否存在。整个使用期间不需要往里面放新成员，也不需要从里面移走成员。允许但不要求容器具备编辑能力。\n结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。",
+    "gold": "def collect_literal_views(texts):\n    return frozenset(repr(text) for text in texts)\n",
+    "tests": [
+      {
+        "role": "empty",
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "role": "duplicates",
+        "args": [
+          [
+            "a",
+            "a",
+            "can't"
+          ]
+        ],
+        "expected": [
+          "'a'",
+          "\"can't\""
+        ]
+      },
+      {
+        "role": "boundary",
+        "args": [
+          [
+            "",
+            "\n",
+            "\\"
+          ]
+        ],
+        "expected": [
+          "''",
+          "'\\n'",
+          "'\\\\'"
+        ]
+      },
+      {
+        "role": "ordinary",
+        "args": [
+          [
+            "中文",
+            "a\tb"
+          ]
+        ],
+        "expected": [
+          "'中文'",
+          "'a\\tb'"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "python_literal_representation_N_W3",
+    "family": "python_literal_representation",
+    "wording": "W3",
+    "category": "N",
+    "function_name": "collect_literal_views",
+    "member_type": "str",
+    "prompt": "编写 Python 函数 collect_literal_views(texts)，texts 是字符串列表。对每个元素调用 Python 内置 repr，收集得到的字符串表示；引号、反斜杠和转义序列都是结果的一部分，不要调用 eval。\n这个返回值交给下游后，要先判断成员是否存在，再往里面放新成员，并从里面移走成员。上述编辑必须在同一个返回对象上完成。\n结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。",
+    "gold": "def collect_literal_views(texts):\n    return set(repr(text) for text in texts)\n",
+    "tests": [
+      {
+        "role": "empty",
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "role": "duplicates",
+        "args": [
+          [
+            "a",
+            "a",
+            "can't"
+          ]
+        ],
+        "expected": [
+          "'a'",
+          "\"can't\""
+        ]
+      },
+      {
+        "role": "boundary",
+        "args": [
+          [
+            "",
+            "\n",
+            "\\"
+          ]
+        ],
+        "expected": [
+          "''",
+          "'\\n'",
+          "'\\\\'"
+        ]
+      },
+      {
+        "role": "ordinary",
+        "args": [
+          [
+            "中文",
+            "a\tb"
+          ]
+        ],
+        "expected": [
+          "'中文'",
+          "'a\\tb'"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "python_literal_representation_E_W4",
+    "family": "python_literal_representation",
+    "wording": "W4",
+    "category": "E",
+    "function_name": "collect_literal_views",
+    "member_type": "str",
+    "prompt": "编写 Python 函数 collect_literal_views(texts)，texts 是字符串列表。对每个元素调用 Python 内置 repr，收集得到的字符串表示；引号、反斜杠和转义序列都是结果的一部分，不要调用 eval。\n生命周期约定：读取完毕后，调用方不会继续对返回对象执行成员插入和删除；允许容器本身具备这种能力。\n结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。",
+    "gold": "def collect_literal_views(texts):\n    return frozenset(repr(text) for text in texts)\n",
+    "tests": [
+      {
+        "role": "empty",
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "role": "duplicates",
+        "args": [
+          [
+            "a",
+            "a",
+            "can't"
+          ]
+        ],
+        "expected": [
+          "'a'",
+          "\"can't\""
+        ]
+      },
+      {
+        "role": "boundary",
+        "args": [
+          [
+            "",
+            "\n",
+            "\\"
+          ]
+        ],
+        "expected": [
+          "''",
+          "'\\n'",
+          "'\\\\'"
+        ]
+      },
+      {
+        "role": "ordinary",
+        "args": [
+          [
+            "中文",
+            "a\tb"
+          ]
+        ],
+        "expected": [
+          "'中文'",
+          "'a\\tb'"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "python_literal_representation_N_W4",
+    "family": "python_literal_representation",
+    "wording": "W4",
+    "category": "N",
+    "function_name": "collect_literal_views",
+    "member_type": "str",
+    "prompt": "编写 Python 函数 collect_literal_views(texts)，texts 是字符串列表。对每个元素调用 Python 内置 repr，收集得到的字符串表示；引号、反斜杠和转义序列都是结果的一部分，不要调用 eval。\n生命周期约定：读取完毕后，调用方会继续对返回对象执行成员插入和删除；操作必须保留对象身份。\n结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。",
+    "gold": "def collect_literal_views(texts):\n    return set(repr(text) for text in texts)\n",
+    "tests": [
+      {
+        "role": "empty",
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "role": "duplicates",
+        "args": [
+          [
+            "a",
+            "a",
+            "can't"
+          ]
+        ],
+        "expected": [
+          "'a'",
+          "\"can't\""
+        ]
+      },
+      {
+        "role": "boundary",
+        "args": [
+          [
+            "",
+            "\n",
+            "\\"
+          ]
+        ],
+        "expected": [
+          "''",
+          "'\\n'",
+          "'\\\\'"
+        ]
+      },
+      {
+        "role": "ordinary",
+        "args": [
+          [
+            "中文",
+            "a\tb"
+          ]
+        ],
+        "expected": [
+          "'中文'",
+          "'a\\tb'"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "centered_text_padding_E_W3",
+    "family": "centered_text_padding",
+    "wording": "W3",
+    "category": "E",
+    "function_name": "collect_centered_views",
+    "member_type": "str",
+    "prompt": "编写 Python 函数 collect_centered_views(texts)，texts 是字符串列表。对每个字符串调用 center(6, \".\")，收集居中后的字符串；宽度已经达到六或超过六的字符串保持原样，奇数填充遵循该 Python 方法。\n这个返回值交给下游后，只用来判断成员是否存在。整个使用期间不需要往里面放新成员，也不需要从里面移走成员。允许但不要求容器具备编辑能力。\n结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。",
+    "gold": "def collect_centered_views(texts):\n    return frozenset(text.center(6, '.') for text in texts)\n",
+    "tests": [
+      {
+        "role": "empty",
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "role": "duplicates",
+        "args": [
+          [
+            "ab",
+            "ab",
+            "a"
+          ]
+        ],
+        "expected": [
+          "..ab..",
+          "..a..."
+        ]
+      },
+      {
+        "role": "boundary",
+        "args": [
+          [
+            "",
+            "123456",
+            "1234567"
+          ]
+        ],
+        "expected": [
+          "......",
+          "123456",
+          "1234567"
+        ]
+      },
+      {
+        "role": "ordinary",
+        "args": [
+          [
+            "abc",
+            "abcd",
+            "abcde"
+          ]
+        ],
+        "expected": [
+          ".abc..",
+          ".abcd.",
+          "abcde."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "centered_text_padding_N_W3",
+    "family": "centered_text_padding",
+    "wording": "W3",
+    "category": "N",
+    "function_name": "collect_centered_views",
+    "member_type": "str",
+    "prompt": "编写 Python 函数 collect_centered_views(texts)，texts 是字符串列表。对每个字符串调用 center(6, \".\")，收集居中后的字符串；宽度已经达到六或超过六的字符串保持原样，奇数填充遵循该 Python 方法。\n这个返回值交给下游后，要先判断成员是否存在，再往里面放新成员，并从里面移走成员。上述编辑必须在同一个返回对象上完成。\n结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。",
+    "gold": "def collect_centered_views(texts):\n    return set(text.center(6, '.') for text in texts)\n",
+    "tests": [
+      {
+        "role": "empty",
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "role": "duplicates",
+        "args": [
+          [
+            "ab",
+            "ab",
+            "a"
+          ]
+        ],
+        "expected": [
+          "..ab..",
+          "..a..."
+        ]
+      },
+      {
+        "role": "boundary",
+        "args": [
+          [
+            "",
+            "123456",
+            "1234567"
+          ]
+        ],
+        "expected": [
+          "......",
+          "123456",
+          "1234567"
+        ]
+      },
+      {
+        "role": "ordinary",
+        "args": [
+          [
+            "abc",
+            "abcd",
+            "abcde"
+          ]
+        ],
+        "expected": [
+          ".abc..",
+          ".abcd.",
+          "abcde."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "centered_text_padding_E_W4",
+    "family": "centered_text_padding",
+    "wording": "W4",
+    "category": "E",
+    "function_name": "collect_centered_views",
+    "member_type": "str",
+    "prompt": "编写 Python 函数 collect_centered_views(texts)，texts 是字符串列表。对每个字符串调用 center(6, \".\")，收集居中后的字符串；宽度已经达到六或超过六的字符串保持原样，奇数填充遵循该 Python 方法。\n生命周期约定：读取完毕后，调用方不会继续对返回对象执行成员插入和删除；允许容器本身具备这种能力。\n结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。",
+    "gold": "def collect_centered_views(texts):\n    return frozenset(text.center(6, '.') for text in texts)\n",
+    "tests": [
+      {
+        "role": "empty",
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "role": "duplicates",
+        "args": [
+          [
+            "ab",
+            "ab",
+            "a"
+          ]
+        ],
+        "expected": [
+          "..ab..",
+          "..a..."
+        ]
+      },
+      {
+        "role": "boundary",
+        "args": [
+          [
+            "",
+            "123456",
+            "1234567"
+          ]
+        ],
+        "expected": [
+          "......",
+          "123456",
+          "1234567"
+        ]
+      },
+      {
+        "role": "ordinary",
+        "args": [
+          [
+            "abc",
+            "abcd",
+            "abcde"
+          ]
+        ],
+        "expected": [
+          ".abc..",
+          ".abcd.",
+          "abcde."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "centered_text_padding_N_W4",
+    "family": "centered_text_padding",
+    "wording": "W4",
+    "category": "N",
+    "function_name": "collect_centered_views",
+    "member_type": "str",
+    "prompt": "编写 Python 函数 collect_centered_views(texts)，texts 是字符串列表。对每个字符串调用 center(6, \".\")，收集居中后的字符串；宽度已经达到六或超过六的字符串保持原样，奇数填充遵循该 Python 方法。\n生命周期约定：读取完毕后，调用方会继续对返回对象执行成员插入和删除；操作必须保留对象身份。\n结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。",
+    "gold": "def collect_centered_views(texts):\n    return set(text.center(6, '.') for text in texts)\n",
+    "tests": [
+      {
+        "role": "empty",
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "role": "duplicates",
+        "args": [
+          [
+            "ab",
+            "ab",
+            "a"
+          ]
+        ],
+        "expected": [
+          "..ab..",
+          "..a..."
+        ]
+      },
+      {
+        "role": "boundary",
+        "args": [
+          [
+            "",
+            "123456",
+            "1234567"
+          ]
+        ],
+        "expected": [
+          "......",
+          "123456",
+          "1234567"
+        ]
+      },
+      {
+        "role": "ordinary",
+        "args": [
+          [
+            "abc",
+            "abcd",
+            "abcde"
+          ]
+        ],
+        "expected": [
+          ".abc..",
+          ".abcd.",
+          "abcde."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "integral_float_predicate_E_W3",
+    "family": "integral_float_predicate",
+    "wording": "W3",
+    "category": "E",
+    "function_name": "collect_integrality_flags",
+    "member_type": "bool",
+    "prompt": "编写 Python 函数 collect_integrality_flags(values)，values 是有限 float 值的列表。对每个值调用 is_integer()，收集布尔结果；正负零均视为整数值，非零小数部分得到 False，不要把结果改成整数 0 或 1。\n这个返回值交给下游后，只用来判断成员是否存在。整个使用期间不需要往里面放新成员，也不需要从里面移走成员。允许但不要求容器具备编辑能力。\n结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。",
+    "gold": "def collect_integrality_flags(values):\n    return frozenset(value.is_integer() for value in values)\n",
+    "tests": [
+      {
+        "role": "empty",
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "role": "duplicates",
+        "args": [
+          [
+            1.0,
+            1.0,
+            2.5
+          ]
+        ],
+        "expected": [
+          true,
+          false
+        ]
+      },
+      {
+        "role": "boundary",
+        "args": [
+          [
+            -0.0,
+            0.0,
+            -2.5
+          ]
+        ],
+        "expected": [
+          true,
+          false
+        ]
+      },
+      {
+        "role": "ordinary",
+        "args": [
+          [
+            3.25,
+            -1.75
+          ]
+        ],
+        "expected": [
+          false
+        ]
+      }
+    ]
+  },
+  {
+    "id": "integral_float_predicate_N_W3",
+    "family": "integral_float_predicate",
+    "wording": "W3",
+    "category": "N",
+    "function_name": "collect_integrality_flags",
+    "member_type": "bool",
+    "prompt": "编写 Python 函数 collect_integrality_flags(values)，values 是有限 float 值的列表。对每个值调用 is_integer()，收集布尔结果；正负零均视为整数值，非零小数部分得到 False，不要把结果改成整数 0 或 1。\n这个返回值交给下游后，要先判断成员是否存在，再往里面放新成员，并从里面移走成员。上述编辑必须在同一个返回对象上完成。\n结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。",
+    "gold": "def collect_integrality_flags(values):\n    return set(value.is_integer() for value in values)\n",
+    "tests": [
+      {
+        "role": "empty",
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "role": "duplicates",
+        "args": [
+          [
+            1.0,
+            1.0,
+            2.5
+          ]
+        ],
+        "expected": [
+          true,
+          false
+        ]
+      },
+      {
+        "role": "boundary",
+        "args": [
+          [
+            -0.0,
+            0.0,
+            -2.5
+          ]
+        ],
+        "expected": [
+          true,
+          false
+        ]
+      },
+      {
+        "role": "ordinary",
+        "args": [
+          [
+            3.25,
+            -1.75
+          ]
+        ],
+        "expected": [
+          false
+        ]
+      }
+    ]
+  },
+  {
+    "id": "integral_float_predicate_E_W4",
+    "family": "integral_float_predicate",
+    "wording": "W4",
+    "category": "E",
+    "function_name": "collect_integrality_flags",
+    "member_type": "bool",
+    "prompt": "编写 Python 函数 collect_integrality_flags(values)，values 是有限 float 值的列表。对每个值调用 is_integer()，收集布尔结果；正负零均视为整数值，非零小数部分得到 False，不要把结果改成整数 0 或 1。\n生命周期约定：读取完毕后，调用方不会继续对返回对象执行成员插入和删除；允许容器本身具备这种能力。\n结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。",
+    "gold": "def collect_integrality_flags(values):\n    return frozenset(value.is_integer() for value in values)\n",
+    "tests": [
+      {
+        "role": "empty",
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "role": "duplicates",
+        "args": [
+          [
+            1.0,
+            1.0,
+            2.5
+          ]
+        ],
+        "expected": [
+          true,
+          false
+        ]
+      },
+      {
+        "role": "boundary",
+        "args": [
+          [
+            -0.0,
+            0.0,
+            -2.5
+          ]
+        ],
+        "expected": [
+          true,
+          false
+        ]
+      },
+      {
+        "role": "ordinary",
+        "args": [
+          [
+            3.25,
+            -1.75
+          ]
+        ],
+        "expected": [
+          false
+        ]
+      }
+    ]
+  },
+  {
+    "id": "integral_float_predicate_N_W4",
+    "family": "integral_float_predicate",
+    "wording": "W4",
+    "category": "N",
+    "function_name": "collect_integrality_flags",
+    "member_type": "bool",
+    "prompt": "编写 Python 函数 collect_integrality_flags(values)，values 是有限 float 值的列表。对每个值调用 is_integer()，收集布尔结果；正负零均视为整数值，非零小数部分得到 False，不要把结果改成整数 0 或 1。\n生命周期约定：读取完毕后，调用方会继续对返回对象执行成员插入和删除；操作必须保留对象身份。\n结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。",
+    "gold": "def collect_integrality_flags(values):\n    return set(value.is_integer() for value in values)\n",
+    "tests": [
+      {
+        "role": "empty",
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "role": "duplicates",
+        "args": [
+          [
+            1.0,
+            1.0,
+            2.5
+          ]
+        ],
+        "expected": [
+          true,
+          false
+        ]
+      },
+      {
+        "role": "boundary",
+        "args": [
+          [
+            -0.0,
+            0.0,
+            -2.5
+          ]
+        ],
+        "expected": [
+          true,
+          false
+        ]
+      },
+      {
+        "role": "ordinary",
+        "args": [
+          [
+            3.25,
+            -1.75
+          ]
+        ],
+        "expected": [
+          false
+        ]
+      }
+    ]
+  },
+  {
+    "id": "least_significant_one_value_E_W3",
+    "family": "least_significant_one_value",
+    "wording": "W3",
+    "category": "E",
+    "function_name": "collect_lowbit_values",
+    "member_type": "int",
+    "prompt": "编写 Python 函数 collect_lowbit_values(numbers)，numbers 是非负整数列表。对每个整数 n，求二进制表示中最低位的 1 所代表的数值；n 为零时结果为零。例如 12 的结果为 4，10 的结果为 2。\n这个返回值交给下游后，只用来判断成员是否存在。整个使用期间不需要往里面放新成员，也不需要从里面移走成员。允许但不要求容器具备编辑能力。\n结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。",
+    "gold": "def collect_lowbit_values(numbers):\n    return frozenset(n & -n for n in numbers)\n",
+    "tests": [
+      {
+        "role": "empty",
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "role": "duplicates",
+        "args": [
+          [
+            12,
+            10,
+            12,
+            6
+          ]
+        ],
+        "expected": [
+          4,
+          2
+        ]
+      },
+      {
+        "role": "boundary",
+        "args": [
+          [
+            0,
+            1,
+            16,
+            128
+          ]
+        ],
+        "expected": [
+          0,
+          1,
+          16,
+          128
+        ]
+      },
+      {
+        "role": "ordinary",
+        "args": [
+          [
+            7,
+            24,
+            40
+          ]
+        ],
+        "expected": [
+          1,
+          8
+        ]
+      }
+    ]
+  },
+  {
+    "id": "least_significant_one_value_N_W3",
+    "family": "least_significant_one_value",
+    "wording": "W3",
+    "category": "N",
+    "function_name": "collect_lowbit_values",
+    "member_type": "int",
+    "prompt": "编写 Python 函数 collect_lowbit_values(numbers)，numbers 是非负整数列表。对每个整数 n，求二进制表示中最低位的 1 所代表的数值；n 为零时结果为零。例如 12 的结果为 4，10 的结果为 2。\n这个返回值交给下游后，要先判断成员是否存在，再往里面放新成员，并从里面移走成员。上述编辑必须在同一个返回对象上完成。\n结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。",
+    "gold": "def collect_lowbit_values(numbers):\n    return set(n & -n for n in numbers)\n",
+    "tests": [
+      {
+        "role": "empty",
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "role": "duplicates",
+        "args": [
+          [
+            12,
+            10,
+            12,
+            6
+          ]
+        ],
+        "expected": [
+          4,
+          2
+        ]
+      },
+      {
+        "role": "boundary",
+        "args": [
+          [
+            0,
+            1,
+            16,
+            128
+          ]
+        ],
+        "expected": [
+          0,
+          1,
+          16,
+          128
+        ]
+      },
+      {
+        "role": "ordinary",
+        "args": [
+          [
+            7,
+            24,
+            40
+          ]
+        ],
+        "expected": [
+          1,
+          8
+        ]
+      }
+    ]
+  },
+  {
+    "id": "least_significant_one_value_E_W4",
+    "family": "least_significant_one_value",
+    "wording": "W4",
+    "category": "E",
+    "function_name": "collect_lowbit_values",
+    "member_type": "int",
+    "prompt": "编写 Python 函数 collect_lowbit_values(numbers)，numbers 是非负整数列表。对每个整数 n，求二进制表示中最低位的 1 所代表的数值；n 为零时结果为零。例如 12 的结果为 4，10 的结果为 2。\n生命周期约定：读取完毕后，调用方不会继续对返回对象执行成员插入和删除；允许容器本身具备这种能力。\n结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。",
+    "gold": "def collect_lowbit_values(numbers):\n    return frozenset(n & -n for n in numbers)\n",
+    "tests": [
+      {
+        "role": "empty",
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "role": "duplicates",
+        "args": [
+          [
+            12,
+            10,
+            12,
+            6
+          ]
+        ],
+        "expected": [
+          4,
+          2
+        ]
+      },
+      {
+        "role": "boundary",
+        "args": [
+          [
+            0,
+            1,
+            16,
+            128
+          ]
+        ],
+        "expected": [
+          0,
+          1,
+          16,
+          128
+        ]
+      },
+      {
+        "role": "ordinary",
+        "args": [
+          [
+            7,
+            24,
+            40
+          ]
+        ],
+        "expected": [
+          1,
+          8
+        ]
+      }
+    ]
+  },
+  {
+    "id": "least_significant_one_value_N_W4",
+    "family": "least_significant_one_value",
+    "wording": "W4",
+    "category": "N",
+    "function_name": "collect_lowbit_values",
+    "member_type": "int",
+    "prompt": "编写 Python 函数 collect_lowbit_values(numbers)，numbers 是非负整数列表。对每个整数 n，求二进制表示中最低位的 1 所代表的数值；n 为零时结果为零。例如 12 的结果为 4，10 的结果为 2。\n生命周期约定：读取完毕后，调用方会继续对返回对象执行成员插入和删除；操作必须保留对象身份。\n结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。",
+    "gold": "def collect_lowbit_values(numbers):\n    return set(n & -n for n in numbers)\n",
+    "tests": [
+      {
+        "role": "empty",
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "role": "duplicates",
+        "args": [
+          [
+            12,
+            10,
+            12,
+            6
+          ]
+        ],
+        "expected": [
+          4,
+          2
+        ]
+      },
+      {
+        "role": "boundary",
+        "args": [
+          [
+            0,
+            1,
+            16,
+            128
+          ]
+        ],
+        "expected": [
+          0,
+          1,
+          16,
+          128
+        ]
+      },
+      {
+        "role": "ordinary",
+        "args": [
+          [
+            7,
+            24,
+            40
+          ]
+        ],
+        "expected": [
+          1,
+          8
+        ]
+      }
+    ]
+  },
+  {
+    "id": "modal_member_selection_E_W3",
+    "family": "modal_member_selection",
+    "wording": "W3",
+    "category": "E",
+    "function_name": "collect_modal_members",
+    "member_type": "int",
+    "prompt": "编写 Python 函数 collect_modal_members(numbers)，numbers 是整数列表。收集在整个列表中出现次数达到最大值的所有整数，出现次数并列第一时全部保留；空输入得到空结果。\n这个返回值交给下游后，只用来判断成员是否存在。整个使用期间不需要往里面放新成员，也不需要从里面移走成员。允许但不要求容器具备编辑能力。\n结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。",
+    "gold": "def collect_modal_members(numbers):\n    return frozenset(n for n in numbers if numbers.count(n) == max((numbers.count(v) for v in numbers), default=0))\n",
+    "tests": [
+      {
+        "role": "empty",
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "role": "duplicates",
+        "args": [
+          [
+            1,
+            1,
+            2,
+            2,
+            3
+          ]
+        ],
+        "expected": [
+          1,
+          2
+        ]
+      },
+      {
+        "role": "boundary",
+        "args": [
+          [
+            -1,
+            -1,
+            0
+          ]
+        ],
+        "expected": [
+          -1
+        ]
+      },
+      {
+        "role": "ordinary",
+        "args": [
+          [
+            5,
+            7,
+            9
+          ]
+        ],
+        "expected": [
+          5,
+          7,
+          9
+        ]
+      }
+    ]
+  },
+  {
+    "id": "modal_member_selection_N_W3",
+    "family": "modal_member_selection",
+    "wording": "W3",
+    "category": "N",
+    "function_name": "collect_modal_members",
+    "member_type": "int",
+    "prompt": "编写 Python 函数 collect_modal_members(numbers)，numbers 是整数列表。收集在整个列表中出现次数达到最大值的所有整数，出现次数并列第一时全部保留；空输入得到空结果。\n这个返回值交给下游后，要先判断成员是否存在，再往里面放新成员，并从里面移走成员。上述编辑必须在同一个返回对象上完成。\n结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。",
+    "gold": "def collect_modal_members(numbers):\n    return set(n for n in numbers if numbers.count(n) == max((numbers.count(v) for v in numbers), default=0))\n",
+    "tests": [
+      {
+        "role": "empty",
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "role": "duplicates",
+        "args": [
+          [
+            1,
+            1,
+            2,
+            2,
+            3
+          ]
+        ],
+        "expected": [
+          1,
+          2
+        ]
+      },
+      {
+        "role": "boundary",
+        "args": [
+          [
+            -1,
+            -1,
+            0
+          ]
+        ],
+        "expected": [
+          -1
+        ]
+      },
+      {
+        "role": "ordinary",
+        "args": [
+          [
+            5,
+            7,
+            9
+          ]
+        ],
+        "expected": [
+          5,
+          7,
+          9
+        ]
+      }
+    ]
+  },
+  {
+    "id": "modal_member_selection_E_W4",
+    "family": "modal_member_selection",
+    "wording": "W4",
+    "category": "E",
+    "function_name": "collect_modal_members",
+    "member_type": "int",
+    "prompt": "编写 Python 函数 collect_modal_members(numbers)，numbers 是整数列表。收集在整个列表中出现次数达到最大值的所有整数，出现次数并列第一时全部保留；空输入得到空结果。\n生命周期约定：读取完毕后，调用方不会继续对返回对象执行成员插入和删除；允许容器本身具备这种能力。\n结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。",
+    "gold": "def collect_modal_members(numbers):\n    return frozenset(n for n in numbers if numbers.count(n) == max((numbers.count(v) for v in numbers), default=0))\n",
+    "tests": [
+      {
+        "role": "empty",
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "role": "duplicates",
+        "args": [
+          [
+            1,
+            1,
+            2,
+            2,
+            3
+          ]
+        ],
+        "expected": [
+          1,
+          2
+        ]
+      },
+      {
+        "role": "boundary",
+        "args": [
+          [
+            -1,
+            -1,
+            0
+          ]
+        ],
+        "expected": [
+          -1
+        ]
+      },
+      {
+        "role": "ordinary",
+        "args": [
+          [
+            5,
+            7,
+            9
+          ]
+        ],
+        "expected": [
+          5,
+          7,
+          9
+        ]
+      }
+    ]
+  },
+  {
+    "id": "modal_member_selection_N_W4",
+    "family": "modal_member_selection",
+    "wording": "W4",
+    "category": "N",
+    "function_name": "collect_modal_members",
+    "member_type": "int",
+    "prompt": "编写 Python 函数 collect_modal_members(numbers)，numbers 是整数列表。收集在整个列表中出现次数达到最大值的所有整数，出现次数并列第一时全部保留；空输入得到空结果。\n生命周期约定：读取完毕后，调用方会继续对返回对象执行成员插入和删除；操作必须保留对象身份。\n结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。",
+    "gold": "def collect_modal_members(numbers):\n    return set(n for n in numbers if numbers.count(n) == max((numbers.count(v) for v in numbers), default=0))\n",
+    "tests": [
+      {
+        "role": "empty",
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "role": "duplicates",
+        "args": [
+          [
+            1,
+            1,
+            2,
+            2,
+            3
+          ]
+        ],
+        "expected": [
+          1,
+          2
+        ]
+      },
+      {
+        "role": "boundary",
+        "args": [
+          [
+            -1,
+            -1,
+            0
+          ]
+        ],
+        "expected": [
+          -1
+        ]
+      },
+      {
+        "role": "ordinary",
+        "args": [
+          [
+            5,
+            7,
+            9
+          ]
+        ],
+        "expected": [
+          5,
+          7,
+          9
+        ]
+      }
+    ]
+  },
+  {
+    "id": "run_length_expansion_E_W3",
+    "family": "run_length_expansion",
+    "wording": "W3",
+    "category": "E",
+    "function_name": "collect_expanded_runs",
+    "member_type": "str",
+    "prompt": "编写 Python 函数 collect_expanded_runs(records)，records 是多条游程记录组成的列表，每条记录是若干 [单字符字符串, 非负重复次数] 对。按每条记录的顺序重复字符并连接成一个字符串，收集每条记录展开后的字符串；空记录得到空字符串。\n这个返回值交给下游后，只用来判断成员是否存在。整个使用期间不需要往里面放新成员，也不需要从里面移走成员。允许但不要求容器具备编辑能力。\n结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。",
+    "gold": "def collect_expanded_runs(records):\n    return frozenset(''.join(ch * count for ch, count in record) for record in records)\n",
+    "tests": [
+      {
+        "role": "empty",
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "role": "duplicates",
+        "args": [
+          [
+            [
+              [
+                "a",
+                2
+              ],
+              [
+                "b",
+                1
+              ]
+            ],
+            [
+              [
+                "a",
+                2
+              ],
+              [
+                "b",
+                1
+              ]
+            ],
+            [
+              [
+                "c",
+                1
+              ]
+            ]
+          ]
+        ],
+        "expected": [
+          "aab",
+          "c"
+        ]
+      },
+      {
+        "role": "boundary",
+        "args": [
+          [
+            [],
+            [
+              [
+                "x",
+                0
+              ]
+            ],
+            [
+              [
+                "z",
+                3
+              ]
+            ]
+          ]
+        ],
+        "expected": [
+          "",
+          "zzz"
+        ]
+      },
+      {
+        "role": "ordinary",
+        "args": [
+          [
+            [
+              [
+                "a",
+                1
+              ],
+              [
+                "a",
+                2
+              ],
+              [
+                "b",
+                0
+              ]
+            ],
+            [
+              [
+                "1",
+                2
+              ],
+              [
+                "2",
+                1
+              ]
+            ]
+          ]
+        ],
+        "expected": [
+          "aaa",
+          "112"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "run_length_expansion_N_W3",
+    "family": "run_length_expansion",
+    "wording": "W3",
+    "category": "N",
+    "function_name": "collect_expanded_runs",
+    "member_type": "str",
+    "prompt": "编写 Python 函数 collect_expanded_runs(records)，records 是多条游程记录组成的列表，每条记录是若干 [单字符字符串, 非负重复次数] 对。按每条记录的顺序重复字符并连接成一个字符串，收集每条记录展开后的字符串；空记录得到空字符串。\n这个返回值交给下游后，要先判断成员是否存在，再往里面放新成员，并从里面移走成员。上述编辑必须在同一个返回对象上完成。\n结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。",
+    "gold": "def collect_expanded_runs(records):\n    return set(''.join(ch * count for ch, count in record) for record in records)\n",
+    "tests": [
+      {
+        "role": "empty",
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "role": "duplicates",
+        "args": [
+          [
+            [
+              [
+                "a",
+                2
+              ],
+              [
+                "b",
+                1
+              ]
+            ],
+            [
+              [
+                "a",
+                2
+              ],
+              [
+                "b",
+                1
+              ]
+            ],
+            [
+              [
+                "c",
+                1
+              ]
+            ]
+          ]
+        ],
+        "expected": [
+          "aab",
+          "c"
+        ]
+      },
+      {
+        "role": "boundary",
+        "args": [
+          [
+            [],
+            [
+              [
+                "x",
+                0
+              ]
+            ],
+            [
+              [
+                "z",
+                3
+              ]
+            ]
+          ]
+        ],
+        "expected": [
+          "",
+          "zzz"
+        ]
+      },
+      {
+        "role": "ordinary",
+        "args": [
+          [
+            [
+              [
+                "a",
+                1
+              ],
+              [
+                "a",
+                2
+              ],
+              [
+                "b",
+                0
+              ]
+            ],
+            [
+              [
+                "1",
+                2
+              ],
+              [
+                "2",
+                1
+              ]
+            ]
+          ]
+        ],
+        "expected": [
+          "aaa",
+          "112"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "run_length_expansion_E_W4",
+    "family": "run_length_expansion",
+    "wording": "W4",
+    "category": "E",
+    "function_name": "collect_expanded_runs",
+    "member_type": "str",
+    "prompt": "编写 Python 函数 collect_expanded_runs(records)，records 是多条游程记录组成的列表，每条记录是若干 [单字符字符串, 非负重复次数] 对。按每条记录的顺序重复字符并连接成一个字符串，收集每条记录展开后的字符串；空记录得到空字符串。\n生命周期约定：读取完毕后，调用方不会继续对返回对象执行成员插入和删除；允许容器本身具备这种能力。\n结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。",
+    "gold": "def collect_expanded_runs(records):\n    return frozenset(''.join(ch * count for ch, count in record) for record in records)\n",
+    "tests": [
+      {
+        "role": "empty",
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "role": "duplicates",
+        "args": [
+          [
+            [
+              [
+                "a",
+                2
+              ],
+              [
+                "b",
+                1
+              ]
+            ],
+            [
+              [
+                "a",
+                2
+              ],
+              [
+                "b",
+                1
+              ]
+            ],
+            [
+              [
+                "c",
+                1
+              ]
+            ]
+          ]
+        ],
+        "expected": [
+          "aab",
+          "c"
+        ]
+      },
+      {
+        "role": "boundary",
+        "args": [
+          [
+            [],
+            [
+              [
+                "x",
+                0
+              ]
+            ],
+            [
+              [
+                "z",
+                3
+              ]
+            ]
+          ]
+        ],
+        "expected": [
+          "",
+          "zzz"
+        ]
+      },
+      {
+        "role": "ordinary",
+        "args": [
+          [
+            [
+              [
+                "a",
+                1
+              ],
+              [
+                "a",
+                2
+              ],
+              [
+                "b",
+                0
+              ]
+            ],
+            [
+              [
+                "1",
+                2
+              ],
+              [
+                "2",
+                1
+              ]
+            ]
+          ]
+        ],
+        "expected": [
+          "aaa",
+          "112"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "run_length_expansion_N_W4",
+    "family": "run_length_expansion",
+    "wording": "W4",
+    "category": "N",
+    "function_name": "collect_expanded_runs",
+    "member_type": "str",
+    "prompt": "编写 Python 函数 collect_expanded_runs(records)，records 是多条游程记录组成的列表，每条记录是若干 [单字符字符串, 非负重复次数] 对。按每条记录的顺序重复字符并连接成一个字符串，收集每条记录展开后的字符串；空记录得到空字符串。\n生命周期约定：读取完毕后，调用方会继续对返回对象执行成员插入和删除；操作必须保留对象身份。\n结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。",
+    "gold": "def collect_expanded_runs(records):\n    return set(''.join(ch * count for ch, count in record) for record in records)\n",
+    "tests": [
+      {
+        "role": "empty",
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "role": "duplicates",
+        "args": [
+          [
+            [
+              [
+                "a",
+                2
+              ],
+              [
+                "b",
+                1
+              ]
+            ],
+            [
+              [
+                "a",
+                2
+              ],
+              [
+                "b",
+                1
+              ]
+            ],
+            [
+              [
+                "c",
+                1
+              ]
+            ]
+          ]
+        ],
+        "expected": [
+          "aab",
+          "c"
+        ]
+      },
+      {
+        "role": "boundary",
+        "args": [
+          [
+            [],
+            [
+              [
+                "x",
+                0
+              ]
+            ],
+            [
+              [
+                "z",
+                3
+              ]
+            ]
+          ]
+        ],
+        "expected": [
+          "",
+          "zzz"
+        ]
+      },
+      {
+        "role": "ordinary",
+        "args": [
+          [
+            [
+              [
+                "a",
+                1
+              ],
+              [
+                "a",
+                2
+              ],
+              [
+                "b",
+                0
+              ]
+            ],
+            [
+              [
+                "1",
+                2
+              ],
+              [
+                "2",
+                1
+              ]
+            ]
+          ]
+        ],
+        "expected": [
+          "aaa",
+          "112"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "dna_reverse_complement_E_W3",
+    "family": "dna_reverse_complement",
+    "wording": "W3",
+    "category": "E",
+    "function_name": "collect_reverse_complements",
+    "member_type": "str",
+    "prompt": "编写 Python 函数 collect_reverse_complements(sequences)，sequences 是仅含大写 A、C、G、T 的 DNA 字符串列表。对每条序列先按 A 与 T、C 与 G 互换做互补，再反转字符顺序，收集反向互补序列；空序列仍为空字符串。\n这个返回值交给下游后，只用来判断成员是否存在。整个使用期间不需要往里面放新成员，也不需要从里面移走成员。允许但不要求容器具备编辑能力。\n结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。",
+    "gold": "def collect_reverse_complements(sequences):\n    return frozenset(sequence.translate(str.maketrans('ACGT', 'TGCA'))[::-1] for sequence in sequences)\n",
+    "tests": [
+      {
+        "role": "empty",
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "role": "duplicates",
+        "args": [
+          [
+            "AAGC",
+            "AAGC",
+            "AC"
+          ]
+        ],
+        "expected": [
+          "GCTT",
+          "GT"
+        ]
+      },
+      {
+        "role": "boundary",
+        "args": [
+          [
+            "",
+            "A",
+            "C"
+          ]
+        ],
+        "expected": [
+          "",
+          "T",
+          "G"
+        ]
+      },
+      {
+        "role": "ordinary",
+        "args": [
+          [
+            "ATGC",
+            "GGTA",
+            "ACGT"
+          ]
+        ],
+        "expected": [
+          "GCAT",
+          "TACC",
+          "ACGT"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "dna_reverse_complement_N_W3",
+    "family": "dna_reverse_complement",
+    "wording": "W3",
+    "category": "N",
+    "function_name": "collect_reverse_complements",
+    "member_type": "str",
+    "prompt": "编写 Python 函数 collect_reverse_complements(sequences)，sequences 是仅含大写 A、C、G、T 的 DNA 字符串列表。对每条序列先按 A 与 T、C 与 G 互换做互补，再反转字符顺序，收集反向互补序列；空序列仍为空字符串。\n这个返回值交给下游后，要先判断成员是否存在，再往里面放新成员，并从里面移走成员。上述编辑必须在同一个返回对象上完成。\n结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。",
+    "gold": "def collect_reverse_complements(sequences):\n    return set(sequence.translate(str.maketrans('ACGT', 'TGCA'))[::-1] for sequence in sequences)\n",
+    "tests": [
+      {
+        "role": "empty",
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "role": "duplicates",
+        "args": [
+          [
+            "AAGC",
+            "AAGC",
+            "AC"
+          ]
+        ],
+        "expected": [
+          "GCTT",
+          "GT"
+        ]
+      },
+      {
+        "role": "boundary",
+        "args": [
+          [
+            "",
+            "A",
+            "C"
+          ]
+        ],
+        "expected": [
+          "",
+          "T",
+          "G"
+        ]
+      },
+      {
+        "role": "ordinary",
+        "args": [
+          [
+            "ATGC",
+            "GGTA",
+            "ACGT"
+          ]
+        ],
+        "expected": [
+          "GCAT",
+          "TACC",
+          "ACGT"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "dna_reverse_complement_E_W4",
+    "family": "dna_reverse_complement",
+    "wording": "W4",
+    "category": "E",
+    "function_name": "collect_reverse_complements",
+    "member_type": "str",
+    "prompt": "编写 Python 函数 collect_reverse_complements(sequences)，sequences 是仅含大写 A、C、G、T 的 DNA 字符串列表。对每条序列先按 A 与 T、C 与 G 互换做互补，再反转字符顺序，收集反向互补序列；空序列仍为空字符串。\n生命周期约定：读取完毕后，调用方不会继续对返回对象执行成员插入和删除；允许容器本身具备这种能力。\n结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。",
+    "gold": "def collect_reverse_complements(sequences):\n    return frozenset(sequence.translate(str.maketrans('ACGT', 'TGCA'))[::-1] for sequence in sequences)\n",
+    "tests": [
+      {
+        "role": "empty",
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "role": "duplicates",
+        "args": [
+          [
+            "AAGC",
+            "AAGC",
+            "AC"
+          ]
+        ],
+        "expected": [
+          "GCTT",
+          "GT"
+        ]
+      },
+      {
+        "role": "boundary",
+        "args": [
+          [
+            "",
+            "A",
+            "C"
+          ]
+        ],
+        "expected": [
+          "",
+          "T",
+          "G"
+        ]
+      },
+      {
+        "role": "ordinary",
+        "args": [
+          [
+            "ATGC",
+            "GGTA",
+            "ACGT"
+          ]
+        ],
+        "expected": [
+          "GCAT",
+          "TACC",
+          "ACGT"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "dna_reverse_complement_N_W4",
+    "family": "dna_reverse_complement",
+    "wording": "W4",
+    "category": "N",
+    "function_name": "collect_reverse_complements",
+    "member_type": "str",
+    "prompt": "编写 Python 函数 collect_reverse_complements(sequences)，sequences 是仅含大写 A、C、G、T 的 DNA 字符串列表。对每条序列先按 A 与 T、C 与 G 互换做互补，再反转字符顺序，收集反向互补序列；空序列仍为空字符串。\n生命周期约定：读取完毕后，调用方会继续对返回对象执行成员插入和删除；操作必须保留对象身份。\n结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。",
+    "gold": "def collect_reverse_complements(sequences):\n    return set(sequence.translate(str.maketrans('ACGT', 'TGCA'))[::-1] for sequence in sequences)\n",
+    "tests": [
+      {
+        "role": "empty",
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "role": "duplicates",
+        "args": [
+          [
+            "AAGC",
+            "AAGC",
+            "AC"
+          ]
+        ],
+        "expected": [
+          "GCTT",
+          "GT"
+        ]
+      },
+      {
+        "role": "boundary",
+        "args": [
+          [
+            "",
+            "A",
+            "C"
+          ]
+        ],
+        "expected": [
+          "",
+          "T",
+          "G"
+        ]
+      },
+      {
+        "role": "ordinary",
+        "args": [
+          [
+            "ATGC",
+            "GGTA",
+            "ACGT"
+          ]
+        ],
+        "expected": [
+          "GCAT",
+          "TACC",
+          "ACGT"
+        ]
+      }
+    ]
+  }
+]

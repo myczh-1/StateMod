@@ -1,0 +1,30 @@
+[
+  {
+    "family": "boolean_complement",
+    "wording_bare": 16.216506667025975,
+    "wording_fenced": 13.04875764603982,
+    "format_train": 1.8079849297618171,
+    "format_heldout": -1.3597640912243405,
+    "interaction": -3.1677490209861574,
+    "decisions": {
+      "train__bare": false,
+      "train__fenced": false,
+      "heldout__bare": true,
+      "heldout__fenced": true
+    }
+  },
+  {
+    "family": "lower",
+    "wording_bare": 20.139338027423783,
+    "wording_fenced": 17.202956324729726,
+    "format_train": -0.9129279212287287,
+    "format_heldout": -3.849309623922787,
+    "interaction": -2.93638170269406,
+    "decisions": {
+      "train__bare": false,
+      "train__fenced": false,
+      "heldout__bare": false,
+      "heldout__fenced": false
+    }
+  }
+]

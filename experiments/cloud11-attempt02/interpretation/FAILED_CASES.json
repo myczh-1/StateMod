@@ -1,0 +1,369 @@
+[
+  {
+    "prediction": {
+      "task_id": "boolean_complement_N_CLEAR",
+      "split": "reference",
+      "prob": 0.8579101632204458,
+      "logit": 1.7980398781971276,
+      "threshold_margin": 0.3579101632204458,
+      "action": "frozenset",
+      "teacher": {
+        "task_id": "boolean_complement_N_CLEAR",
+        "valid": true,
+        "p": 6.825611856931407e-08,
+        "action": "set",
+        "fro_logp": -16.50000181572568,
+        "set_logp": -3.1264494314437696e-06
+      },
+      "teacher_agreement": false,
+      "expected_choice": "set",
+      "contract_correct": false
+    },
+    "reference_prompt": "编写 Python 函数 collect_inverted_flags(flags)，flags 是布尔值列表。对每个元素做逻辑取反：True 变为 False，False 变为 True，保留布尔类型。\n调用者在函数返回后，会通过返回对象的 .add() 添加一个成员，再通过 .remove() 移除它，并检查同一对象恢复原成员。函数只计算并返回结果，不在函数内部执行这些验收操作。\n结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。",
+    "training_prompt": "编写 Python 函数 collect_inverted_flags(flags)，flags 是布尔值列表。对每个元素做逻辑取反：True 变为 False，False 变为 True，保留布尔类型。\n返回之后，调用方需要改变结果成员：对返回对象调用 .add() 加入一个新成员，再调用 .remove() 删除该成员，原对象应恢复原来的内容。函数内部只完成计算并返回，不执行调用方的这些操作。\n结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。",
+    "fresh": {
+      "task_id": "boolean_complement_N_CLEAR",
+      "status": "RECORDED",
+      "cached": 0.8579101632204458,
+      "fresh": 0.8587405442434412,
+      "absolute_shift": 0.0008303810229953745,
+      "decision_flip": false,
+      "behavior_gate": false
+    },
+    "code_scores": [
+      {
+        "task_id": "boolean_complement_N_CLEAR__TRAIN_USAGE",
+        "condition": "BASE",
+        "result": {
+          "status": "EXECUTED",
+          "format_ok": true,
+          "executable": true,
+          "values_correct": true,
+          "mutability_correct": true,
+          "functional": true,
+          "exact_frozenset": false,
+          "joint": true,
+          "code": "def collect_inverted_flags(flags):\n    return {not flag for flag in flags}",
+          "ast": "Module(body=[FunctionDef(name='collect_inverted_flags', args=arguments(posonlyargs=[], args=[arg(arg='flags', lineno=1, col_offset=27, end_lineno=1, end_col_offset=32)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=SetComp(elt=UnaryOp(op=Not(), operand=Name(id='flag', ctx=Load(), lineno=2, col_offset=16, end_lineno=2, end_col_offset=20), lineno=2, col_offset=12, end_lineno=2, end_col_offset=20), generators=[comprehension(target=Name(id='flag', ctx=Store(), lineno=2, col_offset=25, end_lineno=2, end_col_offset=29), iter=Name(id='flags', ctx=Load(), lineno=2, col_offset=33, end_lineno=2, end_col_offset=38), ifs=[], is_async=0)], lineno=2, col_offset=11, end_lineno=2, end_col_offset=39), lineno=2, col_offset=4, end_lineno=2, end_col_offset=39)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=39)], type_ignores=[])",
+          "structure": {
+            "return_count": 1,
+            "loop_count": 0,
+            "branch_count": 0
+          },
+          "trials": [
+            {
+              "case": 0,
+              "case_role": "empty",
+              "args": [
+                []
+              ],
+              "expected": [],
+              "output": "set()",
+              "output_type": "set",
+              "exact_frozenset": false,
+              "member_shape": true,
+              "unique": true,
+              "values_correct": true,
+              "input_unchanged": true,
+              "mutability": {
+                "passed": true,
+                "add_query_ok": true,
+                "remove_restore_ok": true,
+                "marker": 987654321,
+                "error": null
+              },
+              "error": null
+            },
+            {
+              "case": 1,
+              "case_role": "duplicates",
+              "args": [
+                [
+                  true,
+                  true,
+                  false
+                ]
+              ],
+              "expected": [
+                false,
+                true
+              ],
+              "output": "{False, True}",
+              "output_type": "set",
+              "exact_frozenset": false,
+              "member_shape": true,
+              "unique": true,
+              "values_correct": true,
+              "input_unchanged": true,
+              "mutability": {
+                "passed": true,
+                "add_query_ok": true,
+                "remove_restore_ok": true,
+                "marker": 987654321,
+                "error": null
+              },
+              "error": null
+            },
+            {
+              "case": 2,
+              "case_role": "boundary",
+              "args": [
+                [
+                  false,
+                  false
+                ]
+              ],
+              "expected": [
+                true
+              ],
+              "output": "{True}",
+              "output_type": "set",
+              "exact_frozenset": false,
+              "member_shape": true,
+              "unique": true,
+              "values_correct": true,
+              "input_unchanged": true,
+              "mutability": {
+                "passed": true,
+                "add_query_ok": true,
+                "remove_restore_ok": true,
+                "marker": 987654321,
+                "error": null
+              },
+              "error": null
+            }
+          ],
+          "failure_reasons": [],
+          "stdout": "",
+          "process": {
+            "exit_code": 0,
+            "stdout": "{\"status\": \"EXECUTED\", \"format_ok\": true, \"executable\": true, \"values_correct\": true, \"mutability_correct\": true, \"functional\": true, \"exact_frozenset\": false, \"joint\": true, \"code\": \"def collect_inverted_flags(flags):\\n    return {not flag for flag in flags}\", \"ast\": \"Module(body=[FunctionDef(name='collect_inverted_flags', args=arguments(posonlyargs=[], args=[arg(arg='flags', lineno=1, col_offset=27, end_lineno=1, end_col_offset=32)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=SetComp(elt=UnaryOp(op=Not(), operand=Name(id='flag', ctx=Load(), lineno=2, col_offset=16, end_lineno=2, end_col_offset=20), lineno=2, col_offset=12, end_lineno=2, end_col_offset=20), generators=[comprehension(target=Name(id='flag', ctx=Store(), lineno=2, col_offset=25, end_lineno=2, end_col_offset=29), iter=Name(id='flags', ctx=Load(), lineno=2, col_offset=33, end_lineno=2, end_col_offset=38), ifs=[], is_async=0)], lineno=2, col_offset=11, end_lineno=2, end_col_offset=39), lineno=2, col_offset=4, end_lineno=2, end_col_offset=39)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=39)], type_ignores=[])\", \"structure\": {\"return_count\": 1, \"loop_count\": 0, \"branch_count\": 0}, \"trials\": [{\"case\": 0, \"case_role\": \"empty\", \"args\": [[]], \"expected\": [], \"output\": \"set()\", \"output_type\": \"set\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": {\"passed\": true, \"add_query_ok\": true, \"remove_restore_ok\": true, \"marker\": 987654321, \"error\": null}, \"error\": null}, {\"case\": 1, \"case_role\": \"duplicates\", \"args\": [[true, true, false]], \"expected\": [false, true], \"output\": \"{False, True}\", \"output_type\": \"set\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": {\"passed\": true, \"add_query_ok\": true, \"remove_restore_ok\": true, \"marker\": 987654321, \"error\": null}, \"error\": null}, {\"case\": 2, \"case_role\": \"boundary\", \"args\": [[false, false]], \"expected\": [true], \"output\": \"{True}\", \"output_type\": \"set\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": {\"passed\": true, \"add_query_ok\": true, \"remove_restore_ok\": true, \"marker\": 987654321, \"error\": null}, \"error\": null}], \"failure_reasons\": [], \"stdout\": \"\"}\n",
+            "stderr": ""
+          }
+        }
+      },
+      {
+        "task_id": "boolean_complement_N_CLEAR",
+        "condition": "BASE",
+        "result": {
+          "status": "EXECUTED",
+          "format_ok": true,
+          "executable": true,
+          "values_correct": true,
+          "mutability_correct": true,
+          "functional": true,
+          "exact_frozenset": false,
+          "joint": true,
+          "code": "def collect_inverted_flags(flags):\n    return set(not flag for flag in flags)",
+          "ast": "Module(body=[FunctionDef(name='collect_inverted_flags', args=arguments(posonlyargs=[], args=[arg(arg='flags', lineno=1, col_offset=27, end_lineno=1, end_col_offset=32)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=Call(func=Name(id='set', ctx=Load(), lineno=2, col_offset=11, end_lineno=2, end_col_offset=14), args=[GeneratorExp(elt=UnaryOp(op=Not(), operand=Name(id='flag', ctx=Load(), lineno=2, col_offset=19, end_lineno=2, end_col_offset=23), lineno=2, col_offset=15, end_lineno=2, end_col_offset=23), generators=[comprehension(target=Name(id='flag', ctx=Store(), lineno=2, col_offset=28, end_lineno=2, end_col_offset=32), iter=Name(id='flags', ctx=Load(), lineno=2, col_offset=36, end_lineno=2, end_col_offset=41), ifs=[], is_async=0)], lineno=2, col_offset=14, end_lineno=2, end_col_offset=42)], keywords=[], lineno=2, col_offset=11, end_lineno=2, end_col_offset=42), lineno=2, col_offset=4, end_lineno=2, end_col_offset=42)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=42)], type_ignores=[])",
+          "structure": {
+            "return_count": 1,
+            "loop_count": 0,
+            "branch_count": 0
+          },
+          "trials": [
+            {
+              "case": 0,
+              "case_role": "empty",
+              "args": [
+                []
+              ],
+              "expected": [],
+              "output": "set()",
+              "output_type": "set",
+              "exact_frozenset": false,
+              "member_shape": true,
+              "unique": true,
+              "values_correct": true,
+              "input_unchanged": true,
+              "mutability": {
+                "passed": true,
+                "add_query_ok": true,
+                "remove_restore_ok": true,
+                "marker": 987654321,
+                "error": null
+              },
+              "error": null
+            },
+            {
+              "case": 1,
+              "case_role": "duplicates",
+              "args": [
+                [
+                  true,
+                  true,
+                  false
+                ]
+              ],
+              "expected": [
+                false,
+                true
+              ],
+              "output": "{False, True}",
+              "output_type": "set",
+              "exact_frozenset": false,
+              "member_shape": true,
+              "unique": true,
+              "values_correct": true,
+              "input_unchanged": true,
+              "mutability": {
+                "passed": true,
+                "add_query_ok": true,
+                "remove_restore_ok": true,
+                "marker": 987654321,
+                "error": null
+              },
+              "error": null
+            },
+            {
+              "case": 2,
+              "case_role": "boundary",
+              "args": [
+                [
+                  false,
+                  false
+                ]
+              ],
+              "expected": [
+                true
+              ],
+              "output": "{True}",
+              "output_type": "set",
+              "exact_frozenset": false,
+              "member_shape": true,
+              "unique": true,
+              "values_correct": true,
+              "input_unchanged": true,
+              "mutability": {
+                "passed": true,
+                "add_query_ok": true,
+                "remove_restore_ok": true,
+                "marker": 987654321,
+                "error": null
+              },
+              "error": null
+            }
+          ],
+          "failure_reasons": [],
+          "stdout": "",
+          "process": {
+            "exit_code": 0,
+            "stdout": "{\"status\": \"EXECUTED\", \"format_ok\": true, \"executable\": true, \"values_correct\": true, \"mutability_correct\": true, \"functional\": true, \"exact_frozenset\": false, \"joint\": true, \"code\": \"def collect_inverted_flags(flags):\\n    return set(not flag for flag in flags)\", \"ast\": \"Module(body=[FunctionDef(name='collect_inverted_flags', args=arguments(posonlyargs=[], args=[arg(arg='flags', lineno=1, col_offset=27, end_lineno=1, end_col_offset=32)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=Call(func=Name(id='set', ctx=Load(), lineno=2, col_offset=11, end_lineno=2, end_col_offset=14), args=[GeneratorExp(elt=UnaryOp(op=Not(), operand=Name(id='flag', ctx=Load(), lineno=2, col_offset=19, end_lineno=2, end_col_offset=23), lineno=2, col_offset=15, end_lineno=2, end_col_offset=23), generators=[comprehension(target=Name(id='flag', ctx=Store(), lineno=2, col_offset=28, end_lineno=2, end_col_offset=32), iter=Name(id='flags', ctx=Load(), lineno=2, col_offset=36, end_lineno=2, end_col_offset=41), ifs=[], is_async=0)], lineno=2, col_offset=14, end_lineno=2, end_col_offset=42)], keywords=[], lineno=2, col_offset=11, end_lineno=2, end_col_offset=42), lineno=2, col_offset=4, end_lineno=2, end_col_offset=42)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=42)], type_ignores=[])\", \"structure\": {\"return_count\": 1, \"loop_count\": 0, \"branch_count\": 0}, \"trials\": [{\"case\": 0, \"case_role\": \"empty\", \"args\": [[]], \"expected\": [], \"output\": \"set()\", \"output_type\": \"set\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": {\"passed\": true, \"add_query_ok\": true, \"remove_restore_ok\": true, \"marker\": 987654321, \"error\": null}, \"error\": null}, {\"case\": 1, \"case_role\": \"duplicates\", \"args\": [[true, true, false]], \"expected\": [false, true], \"output\": \"{False, True}\", \"output_type\": \"set\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": {\"passed\": true, \"add_query_ok\": true, \"remove_restore_ok\": true, \"marker\": 987654321, \"error\": null}, \"error\": null}, {\"case\": 2, \"case_role\": \"boundary\", \"args\": [[false, false]], \"expected\": [true], \"output\": \"{True}\", \"output_type\": \"set\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": {\"passed\": true, \"add_query_ok\": true, \"remove_restore_ok\": true, \"marker\": 987654321, \"error\": null}, \"error\": null}], \"failure_reasons\": [], \"stdout\": \"\"}\n",
+            "stderr": ""
+          }
+        }
+      },
+      {
+        "task_id": "boolean_complement_N_CLEAR",
+        "condition": "ARCHIVED_TEXT_CODE",
+        "result": {
+          "status": "EXECUTED",
+          "format_ok": true,
+          "executable": true,
+          "values_correct": true,
+          "mutability_correct": true,
+          "functional": true,
+          "exact_frozenset": false,
+          "joint": true,
+          "code": "def collect_inverted_flags(flags):\n    return set(not flag for flag in flags)",
+          "ast": "Module(body=[FunctionDef(name='collect_inverted_flags', args=arguments(posonlyargs=[], args=[arg(arg='flags', lineno=1, col_offset=27, end_lineno=1, end_col_offset=32)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=Call(func=Name(id='set', ctx=Load(), lineno=2, col_offset=11, end_lineno=2, end_col_offset=14), args=[GeneratorExp(elt=UnaryOp(op=Not(), operand=Name(id='flag', ctx=Load(), lineno=2, col_offset=19, end_lineno=2, end_col_offset=23), lineno=2, col_offset=15, end_lineno=2, end_col_offset=23), generators=[comprehension(target=Name(id='flag', ctx=Store(), lineno=2, col_offset=28, end_lineno=2, end_col_offset=32), iter=Name(id='flags', ctx=Load(), lineno=2, col_offset=36, end_lineno=2, end_col_offset=41), ifs=[], is_async=0)], lineno=2, col_offset=14, end_lineno=2, end_col_offset=42)], keywords=[], lineno=2, col_offset=11, end_lineno=2, end_col_offset=42), lineno=2, col_offset=4, end_lineno=2, end_col_offset=42)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=42)], type_ignores=[])",
+          "structure": {
+            "return_count": 1,
+            "loop_count": 0,
+            "branch_count": 0
+          },
+          "trials": [
+            {
+              "case": 0,
+              "case_role": "empty",
+              "args": [
+                []
+              ],
+              "expected": [],
+              "output": "set()",
+              "output_type": "set",
+              "exact_frozenset": false,
+              "member_shape": true,
+              "unique": true,
+              "values_correct": true,
+              "input_unchanged": true,
+              "mutability": {
+                "passed": true,
+                "add_query_ok": true,
+                "remove_restore_ok": true,
+                "marker": 987654321,
+                "error": null
+              },
+              "error": null
+            },
+            {
+              "case": 1,
+              "case_role": "duplicates",
+              "args": [
+                [
+                  true,
+                  true,
+                  false
+                ]
+              ],
+              "expected": [
+                false,
+                true
+              ],
+              "output": "{False, True}",
+              "output_type": "set",
+              "exact_frozenset": false,
+              "member_shape": true,
+              "unique": true,
+              "values_correct": true,
+              "input_unchanged": true,
+              "mutability": {
+                "passed": true,
+                "add_query_ok": true,
+                "remove_restore_ok": true,
+                "marker": 987654321,
+                "error": null
+              },
+              "error": null
+            },
+            {
+              "case": 2,
+              "case_role": "boundary",
+              "args": [
+                [
+                  false,
+                  false
+                ]
+              ],
+              "expected": [
+                true
+              ],
+              "output": "{True}",
+              "output_type": "set",
+              "exact_frozenset": false,
+              "member_shape": true,
+              "unique": true,
+              "values_correct": true,
+              "input_unchanged": true,
+              "mutability": {
+                "passed": true,
+                "add_query_ok": true,
+                "remove_restore_ok": true,
+                "marker": 987654321,
+                "error": null
+              },
+              "error": null
+            }
+          ],
+          "failure_reasons": [],
+          "stdout": "",
+          "process": {
+            "exit_code": 0,
+            "stdout": "{\"status\": \"EXECUTED\", \"format_ok\": true, \"executable\": true, \"values_correct\": true, \"mutability_correct\": true, \"functional\": true, \"exact_frozenset\": false, \"joint\": true, \"code\": \"def collect_inverted_flags(flags):\\n    return set(not flag for flag in flags)\", \"ast\": \"Module(body=[FunctionDef(name='collect_inverted_flags', args=arguments(posonlyargs=[], args=[arg(arg='flags', lineno=1, col_offset=27, end_lineno=1, end_col_offset=32)], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Return(value=Call(func=Name(id='set', ctx=Load(), lineno=2, col_offset=11, end_lineno=2, end_col_offset=14), args=[GeneratorExp(elt=UnaryOp(op=Not(), operand=Name(id='flag', ctx=Load(), lineno=2, col_offset=19, end_lineno=2, end_col_offset=23), lineno=2, col_offset=15, end_lineno=2, end_col_offset=23), generators=[comprehension(target=Name(id='flag', ctx=Store(), lineno=2, col_offset=28, end_lineno=2, end_col_offset=32), iter=Name(id='flags', ctx=Load(), lineno=2, col_offset=36, end_lineno=2, end_col_offset=41), ifs=[], is_async=0)], lineno=2, col_offset=14, end_lineno=2, end_col_offset=42)], keywords=[], lineno=2, col_offset=11, end_lineno=2, end_col_offset=42), lineno=2, col_offset=4, end_lineno=2, end_col_offset=42)], decorator_list=[], lineno=1, col_offset=0, end_lineno=2, end_col_offset=42)], type_ignores=[])\", \"structure\": {\"return_count\": 1, \"loop_count\": 0, \"branch_count\": 0}, \"trials\": [{\"case\": 0, \"case_role\": \"empty\", \"args\": [[]], \"expected\": [], \"output\": \"set()\", \"output_type\": \"set\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": {\"passed\": true, \"add_query_ok\": true, \"remove_restore_ok\": true, \"marker\": 987654321, \"error\": null}, \"error\": null}, {\"case\": 1, \"case_role\": \"duplicates\", \"args\": [[true, true, false]], \"expected\": [false, true], \"output\": \"{False, True}\", \"output_type\": \"set\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": {\"passed\": true, \"add_query_ok\": true, \"remove_restore_ok\": true, \"marker\": 987654321, \"error\": null}, \"error\": null}, {\"case\": 2, \"case_role\": \"boundary\", \"args\": [[false, false]], \"expected\": [true], \"output\": \"{True}\", \"output_type\": \"set\", \"exact_frozenset\": false, \"member_shape\": true, \"unique\": true, \"values_correct\": true, \"input_unchanged\": true, \"mutability\": {\"passed\": true, \"add_query_ok\": true, \"remove_restore_ok\": true, \"marker\": 987654321, \"error\": null}, \"error\": null}], \"failure_reasons\": [], \"stdout\": \"\"}\n",
+            "stderr": ""
+          }
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,440 @@
+[
+  {
+    "id": "double_N_W_ANCHOR",
+    "condition": "TEXT_CODE",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "double_N_W_LIFECYCLE",
+    "condition": "BASE",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 0,
+        "detail": "NameError(\"name 'object' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'object' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'object' is not defined\")"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "double_N_W_LIFECYCLE",
+    "condition": "MANUAL_V",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 0,
+        "detail": "NameError(\"name 'object' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'object' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'object' is not defined\")"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "double_N_W_LIFECYCLE",
+    "condition": "MODULE_V",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 0,
+        "detail": "NameError(\"name 'object' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'object' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'object' is not defined\")"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "increment_N_W_ANCHOR",
+    "condition": "TEXT_CODE",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "increment_N_W_LIFECYCLE",
+    "condition": "BASE",
+    "reasons": [
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 0,
+        "actual": "X()",
+        "expected": []
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 1,
+        "actual": "X({3, -2})",
+        "expected": [
+          3,
+          -2
+        ]
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "X({0, 1, 1000000000001})",
+        "expected": [
+          1,
+          0,
+          1000000000001
+        ]
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "increment_N_W_LIFECYCLE",
+    "condition": "MANUAL_V",
+    "reasons": [
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 0,
+        "actual": "X()",
+        "expected": []
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 1,
+        "actual": "X({3, -2})",
+        "expected": [
+          3,
+          -2
+        ]
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "X({0, 1, 1000000000001})",
+        "expected": [
+          1,
+          0,
+          1000000000001
+        ]
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "increment_N_W_LIFECYCLE",
+    "condition": "MODULE_V",
+    "reasons": [
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 0,
+        "actual": "X()",
+        "expected": []
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 1,
+        "actual": "X({3, -2})",
+        "expected": [
+          3,
+          -2
+        ]
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "X({0, 1, 1000000000001})",
+        "expected": [
+          1,
+          0,
+          1000000000001
+        ]
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "increment_N_W_LIFECYCLE",
+    "condition": "TEXT_CODE",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "lower_N_W_ANCHOR",
+    "condition": "TEXT_CODE",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "lower_N_W_LIFECYCLE",
+    "condition": "BASE",
+    "reasons": [
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 0,
+        "actual": "X()",
+        "expected": []
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 1,
+        "actual": "X({'', 'bb', 'aa'})",
+        "expected": [
+          "aa",
+          "bb",
+          ""
+        ]
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "X({'xyz', '中文', 'abc'})",
+        "expected": [
+          "xyz",
+          "中文",
+          "abc"
+        ]
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "lower_N_W_LIFECYCLE",
+    "condition": "MANUAL_V",
+    "reasons": [
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 0,
+        "actual": "X()",
+        "expected": []
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 1,
+        "actual": "X({'', 'bb', 'aa'})",
+        "expected": [
+          "aa",
+          "bb",
+          ""
+        ]
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "X({'xyz', '中文', 'abc'})",
+        "expected": [
+          "xyz",
+          "中文",
+          "abc"
+        ]
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "lower_N_W_LIFECYCLE",
+    "condition": "MODULE_V",
+    "reasons": [
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 0,
+        "actual": "X()",
+        "expected": []
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 1,
+        "actual": "X({'', 'bb', 'aa'})",
+        "expected": [
+          "aa",
+          "bb",
+          ""
+        ]
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "X({'xyz', '中文', 'abc'})",
+        "expected": [
+          "xyz",
+          "中文",
+          "abc"
+        ]
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "negative_N_W_ANCHOR",
+    "condition": "TEXT_CODE",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "negative_N_W_LIFECYCLE",
+    "condition": "TEXT_CODE",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "coverage": true
+  }
+]

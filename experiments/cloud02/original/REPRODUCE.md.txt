@@ -1,0 +1,17 @@
+# 复现入口
+
+保留原冻结README及源码；函数命名工程修正见execution/AMENDMENT.md。
+
+在独立的新副本目录操作，不能覆盖本次独占写入的留档：
+
+1. 校验freeze.json、execution/AMENDMENT_FREEZE.json、returned/capture/manifest.json。
+2. GPU capture命令沿用原README；本次已完成，不为复核拟合重新开GPU。
+3. 仅保留冻结源文件、data、TASKS.json、freeze.json、execution及returned/capture；准备空artifacts目录。
+4. 本地CPU执行：
+
+```bash
+[LOCAL_PATH] -B /NEW_COPY/execution/fit.py
+[LOCAL_PATH] -B /NEW_COPY/analysis/report.py
+```
+
+现有结果不重跑、不覆盖。最终checkpoint可用其保存的center/scale/权重与GELU直接离线复算，主模型不参与。源SHA清单绝对路径指向本机只读历史；异机复现须按SHA恢复相同来源并显式记录路径重定位。

@@ -1,0 +1,322 @@
+[
+  {
+    "id": "tab_stop_expansion_E_W3",
+    "family": "tab_stop_expansion",
+    "wording": "W3",
+    "routes_equal": true,
+    "tokens_equal": true,
+    "manual_minus_auto_joint": 0,
+    "manual_first_divergence": null,
+    "auto_first_divergence": null
+  },
+  {
+    "id": "tab_stop_expansion_N_W3",
+    "family": "tab_stop_expansion",
+    "wording": "W3",
+    "routes_equal": true,
+    "tokens_equal": true,
+    "manual_minus_auto_joint": 0,
+    "manual_first_divergence": null,
+    "auto_first_divergence": null
+  },
+  {
+    "id": "tab_stop_expansion_E_W4",
+    "family": "tab_stop_expansion",
+    "wording": "W4",
+    "routes_equal": true,
+    "tokens_equal": true,
+    "manual_minus_auto_joint": 0,
+    "manual_first_divergence": 8,
+    "auto_first_divergence": 8
+  },
+  {
+    "id": "tab_stop_expansion_N_W4",
+    "family": "tab_stop_expansion",
+    "wording": "W4",
+    "routes_equal": false,
+    "tokens_equal": false,
+    "manual_minus_auto_joint": 0,
+    "manual_first_divergence": null,
+    "auto_first_divergence": 8
+  },
+  {
+    "id": "python_literal_representation_E_W3",
+    "family": "python_literal_representation",
+    "wording": "W3",
+    "routes_equal": true,
+    "tokens_equal": true,
+    "manual_minus_auto_joint": 0,
+    "manual_first_divergence": 8,
+    "auto_first_divergence": 8
+  },
+  {
+    "id": "python_literal_representation_N_W3",
+    "family": "python_literal_representation",
+    "wording": "W3",
+    "routes_equal": true,
+    "tokens_equal": true,
+    "manual_minus_auto_joint": 0,
+    "manual_first_divergence": null,
+    "auto_first_divergence": null
+  },
+  {
+    "id": "python_literal_representation_E_W4",
+    "family": "python_literal_representation",
+    "wording": "W4",
+    "routes_equal": true,
+    "tokens_equal": true,
+    "manual_minus_auto_joint": 0,
+    "manual_first_divergence": 8,
+    "auto_first_divergence": 8
+  },
+  {
+    "id": "python_literal_representation_N_W4",
+    "family": "python_literal_representation",
+    "wording": "W4",
+    "routes_equal": false,
+    "tokens_equal": false,
+    "manual_minus_auto_joint": 0,
+    "manual_first_divergence": null,
+    "auto_first_divergence": 8
+  },
+  {
+    "id": "centered_text_padding_E_W3",
+    "family": "centered_text_padding",
+    "wording": "W3",
+    "routes_equal": true,
+    "tokens_equal": true,
+    "manual_minus_auto_joint": 0,
+    "manual_first_divergence": 12,
+    "auto_first_divergence": 12
+  },
+  {
+    "id": "centered_text_padding_N_W3",
+    "family": "centered_text_padding",
+    "wording": "W3",
+    "routes_equal": true,
+    "tokens_equal": true,
+    "manual_minus_auto_joint": 0,
+    "manual_first_divergence": null,
+    "auto_first_divergence": null
+  },
+  {
+    "id": "centered_text_padding_E_W4",
+    "family": "centered_text_padding",
+    "wording": "W4",
+    "routes_equal": true,
+    "tokens_equal": true,
+    "manual_minus_auto_joint": 0,
+    "manual_first_divergence": 9,
+    "auto_first_divergence": 9
+  },
+  {
+    "id": "centered_text_padding_N_W4",
+    "family": "centered_text_padding",
+    "wording": "W4",
+    "routes_equal": false,
+    "tokens_equal": false,
+    "manual_minus_auto_joint": 0,
+    "manual_first_divergence": null,
+    "auto_first_divergence": 9
+  },
+  {
+    "id": "integral_float_predicate_E_W3",
+    "family": "integral_float_predicate",
+    "wording": "W3",
+    "routes_equal": true,
+    "tokens_equal": true,
+    "manual_minus_auto_joint": 0,
+    "manual_first_divergence": 9,
+    "auto_first_divergence": 9
+  },
+  {
+    "id": "integral_float_predicate_N_W3",
+    "family": "integral_float_predicate",
+    "wording": "W3",
+    "routes_equal": true,
+    "tokens_equal": true,
+    "manual_minus_auto_joint": 0,
+    "manual_first_divergence": null,
+    "auto_first_divergence": null
+  },
+  {
+    "id": "integral_float_predicate_E_W4",
+    "family": "integral_float_predicate",
+    "wording": "W4",
+    "routes_equal": true,
+    "tokens_equal": true,
+    "manual_minus_auto_joint": 0,
+    "manual_first_divergence": 9,
+    "auto_first_divergence": 9
+  },
+  {
+    "id": "integral_float_predicate_N_W4",
+    "family": "integral_float_predicate",
+    "wording": "W4",
+    "routes_equal": false,
+    "tokens_equal": false,
+    "manual_minus_auto_joint": 0,
+    "manual_first_divergence": null,
+    "auto_first_divergence": 9
+  },
+  {
+    "id": "least_significant_one_value_E_W3",
+    "family": "least_significant_one_value",
+    "wording": "W3",
+    "routes_equal": true,
+    "tokens_equal": true,
+    "manual_minus_auto_joint": 0,
+    "manual_first_divergence": 11,
+    "auto_first_divergence": 11
+  },
+  {
+    "id": "least_significant_one_value_N_W3",
+    "family": "least_significant_one_value",
+    "wording": "W3",
+    "routes_equal": false,
+    "tokens_equal": false,
+    "manual_minus_auto_joint": 0,
+    "manual_first_divergence": null,
+    "auto_first_divergence": 12
+  },
+  {
+    "id": "least_significant_one_value_E_W4",
+    "family": "least_significant_one_value",
+    "wording": "W4",
+    "routes_equal": true,
+    "tokens_equal": true,
+    "manual_minus_auto_joint": 0,
+    "manual_first_divergence": 12,
+    "auto_first_divergence": 12
+  },
+  {
+    "id": "least_significant_one_value_N_W4",
+    "family": "least_significant_one_value",
+    "wording": "W4",
+    "routes_equal": false,
+    "tokens_equal": false,
+    "manual_minus_auto_joint": 1,
+    "manual_first_divergence": null,
+    "auto_first_divergence": 8
+  },
+  {
+    "id": "modal_member_selection_E_W3",
+    "family": "modal_member_selection",
+    "wording": "W3",
+    "routes_equal": true,
+    "tokens_equal": true,
+    "manual_minus_auto_joint": 0,
+    "manual_first_divergence": 10,
+    "auto_first_divergence": 10
+  },
+  {
+    "id": "modal_member_selection_N_W3",
+    "family": "modal_member_selection",
+    "wording": "W3",
+    "routes_equal": false,
+    "tokens_equal": false,
+    "manual_minus_auto_joint": -1,
+    "manual_first_divergence": null,
+    "auto_first_divergence": 11
+  },
+  {
+    "id": "modal_member_selection_E_W4",
+    "family": "modal_member_selection",
+    "wording": "W4",
+    "routes_equal": true,
+    "tokens_equal": true,
+    "manual_minus_auto_joint": 0,
+    "manual_first_divergence": 7,
+    "auto_first_divergence": 7
+  },
+  {
+    "id": "modal_member_selection_N_W4",
+    "family": "modal_member_selection",
+    "wording": "W4",
+    "routes_equal": false,
+    "tokens_equal": false,
+    "manual_minus_auto_joint": 0,
+    "manual_first_divergence": null,
+    "auto_first_divergence": 7
+  },
+  {
+    "id": "run_length_expansion_E_W3",
+    "family": "run_length_expansion",
+    "wording": "W3",
+    "routes_equal": true,
+    "tokens_equal": true,
+    "manual_minus_auto_joint": 0,
+    "manual_first_divergence": 12,
+    "auto_first_divergence": 12
+  },
+  {
+    "id": "run_length_expansion_N_W3",
+    "family": "run_length_expansion",
+    "wording": "W3",
+    "routes_equal": true,
+    "tokens_equal": true,
+    "manual_minus_auto_joint": 0,
+    "manual_first_divergence": null,
+    "auto_first_divergence": null
+  },
+  {
+    "id": "run_length_expansion_E_W4",
+    "family": "run_length_expansion",
+    "wording": "W4",
+    "routes_equal": true,
+    "tokens_equal": true,
+    "manual_minus_auto_joint": 0,
+    "manual_first_divergence": 8,
+    "auto_first_divergence": 8
+  },
+  {
+    "id": "run_length_expansion_N_W4",
+    "family": "run_length_expansion",
+    "wording": "W4",
+    "routes_equal": false,
+    "tokens_equal": false,
+    "manual_minus_auto_joint": -1,
+    "manual_first_divergence": null,
+    "auto_first_divergence": 8
+  },
+  {
+    "id": "dna_reverse_complement_E_W3",
+    "family": "dna_reverse_complement",
+    "wording": "W3",
+    "routes_equal": true,
+    "tokens_equal": true,
+    "manual_minus_auto_joint": 0,
+    "manual_first_divergence": 9,
+    "auto_first_divergence": 9
+  },
+  {
+    "id": "dna_reverse_complement_N_W3",
+    "family": "dna_reverse_complement",
+    "wording": "W3",
+    "routes_equal": true,
+    "tokens_equal": true,
+    "manual_minus_auto_joint": 0,
+    "manual_first_divergence": null,
+    "auto_first_divergence": null
+  },
+  {
+    "id": "dna_reverse_complement_E_W4",
+    "family": "dna_reverse_complement",
+    "wording": "W4",
+    "routes_equal": true,
+    "tokens_equal": true,
+    "manual_minus_auto_joint": 0,
+    "manual_first_divergence": 13,
+    "auto_first_divergence": 13
+  },
+  {
+    "id": "dna_reverse_complement_N_W4",
+    "family": "dna_reverse_complement",
+    "wording": "W4",
+    "routes_equal": false,
+    "tokens_equal": false,
+    "manual_minus_auto_joint": -1,
+    "manual_first_divergence": null,
+    "auto_first_divergence": 9
+  }
+]

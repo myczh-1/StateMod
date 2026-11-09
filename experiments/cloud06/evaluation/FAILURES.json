@@ -1,0 +1,766 @@
+[
+  {
+    "id": "ascii_text_predicate_E_W_INTERFACE",
+    "condition": "BASE",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "ascii_text_predicate_E_W_INTERFACE",
+    "condition": "MANUAL_V",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "ascii_text_predicate_E_W_INTERFACE",
+    "condition": "MODULE_V",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "ascii_text_predicate_E_W_INTERFACE",
+    "condition": "TEXT_CODE",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "ascii_text_predicate_E_W_USAGE",
+    "condition": "BASE",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "ascii_text_predicate_E_W_USAGE",
+    "condition": "MANUAL_V",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "ascii_text_predicate_E_W_USAGE",
+    "condition": "MODULE_V",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "ascii_text_predicate_E_W_USAGE",
+    "condition": "TEXT_CODE",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "ascii_text_predicate_N_W_INTERFACE",
+    "condition": "BASE",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 0,
+        "detail": "TypeError('set.add() takes exactly one argument (0 given)')"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "TypeError('set.add() takes exactly one argument (3 given)')"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "TypeError('set.add() takes exactly one argument (4 given)')"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "ascii_text_predicate_N_W_INTERFACE",
+    "condition": "MANUAL_V",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 0,
+        "detail": "TypeError('set.add() takes exactly one argument (0 given)')"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "TypeError('set.add() takes exactly one argument (3 given)')"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "TypeError('set.add() takes exactly one argument (4 given)')"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "ascii_text_predicate_N_W_INTERFACE",
+    "condition": "MODULE_V",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 0,
+        "detail": "TypeError('set.add() takes exactly one argument (0 given)')"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "TypeError('set.add() takes exactly one argument (3 given)')"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "TypeError('set.add() takes exactly one argument (4 given)')"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "ascii_text_predicate_N_W_INTERFACE",
+    "condition": "TEXT_CODE",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "ascii_text_predicate_N_W_USAGE",
+    "condition": "BASE",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "ascii_text_predicate_N_W_USAGE",
+    "condition": "MANUAL_V",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "ascii_text_predicate_N_W_USAGE",
+    "condition": "MODULE_V",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "ascii_text_predicate_N_W_USAGE",
+    "condition": "TEXT_CODE",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'isascii' is not defined\")"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "boolean_complement_N_W_INTERFACE",
+    "condition": "BASE",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 0,
+        "detail": "TypeError('set.add() takes exactly one argument (0 given)')"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "TypeError('set.add() takes exactly one argument (3 given)')"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "TypeError('set.add() takes exactly one argument (2 given)')"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "boolean_complement_N_W_INTERFACE",
+    "condition": "MANUAL_V",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 0,
+        "detail": "TypeError('set.add() takes exactly one argument (0 given)')"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "TypeError('set.add() takes exactly one argument (3 given)')"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "TypeError('set.add() takes exactly one argument (2 given)')"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "boolean_complement_N_W_INTERFACE",
+    "condition": "MODULE_V",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 0,
+        "detail": "TypeError('set.add() takes exactly one argument (0 given)')"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "TypeError('set.add() takes exactly one argument (3 given)')"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "TypeError('set.add() takes exactly one argument (2 given)')"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "boolean_complement_N_W_INTERFACE",
+    "condition": "TEXT_CODE",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "boolean_complement_N_W_USAGE",
+    "condition": "MODULE_V",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "boolean_complement_N_W_USAGE",
+    "condition": "TEXT_CODE",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "integer_octal_text_N_W_INTERFACE",
+    "condition": "BASE",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 0,
+        "detail": "AttributeError(\"'NoneType' object has no attribute 'remove'\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "AttributeError(\"'NoneType' object has no attribute 'remove'\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "AttributeError(\"'NoneType' object has no attribute 'remove'\")"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "integer_octal_text_N_W_INTERFACE",
+    "condition": "MANUAL_V",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 0,
+        "detail": "AttributeError(\"'NoneType' object has no attribute 'remove'\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "AttributeError(\"'NoneType' object has no attribute 'remove'\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "AttributeError(\"'NoneType' object has no attribute 'remove'\")"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "integer_octal_text_N_W_INTERFACE",
+    "condition": "MODULE_V",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 0,
+        "detail": "AttributeError(\"'NoneType' object has no attribute 'remove'\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "AttributeError(\"'NoneType' object has no attribute 'remove'\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "AttributeError(\"'NoneType' object has no attribute 'remove'\")"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "integer_octal_text_N_W_INTERFACE",
+    "condition": "TEXT_CODE",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "integer_octal_text_N_W_USAGE",
+    "condition": "MODULE_V",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "literal_a_occurrences_E_W_INTERFACE",
+    "condition": "MANUAL_V",
+    "reasons": [
+      {
+        "kind": "EXECUTION_OR_SUPPORT",
+        "reason": "DEFINITION_EXECUTION_ERROR",
+        "detail": "SyntaxError(\"assignment expression cannot rebind comprehension iteration variable 'count'\")"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "literal_a_occurrences_E_W_INTERFACE",
+    "condition": "MODULE_V",
+    "reasons": [
+      {
+        "kind": "EXECUTION_OR_SUPPORT",
+        "reason": "DEFINITION_EXECUTION_ERROR",
+        "detail": "SyntaxError(\"assignment expression cannot rebind comprehension iteration variable 'count'\")"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "literal_a_occurrences_E_W_USAGE",
+    "condition": "BASE",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "TypeError('can only concatenate tuple (not \"int\") to tuple')"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "TypeError('can only concatenate tuple (not \"int\") to tuple')"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "literal_a_occurrences_E_W_USAGE",
+    "condition": "MANUAL_V",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "TypeError('can only concatenate list (not \"int\") to list')"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "TypeError('can only concatenate list (not \"int\") to list')"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "literal_a_occurrences_E_W_USAGE",
+    "condition": "MODULE_V",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "TypeError('can only concatenate list (not \"int\") to list')"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "TypeError('can only concatenate list (not \"int\") to list')"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "literal_a_occurrences_N_W_INTERFACE",
+    "condition": "BASE",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 0,
+        "detail": "NameError(\"name 'reduce' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'reduce' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'reduce' is not defined\")"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "literal_a_occurrences_N_W_INTERFACE",
+    "condition": "MANUAL_V",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 0,
+        "detail": "NameError(\"name 'reduce' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'reduce' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'reduce' is not defined\")"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "literal_a_occurrences_N_W_INTERFACE",
+    "condition": "MODULE_V",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 0,
+        "detail": "NameError(\"name 'reduce' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'reduce' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'reduce' is not defined\")"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "literal_a_occurrences_N_W_INTERFACE",
+    "condition": "TEXT_CODE",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "literal_a_occurrences_N_W_USAGE",
+    "condition": "BASE",
+    "reasons": [
+      {
+        "kind": "FORMAT",
+        "reason": "TRUNCATED",
+        "detail": null
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "literal_a_occurrences_N_W_USAGE",
+    "condition": "MANUAL_V",
+    "reasons": [
+      {
+        "kind": "FORMAT",
+        "reason": "TRUNCATED",
+        "detail": null
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "literal_a_occurrences_N_W_USAGE",
+    "condition": "MODULE_V",
+    "reasons": [
+      {
+        "kind": "FORMAT",
+        "reason": "TRUNCATED",
+        "detail": null
+      }
+    ],
+    "coverage": true
+  }
+]

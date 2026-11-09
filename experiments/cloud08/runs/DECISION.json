@@ -1,0 +1,8 @@
+{
+  "status": "TEXT_PRECHECK_COMPLETE_PENDING_SCORING",
+  "completed": 24,
+  "model_sha_unchanged": true,
+  "bank_loaded": false,
+  "judgment_loaded": false,
+  "independent_confirmation": false
+}

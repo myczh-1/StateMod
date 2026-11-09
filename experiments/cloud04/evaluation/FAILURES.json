@@ -1,0 +1,2776 @@
+[
+  {
+    "id": "centered_text_padding_E_W3",
+    "condition": "TEXT_CODE",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'centered_view' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'centered_view' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 3,
+        "detail": "NameError(\"name 'centered_view' is not defined\")"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "centered_text_padding_E_W4",
+    "condition": "MANUAL_V",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'center' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'center' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 3,
+        "detail": "NameError(\"name 'center' is not defined\")"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "centered_text_padding_E_W4",
+    "condition": "MODULE_V",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'center' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'center' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 3,
+        "detail": "NameError(\"name 'center' is not defined\")"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "centered_text_padding_E_W4",
+    "condition": "TEXT_CODE",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "TypeError(\"'str' object is not callable\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "TypeError(\"'str' object is not callable\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 3,
+        "detail": "TypeError(\"'str' object is not callable\")"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "centered_text_padding_N_W3",
+    "condition": "BASE",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'center' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'center' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 3,
+        "detail": "NameError(\"name 'center' is not defined\")"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "centered_text_padding_N_W3",
+    "condition": "MANUAL_V",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'center' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'center' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 3,
+        "detail": "NameError(\"name 'center' is not defined\")"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "centered_text_padding_N_W3",
+    "condition": "MODULE_V",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'center' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'center' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 3,
+        "detail": "NameError(\"name 'center' is not defined\")"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "centered_text_padding_N_W3",
+    "condition": "TEXT_CODE",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "centered_text_padding_N_W4",
+    "condition": "BASE",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'center' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'center' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 3,
+        "detail": "NameError(\"name 'center' is not defined\")"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "centered_text_padding_N_W4",
+    "condition": "MANUAL_V",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'center' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'center' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 3,
+        "detail": "NameError(\"name 'center' is not defined\")"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "centered_text_padding_N_W4",
+    "condition": "MODULE_V",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'center' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'center' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 3,
+        "detail": "NameError(\"name 'center' is not defined\")"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "centered_text_padding_N_W4",
+    "condition": "TEXT_CODE",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "TypeError(\"'str' object is not callable\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "TypeError(\"'str' object is not callable\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 3,
+        "detail": "TypeError(\"'str' object is not callable\")"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "dna_reverse_complement_N_W3",
+    "condition": "BASE",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "dna_reverse_complement_N_W3",
+    "condition": "MANUAL_V",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "dna_reverse_complement_N_W3",
+    "condition": "MODULE_V",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "dna_reverse_complement_N_W3",
+    "condition": "TEXT_CODE",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "dna_reverse_complement_N_W4",
+    "condition": "BASE",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "dna_reverse_complement_N_W4",
+    "condition": "MANUAL_V",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "dna_reverse_complement_N_W4",
+    "condition": "TEXT_CODE",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "integral_float_predicate_E_W3",
+    "condition": "MANUAL_V",
+    "reasons": [
+      {
+        "kind": "EXECUTION_OR_SUPPORT",
+        "reason": "DEFINITION_EXECUTION_ERROR",
+        "detail": "SyntaxError(\"assignment expression cannot rebind comprehension iteration variable 'value'\")"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "integral_float_predicate_E_W3",
+    "condition": "MODULE_V",
+    "reasons": [
+      {
+        "kind": "EXECUTION_OR_SUPPORT",
+        "reason": "DEFINITION_EXECUTION_ERROR",
+        "detail": "SyntaxError(\"assignment expression cannot rebind comprehension iteration variable 'value'\")"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "integral_float_predicate_E_W3",
+    "condition": "TEXT_CODE",
+    "reasons": [
+      {
+        "kind": "EXECUTION_OR_SUPPORT",
+        "reason": "DEFINITION_EXECUTION_ERROR",
+        "detail": "SyntaxError(\"assignment expression cannot rebind comprehension iteration variable 'value'\")"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "integral_float_predicate_E_W4",
+    "condition": "MANUAL_V",
+    "reasons": [
+      {
+        "kind": "EXECUTION_OR_SUPPORT",
+        "reason": "DEFINITION_EXECUTION_ERROR",
+        "detail": "SyntaxError(\"assignment expression cannot rebind comprehension iteration variable 'value'\")"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "integral_float_predicate_E_W4",
+    "condition": "MODULE_V",
+    "reasons": [
+      {
+        "kind": "EXECUTION_OR_SUPPORT",
+        "reason": "DEFINITION_EXECUTION_ERROR",
+        "detail": "SyntaxError(\"assignment expression cannot rebind comprehension iteration variable 'value'\")"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "integral_float_predicate_E_W4",
+    "condition": "TEXT_CODE",
+    "reasons": [
+      {
+        "kind": "EXECUTION_OR_SUPPORT",
+        "reason": "DEFINITION_EXECUTION_ERROR",
+        "detail": "SyntaxError(\"assignment expression cannot rebind comprehension iteration variable 'value'\")"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "integral_float_predicate_N_W3",
+    "condition": "BASE",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "integral_float_predicate_N_W3",
+    "condition": "MANUAL_V",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "integral_float_predicate_N_W3",
+    "condition": "MODULE_V",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "integral_float_predicate_N_W3",
+    "condition": "TEXT_CODE",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "integral_float_predicate_N_W4",
+    "condition": "BASE",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'is_integer' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'is_integer' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 3,
+        "detail": "NameError(\"name 'is_integer' is not defined\")"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "integral_float_predicate_N_W4",
+    "condition": "MANUAL_V",
+    "reasons": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'is_integer' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'is_integer' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 3,
+        "detail": "NameError(\"name 'is_integer' is not defined\")"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "integral_float_predicate_N_W4",
+    "condition": "MODULE_V",
+    "reasons": [
+      {
+        "kind": "EXECUTION_OR_SUPPORT",
+        "reason": "DEFINITION_EXECUTION_ERROR",
+        "detail": "SyntaxError(\"assignment expression cannot rebind comprehension iteration variable 'value'\")"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "integral_float_predicate_N_W4",
+    "condition": "TEXT_CODE",
+    "reasons": [
+      {
+        "kind": "EXECUTION_OR_SUPPORT",
+        "reason": "DEFINITION_EXECUTION_ERROR",
+        "detail": "SyntaxError(\"assignment expression cannot rebind comprehension iteration variable 'value'\")"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "least_significant_one_value_E_W3",
+    "condition": "MANUAL_V",
+    "reasons": [
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "frozenset({16, 1, 128})",
+        "expected": [
+          0,
+          1,
+          16,
+          128
+        ]
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "least_significant_one_value_E_W3",
+    "condition": "MODULE_V",
+    "reasons": [
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "frozenset({16, 1, 128})",
+        "expected": [
+          0,
+          1,
+          16,
+          128
+        ]
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "least_significant_one_value_E_W3",
+    "condition": "TEXT_CODE",
+    "reasons": [
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "frozenset({16, 1, 128})",
+        "expected": [
+          0,
+          1,
+          16,
+          128
+        ]
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "least_significant_one_value_N_W3",
+    "condition": "BASE",
+    "reasons": [
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "{16, 1, 128}",
+        "expected": [
+          0,
+          1,
+          16,
+          128
+        ]
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "least_significant_one_value_N_W3",
+    "condition": "MANUAL_V",
+    "reasons": [
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "{16, 1, 128}",
+        "expected": [
+          0,
+          1,
+          16,
+          128
+        ]
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "least_significant_one_value_N_W3",
+    "condition": "MODULE_V",
+    "reasons": [
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "{16, 1, 128}",
+        "expected": [
+          0,
+          1,
+          16,
+          128
+        ]
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "least_significant_one_value_N_W3",
+    "condition": "TEXT_CODE",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "least_significant_one_value_N_W4",
+    "condition": "MODULE_V",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "frozenset({16, 1, 128})",
+        "expected": [
+          0,
+          1,
+          16,
+          128
+        ]
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "least_significant_one_value_N_W4",
+    "condition": "TEXT_CODE",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "modal_member_selection_E_W4",
+    "condition": "BASE",
+    "reasons": [
+      {
+        "kind": "FORMAT",
+        "reason": "TRUNCATED",
+        "detail": null
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "modal_member_selection_N_W3",
+    "condition": "BASE",
+    "reasons": [
+      {
+        "kind": "FORMAT",
+        "reason": "TRUNCATED",
+        "detail": null
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "modal_member_selection_N_W3",
+    "condition": "MANUAL_V",
+    "reasons": [
+      {
+        "kind": "FORMAT",
+        "reason": "TRUNCATED",
+        "detail": null
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "modal_member_selection_N_W3",
+    "condition": "TEXT_CODE",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "modal_member_selection_N_W4",
+    "condition": "BASE",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "modal_member_selection_N_W4",
+    "condition": "MANUAL_V",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "modal_member_selection_N_W4",
+    "condition": "MODULE_V",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "modal_member_selection_N_W4",
+    "condition": "TEXT_CODE",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "python_literal_representation_N_W3",
+    "condition": "BASE",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "python_literal_representation_N_W3",
+    "condition": "MANUAL_V",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "python_literal_representation_N_W3",
+    "condition": "MODULE_V",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "python_literal_representation_N_W3",
+    "condition": "TEXT_CODE",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "python_literal_representation_N_W4",
+    "condition": "BASE",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "python_literal_representation_N_W4",
+    "condition": "MANUAL_V",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "python_literal_representation_N_W4",
+    "condition": "MODULE_V",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "python_literal_representation_N_W4",
+    "condition": "TEXT_CODE",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "run_length_expansion_E_W3",
+    "condition": "BASE",
+    "reasons": [
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 0,
+        "actual": "''",
+        "expected": []
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 1,
+        "actual": "'caab'",
+        "expected": [
+          "aab",
+          "c"
+        ]
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "'zzz'",
+        "expected": [
+          "",
+          "zzz"
+        ]
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 3,
+        "actual": "'112aaa'",
+        "expected": [
+          "aaa",
+          "112"
+        ]
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "run_length_expansion_E_W4",
+    "condition": "BASE",
+    "reasons": [
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 0,
+        "actual": "''",
+        "expected": []
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 1,
+        "actual": "'caab'",
+        "expected": [
+          "aab",
+          "c"
+        ]
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "'zzz'",
+        "expected": [
+          "",
+          "zzz"
+        ]
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 3,
+        "actual": "'112aaa'",
+        "expected": [
+          "aaa",
+          "112"
+        ]
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "run_length_expansion_N_W3",
+    "condition": "BASE",
+    "reasons": [
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 0,
+        "actual": "''",
+        "expected": []
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'str' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 1,
+        "actual": "'aabaabc'",
+        "expected": [
+          "aab",
+          "c"
+        ]
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'str' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "'zzz'",
+        "expected": [
+          "",
+          "zzz"
+        ]
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'str' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 3,
+        "actual": "'aaa112'",
+        "expected": [
+          "aaa",
+          "112"
+        ]
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'str' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "run_length_expansion_N_W3",
+    "condition": "MANUAL_V",
+    "reasons": [
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 0,
+        "actual": "''",
+        "expected": []
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'str' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 1,
+        "actual": "'aabaabc'",
+        "expected": [
+          "aab",
+          "c"
+        ]
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'str' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "'zzz'",
+        "expected": [
+          "",
+          "zzz"
+        ]
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'str' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 3,
+        "actual": "'aaa112'",
+        "expected": [
+          "aaa",
+          "112"
+        ]
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'str' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "run_length_expansion_N_W3",
+    "condition": "MODULE_V",
+    "reasons": [
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 0,
+        "actual": "''",
+        "expected": []
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'str' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 1,
+        "actual": "'aabaabc'",
+        "expected": [
+          "aab",
+          "c"
+        ]
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'str' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "'zzz'",
+        "expected": [
+          "",
+          "zzz"
+        ]
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'str' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 3,
+        "actual": "'aaa112'",
+        "expected": [
+          "aaa",
+          "112"
+        ]
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'str' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "run_length_expansion_N_W3",
+    "condition": "TEXT_CODE",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "run_length_expansion_N_W4",
+    "condition": "BASE",
+    "reasons": [
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 0,
+        "actual": "''",
+        "expected": []
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'str' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 1,
+        "actual": "'caab'",
+        "expected": [
+          "aab",
+          "c"
+        ]
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'str' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "'zzz'",
+        "expected": [
+          "",
+          "zzz"
+        ]
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'str' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 3,
+        "actual": "'112aaa'",
+        "expected": [
+          "aaa",
+          "112"
+        ]
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'str' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "run_length_expansion_N_W4",
+    "condition": "MANUAL_V",
+    "reasons": [
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 0,
+        "actual": "''",
+        "expected": []
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'str' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 1,
+        "actual": "'caab'",
+        "expected": [
+          "aab",
+          "c"
+        ]
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'str' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "'zzz'",
+        "expected": [
+          "",
+          "zzz"
+        ]
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'str' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 3,
+        "actual": "'112aaa'",
+        "expected": [
+          "aaa",
+          "112"
+        ]
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'str' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "run_length_expansion_N_W4",
+    "condition": "TEXT_CODE",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "tab_stop_expansion_E_W3",
+    "condition": "BASE",
+    "reasons": [
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 1,
+        "actual": "{' ', '\\n', 'b', 'c', 'a'}",
+        "expected": [
+          "a   b",
+          "ab  c"
+        ]
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "{' ', 'd', '\\n', 'X', 'b', 'c', 'a'}",
+        "expected": [
+          "    ",
+          "abcd    X",
+          "a\n    b",
+          ""
+        ]
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 3,
+        "actual": "{' ', 'y', '\\n', 'x', 'n', 'z', 'i', 'a', 'p', 'l'}",
+        "expected": [
+          "plain",
+          "xy  z"
+        ]
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "tab_stop_expansion_E_W3",
+    "condition": "MANUAL_V",
+    "reasons": [
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 1,
+        "actual": "{' ', '\\n', 'b', 'c', 'a'}",
+        "expected": [
+          "a   b",
+          "ab  c"
+        ]
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "{' ', 'd', '\\n', 'X', 'b', 'c', 'a'}",
+        "expected": [
+          "    ",
+          "abcd    X",
+          "a\n    b",
+          ""
+        ]
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 3,
+        "actual": "{' ', 'y', '\\n', 'x', 'n', 'z', 'i', 'a', 'p', 'l'}",
+        "expected": [
+          "plain",
+          "xy  z"
+        ]
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "tab_stop_expansion_E_W3",
+    "condition": "MODULE_V",
+    "reasons": [
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 1,
+        "actual": "{' ', '\\n', 'b', 'c', 'a'}",
+        "expected": [
+          "a   b",
+          "ab  c"
+        ]
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "{' ', 'd', '\\n', 'X', 'b', 'c', 'a'}",
+        "expected": [
+          "    ",
+          "abcd    X",
+          "a\n    b",
+          ""
+        ]
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 3,
+        "actual": "{' ', 'y', '\\n', 'x', 'n', 'z', 'i', 'a', 'p', 'l'}",
+        "expected": [
+          "plain",
+          "xy  z"
+        ]
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "tab_stop_expansion_E_W4",
+    "condition": "MANUAL_V",
+    "reasons": [
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 1,
+        "actual": "{' ', '\\n', 'b', 'c', 'a'}",
+        "expected": [
+          "a   b",
+          "ab  c"
+        ]
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "{' ', 'd', '\\n', 'X', 'b', 'c', 'a'}",
+        "expected": [
+          "    ",
+          "abcd    X",
+          "a\n    b",
+          ""
+        ]
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 3,
+        "actual": "{' ', 'y', '\\n', 'x', 'n', 'z', 'i', 'a', 'p', 'l'}",
+        "expected": [
+          "plain",
+          "xy  z"
+        ]
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "tab_stop_expansion_E_W4",
+    "condition": "MODULE_V",
+    "reasons": [
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 1,
+        "actual": "{' ', '\\n', 'b', 'c', 'a'}",
+        "expected": [
+          "a   b",
+          "ab  c"
+        ]
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "{' ', 'd', '\\n', 'X', 'b', 'c', 'a'}",
+        "expected": [
+          "    ",
+          "abcd    X",
+          "a\n    b",
+          ""
+        ]
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 3,
+        "actual": "{' ', 'y', '\\n', 'x', 'n', 'z', 'i', 'a', 'p', 'l'}",
+        "expected": [
+          "plain",
+          "xy  z"
+        ]
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "tab_stop_expansion_N_W3",
+    "condition": "BASE",
+    "reasons": [
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 1,
+        "actual": "{' ', '\\n', 'b', 'c', 'a'}",
+        "expected": [
+          "a   b",
+          "ab  c"
+        ]
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "{' ', 'd', '\\n', 'X', 'b', 'c', 'a'}",
+        "expected": [
+          "    ",
+          "abcd    X",
+          "a\n    b",
+          ""
+        ]
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 3,
+        "actual": "{' ', 'y', '\\n', 'x', 'n', 'z', 'i', 'a', 'p', 'l'}",
+        "expected": [
+          "plain",
+          "xy  z"
+        ]
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "tab_stop_expansion_N_W3",
+    "condition": "MANUAL_V",
+    "reasons": [
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 1,
+        "actual": "{' ', '\\n', 'b', 'c', 'a'}",
+        "expected": [
+          "a   b",
+          "ab  c"
+        ]
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "{' ', 'd', '\\n', 'X', 'b', 'c', 'a'}",
+        "expected": [
+          "    ",
+          "abcd    X",
+          "a\n    b",
+          ""
+        ]
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 3,
+        "actual": "{' ', 'y', '\\n', 'x', 'n', 'z', 'i', 'a', 'p', 'l'}",
+        "expected": [
+          "plain",
+          "xy  z"
+        ]
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "tab_stop_expansion_N_W3",
+    "condition": "MODULE_V",
+    "reasons": [
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 1,
+        "actual": "{' ', '\\n', 'b', 'c', 'a'}",
+        "expected": [
+          "a   b",
+          "ab  c"
+        ]
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "{' ', 'd', '\\n', 'X', 'b', 'c', 'a'}",
+        "expected": [
+          "    ",
+          "abcd    X",
+          "a\n    b",
+          ""
+        ]
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 3,
+        "actual": "{' ', 'y', '\\n', 'x', 'n', 'z', 'i', 'a', 'p', 'l'}",
+        "expected": [
+          "plain",
+          "xy  z"
+        ]
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "tab_stop_expansion_N_W3",
+    "condition": "TEXT_CODE",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'expandtabs' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'expandtabs' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 3,
+        "detail": "NameError(\"name 'expandtabs' is not defined\")"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "tab_stop_expansion_N_W4",
+    "condition": "BASE",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'expandtabs' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'expandtabs' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 3,
+        "detail": "NameError(\"name 'expandtabs' is not defined\")"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "tab_stop_expansion_N_W4",
+    "condition": "MANUAL_V",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'expandtabs' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'expandtabs' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 3,
+        "detail": "NameError(\"name 'expandtabs' is not defined\")"
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "tab_stop_expansion_N_W4",
+    "condition": "MODULE_V",
+    "reasons": [
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 1,
+        "actual": "{'a   b\\na   b\\nab  c'}",
+        "expected": [
+          "a   b",
+          "ab  c"
+        ]
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "{'    \\nabcd    X\\na\\n    b\\n'}",
+        "expected": [
+          "    ",
+          "abcd    X",
+          "a\n    b",
+          ""
+        ]
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 3,
+        "actual": "{'plain\\nxy  z'}",
+        "expected": [
+          "plain",
+          "xy  z"
+        ]
+      }
+    ],
+    "coverage": true
+  },
+  {
+    "id": "tab_stop_expansion_N_W4",
+    "condition": "TEXT_CODE",
+    "reasons": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ],
+    "coverage": true
+  }
+]

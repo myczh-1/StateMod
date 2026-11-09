@@ -1,0 +1,32 @@
+{
+  "BASE/train/E": {
+    "n": 4,
+    "functional": 4,
+    "joint": 0
+  },
+  "BASE/train/N": {
+    "n": 4,
+    "functional": 3,
+    "joint": 3
+  },
+  "BASE/reference/E": {
+    "n": 4,
+    "functional": 4,
+    "joint": 0
+  },
+  "BASE/reference/N": {
+    "n": 4,
+    "functional": 2,
+    "joint": 2
+  },
+  "ARCHIVED_TEXT_CODE/reference/E": {
+    "n": 4,
+    "functional": 4,
+    "joint": 4
+  },
+  "ARCHIVED_TEXT_CODE/reference/N": {
+    "n": 4,
+    "functional": 4,
+    "joint": 4
+  }
+}

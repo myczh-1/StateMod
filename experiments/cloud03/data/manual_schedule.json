@@ -1,0 +1,18 @@
+{
+  "double_E_W2": true,
+  "double_N_W2": false,
+  "increment_E_W2": true,
+  "increment_N_W2": false,
+  "lower_E_W2": true,
+  "lower_N_W2": false,
+  "negative_E_W2": true,
+  "negative_N_W2": false,
+  "square_E_W1": true,
+  "square_E_W2": true,
+  "square_N_W1": false,
+  "square_N_W2": false,
+  "strip_E_W1": true,
+  "strip_E_W2": true,
+  "strip_N_W1": false,
+  "strip_N_W2": false
+}

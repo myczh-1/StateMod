@@ -1,0 +1,8 @@
+{
+  "time": 1793784874.89634,
+  "reason": "All immutable Cloud03 results retrieved and individually SHA verified; no GPU work remaining",
+  "returncode": 0,
+  "stdout": "",
+  "stderr": "",
+  "delete_or_release": false
+}

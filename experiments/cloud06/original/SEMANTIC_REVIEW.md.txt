@@ -1,0 +1,18 @@
+# 新任务语义与隔离审核
+
+审核对象是任务计算本身，不以函数名字或Token不相同当作独立性证明。扫描冻结任务/语义元数据，未使用新任务模型输出。evidence/HISTORICAL_TASK_METADATA.json记录来源与抽取内容，SEMANTIC_SCAN.json记录检索结果。
+
+|新族|历史近邻|区别与残留共性|
+|---|---|---|
+|integer_octal_text|hex_float_literals、grouped_decimal_strings、binary_text_value|非负整数生成八进制文字；不同于浮点hex格式、十进制分组或解析二进制文字。不只是改旧函数名字。共享数字表示这个宽主题，不能声称不同知识领域。|
+|literal_a_occurrences|byte_populations、substring_starts、count_members|直接对任意字符串统计固定字符出现次数；不做整数二进制转换/位计数、不输出所有匹配位置、不统计集合基数。仍共享计数这一基础操作。|
+|ascii_text_predicate|identifier_flags、integral_float_predicate、ascii_labels|判断字符串所有字符是否属于ASCII；不判断Python标识符、浮点整数性或数值转字符。共享逐项布尔判定结构。|
+|boolean_complement|boolean_domain、logical_implication、boolean_anf|逐项逻辑取反；不同于返回布尔常量域、二元蕴含或布尔多项式运算。共享布尔运算基础；不声称数学原语完全不重合。|
+
+以上四个具体输入域—变换—输出合同未在已审计清单中发现直接同题，原始新族名与已审计508族不重复。关键操作字面检索无直接命中只是辅助证据；不能把它当作语义无重合的证明。人工审核依据上述具体变换，未把共享的map→去重实现框架算作独立性破坏，因为该框架正是本轮保持计算难度一致的实验约束。
+
+全部历史任务不可能与新的初等运算完全没有抽象或子运算交集。本轮“独立确认”仅指未参与模块训练、阈值选择、Bank编译和此前行为测量的这四个具体计算族及两版完整合同句，不宣称跨算法大类泛化。
+
+W_USAGE/W_INTERFACE完整句与此前已审计Prompt无完全重复；仍有.add/.remove、添加/移除等合同必要词语。本轮检验的是明确API语境下的未见完整措辞，不是完全无关键词迁移。
+
+任务结构全部是一次逐成员操作加去重、三个固定用例，没有按模型表现进行筛选；数学/操作难度用结构代理控制，模型熟悉度由BASE描述。各类别与措辞共享同族测试，不以类目改变评分难度。

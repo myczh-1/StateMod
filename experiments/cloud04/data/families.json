@@ -1,0 +1,522 @@
+[
+  {
+    "family": "tab_stop_expansion",
+    "name": "collect_tab_views",
+    "arg": "texts",
+    "member_type": "str",
+    "operation": "texts 是字符串列表。对每个字符串执行 Python 的 expandtabs(4)，按每四列一个制表位展开制表符，保留换行等其他字符，收集处理后的字符串。",
+    "expression": "text.expandtabs(4) for text in texts",
+    "cases": [
+      [
+        "empty",
+        [],
+        []
+      ],
+      [
+        "duplicates",
+        [
+          "a\tb",
+          "a\tb",
+          "ab\tc"
+        ],
+        [
+          "a   b",
+          "ab  c"
+        ]
+      ],
+      [
+        "boundary",
+        [
+          "\t",
+          "abcd\tX",
+          "a\n\tb",
+          ""
+        ],
+        [
+          "    ",
+          "abcd    X",
+          "a\n    b",
+          ""
+        ]
+      ],
+      [
+        "ordinary",
+        [
+          "plain",
+          "xy\tz"
+        ],
+        [
+          "plain",
+          "xy  z"
+        ]
+      ]
+    ],
+    "nearest": [
+      "trim_members",
+      "word_wrap_lines",
+      "justify_spaces"
+    ],
+    "review": "Tab expansion depends on running column and resets at line boundaries. It is neither boundary stripping nor line packing/space justification; one fixed replacement of tab cannot implement the cases."
+  },
+  {
+    "family": "python_literal_representation",
+    "name": "collect_literal_views",
+    "arg": "texts",
+    "member_type": "str",
+    "operation": "texts 是字符串列表。对每个元素调用 Python 内置 repr，收集得到的字符串表示；引号、反斜杠和转义序列都是结果的一部分，不要调用 eval。",
+    "expression": "repr(text) for text in texts",
+    "cases": [
+      [
+        "empty",
+        [],
+        []
+      ],
+      [
+        "duplicates",
+        [
+          "a",
+          "a",
+          "can't"
+        ],
+        [
+          "'a'",
+          "\"can't\""
+        ]
+      ],
+      [
+        "boundary",
+        [
+          "",
+          "\n",
+          "\\"
+        ],
+        [
+          "''",
+          "'\\n'",
+          "'\\\\'"
+        ]
+      ],
+      [
+        "ordinary",
+        [
+          "中文",
+          "a\tb"
+        ],
+        [
+          "'中文'",
+          "'a\\tb'"
+        ]
+      ]
+    ],
+    "nearest": [
+      "escape_ampersands",
+      "quoted_printable_octets",
+      "scalar_type_names"
+    ],
+    "review": "Python source-literal representation of a whole string, including delimiters and context-sensitive quote choice, differs from replacing one character, byte transfer encoding, or runtime type-name lookup."
+  },
+  {
+    "family": "centered_text_padding",
+    "name": "collect_centered_views",
+    "arg": "texts",
+    "member_type": "str",
+    "operation": "texts 是字符串列表。对每个字符串调用 center(6, \".\")，收集居中后的字符串；宽度已经达到六或超过六的字符串保持原样，奇数填充遵循该 Python 方法。",
+    "expression": "text.center(6, '.') for text in texts",
+    "cases": [
+      [
+        "empty",
+        [],
+        []
+      ],
+      [
+        "duplicates",
+        [
+          "ab",
+          "ab",
+          "a"
+        ],
+        [
+          "..ab..",
+          "..a..."
+        ]
+      ],
+      [
+        "boundary",
+        [
+          "",
+          "123456",
+          "1234567"
+        ],
+        [
+          "......",
+          "123456",
+          "1234567"
+        ]
+      ],
+      [
+        "ordinary",
+        [
+          "abc",
+          "abcd",
+          "abcde"
+        ],
+        [
+          ".abc..",
+          ".abcd.",
+          "abcde."
+        ]
+      ]
+    ],
+    "nearest": [
+      "justify_spaces",
+      "word_wrap_lines",
+      "grouped_decimal_strings"
+    ],
+    "review": "Symmetric fixed-width boundary padding of each independent string is distinct from distributing spaces between words or wrapping lines. Width is fixed before inference; this is one family, not multiple widths counted separately."
+  },
+  {
+    "family": "integral_float_predicate",
+    "name": "collect_integrality_flags",
+    "arg": "values",
+    "member_type": "bool",
+    "operation": "values 是有限 float 值的列表。对每个值调用 is_integer()，收集布尔结果；正负零均视为整数值，非零小数部分得到 False，不要把结果改成整数 0 或 1。",
+    "expression": "value.is_integer() for value in values",
+    "cases": [
+      [
+        "empty",
+        [],
+        []
+      ],
+      [
+        "duplicates",
+        [
+          1.0,
+          1.0,
+          2.5
+        ],
+        [
+          true,
+          false
+        ]
+      ],
+      [
+        "boundary",
+        [
+          -0.0,
+          0.0,
+          -2.5
+        ],
+        [
+          true,
+          false
+        ]
+      ],
+      [
+        "ordinary",
+        [
+          3.25,
+          -1.75
+        ],
+        [
+          false
+        ]
+      ]
+    ],
+    "nearest": [
+      "identifier_flags",
+      "binary_parity",
+      "rounded_members"
+    ],
+    "review": "Tests integrality of finite floating-point values without rounding. It is neither a lexical identifier predicate, bit parity nor mapping values to rounded numbers; a boolean output alone does not define one semantic family."
+  },
+  {
+    "family": "least_significant_one_value",
+    "name": "collect_lowbit_values",
+    "arg": "numbers",
+    "member_type": "int",
+    "operation": "numbers 是非负整数列表。对每个整数 n，求二进制表示中最低位的 1 所代表的数值；n 为零时结果为零。例如 12 的结果为 4，10 的结果为 2。",
+    "expression": "n & -n for n in numbers",
+    "cases": [
+      [
+        "empty",
+        [],
+        []
+      ],
+      [
+        "duplicates",
+        [
+          12,
+          10,
+          12,
+          6
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      [
+        "boundary",
+        [
+          0,
+          1,
+          16,
+          128
+        ],
+        [
+          0,
+          1,
+          16,
+          128
+        ]
+      ],
+      [
+        "ordinary",
+        [
+          7,
+          24,
+          40
+        ],
+        [
+          1,
+          8
+        ]
+      ]
+    ],
+    "nearest": [
+      "gray_words",
+      "ceiling_binary_exponents",
+      "swapped_u16_values"
+    ],
+    "review": "Isolates the least significant nonzero bit value. Gray encoding mixes bits, ceiling binary exponent measures magnitude, byte swap permutes fixed-width bytes. None becomes this transform by renaming or changing a constant; shared bit operations are disclosed."
+  },
+  {
+    "family": "modal_member_selection",
+    "name": "collect_modal_members",
+    "arg": "numbers",
+    "member_type": "int",
+    "operation": "numbers 是整数列表。收集在整个列表中出现次数达到最大值的所有整数，出现次数并列第一时全部保留；空输入得到空结果。",
+    "expression": "n for n in numbers if numbers.count(n) == max((numbers.count(v) for v in numbers), default=0)",
+    "cases": [
+      [
+        "empty",
+        [],
+        []
+      ],
+      [
+        "duplicates",
+        [
+          1,
+          1,
+          2,
+          2,
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      [
+        "boundary",
+        [
+          -1,
+          -1,
+          0
+        ],
+        [
+          -1
+        ]
+      ],
+      [
+        "ordinary",
+        [
+          5,
+          7,
+          9
+        ],
+        [
+          5,
+          7,
+          9
+        ]
+      ]
+    ],
+    "nearest": [
+      "frequency_map",
+      "majority_vote",
+      "minimum_value"
+    ],
+    "review": "Returns every global frequency maximizer, including ties with no strict majority. Frequency map returns counts, majority_vote tests/reconstructs strict majority, and numeric minimum ignores frequency. Tie/no-majority cases prevent substituting these older contracts."
+  },
+  {
+    "family": "run_length_expansion",
+    "name": "collect_expanded_runs",
+    "arg": "records",
+    "member_type": "str",
+    "operation": "records 是多条游程记录组成的列表，每条记录是若干 [单字符字符串, 非负重复次数] 对。按每条记录的顺序重复字符并连接成一个字符串，收集每条记录展开后的字符串；空记录得到空字符串。",
+    "expression": "''.join(ch * count for ch, count in record) for record in records",
+    "cases": [
+      [
+        "empty",
+        [],
+        []
+      ],
+      [
+        "duplicates",
+        [
+          [
+            [
+              "a",
+              2
+            ],
+            [
+              "b",
+              1
+            ]
+          ],
+          [
+            [
+              "a",
+              2
+            ],
+            [
+              "b",
+              1
+            ]
+          ],
+          [
+            [
+              "c",
+              1
+            ]
+          ]
+        ],
+        [
+          "aab",
+          "c"
+        ]
+      ],
+      [
+        "boundary",
+        [
+          [],
+          [
+            [
+              "x",
+              0
+            ]
+          ],
+          [
+            [
+              "z",
+              3
+            ]
+          ]
+        ],
+        [
+          "",
+          "zzz"
+        ]
+      ],
+      [
+        "ordinary",
+        [
+          [
+            [
+              "a",
+              1
+            ],
+            [
+              "a",
+              2
+            ],
+            [
+              "b",
+              0
+            ]
+          ],
+          [
+            [
+              "1",
+              2
+            ],
+            [
+              "2",
+              1
+            ]
+          ]
+        ],
+        [
+          "aaa",
+          "112"
+        ]
+      ]
+    ],
+    "nearest": [
+      "repeat_text",
+      "joined_words",
+      "run_start_offsets"
+    ],
+    "review": "Decodes variable nested character/count runs into one string per record. Repeating one text or joining given words is a primitive, not this variable-run input contract; run_start_offsets is segmentation of already expanded sequences."
+  },
+  {
+    "family": "dna_reverse_complement",
+    "name": "collect_reverse_complements",
+    "arg": "sequences",
+    "member_type": "str",
+    "operation": "sequences 是仅含大写 A、C、G、T 的 DNA 字符串列表。对每条序列先按 A 与 T、C 与 G 互换做互补，再反转字符顺序，收集反向互补序列；空序列仍为空字符串。",
+    "expression": "sequence.translate(str.maketrans('ACGT', 'TGCA'))[::-1] for sequence in sequences",
+    "cases": [
+      [
+        "empty",
+        [],
+        []
+      ],
+      [
+        "duplicates",
+        [
+          "AAGC",
+          "AAGC",
+          "AC"
+        ],
+        [
+          "GCTT",
+          "GT"
+        ]
+      ],
+      [
+        "boundary",
+        [
+          "",
+          "A",
+          "C"
+        ],
+        [
+          "",
+          "T",
+          "G"
+        ]
+      ],
+      [
+        "ordinary",
+        [
+          "ATGC",
+          "GGTA",
+          "ACGT"
+        ],
+        [
+          "GCAT",
+          "TACC",
+          "ACGT"
+        ]
+      ]
+    ],
+    "nearest": [
+      "ordered_reverse",
+      "casefold_membership",
+      "rna_noncrossing_counts"
+    ],
+    "review": "Fixed nucleotide complement plus reversal, tested on non-palindromic/non-self-complementary inputs. Reversal alone or character case normalization cannot satisfy these outputs; RNA pairing counts solve a different combinatorial problem. Shared string primitives do not imply unseen algorithmic primitives."
+  }
+]

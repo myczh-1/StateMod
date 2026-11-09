@@ -1,0 +1,18 @@
+{
+  "integer_octal_text_E_W_USAGE": true,
+  "integer_octal_text_E_W_INTERFACE": true,
+  "integer_octal_text_N_W_USAGE": false,
+  "integer_octal_text_N_W_INTERFACE": false,
+  "literal_a_occurrences_E_W_USAGE": true,
+  "literal_a_occurrences_E_W_INTERFACE": true,
+  "literal_a_occurrences_N_W_USAGE": false,
+  "literal_a_occurrences_N_W_INTERFACE": false,
+  "ascii_text_predicate_E_W_USAGE": true,
+  "ascii_text_predicate_E_W_INTERFACE": true,
+  "ascii_text_predicate_N_W_USAGE": false,
+  "ascii_text_predicate_N_W_INTERFACE": false,
+  "boolean_complement_E_W_USAGE": true,
+  "boolean_complement_E_W_INTERFACE": true,
+  "boolean_complement_N_W_USAGE": false,
+  "boolean_complement_N_W_INTERFACE": false
+}

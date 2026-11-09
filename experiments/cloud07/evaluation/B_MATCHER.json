@@ -1,0 +1,158 @@
+{
+  "rows": [
+    {
+      "id": "integer_octal_text_E_W_USAGE",
+      "category": "E",
+      "natural_judgment": {
+        "logit": 17.17950743545949,
+        "p": 0.9999999654032977,
+        "enabled": true,
+        "threshold": 0.5
+      },
+      "controlled_judgment": {
+        "logit": 17.17950743545949,
+        "p": 0.9999999654032977,
+        "enabled": true,
+        "threshold": 0.5
+      },
+      "base_functional": true,
+      "text_functional": true,
+      "text_joint": true
+    },
+    {
+      "id": "integer_octal_text_E_CLEAR_CALLER",
+      "category": "E",
+      "natural_judgment": {
+        "logit": 8.478250952689155,
+        "p": 0.9997921011455377,
+        "enabled": true,
+        "threshold": 0.5
+      },
+      "controlled_judgment": {
+        "logit": 8.478250952689155,
+        "p": 0.9997921011455377,
+        "enabled": true,
+        "threshold": 0.5
+      },
+      "base_functional": true,
+      "text_functional": true,
+      "text_joint": true
+    },
+    {
+      "id": "integer_octal_text_N_W_USAGE",
+      "category": "N",
+      "natural_judgment": {
+        "logit": 7.646052277283399,
+        "p": 0.9995223011716428,
+        "enabled": true,
+        "threshold": 0.5
+      },
+      "controlled_judgment": {
+        "logit": 7.646052277283399,
+        "p": 0.9995223011716428,
+        "enabled": true,
+        "threshold": 0.5
+      },
+      "base_functional": true,
+      "text_functional": true,
+      "text_joint": true
+    },
+    {
+      "id": "integer_octal_text_N_CLEAR_CALLER",
+      "category": "N",
+      "natural_judgment": {
+        "logit": -7.394805127509678,
+        "p": 0.000614059103164398,
+        "enabled": false,
+        "threshold": 0.5
+      },
+      "controlled_judgment": {
+        "logit": -7.394805127509678,
+        "p": 0.000614059103164398,
+        "enabled": false,
+        "threshold": 0.5
+      },
+      "base_functional": true,
+      "text_functional": false,
+      "text_joint": false
+    },
+    {
+      "id": "boolean_complement_E_W_USAGE",
+      "category": "E",
+      "natural_judgment": {
+        "logit": 13.34076685830994,
+        "p": 0.9999983924004687,
+        "enabled": true,
+        "threshold": 0.5
+      },
+      "controlled_judgment": {
+        "logit": 13.34076685830994,
+        "p": 0.9999983924004687,
+        "enabled": true,
+        "threshold": 0.5
+      },
+      "base_functional": true,
+      "text_functional": true,
+      "text_joint": true
+    },
+    {
+      "id": "boolean_complement_E_CLEAR_CALLER",
+      "category": "E",
+      "natural_judgment": {
+        "logit": 1.677595574247069,
+        "p": 0.8425858829455825,
+        "enabled": true,
+        "threshold": 0.5
+      },
+      "controlled_judgment": {
+        "logit": 1.677595574247069,
+        "p": 0.8425858829455825,
+        "enabled": true,
+        "threshold": 0.5
+      },
+      "base_functional": true,
+      "text_functional": true,
+      "text_joint": true
+    },
+    {
+      "id": "boolean_complement_N_W_USAGE",
+      "category": "N",
+      "natural_judgment": {
+        "logit": 3.025472279409243,
+        "p": 0.9537117037199376,
+        "enabled": true,
+        "threshold": 0.5
+      },
+      "controlled_judgment": {
+        "logit": 3.025472279409243,
+        "p": 0.9537117037199376,
+        "enabled": true,
+        "threshold": 0.5
+      },
+      "base_functional": true,
+      "text_functional": false,
+      "text_joint": false
+    },
+    {
+      "id": "boolean_complement_N_CLEAR_CALLER",
+      "category": "N",
+      "natural_judgment": {
+        "logit": -23.685482085632742,
+        "p": 5.1704200729976196e-11,
+        "enabled": false,
+        "threshold": 0.5
+      },
+      "controlled_judgment": {
+        "logit": -23.685482085632742,
+        "p": 5.1704200729976196e-11,
+        "enabled": false,
+        "threshold": 0.5
+      },
+      "base_functional": true,
+      "text_functional": false,
+      "text_joint": false
+    }
+  ],
+  "threshold": 0.5,
+  "trained": false
+}

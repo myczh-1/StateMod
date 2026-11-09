@@ -1,0 +1,15 @@
+{
+  "generation_step_checks": 653,
+  "probe_count": 22,
+  "max_logits_rms": 3.5486542746783747e-05,
+  "max_actual_token_logp_error": 1.890518722724721e-05,
+  "all_probes_readonly_exact": true,
+  "all_probe_actions_agree": true,
+  "max_probe_p_error": 9.064533981195666e-07,
+  "max_probe_logits_rms": 8.088938410914743e-06,
+  "max_attention_error": 8.971420706882505e-07,
+  "max_attention_output_rms": 2.303527342326948e-07,
+  "active_predictions": 3,
+  "generation_layer_calls": 42,
+  "same_history_cross_condition_logit_differences_are_not_numerical_errors": true
+}

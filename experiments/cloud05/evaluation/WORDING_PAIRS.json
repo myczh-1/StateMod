@@ -1,0 +1,658 @@
+[
+  {
+    "family": "double",
+    "category": "E",
+    "condition": "BASE",
+    "anchor_id": "double_E_W_ANCHOR",
+    "lifecycle_id": "double_E_W_LIFECYCLE",
+    "complete": true,
+    "anchor": {
+      "functional": true,
+      "joint": false,
+      "judgment": null
+    },
+    "lifecycle": {
+      "functional": true,
+      "joint": false,
+      "judgment": null
+    }
+  },
+  {
+    "family": "double",
+    "category": "E",
+    "condition": "TEXT_CODE",
+    "anchor_id": "double_E_W_ANCHOR",
+    "lifecycle_id": "double_E_W_LIFECYCLE",
+    "complete": true,
+    "anchor": {
+      "functional": true,
+      "joint": true,
+      "judgment": null
+    },
+    "lifecycle": {
+      "functional": true,
+      "joint": true,
+      "judgment": null
+    }
+  },
+  {
+    "family": "double",
+    "category": "E",
+    "condition": "MANUAL_V",
+    "anchor_id": "double_E_W_ANCHOR",
+    "lifecycle_id": "double_E_W_LIFECYCLE",
+    "complete": true,
+    "anchor": {
+      "functional": true,
+      "joint": true,
+      "judgment": null
+    },
+    "lifecycle": {
+      "functional": true,
+      "joint": true,
+      "judgment": null
+    }
+  },
+  {
+    "family": "double",
+    "category": "E",
+    "condition": "MODULE_V",
+    "anchor_id": "double_E_W_ANCHOR",
+    "lifecycle_id": "double_E_W_LIFECYCLE",
+    "complete": true,
+    "anchor": {
+      "functional": true,
+      "joint": true,
+      "judgment": {
+        "logit": 13.375593997393274,
+        "p": 0.9999984474247435,
+        "enabled": true,
+        "threshold": 0.5
+      }
+    },
+    "lifecycle": {
+      "functional": true,
+      "joint": true,
+      "judgment": {
+        "logit": 8.504758777473674,
+        "p": 0.9997975385903851,
+        "enabled": true,
+        "threshold": 0.5
+      }
+    }
+  },
+  {
+    "family": "double",
+    "category": "N",
+    "condition": "BASE",
+    "anchor_id": "double_N_W_ANCHOR",
+    "lifecycle_id": "double_N_W_LIFECYCLE",
+    "complete": true,
+    "anchor": {
+      "functional": true,
+      "joint": true,
+      "judgment": null
+    },
+    "lifecycle": {
+      "functional": false,
+      "joint": false,
+      "judgment": null
+    }
+  },
+  {
+    "family": "double",
+    "category": "N",
+    "condition": "TEXT_CODE",
+    "anchor_id": "double_N_W_ANCHOR",
+    "lifecycle_id": "double_N_W_LIFECYCLE",
+    "complete": true,
+    "anchor": {
+      "functional": false,
+      "joint": false,
+      "judgment": null
+    },
+    "lifecycle": {
+      "functional": true,
+      "joint": true,
+      "judgment": null
+    }
+  },
+  {
+    "family": "double",
+    "category": "N",
+    "condition": "MANUAL_V",
+    "anchor_id": "double_N_W_ANCHOR",
+    "lifecycle_id": "double_N_W_LIFECYCLE",
+    "complete": true,
+    "anchor": {
+      "functional": true,
+      "joint": true,
+      "judgment": null
+    },
+    "lifecycle": {
+      "functional": false,
+      "joint": false,
+      "judgment": null
+    }
+  },
+  {
+    "family": "double",
+    "category": "N",
+    "condition": "MODULE_V",
+    "anchor_id": "double_N_W_ANCHOR",
+    "lifecycle_id": "double_N_W_LIFECYCLE",
+    "complete": true,
+    "anchor": {
+      "functional": true,
+      "joint": true,
+      "judgment": {
+        "logit": -18.46053049181813,
+        "p": 9.609338014279621e-09,
+        "enabled": false,
+        "threshold": 0.5
+      }
+    },
+    "lifecycle": {
+      "functional": false,
+      "joint": false,
+      "judgment": {
+        "logit": -5.260677490219797,
+        "p": 0.005164970719197589,
+        "enabled": false,
+        "threshold": 0.5
+      }
+    }
+  },
+  {
+    "family": "increment",
+    "category": "E",
+    "condition": "BASE",
+    "anchor_id": "increment_E_W_ANCHOR",
+    "lifecycle_id": "increment_E_W_LIFECYCLE",
+    "complete": true,
+    "anchor": {
+      "functional": true,
+      "joint": false,
+      "judgment": null
+    },
+    "lifecycle": {
+      "functional": true,
+      "joint": false,
+      "judgment": null
+    }
+  },
+  {
+    "family": "increment",
+    "category": "E",
+    "condition": "TEXT_CODE",
+    "anchor_id": "increment_E_W_ANCHOR",
+    "lifecycle_id": "increment_E_W_LIFECYCLE",
+    "complete": true,
+    "anchor": {
+      "functional": true,
+      "joint": true,
+      "judgment": null
+    },
+    "lifecycle": {
+      "functional": true,
+      "joint": true,
+      "judgment": null
+    }
+  },
+  {
+    "family": "increment",
+    "category": "E",
+    "condition": "MANUAL_V",
+    "anchor_id": "increment_E_W_ANCHOR",
+    "lifecycle_id": "increment_E_W_LIFECYCLE",
+    "complete": true,
+    "anchor": {
+      "functional": true,
+      "joint": true,
+      "judgment": null
+    },
+    "lifecycle": {
+      "functional": true,
+      "joint": true,
+      "judgment": null
+    }
+  },
+  {
+    "family": "increment",
+    "category": "E",
+    "condition": "MODULE_V",
+    "anchor_id": "increment_E_W_ANCHOR",
+    "lifecycle_id": "increment_E_W_LIFECYCLE",
+    "complete": true,
+    "anchor": {
+      "functional": true,
+      "joint": true,
+      "judgment": {
+        "logit": 15.336130541813814,
+        "p": 0.9999997814237166,
+        "enabled": true,
+        "threshold": 0.5
+      }
+    },
+    "lifecycle": {
+      "functional": true,
+      "joint": true,
+      "judgment": {
+        "logit": 9.595442284850138,
+        "p": 0.9999319664995663,
+        "enabled": true,
+        "threshold": 0.5
+      }
+    }
+  },
+  {
+    "family": "increment",
+    "category": "N",
+    "condition": "BASE",
+    "anchor_id": "increment_N_W_ANCHOR",
+    "lifecycle_id": "increment_N_W_LIFECYCLE",
+    "complete": true,
+    "anchor": {
+      "functional": true,
+      "joint": true,
+      "judgment": null
+    },
+    "lifecycle": {
+      "functional": false,
+      "joint": false,
+      "judgment": null
+    }
+  },
+  {
+    "family": "increment",
+    "category": "N",
+    "condition": "TEXT_CODE",
+    "anchor_id": "increment_N_W_ANCHOR",
+    "lifecycle_id": "increment_N_W_LIFECYCLE",
+    "complete": true,
+    "anchor": {
+      "functional": false,
+      "joint": false,
+      "judgment": null
+    },
+    "lifecycle": {
+      "functional": false,
+      "joint": false,
+      "judgment": null
+    }
+  },
+  {
+    "family": "increment",
+    "category": "N",
+    "condition": "MANUAL_V",
+    "anchor_id": "increment_N_W_ANCHOR",
+    "lifecycle_id": "increment_N_W_LIFECYCLE",
+    "complete": true,
+    "anchor": {
+      "functional": true,
+      "joint": true,
+      "judgment": null
+    },
+    "lifecycle": {
+      "functional": false,
+      "joint": false,
+      "judgment": null
+    }
+  },
+  {
+    "family": "increment",
+    "category": "N",
+    "condition": "MODULE_V",
+    "anchor_id": "increment_N_W_ANCHOR",
+    "lifecycle_id": "increment_N_W_LIFECYCLE",
+    "complete": true,
+    "anchor": {
+      "functional": true,
+      "joint": true,
+      "judgment": {
+        "logit": -12.059018772676442,
+        "p": 5.792048294704445e-06,
+        "enabled": false,
+        "threshold": 0.5
+      }
+    },
+    "lifecycle": {
+      "functional": false,
+      "joint": false,
+      "judgment": {
+        "logit": -3.2298114020905233,
+        "p": 0.038059151161944534,
+        "enabled": false,
+        "threshold": 0.5
+      }
+    }
+  },
+  {
+    "family": "lower",
+    "category": "E",
+    "condition": "BASE",
+    "anchor_id": "lower_E_W_ANCHOR",
+    "lifecycle_id": "lower_E_W_LIFECYCLE",
+    "complete": true,
+    "anchor": {
+      "functional": true,
+      "joint": false,
+      "judgment": null
+    },
+    "lifecycle": {
+      "functional": true,
+      "joint": false,
+      "judgment": null
+    }
+  },
+  {
+    "family": "lower",
+    "category": "E",
+    "condition": "TEXT_CODE",
+    "anchor_id": "lower_E_W_ANCHOR",
+    "lifecycle_id": "lower_E_W_LIFECYCLE",
+    "complete": true,
+    "anchor": {
+      "functional": true,
+      "joint": true,
+      "judgment": null
+    },
+    "lifecycle": {
+      "functional": true,
+      "joint": true,
+      "judgment": null
+    }
+  },
+  {
+    "family": "lower",
+    "category": "E",
+    "condition": "MANUAL_V",
+    "anchor_id": "lower_E_W_ANCHOR",
+    "lifecycle_id": "lower_E_W_LIFECYCLE",
+    "complete": true,
+    "anchor": {
+      "functional": true,
+      "joint": true,
+      "judgment": null
+    },
+    "lifecycle": {
+      "functional": true,
+      "joint": true,
+      "judgment": null
+    }
+  },
+  {
+    "family": "lower",
+    "category": "E",
+    "condition": "MODULE_V",
+    "anchor_id": "lower_E_W_ANCHOR",
+    "lifecycle_id": "lower_E_W_LIFECYCLE",
+    "complete": true,
+    "anchor": {
+      "functional": true,
+      "joint": true,
+      "judgment": {
+        "logit": 9.356036714417176,
+        "p": 0.9999135654564713,
+        "enabled": true,
+        "threshold": 0.5
+      }
+    },
+    "lifecycle": {
+      "functional": true,
+      "joint": true,
+      "judgment": {
+        "logit": 3.8861777132125943,
+        "p": 0.9798891052784447,
+        "enabled": true,
+        "threshold": 0.5
+      }
+    }
+  },
+  {
+    "family": "lower",
+    "category": "N",
+    "condition": "BASE",
+    "anchor_id": "lower_N_W_ANCHOR",
+    "lifecycle_id": "lower_N_W_LIFECYCLE",
+    "complete": true,
+    "anchor": {
+      "functional": true,
+      "joint": true,
+      "judgment": null
+    },
+    "lifecycle": {
+      "functional": false,
+      "joint": false,
+      "judgment": null
+    }
+  },
+  {
+    "family": "lower",
+    "category": "N",
+    "condition": "TEXT_CODE",
+    "anchor_id": "lower_N_W_ANCHOR",
+    "lifecycle_id": "lower_N_W_LIFECYCLE",
+    "complete": true,
+    "anchor": {
+      "functional": false,
+      "joint": false,
+      "judgment": null
+    },
+    "lifecycle": {
+      "functional": true,
+      "joint": true,
+      "judgment": null
+    }
+  },
+  {
+    "family": "lower",
+    "category": "N",
+    "condition": "MANUAL_V",
+    "anchor_id": "lower_N_W_ANCHOR",
+    "lifecycle_id": "lower_N_W_LIFECYCLE",
+    "complete": true,
+    "anchor": {
+      "functional": true,
+      "joint": true,
+      "judgment": null
+    },
+    "lifecycle": {
+      "functional": false,
+      "joint": false,
+      "judgment": null
+    }
+  },
+  {
+    "family": "lower",
+    "category": "N",
+    "condition": "MODULE_V",
+    "anchor_id": "lower_N_W_ANCHOR",
+    "lifecycle_id": "lower_N_W_LIFECYCLE",
+    "complete": true,
+    "anchor": {
+      "functional": true,
+      "joint": true,
+      "judgment": {
+        "logit": -23.904755041605405,
+        "p": 4.152377165810138e-11,
+        "enabled": false,
+        "threshold": 0.5
+      }
+    },
+    "lifecycle": {
+      "functional": false,
+      "joint": false,
+      "judgment": {
+        "logit": -11.266299467943554,
+        "p": 1.279684035385263e-05,
+        "enabled": false,
+        "threshold": 0.5
+      }
+    }
+  },
+  {
+    "family": "negative",
+    "category": "E",
+    "condition": "BASE",
+    "anchor_id": "negative_E_W_ANCHOR",
+    "lifecycle_id": "negative_E_W_LIFECYCLE",
+    "complete": true,
+    "anchor": {
+      "functional": true,
+      "joint": false,
+      "judgment": null
+    },
+    "lifecycle": {
+      "functional": true,
+      "joint": false,
+      "judgment": null
+    }
+  },
+  {
+    "family": "negative",
+    "category": "E",
+    "condition": "TEXT_CODE",
+    "anchor_id": "negative_E_W_ANCHOR",
+    "lifecycle_id": "negative_E_W_LIFECYCLE",
+    "complete": true,
+    "anchor": {
+      "functional": true,
+      "joint": true,
+      "judgment": null
+    },
+    "lifecycle": {
+      "functional": true,
+      "joint": true,
+      "judgment": null
+    }
+  },
+  {
+    "family": "negative",
+    "category": "E",
+    "condition": "MANUAL_V",
+    "anchor_id": "negative_E_W_ANCHOR",
+    "lifecycle_id": "negative_E_W_LIFECYCLE",
+    "complete": true,
+    "anchor": {
+      "functional": true,
+      "joint": true,
+      "judgment": null
+    },
+    "lifecycle": {
+      "functional": true,
+      "joint": true,
+      "judgment": null
+    }
+  },
+  {
+    "family": "negative",
+    "category": "E",
+    "condition": "MODULE_V",
+    "anchor_id": "negative_E_W_ANCHOR",
+    "lifecycle_id": "negative_E_W_LIFECYCLE",
+    "complete": true,
+    "anchor": {
+      "functional": true,
+      "joint": true,
+      "judgment": {
+        "logit": 13.44390887487909,
+        "p": 0.9999985499468179,
+        "enabled": true,
+        "threshold": 0.5
+      }
+    },
+    "lifecycle": {
+      "functional": true,
+      "joint": true,
+      "judgment": {
+        "logit": 9.185541080242675,
+        "p": 0.9998974995722193,
+        "enabled": true,
+        "threshold": 0.5
+      }
+    }
+  },
+  {
+    "family": "negative",
+    "category": "N",
+    "condition": "BASE",
+    "anchor_id": "negative_N_W_ANCHOR",
+    "lifecycle_id": "negative_N_W_LIFECYCLE",
+    "complete": true,
+    "anchor": {
+      "functional": true,
+      "joint": true,
+      "judgment": null
+    },
+    "lifecycle": {
+      "functional": true,
+      "joint": true,
+      "judgment": null
+    }
+  },
+  {
+    "family": "negative",
+    "category": "N",
+    "condition": "TEXT_CODE",
+    "anchor_id": "negative_N_W_ANCHOR",
+    "lifecycle_id": "negative_N_W_LIFECYCLE",
+    "complete": true,
+    "anchor": {
+      "functional": false,
+      "joint": false,
+      "judgment": null
+    },
+    "lifecycle": {
+      "functional": false,
+      "joint": false,
+      "judgment": null
+    }
+  },
+  {
+    "family": "negative",
+    "category": "N",
+    "condition": "MANUAL_V",
+    "anchor_id": "negative_N_W_ANCHOR",
+    "lifecycle_id": "negative_N_W_LIFECYCLE",
+    "complete": true,
+    "anchor": {
+      "functional": true,
+      "joint": true,
+      "judgment": null
+    },
+    "lifecycle": {
+      "functional": true,
+      "joint": true,
+      "judgment": null
+    }
+  },
+  {
+    "family": "negative",
+    "category": "N",
+    "condition": "MODULE_V",
+    "anchor_id": "negative_N_W_ANCHOR",
+    "lifecycle_id": "negative_N_W_LIFECYCLE",
+    "complete": true,
+    "anchor": {
+      "functional": true,
+      "joint": true,
+      "judgment": {
+        "logit": -21.04163544566274,
+        "p": 7.273339092459626e-10,
+        "enabled": false,
+        "threshold": 0.5
+      }
+    },
+    "lifecycle": {
+      "functional": true,
+      "joint": true,
+      "judgment": {
+        "logit": -6.579463889272613,
+        "p": 0.0013866680169668415,
+        "enabled": false,
+        "threshold": 0.5
+      }
+    }
+  }
+]

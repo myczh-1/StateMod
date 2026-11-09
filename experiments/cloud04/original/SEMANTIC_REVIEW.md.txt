@@ -1,0 +1,28 @@
+# 语义与措辞隔离审查
+
+准备阶段单代理审查，未运行模型。审阅35个来源文件，去重后366个历史族标识、690条描述记录。完整范围与SHA见data/historical_inventory.json。
+
+原隔离test_tasks.json及未公开最终数据未读取；本审查对显式列明的历史输入/已有隔离元数据负责，不声称对工作区所有文件作过形式化证明。8个新任务均不是Cloud02拟合或Cloud03开发题。
+
+|新族|最近历史邻居|区分与剩余重合|
+|---|---|---|
+|tab_stop_expansion|trim_members, word_wrap_lines, justify_spaces|Tab expansion depends on running column and resets at line boundaries. It is neither boundary stripping nor line packing/space justification; one fixed replacement of tab cannot implement the cases.|
+|python_literal_representation|escape_ampersands, quoted_printable_octets, scalar_type_names|Python source-literal representation of a whole string, including delimiters and context-sensitive quote choice, differs from replacing one character, byte transfer encoding, or runtime type-name lookup.|
+|centered_text_padding|justify_spaces, word_wrap_lines, grouped_decimal_strings|Symmetric fixed-width boundary padding of each independent string is distinct from distributing spaces between words or wrapping lines. Width is fixed before inference; this is one family, not multiple widths counted separately.|
+|integral_float_predicate|identifier_flags, binary_parity, rounded_members|Tests integrality of finite floating-point values without rounding. It is neither a lexical identifier predicate, bit parity nor mapping values to rounded numbers; a boolean output alone does not define one semantic family.|
+|least_significant_one_value|gray_words, ceiling_binary_exponents, swapped_u16_values|Isolates the least significant nonzero bit value. Gray encoding mixes bits, ceiling binary exponent measures magnitude, byte swap permutes fixed-width bytes. None becomes this transform by renaming or changing a constant; shared bit operations are disclosed.|
+|modal_member_selection|frequency_map, majority_vote, minimum_value|Returns every global frequency maximizer, including ties with no strict majority. Frequency map returns counts, majority_vote tests/reconstructs strict majority, and numeric minimum ignores frequency. Tie/no-majority cases prevent substituting these older contracts.|
+|run_length_expansion|repeat_text, joined_words, run_start_offsets|Decodes variable nested character/count runs into one string per record. Repeating one text or joining given words is a primitive, not this variable-run input contract; run_start_offsets is segmentation of already expanded sequences.|
+|dna_reverse_complement|ordered_reverse, casefold_membership, rna_noncrossing_counts|Fixed nucleotide complement plus reversal, tested on non-palindromic/non-self-complementary inputs. Reversal alone or character case normalization cannot satisfy these outputs; RNA pairing counts solve a different combinatorial problem. Shared string primitives do not imply unseen algorithmic primitives.|
+
+## 不当作新族的候选
+
+在任何模型评分前排除整数倍乘/幂次变体、余数/个位数字、浮点取整、大小写转换、Hamming距离、二进制文本解码、点积、回文判断及单字符HTML替换：它们与已存在任务相同或过近。未产生这些候选的模型输出。
+
+新族是完整输入—变换—输出合同；循环、成员去重、字符串映射、位运算等基础操作仍然共享，不能把“新任务”说成“所有算法原语都没见过”。repr与转义、center与文本对齐、RLE与重复连接、DNA与字符串反转的邻近关系已明确披露。
+
+## 合同表达
+
+W3采用下游使用过程描述；W4采用生命周期描述和会/不会反事实。两套都不出现set/frozenset或.add()/.remove()；E明确容器可以具备编辑能力，但调用方不需要，避免把E写成强制不可变合同。N均要求返回对象原地插入、删除成员。
+
+两套完整合同句均不在上述历史描述中。格式后缀与旧实验保持一致以隔离合同措辞变化；此处不声称整个Prompt模板、语言或代码格式全新。两个措辞对同族是重复测量，统计单位仍为8个族。

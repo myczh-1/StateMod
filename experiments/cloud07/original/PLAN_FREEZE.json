@@ -1,0 +1,43 @@
+{
+  "status": "PLAN_PREPARED_NOT_RUN",
+  "execution_code_frozen": false,
+  "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "module_sha": "3a35f380d49fdbf9d76832d252554c8f9c55b715ed1fc7a3ad3d47ccda6bace7",
+  "threshold": 0.5,
+  "bank_sha": "19fd69d23b1bc164ff7e548499a96b507fe7e8f0084487abe55e2a15686db11e",
+  "weight": 1,
+  "layers": [
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+  ],
+  "slots": 36,
+  "window": "FIRST_DECISION_ONLY",
+  "source_sha256": {
+    "[LOCAL_PATH]": "87c18a66adc34c01a3a7f166bff9de28f23488f8d98bd1d0fda89615931054ff"
+  },
+  "plan_sha256": {
+    "PROTOCOL.md": "c9e9306f395722e04c888cecbc3cf0f1c3c098bad3c1dc2c0d95db21eb768803",
+    "TASKS.json": "9598ead5624565c4931ee9eb8f45411da89fd8380bb5a27969cece0cfaa1c1f4",
+    "MATRIX.json": "4fe46cfab7757368c252f8771f0669f9a2d94013c95ea27dd94c4e7c231e4f1f",
+    "prepare_plan.py": "925a45136798bd447eb314d709f86961acf73b0380dbce504a463bcf843adfd1",
+    "README.md": "2b864138c465363b6df245a4729046580a6bf11edf11b14a4aa9ae052b6ed36a"
+  },
+  "requires_before_execution": [
+    "implement_and_freeze_runner",
+    "audit_branch_and_forced_token_semantics",
+    "verify_runtime_and_storage_only_after_user_start"
+  ],
+  "model_forward_count": 0
+}

@@ -1,0 +1,11 @@
+{
+  "time": 1793796183.372061,
+  "workers": 32,
+  "block_bytes": 4194304,
+  "timeout": 60,
+  "ipqos": "none",
+  "archive_sha": "c2e15df2fcbb1a7938b16971322ac160bca2751943d74dc7a6161969146e0da9",
+  "model_restarted": false,
+  "source_sha": "74cf56210de2b52d8c88b3bf1330b7146eacb50bb2df59db40ae4fb942afd0e6",
+  "deadline": 1793799702.617937
+}

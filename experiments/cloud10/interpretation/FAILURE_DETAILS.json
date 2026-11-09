@@ -1,0 +1,69 @@
+[
+  {
+    "id": "double_N_CLEAR",
+    "condition": "BASE",
+    "prompt": "编写 Python 函数 collect_doubles(numbers)，numbers 是整数列表，返回各整数乘以二后的不同值。\n调用者在函数返回后，会通过返回对象的 .add() 添加一个成员，再通过 .remove() 移除它，并检查同一对象恢复原成员。函数只计算并返回结果，不在函数内部执行这些验收操作。\n结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。",
+    "code": "def collect_doubles(numbers):\n    return list({n * 2 for n in numbers})",
+    "values_correct": true,
+    "mutability_correct": false,
+    "failures": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      }
+    ]
+  },
+  {
+    "id": "integer_octal_text_N_CLEAR",
+    "condition": "BASE",
+    "prompt": "编写 Python 函数 collect_octal_strings(numbers)，numbers 是非负整数列表。对每个整数调用 Python 内置 oct，返回带 0o 前缀的八进制字符串。\n调用者在函数返回后，会通过返回对象的 .add() 添加一个成员，再通过 .remove() 移除它，并检查同一对象恢复原成员。函数只计算并返回结果，不在函数内部执行这些验收操作。\n结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。",
+    "code": "def collect_octal_strings(numbers):\n    return {oct(n).removeprefix('0o') for n in numbers}",
+    "values_correct": false,
+    "mutability_correct": true,
+    "failures": [
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 1,
+        "actual": "{'10', '17', '0'}",
+        "expected": [
+          "0o0",
+          "0o10",
+          "0o17"
+        ]
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "{'100', '7', '1'}",
+        "expected": [
+          "0o1",
+          "0o7",
+          "0o100"
+        ]
+      }
+    ]
+  }
+]

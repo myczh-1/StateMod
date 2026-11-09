@@ -1,0 +1,178 @@
+{
+  "W3": {
+    "E_accept": 8,
+    "N_reject": 6,
+    "denominator_each": 8,
+    "uncovered_or_missing": [],
+    "margins": [
+      {
+        "id": "tab_stop_expansion_E_W3",
+        "p": 0.9999920072978389,
+        "threshold_margin": 0.4999920072978389
+      },
+      {
+        "id": "tab_stop_expansion_N_W3",
+        "p": 2.4281909459458414e-08,
+        "threshold_margin": -0.4999999757180905
+      },
+      {
+        "id": "python_literal_representation_E_W3",
+        "p": 0.9990840748148823,
+        "threshold_margin": 0.49908407481488226
+      },
+      {
+        "id": "python_literal_representation_N_W3",
+        "p": 6.563315664801014e-12,
+        "threshold_margin": -0.4999999999934367
+      },
+      {
+        "id": "centered_text_padding_E_W3",
+        "p": 0.9979725950003351,
+        "threshold_margin": 0.4979725950003351
+      },
+      {
+        "id": "centered_text_padding_N_W3",
+        "p": 0.0007396088781999065,
+        "threshold_margin": -0.4992603911218001
+      },
+      {
+        "id": "integral_float_predicate_E_W3",
+        "p": 0.9999489711475894,
+        "threshold_margin": 0.4999489711475894
+      },
+      {
+        "id": "integral_float_predicate_N_W3",
+        "p": 1.2829984726940859e-08,
+        "threshold_margin": -0.49999998717001526
+      },
+      {
+        "id": "least_significant_one_value_E_W3",
+        "p": 0.9999998224881497,
+        "threshold_margin": 0.49999982248814967
+      },
+      {
+        "id": "least_significant_one_value_N_W3",
+        "p": 0.9823373464891575,
+        "threshold_margin": 0.4823373464891575
+      },
+      {
+        "id": "modal_member_selection_E_W3",
+        "p": 0.9999987923999331,
+        "threshold_margin": 0.49999879239993306
+      },
+      {
+        "id": "modal_member_selection_N_W3",
+        "p": 0.9998788179410133,
+        "threshold_margin": 0.4998788179410133
+      },
+      {
+        "id": "run_length_expansion_E_W3",
+        "p": 0.9999999999957033,
+        "threshold_margin": 0.4999999999957033
+      },
+      {
+        "id": "run_length_expansion_N_W3",
+        "p": 0.24268562843279928,
+        "threshold_margin": -0.2573143715672007
+      },
+      {
+        "id": "dna_reverse_complement_E_W3",
+        "p": 0.9996316953424049,
+        "threshold_margin": 0.4996316953424049
+      },
+      {
+        "id": "dna_reverse_complement_N_W3",
+        "p": 2.0885577190796988e-12,
+        "threshold_margin": -0.49999999999791145
+      }
+    ]
+  },
+  "W4": {
+    "E_accept": 8,
+    "N_reject": 0,
+    "denominator_each": 8,
+    "uncovered_or_missing": [],
+    "margins": [
+      {
+        "id": "tab_stop_expansion_E_W4",
+        "p": 0.9999711542711213,
+        "threshold_margin": 0.49997115427112127
+      },
+      {
+        "id": "tab_stop_expansion_N_W4",
+        "p": 0.9887724731262635,
+        "threshold_margin": 0.4887724731262635
+      },
+      {
+        "id": "python_literal_representation_E_W4",
+        "p": 0.9998610014129222,
+        "threshold_margin": 0.4998610014129222
+      },
+      {
+        "id": "python_literal_representation_N_W4",
+        "p": 0.9815839791506046,
+        "threshold_margin": 0.4815839791506046
+      },
+      {
+        "id": "centered_text_padding_E_W4",
+        "p": 0.9983580379149204,
+        "threshold_margin": 0.4983580379149204
+      },
+      {
+        "id": "centered_text_padding_N_W4",
+        "p": 0.8822287962455253,
+        "threshold_margin": 0.3822287962455253
+      },
+      {
+        "id": "integral_float_predicate_E_W4",
+        "p": 0.9996067486884197,
+        "threshold_margin": 0.4996067486884197
+      },
+      {
+        "id": "integral_float_predicate_N_W4",
+        "p": 0.9697076674225587,
+        "threshold_margin": 0.46970766742255865
+      },
+      {
+        "id": "least_significant_one_value_E_W4",
+        "p": 0.999999999999865,
+        "threshold_margin": 0.499999999999865
+      },
+      {
+        "id": "least_significant_one_value_N_W4",
+        "p": 0.9999880717627094,
+        "threshold_margin": 0.49998807176270943
+      },
+      {
+        "id": "modal_member_selection_E_W4",
+        "p": 0.9999998353244884,
+        "threshold_margin": 0.49999983532448844
+      },
+      {
+        "id": "modal_member_selection_N_W4",
+        "p": 0.9998436146092824,
+        "threshold_margin": 0.4998436146092824
+      },
+      {
+        "id": "run_length_expansion_E_W4",
+        "p": 0.9999999229255283,
+        "threshold_margin": 0.4999999229255283
+      },
+      {
+        "id": "run_length_expansion_N_W4",
+        "p": 0.9999620254486647,
+        "threshold_margin": 0.49996202544866475
+      },
+      {
+        "id": "dna_reverse_complement_E_W4",
+        "p": 0.9999999996804397,
+        "threshold_margin": 0.49999999968043973
+      },
+      {
+        "id": "dna_reverse_complement_N_W4",
+        "p": 0.8988226136289654,
+        "threshold_margin": 0.39882261362896543
+      }
+    ]
+  }
+}

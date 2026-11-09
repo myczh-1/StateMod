@@ -1,0 +1,58 @@
+{
+  "formal_status": "CAPABILITY_LIMITED",
+  "conditions": 64,
+  "original_stop_on_empty_endpoint_preserved": true,
+  "package_sha": "3e8e8765f1107cf39baa7e578f9daa6e07ca47c0b83d4f235e66c90d6b4f85ef",
+  "model_job": {
+    "start": 1793931845.5024986,
+    "end": 1793932403.4566925,
+    "returncode": 0,
+    "status": "MODEL_JOB_FINISHED"
+  },
+  "model_engineering": {
+    "status": "ENGINEERING_COMPLETE_PENDING_EXECUTION_SCORING",
+    "model_sha_unchanged": true,
+    "judgment_sha_unchanged": true,
+    "bank_sha_unchanged": true,
+    "bank_compiled": false,
+    "judge_trained": false,
+    "planned_conditions": 64,
+    "completed_conditions": 64,
+    "covered": 16
+  },
+  "historical_files_changed": [],
+  "transfer": {
+    "time": 1793933009.928216,
+    "archive_sha": "4a7daecbdc1602c1223758e0dc8c1f8df5ad6d3e5e63eaf864989938c94d2a9b",
+    "bytes": 3638886400,
+    "files_verified": 3113,
+    "all_collected_files_verified": true
+  },
+  "shutdown_returncode": 0,
+  "post_shutdown_ssh_returncode": 255,
+  "verification_precedes_shutdown": true,
+  "billing_verified": false,
+  "cleanup": {
+    "stage": "CLEANUP_COMPLETE",
+    "time": 1793931808.7757525,
+    "deleted_paths": [
+      "runs",
+      "results.tar"
+    ],
+    "deleted_files": 2684,
+    "retained_files_unchanged": 45,
+    "free_before": 11024769024,
+    "free_after": 17297117184
+  },
+  "cleanup_local_evidence_preserved": true,
+  "EOS": 61,
+  "TRUNCATED": 3,
+  "valid_decision_prefixes": 64,
+  "bank_layer_calls": 252,
+  "module_sha": "3a35f380d49fdbf9d76832d252554c8f9c55b715ed1fc7a3ad3d47ccda6bace7",
+  "bank_sha": "19fd69d23b1bc164ff7e548499a96b507fe7e8f0084487abe55e2a15686db11e",
+  "threshold": 0.5,
+  "module_trained": false,
+  "bank_compiled": false,
+  "new_model_attempts": 1
+}

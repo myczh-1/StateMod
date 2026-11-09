@@ -1,0 +1,20 @@
+{
+  "status": "DEVELOPMENT_SIMPLE_WORDING_LOOP_STABLE",
+  "engineering_complete": true,
+  "complete_matrix": true,
+  "anchor_reproduced": true,
+  "simple_baseline_stable": true,
+  "matcher_stable": true,
+  "manual_V_stable": true,
+  "module_V_stable": true,
+  "statistical_units": 4,
+  "independent_confirmation": false,
+  "threshold_changed": false,
+  "bank_compiled": false,
+  "module_trained": false,
+  "all_historical_statuses_preserved": true,
+  "analysis_scope": "POST_HOC_SCORER_CORRECTION_ON_SAVED_GENERATIONS",
+  "original_experiment_status": "SIMPLE_BASELINE_NOT_STABLE",
+  "original_status_overwritten": false,
+  "numerical_evidence": "INHERITED_FROM_ORIGINAL_RUN_NOT_REMEASURED"
+}

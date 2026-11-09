@@ -1,0 +1,306 @@
+[
+  {
+    "task_id": "double_E_CLEAR__TRAIN_USAGE",
+    "split": "train",
+    "prob": 0.9999999999997914,
+    "logit": 29.198438470687606,
+    "threshold_margin": 0.4999999999997914,
+    "action": "frozenset",
+    "teacher": {
+      "task_id": "double_E_CLEAR__TRAIN_USAGE",
+      "valid": true,
+      "p": 0.99999994684222,
+      "action": "frozenset",
+      "fro_logp": -3.918338558723355e-07,
+      "set_logp": -16.750001704094338
+    },
+    "teacher_agreement": true,
+    "expected_choice": "frozenset",
+    "contract_correct": true
+  },
+  {
+    "task_id": "double_N_CLEAR__TRAIN_USAGE",
+    "split": "train",
+    "prob": 6.611769123642946e-11,
+    "logit": -23.439584761298597,
+    "threshold_margin": -0.49999999993388233,
+    "action": "set",
+    "teacher": {
+      "task_id": "double_N_CLEAR__TRAIN_USAGE",
+      "valid": true,
+      "p": 5.04345877935428e-07,
+      "action": "set",
+      "fro_logp": -14.500009855715895,
+      "set_logp": -6.8215590971823994e-06
+    },
+    "teacher_agreement": true,
+    "expected_choice": "set",
+    "contract_correct": true
+  },
+  {
+    "task_id": "lower_E_CLEAR__TRAIN_USAGE",
+    "split": "train",
+    "prob": 0.999999999923322,
+    "logit": 23.291405597958583,
+    "threshold_margin": 0.499999999923322,
+    "action": "frozenset",
+    "teacher": {
+      "task_id": "lower_E_CLEAR__TRAIN_USAGE",
+      "valid": true,
+      "p": 0.9999998555022128,
+      "action": "frozenset",
+      "fro_logp": -5.457022993477204e-07,
+      "set_logp": -15.750002044212428
+    },
+    "teacher_agreement": true,
+    "expected_choice": "frozenset",
+    "contract_correct": true
+  },
+  {
+    "task_id": "lower_N_CLEAR__TRAIN_USAGE",
+    "split": "train",
+    "prob": 5.985144580787727e-11,
+    "logit": -23.539155526965562,
+    "threshold_margin": -0.49999999994014854,
+    "action": "set",
+    "teacher": {
+      "task_id": "lower_N_CLEAR__TRAIN_USAGE",
+      "valid": true,
+      "p": 1.8553921392834018e-07,
+      "action": "set",
+      "fro_logp": -15.500006702509184,
+      "set_logp": -7.306648651247096e-06
+    },
+    "teacher_agreement": true,
+    "expected_choice": "set",
+    "contract_correct": true
+  },
+  {
+    "task_id": "integer_octal_text_E_CLEAR__TRAIN_USAGE",
+    "split": "train",
+    "prob": 0.9999999989115561,
+    "logit": 20.638516738860698,
+    "threshold_margin": 0.4999999989115561,
+    "action": "frozenset",
+    "teacher": {
+      "task_id": "integer_octal_text_E_CLEAR__TRAIN_USAGE",
+      "valid": true,
+      "p": 0.9999999907625785,
+      "action": "frozenset",
+      "fro_logp": -4.0079999925919297e-07,
+      "set_logp": -18.500003439789374
+    },
+    "teacher_agreement": true,
+    "expected_choice": "frozenset",
+    "contract_correct": true
+  },
+  {
+    "task_id": "integer_octal_text_N_CLEAR__TRAIN_USAGE",
+    "split": "train",
+    "prob": 2.234316616099582e-09,
+    "logit": -19.91933041801078,
+    "threshold_margin": -0.4999999977656834,
+    "action": "set",
+    "teacher": {
+      "task_id": "integer_octal_text_N_CLEAR__TRAIN_USAGE",
+      "valid": true,
+      "p": 5.315781506995163e-08,
+      "action": "set",
+      "fro_logp": -16.750003390785096,
+      "set_logp": -2.7389801664434885e-06
+    },
+    "teacher_agreement": true,
+    "expected_choice": "set",
+    "contract_correct": true
+  },
+  {
+    "task_id": "boolean_complement_E_CLEAR__TRAIN_USAGE",
+    "split": "train",
+    "prob": 0.9999999885903377,
+    "logit": 18.288805256447535,
+    "threshold_margin": 0.4999999885903377,
+    "action": "frozenset",
+    "teacher": {
+      "task_id": "boolean_complement_E_CLEAR__TRAIN_USAGE",
+      "valid": true,
+      "p": 0.9999996072151444,
+      "action": "frozenset",
+      "fro_logp": -8.377259883499372e-07,
+      "set_logp": -14.750004260908417
+    },
+    "teacher_agreement": true,
+    "expected_choice": "frozenset",
+    "contract_correct": true
+  },
+  {
+    "task_id": "boolean_complement_N_CLEAR__TRAIN_USAGE",
+    "split": "train",
+    "prob": 2.131456883766642e-06,
+    "logit": -13.058702697604508,
+    "threshold_margin": -0.49999786854311623,
+    "action": "set",
+    "teacher": {
+      "task_id": "boolean_complement_N_CLEAR__TRAIN_USAGE",
+      "valid": true,
+      "p": 3.726642446608148e-06,
+      "action": "set",
+      "fro_logp": -12.500005249849725,
+      "set_logp": -6.0984513167767785e-06
+    },
+    "teacher_agreement": true,
+    "expected_choice": "set",
+    "contract_correct": true
+  },
+  {
+    "task_id": "double_E_CLEAR",
+    "split": "reference",
+    "prob": 0.9999999999999838,
+    "logit": 31.752186549802726,
+    "threshold_margin": 0.4999999999999838,
+    "action": "frozenset",
+    "teacher": {
+      "task_id": "double_E_CLEAR",
+      "valid": true,
+      "p": 0.999999996149265,
+      "action": "frozenset",
+      "fro_logp": -3.3913465824263497e-07,
+      "set_logp": -19.375002131100185
+    },
+    "teacher_agreement": true,
+    "expected_choice": "frozenset",
+    "contract_correct": true
+  },
+  {
+    "task_id": "double_N_CLEAR",
+    "split": "reference",
+    "prob": 0.0340918051717278,
+    "logit": -3.3440117554226725,
+    "threshold_margin": -0.46590819482827217,
+    "action": "set",
+    "teacher": {
+      "task_id": "double_N_CLEAR",
+      "valid": true,
+      "p": 1.5229905341575146e-08,
+      "action": "set",
+      "fro_logp": -18.00000756141812,
+      "set_logp": -2.691328380423469e-06
+    },
+    "teacher_agreement": true,
+    "expected_choice": "set",
+    "contract_correct": true
+  },
+  {
+    "task_id": "lower_E_CLEAR",
+    "split": "reference",
+    "prob": 0.9999999999889552,
+    "logit": 25.22905957288392,
+    "threshold_margin": 0.49999999998895517,
+    "action": "frozenset",
+    "teacher": {
+      "task_id": "lower_E_CLEAR",
+      "valid": true,
+      "p": 0.9999999918480112,
+      "action": "frozenset",
+      "fro_logp": -5.003116978538566e-07,
+      "set_logp": -18.625004413720355
+    },
+    "teacher_agreement": true,
+    "expected_choice": "frozenset",
+    "contract_correct": true
+  },
+  {
+    "task_id": "lower_N_CLEAR",
+    "split": "reference",
+    "prob": 0.0017678897831090526,
+    "logit": -6.336199202235837,
+    "threshold_margin": -0.49823211021689096,
+    "action": "set",
+    "teacher": {
+      "task_id": "lower_N_CLEAR",
+      "valid": true,
+      "p": 2.0611403171703904e-09,
+      "action": "set",
+      "fro_logp": -20.000009871475996,
+      "set_logp": -3.4182632701026395e-06
+    },
+    "teacher_agreement": true,
+    "expected_choice": "set",
+    "contract_correct": true
+  },
+  {
+    "task_id": "integer_octal_text_E_CLEAR",
+    "split": "reference",
+    "prob": 0.9999999931364321,
+    "logit": 18.79703842084726,
+    "threshold_margin": 0.49999999313643206,
+    "action": "frozenset",
+    "teacher": {
+      "task_id": "integer_octal_text_E_CLEAR",
+      "valid": true,
+      "p": 0.9999999987498516,
+      "action": "frozenset",
+      "fro_logp": -3.2969053252914403e-07,
+      "set_logp": -20.500003862766356
+    },
+    "teacher_agreement": true,
+    "expected_choice": "frozenset",
+    "contract_correct": true
+  },
+  {
+    "task_id": "integer_octal_text_N_CLEAR",
+    "split": "reference",
+    "prob": 0.10515694393837932,
+    "logit": -2.141194408168242,
+    "threshold_margin": -0.3948430560616207,
+    "action": "set",
+    "teacher": {
+      "task_id": "integer_octal_text_N_CLEAR",
+      "valid": true,
+      "p": 4.3634615528517405e-09,
+      "action": "set",
+      "fro_logp": -19.250002585286364,
+      "set_logp": -2.4292056692168693e-06
+    },
+    "teacher_agreement": true,
+    "expected_choice": "set",
+    "contract_correct": true
+  },
+  {
+    "task_id": "boolean_complement_E_CLEAR",
+    "split": "reference",
+    "prob": 0.9999999996641201,
+    "logit": 21.814267569846503,
+    "threshold_margin": 0.4999999996641201,
+    "action": "frozenset",
+    "teacher": {
+      "task_id": "boolean_complement_E_CLEAR",
+      "valid": true,
+      "p": 0.9999999586007142,
+      "action": "frozenset",
+      "fro_logp": -5.331634551916896e-07,
+      "set_logp": -17.00000270056041
+    },
+    "teacher_agreement": true,
+    "expected_choice": "frozenset",
+    "contract_correct": true
+  },
+  {
+    "task_id": "boolean_complement_N_CLEAR",
+    "split": "reference",
+    "prob": 0.8579101632204458,
+    "logit": 1.7980398781971276,
+    "threshold_margin": 0.3579101632204458,
+    "action": "frozenset",
+    "teacher": {
+      "task_id": "boolean_complement_N_CLEAR",
+      "valid": true,
+      "p": 6.825611856931407e-08,
+      "action": "set",
+      "fro_logp": -16.50000181572568,
+      "set_logp": -3.1264494314437696e-06
+    },
+    "teacher_agreement": false,
+    "expected_choice": "set",
+    "contract_correct": false
+  }
+]

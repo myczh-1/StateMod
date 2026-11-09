@@ -1,0 +1,270 @@
+{
+  "complete": true,
+  "passed": true,
+  "rows": [
+    {
+      "id": "double_E_W_ANCHOR",
+      "condition": "BASE",
+      "status": "MEASURED",
+      "tokens_equal": true,
+      "functional_equal": true,
+      "joint_equal": true,
+      "max_step_logits_rms": 0.0,
+      "max_selected_logp_error": 0.0,
+      "passed": true
+    },
+    {
+      "id": "double_E_W_ANCHOR",
+      "condition": "MANUAL_V",
+      "status": "MEASURED",
+      "tokens_equal": true,
+      "functional_equal": true,
+      "joint_equal": true,
+      "max_step_logits_rms": 0.0,
+      "max_selected_logp_error": 0.0,
+      "passed": true
+    },
+    {
+      "id": "double_E_W_ANCHOR",
+      "condition": "MODULE_V",
+      "status": "MEASURED",
+      "tokens_equal": true,
+      "functional_equal": true,
+      "joint_equal": true,
+      "max_step_logits_rms": 0.0,
+      "max_selected_logp_error": 0.0,
+      "passed": true
+    },
+    {
+      "id": "double_N_W_ANCHOR",
+      "condition": "BASE",
+      "status": "MEASURED",
+      "tokens_equal": true,
+      "functional_equal": true,
+      "joint_equal": true,
+      "max_step_logits_rms": 0.0,
+      "max_selected_logp_error": 0.0,
+      "passed": true
+    },
+    {
+      "id": "double_N_W_ANCHOR",
+      "condition": "MANUAL_V",
+      "status": "MEASURED",
+      "tokens_equal": true,
+      "functional_equal": true,
+      "joint_equal": true,
+      "max_step_logits_rms": 0.0,
+      "max_selected_logp_error": 0.0,
+      "passed": true
+    },
+    {
+      "id": "double_N_W_ANCHOR",
+      "condition": "MODULE_V",
+      "status": "MEASURED",
+      "tokens_equal": true,
+      "functional_equal": true,
+      "joint_equal": true,
+      "max_step_logits_rms": 0.0,
+      "max_selected_logp_error": 0.0,
+      "passed": true
+    },
+    {
+      "id": "increment_E_W_ANCHOR",
+      "condition": "BASE",
+      "status": "MEASURED",
+      "tokens_equal": true,
+      "functional_equal": true,
+      "joint_equal": true,
+      "max_step_logits_rms": 0.0,
+      "max_selected_logp_error": 0.0,
+      "passed": true
+    },
+    {
+      "id": "increment_E_W_ANCHOR",
+      "condition": "MANUAL_V",
+      "status": "MEASURED",
+      "tokens_equal": true,
+      "functional_equal": true,
+      "joint_equal": true,
+      "max_step_logits_rms": 0.0,
+      "max_selected_logp_error": 0.0,
+      "passed": true
+    },
+    {
+      "id": "increment_E_W_ANCHOR",
+      "condition": "MODULE_V",
+      "status": "MEASURED",
+      "tokens_equal": true,
+      "functional_equal": true,
+      "joint_equal": true,
+      "max_step_logits_rms": 0.0,
+      "max_selected_logp_error": 0.0,
+      "passed": true
+    },
+    {
+      "id": "increment_N_W_ANCHOR",
+      "condition": "BASE",
+      "status": "MEASURED",
+      "tokens_equal": true,
+      "functional_equal": true,
+      "joint_equal": true,
+      "max_step_logits_rms": 0.0,
+      "max_selected_logp_error": 0.0,
+      "passed": true
+    },
+    {
+      "id": "increment_N_W_ANCHOR",
+      "condition": "MANUAL_V",
+      "status": "MEASURED",
+      "tokens_equal": true,
+      "functional_equal": true,
+      "joint_equal": true,
+      "max_step_logits_rms": 0.0,
+      "max_selected_logp_error": 0.0,
+      "passed": true
+    },
+    {
+      "id": "increment_N_W_ANCHOR",
+      "condition": "MODULE_V",
+      "status": "MEASURED",
+      "tokens_equal": true,
+      "functional_equal": true,
+      "joint_equal": true,
+      "max_step_logits_rms": 0.0,
+      "max_selected_logp_error": 0.0,
+      "passed": true
+    },
+    {
+      "id": "negative_E_W_ANCHOR",
+      "condition": "BASE",
+      "status": "MEASURED",
+      "tokens_equal": true,
+      "functional_equal": true,
+      "joint_equal": true,
+      "max_step_logits_rms": 0.0,
+      "max_selected_logp_error": 0.0,
+      "passed": true
+    },
+    {
+      "id": "negative_E_W_ANCHOR",
+      "condition": "MANUAL_V",
+      "status": "MEASURED",
+      "tokens_equal": true,
+      "functional_equal": true,
+      "joint_equal": true,
+      "max_step_logits_rms": 0.0,
+      "max_selected_logp_error": 0.0,
+      "passed": true
+    },
+    {
+      "id": "negative_E_W_ANCHOR",
+      "condition": "MODULE_V",
+      "status": "MEASURED",
+      "tokens_equal": true,
+      "functional_equal": true,
+      "joint_equal": true,
+      "max_step_logits_rms": 0.0,
+      "max_selected_logp_error": 0.0,
+      "passed": true
+    },
+    {
+      "id": "negative_N_W_ANCHOR",
+      "condition": "BASE",
+      "status": "MEASURED",
+      "tokens_equal": true,
+      "functional_equal": true,
+      "joint_equal": true,
+      "max_step_logits_rms": 0.0,
+      "max_selected_logp_error": 0.0,
+      "passed": true
+    },
+    {
+      "id": "negative_N_W_ANCHOR",
+      "condition": "MANUAL_V",
+      "status": "MEASURED",
+      "tokens_equal": true,
+      "functional_equal": true,
+      "joint_equal": true,
+      "max_step_logits_rms": 0.0,
+      "max_selected_logp_error": 0.0,
+      "passed": true
+    },
+    {
+      "id": "negative_N_W_ANCHOR",
+      "condition": "MODULE_V",
+      "status": "MEASURED",
+      "tokens_equal": true,
+      "functional_equal": true,
+      "joint_equal": true,
+      "max_step_logits_rms": 0.0,
+      "max_selected_logp_error": 0.0,
+      "passed": true
+    },
+    {
+      "id": "lower_E_W_ANCHOR",
+      "condition": "BASE",
+      "status": "MEASURED",
+      "tokens_equal": true,
+      "functional_equal": true,
+      "joint_equal": true,
+      "max_step_logits_rms": 0.0,
+      "max_selected_logp_error": 0.0,
+      "passed": true
+    },
+    {
+      "id": "lower_E_W_ANCHOR",
+      "condition": "MANUAL_V",
+      "status": "MEASURED",
+      "tokens_equal": true,
+      "functional_equal": true,
+      "joint_equal": true,
+      "max_step_logits_rms": 0.0,
+      "max_selected_logp_error": 0.0,
+      "passed": true
+    },
+    {
+      "id": "lower_E_W_ANCHOR",
+      "condition": "MODULE_V",
+      "status": "MEASURED",
+      "tokens_equal": true,
+      "functional_equal": true,
+      "joint_equal": true,
+      "max_step_logits_rms": 0.0,
+      "max_selected_logp_error": 0.0,
+      "passed": true
+    },
+    {
+      "id": "lower_N_W_ANCHOR",
+      "condition": "BASE",
+      "status": "MEASURED",
+      "tokens_equal": true,
+      "functional_equal": true,
+      "joint_equal": true,
+      "max_step_logits_rms": 0.0,
+      "max_selected_logp_error": 0.0,
+      "passed": true
+    },
+    {
+      "id": "lower_N_W_ANCHOR",
+      "condition": "MANUAL_V",
+      "status": "MEASURED",
+      "tokens_equal": true,
+      "functional_equal": true,
+      "joint_equal": true,
+      "max_step_logits_rms": 0.0,
+      "max_selected_logp_error": 0.0,
+      "passed": true
+    },
+    {
+      "id": "lower_N_W_ANCHOR",
+      "condition": "MODULE_V",
+      "status": "MEASURED",
+      "tokens_equal": true,
+      "functional_equal": true,
+      "joint_equal": true,
+      "max_step_logits_rms": 0.0,
+      "max_selected_logp_error": 0.0,
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "status": "DEVELOPMENT_8B_MODULE_V_LOOP_SUPPORTED",
+  "manual_V_effect_supported": true,
+  "module_V_loop_supported": true,
+  "independent_confirmation": false,
+  "old_results_unchanged": true,
+  "engineering_complete": true,
+  "no_parameter_search": true,
+  "judge_sha": "3a35f380d49fdbf9d76832d252554c8f9c55b715ed1fc7a3ad3d47ccda6bace7"
+}

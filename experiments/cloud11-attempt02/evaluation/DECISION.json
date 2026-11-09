@@ -1,0 +1,11 @@
+{
+  "status": "TEACHER_FIDELITY_NOT_ESTABLISHED",
+  "independent_confirmation": false,
+  "V_executed": false,
+  "training_executed": true,
+  "teacher_agreement": 7,
+  "reference_total": 8,
+  "teacher_rejects_preserved": 3,
+  "teacher_enables_preserved": 4,
+  "V_eligible": false
+}

@@ -1,0 +1,10 @@
+{
+  "status": "CONTROLLED_DIAGNOSTIC_COMPLETE",
+  "not_independent_confirmation": true,
+  "not_natural_generation": true,
+  "no_threshold_selection": true,
+  "training_steps": 0,
+  "bank_calls": 0,
+  "old_cloud11_status": "TEACHER_FIDELITY_NOT_ESTABLISHED",
+  "interpretation": "Report wording/format effects and interaction separately; absolute-position effects remain coupled."
+}

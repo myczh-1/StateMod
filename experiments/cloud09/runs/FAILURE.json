@@ -1,0 +1,5 @@
+{
+  "status": "STOP_NUMERICAL",
+  "error": "AssertionError('STOP_NUMERICAL engineering')",
+  "traceback": "Traceback (most recent call last):\n  File \"[REMOTE_PATH]\", line 87, in main\n    engineering(model,read(ROOT/'data/engineering_input.json'),out/'engineering')\n  File \"[REMOTE_PATH]\", line 36, in engineering\n    save(out/f'{j:03}_failed_cached.npz',**cache_arrays(a));save(out/f'{j:03}_failed_fresh.npz',**cache_arrays(fc));raise AssertionError('STOP_NUMERICAL engineering')\n                                                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: STOP_NUMERICAL engineering\n"
+}

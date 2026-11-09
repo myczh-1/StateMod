@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-04",
+  "files": {
+    "src/capture.py": "734683cac2b1cef5b2aab693a33961a036eaae4ce979845fe80e8328ed2e9584",
+    "src/common.py": "361cd37be3cbcece84aa048678f3e25db3129a73bd65efd842c467083bb38cbe",
+    "src/gate.py": "eff0730280a1ef233d95228e3fb48e65a9c606595b319f47757ccd577b5fa67a",
+    "src/scoring.py": "4190cc4d154a7c531625ea10b94ddfc40d3dccb692483dd78d8326a817812faa",
+    "src/test_probe.py": "25efdcbec2335eb0756beed7c224bd6803a46ee5ada4de880ba4781eadf6cfa1",
+    "src/train.py": "c37265fb257f64ae5b0daf0cf645da8b7c38f421f27b856989347ba0f692f74c",
+    "data/capture_inputs.json": "c3176f3768c2346cee72e920019b4d3b07e40c205f00cf47b8dc309fd1b41180",
+    "data/config.json": "bb4cbc0067177cd80250a951eaebe093f4d6367ad4188d349c117df63f56bb53",
+    "data/evaluation.json": "27c1325a38ca6a2faa00f0c053877bc0da4678a1986f55a53d7d2ff57892409b",
+    "data/model_sha.json": "0389efffd5581b598c7d4054a22d54e07adf3d6d5c9df1fef5cf6ba047792368",
+    "data/source_sha.json": "2f3600236941a18b0ae3c00ba41044adfec6c9075aaf115c97f9af3aea78f47f",
+    "TASKS.json": "8bed549d3f3382f8728a4fd0718d1aa5bc02e045117032b9ea1442d225ace915",
+    "PROTOCOL.md": "acf9b365af2bddf55fb0e242c28009353fd88e793bd72eff19ab26ec519f2c13",
+    "README.md": "172267929431e4750fbc6eaa66486fd25699b79391601772f93a77bccb5f6c65"
+  },
+  "teacher": "Cloud01 RULE_FS",
+  "teacher_count": 24,
+  "train_count": 8,
+  "heldout_count": 16,
+  "heldout_agreement_min": 15,
+  "per_teacher_class_min": 7,
+  "model_forward_before_freeze": false,
+  "training_before_freeze": false,
+  "shutdown_authorized": true
+}

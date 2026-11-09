@@ -1,0 +1,26 @@
+{
+  "train": {
+    "total": 8,
+    "agreement": 8,
+    "teacher_enable": 4,
+    "teacher_reject": 4,
+    "enables_reproduced": 4,
+    "rejects_reproduced": 4,
+    "MAE": 3.653713794335002e-07,
+    "always_on_agreement": 4,
+    "always_off_agreement": 4,
+    "KL": 1.0611245705734564e-06
+  },
+  "reference": {
+    "total": 8,
+    "agreement": 7,
+    "teacher_enable": 4,
+    "teacher_reject": 4,
+    "enables_reproduced": 4,
+    "rejects_reproduced": 3,
+    "MAE": 0.12486584635894053,
+    "always_on_agreement": 4,
+    "always_off_agreement": 4,
+    "KL": 0.26235715335856463
+  }
+}

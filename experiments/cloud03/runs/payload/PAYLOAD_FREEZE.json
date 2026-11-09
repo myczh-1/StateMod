@@ -1,0 +1,9 @@
+{
+  "time": 1793784245.691009,
+  "before_behavior": true,
+  "files": {
+    "bank.npz": "19fd69d23b1bc164ff7e548499a96b507fe7e8f0084487abe55e2a15686db11e",
+    "bank.json": "2183c85f8550c1e00f3388f6ab20f6315713f22d1ae92aa2616a5e9f3b8784c5",
+    "compilation_raw.npz": "bfbadcd617360a8568b1020431f1bb3a8cd41ac32e1e94e29cfdf5ec10928e9d"
+  }
+}

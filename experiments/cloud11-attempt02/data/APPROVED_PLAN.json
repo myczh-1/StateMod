@@ -1,0 +1,112 @@
+{
+  "status": "PLAN_PREPARED_NOT_RUN",
+  "execution_ready": false,
+  "scope": "same_family_development_teacher_fidelity_then_static_V",
+  "model": {
+    "model_id": "Qwen/Qwen3-14B",
+    "revision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+    "dtype": "bfloat16",
+    "attention": "eager",
+    "thinking": false,
+    "seed": 42801,
+    "runtime_versions": {
+      "torch": "2.8.0+cu128",
+      "transformers": "4.57.6",
+      "tokenizers": "0.22.2",
+      "safetensors": "0.8.0",
+      "numpy": "2.4.6",
+      "psutil": "7.2.2"
+    }
+  },
+  "rule": "返回结果需要支持增删时，使用 set。\n返回结果不需要支持增删时，使用 frozenset。",
+  "input_hidden_dimension": 5120,
+  "generation": {
+    "code_tokens": 96,
+    "select_tokens": 8,
+    "do_sample": false
+  },
+  "readout": {
+    "block": 13,
+    "position": "FIRST_DECISION_ONLY_before_return_expression_prediction"
+  },
+  "module": {
+    "widths": [
+      5120,
+      8,
+      1
+    ],
+    "activation": "GELU",
+    "fit_dtype": "float64",
+    "fit_device": "cpu",
+    "optimizer": "AdamW",
+    "lr": 0.003,
+    "weight_decay": 0.01,
+    "steps": 256,
+    "seed": 42916,
+    "threshold": 0.5,
+    "comparison": "strict_greater",
+    "target": "teacher_type_eos_soft_probability",
+    "normalization": "sample_RMS_then_train_only_center_and_global_RMS",
+    "epsilon": 1e-06
+  },
+  "teacher_gate": {
+    "train_records": 8,
+    "natural_soft_target_agreement_required": true,
+    "min_each_teacher_class": 2,
+    "base_functional_gate": false
+  },
+  "module_gate": {
+    "reference_total": 8,
+    "reference_valid_windows": 8,
+    "min_teacher_agreement": 7,
+    "all_teacher_rejects_preserved": 4,
+    "min_teacher_enables_preserved": 3
+  },
+  "new_V": {
+    "compile_only_after_module_pass": true,
+    "old_bank_reused": false,
+    "layers": [
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27
+    ],
+    "expected_slots": 36,
+    "weight": 1.0,
+    "window": "FIRST_DECISION_ONLY",
+    "target_task_oracle_allowed": false
+  },
+  "V_gate": {
+    "teacher_routed_min_E_joint": 3,
+    "module_min_E_joint": 3,
+    "max_E_joint_loss_to_teacher_route": 1,
+    "N_accesses": 0,
+    "max_functional_regressions": 0
+  },
+  "numerical": {
+    "primary": "Cached",
+    "cross_path": "descriptive_only",
+    "attention_engineering_spec_pending": true
+  },
+  "execution_freeze_pending": [
+    "runtime_source",
+    "tokenization",
+    "teacher_output_provenance",
+    "BF16_attention_audit",
+    "execution_and_shutdown_manifest"
+  ],
+  "cloud_calls": 0,
+  "model_forwards": 0,
+  "optimizer_steps_executed": 0,
+  "bank_compilations": 0
+}

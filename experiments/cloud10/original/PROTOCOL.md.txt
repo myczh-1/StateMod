@@ -1,0 +1,59 @@
+# Cloud10：Cached 文字能力与独立数值诊断
+
+状态：本地待冻结、待用户开机执行。2026-11-08。修订开发预检，不是独立确认。
+
+本轮承接Cloud09未执行的8题文字预检。原Cloud09永久保留STOP_NUMERICAL，其RMS=0.0972914超过当时0.05硬门槛的事实不改变。本轮明确修改的是新实验的评价结构，不重写旧实验、不给旧结果追认通过。
+
+## 1. 完全复用的对象
+
+Qwen/Qwen3-14B revision `40c069824f4251a91eefaf281ebe4c544efd3e18`，BF16/CUDA/eager，TF32关闭、非thinking、贪心、seed42801。继续使用已下载的15个模型文件及原SHA，不重新下载、量化、升级依赖或替换attention实现。
+
+TASKS.json、data/evaluation.json、data/inputs.json、直接选型包装、规则正文、候选Token及EOS、全部24个Prompt Token序列、评分器、模型加载/forward接口与Cloud09逐字节一致。四个已见计算族、E/N各4题，不换题、不重写合同、不改变选项顺序。
+
+原判断模块、0.5阈值与8B Bank不加载、不修改。源码及历史结果通过data/source_sha.json保护；运行包不含Bank或模块。新远端目录为 `[REMOTE_PATH]`，不覆盖Cloud09。
+
+## 2. 先完成Cached文字能力
+
+首先在原冻结工程输入和7个固定诊断Token上检查两次Cached运行的Logits/KV逐元素一致、缓存存储独立、长度正确及有限值。这里不运行Fresh，也不比较跨路径RMS。
+
+随后仅使用真实Cached路径自然生成全部24条输出：BASE完整代码8条、TEXT_CODE完整代码8条、TEXT_SELECT自然类型回答8条。代码预算96Token、选型预算8Token不变。每个条件独立空缓存，使用实际生成历史继续计算；不强制正确前缀，不修复输出，不重采样。
+
+全部自然结果先保存为每题result.json与BEHAVIOR_COMPLETE.json，再进行16条Cached完整候选路径。名称总logP与名称加EOS总logP分开记录，不按Token长度归一化，候选分数不能补救自然回答失败。即使后续辅助评分或诊断中断，已保存自然结果也必须保留并报告覆盖。
+
+## 3. Fresh为后置独立诊断
+
+完成上述Cached测量后，逐步读取已经落盘的Cached Logits与实际Token历史。每次Fresh均从独立空缓存计算完全相同的完整历史，不让Fresh另行生成，不改写Cached答案，不混用缓存。
+
+原诊断界限数值保持不变：全词表RMS 0.05、选中Token logP误差0.10 nat、完整候选总logP误差0.20 nat。本轮这些数值仅用于标记REFERENCE_EXCEEDED，不作为文字能力准入，也不根据本轮结果校准或扩大。
+
+报告全词表max/RMS/相对L2、实际Token logP、Cached/Fresh首选Token、自然步第一名翻转、候选完整分数与排名翻转。工程探针与正式测量分开列示，不能因为没有正式结果就把工程误差报告成0。缺失诊断用null/INCOMPLETE，不伪造零误差。
+
+每步原始Cached Logits、Fresh Logits与比较结果落盘。固定保存工程step1的Cached/Fresh完整KV，供定位路径差异；不因某道题效果好坏追加缓存采样。Fresh非有限值、结构异常或运行错误将停止诊断并记录DIAGNOSTIC_INCOMPLETE，已经完成的文字结果保持独立；不得宣称数值工程全部通过。
+
+跨路径报告状态：WITHIN_REGISTERED_REFERENCE_BOUNDS / CROSS_PATH_DIFFERENCE_OBSERVED / CROSS_PATH_DIAGNOSTIC_INCOMPLETE。即使文字能力通过，只要存在超界或排名翻转，就不称为路径稳健通过。没有独立Fresh自由生成，不能推断两条完整生成轨迹相同。
+
+## 4. 行为评分及门槛不变
+
+评分仍接受合法set子类。E返回功能正确的set算基础功能正确，E-JOINT要求功能正确且实际精确frozenset。N须在同一返回对象执行.add/.remove并恢复成员状态。格式失败、截断、异常和成员类型/值错误全部保留，不修改生成。
+
+- BASE：E与N功能正确分别至少3/4。
+- TEXT_SELECT：8/8自然答案合法且EOS，正确至少7/8，N必须4/4。
+- TEXT_CODE：E-JOINT至少3/4，BASE原本正确的N新增退化为0。
+
+分别报告SELECT_REFERENCE、CODE_REFERENCE和TEXT_REFERENCE_READY_IN_DEVELOPMENT / TEXT_REFERENCE_NOT_READY；未完成为INCOMPLETE。先前Cloud09停止是数值准入失败，不进入行为成功率分母。Fresh诊断不能改变这些行为门槛或替换答案。
+
+## 5. 仍然硬停止的条件
+
+Cached自身非有限Logits：STOP_NUMERICAL_PRIMARY。Cached重复Logits/KV不一致、缓存别名、长度/位置/mask/shape/Hook错误、模型/Tokenizer/源码SHA变化、参数变化、环境不匹配：STOP_ENGINEERING。所有证据先保存；不得以本轮解耦为理由忽略真实Cached工程故障。
+
+若辅助Cached候选路径本身出现硬故障，保留24条已完成行为记录及停止理由，不隐瞒不完整辅助测量。Fresh超界不停止或重跑任何Cached生成；Fresh执行错误仅结束其诊断阶段。最终模型文件、参数与冻结源码审计独立执行，失败不能获得工程通过。
+
+## 6. 运行、回收、关机
+
+本地准备不SSH、不加载语言模型。用户明确开机授权后，由既有launcher使用显式statemod-gpu连接，检查空闲GPU≥40GiB、可用内存≥40GiB、磁盘≥5GiB、本地≥6GiB及原依赖。无清理与安装步骤。
+
+沿用一次性LAUNCH_CLAIM、30分钟模型任务预算、90分钟紧急关机保护、原始结果归档与逐文件SHA回收、取回后自动关机、本地执行评分。控制器中断只可collect-only接管，不能再次生成。无法回收时保留远端原始数据并按现有安全策略关机。
+
+## 7. 解释边界
+
+这是已知Cloud09数值结果之后的新开发协议。只回答固定Cached运行路径下14B的文字能力，另行报告跨路径数值敏感性。14B BF16与历史8B FP32同时改变规模与精度，不能单独归因于模型大小。本轮不训练、不注入、不编译Bank、不调判断阈值，结束后不自动扩展实验。

@@ -1,0 +1,18 @@
+{
+  "double_E_W_ANCHOR": true,
+  "double_E_W_LIFECYCLE": true,
+  "double_N_W_ANCHOR": false,
+  "double_N_W_LIFECYCLE": false,
+  "increment_E_W_ANCHOR": true,
+  "increment_E_W_LIFECYCLE": true,
+  "increment_N_W_ANCHOR": false,
+  "increment_N_W_LIFECYCLE": false,
+  "negative_E_W_ANCHOR": true,
+  "negative_E_W_LIFECYCLE": true,
+  "negative_N_W_ANCHOR": false,
+  "negative_N_W_LIFECYCLE": false,
+  "lower_E_W_ANCHOR": true,
+  "lower_E_W_LIFECYCLE": true,
+  "lower_N_W_ANCHOR": false,
+  "lower_N_W_LIFECYCLE": false
+}

@@ -1,0 +1,12 @@
+{
+  "wall_seconds": 1332.2085416316986,
+  "peak_allocated": 33080222720,
+  "peak_reserved": 33214693376,
+  "condition_output_tokens": 4298,
+  "condition_records": 128,
+  "archived_text_reference_count": 0,
+  "payload_bytes": 9877016,
+  "active_side_slots_per_layer": 36,
+  "active_layers": 14,
+  "judgment_bytes": 283323
+}

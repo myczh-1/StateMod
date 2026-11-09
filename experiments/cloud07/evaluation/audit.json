@@ -1,0 +1,19 @@
+{
+  "completed": 28,
+  "model_job": {
+    "status": "ENGINEERING_COMPLETE_PENDING_SCORING",
+    "c_status": "C_MATRIX_COMPLETE",
+    "planned_trajectories": 28,
+    "completed_trajectories": 28,
+    "module_trained": false,
+    "bank_compiled": false,
+    "threshold_changed": false,
+    "model_sha_unchanged": true
+  },
+  "failure": null,
+  "max_logits_rms": 3.5486542746783747e-05,
+  "max_logp_error": 1.890518722724721e-05,
+  "historical_sha_changed": [],
+  "bank_sha": "19fd69d23b1bc164ff7e548499a96b507fe7e8f0084487abe55e2a15686db11e",
+  "judgment_sha": "3a35f380d49fdbf9d76832d252554c8f9c55b715ed1fc7a3ad3d47ccda6bace7"
+}

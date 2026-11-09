@@ -1,0 +1,274 @@
+[
+  {
+    "task": "double_E_W2",
+    "judgment": {
+      "logit": 13.375593997393274,
+      "p": 0.9999984474247435,
+      "enabled": true,
+      "threshold": 0.5
+    },
+    "manual_is_label_based_upper_bound": true,
+    "module_input": "numeric Block13 h only",
+    "decisions": {
+      "BASE": false,
+      "MANUAL_V": true,
+      "MODULE_V": true
+    },
+    "coverage": true
+  },
+  {
+    "task": "double_N_W2",
+    "judgment": {
+      "logit": -18.46053049181813,
+      "p": 9.609338014279621e-09,
+      "enabled": false,
+      "threshold": 0.5
+    },
+    "manual_is_label_based_upper_bound": true,
+    "module_input": "numeric Block13 h only",
+    "decisions": {
+      "BASE": false,
+      "MANUAL_V": false,
+      "MODULE_V": false
+    },
+    "coverage": true
+  },
+  {
+    "task": "increment_E_W2",
+    "judgment": {
+      "logit": 15.336130541813814,
+      "p": 0.9999997814237166,
+      "enabled": true,
+      "threshold": 0.5
+    },
+    "manual_is_label_based_upper_bound": true,
+    "module_input": "numeric Block13 h only",
+    "decisions": {
+      "BASE": false,
+      "MANUAL_V": true,
+      "MODULE_V": true
+    },
+    "coverage": true
+  },
+  {
+    "task": "increment_N_W2",
+    "judgment": {
+      "logit": -12.059018772676442,
+      "p": 5.792048294704445e-06,
+      "enabled": false,
+      "threshold": 0.5
+    },
+    "manual_is_label_based_upper_bound": true,
+    "module_input": "numeric Block13 h only",
+    "decisions": {
+      "BASE": false,
+      "MANUAL_V": false,
+      "MODULE_V": false
+    },
+    "coverage": true
+  },
+  {
+    "task": "lower_E_W2",
+    "judgment": {
+      "logit": 9.356036714417176,
+      "p": 0.9999135654564713,
+      "enabled": true,
+      "threshold": 0.5
+    },
+    "manual_is_label_based_upper_bound": true,
+    "module_input": "numeric Block13 h only",
+    "decisions": {
+      "BASE": false,
+      "MANUAL_V": true,
+      "MODULE_V": true
+    },
+    "coverage": true
+  },
+  {
+    "task": "lower_N_W2",
+    "judgment": {
+      "logit": -23.904755041605405,
+      "p": 4.152377165810138e-11,
+      "enabled": false,
+      "threshold": 0.5
+    },
+    "manual_is_label_based_upper_bound": true,
+    "module_input": "numeric Block13 h only",
+    "decisions": {
+      "BASE": false,
+      "MANUAL_V": false,
+      "MODULE_V": false
+    },
+    "coverage": true
+  },
+  {
+    "task": "negative_E_W2",
+    "judgment": {
+      "logit": 13.44390887487909,
+      "p": 0.9999985499468179,
+      "enabled": true,
+      "threshold": 0.5
+    },
+    "manual_is_label_based_upper_bound": true,
+    "module_input": "numeric Block13 h only",
+    "decisions": {
+      "BASE": false,
+      "MANUAL_V": true,
+      "MODULE_V": true
+    },
+    "coverage": true
+  },
+  {
+    "task": "negative_N_W2",
+    "judgment": {
+      "logit": -21.04163544566274,
+      "p": 7.273339092459626e-10,
+      "enabled": false,
+      "threshold": 0.5
+    },
+    "manual_is_label_based_upper_bound": true,
+    "module_input": "numeric Block13 h only",
+    "decisions": {
+      "BASE": false,
+      "MANUAL_V": false,
+      "MODULE_V": false
+    },
+    "coverage": true
+  },
+  {
+    "task": "square_E_W1",
+    "judgment": {
+      "logit": 14.887191830551343,
+      "p": 0.9999996575678062,
+      "enabled": true,
+      "threshold": 0.5
+    },
+    "manual_is_label_based_upper_bound": true,
+    "module_input": "numeric Block13 h only",
+    "decisions": {
+      "BASE": false,
+      "MANUAL_V": true,
+      "MODULE_V": true
+    },
+    "coverage": true
+  },
+  {
+    "task": "square_E_W2",
+    "judgment": {
+      "logit": 11.5032837500969,
+      "p": 0.9999899032184865,
+      "enabled": true,
+      "threshold": 0.5
+    },
+    "manual_is_label_based_upper_bound": true,
+    "module_input": "numeric Block13 h only",
+    "decisions": {
+      "BASE": false,
+      "MANUAL_V": true,
+      "MODULE_V": true
+    },
+    "coverage": true
+  },
+  {
+    "task": "square_N_W1",
+    "judgment": {
+      "logit": -36.08767467890104,
+      "p": 2.1248193967581872e-16,
+      "enabled": false,
+      "threshold": 0.5
+    },
+    "manual_is_label_based_upper_bound": true,
+    "module_input": "numeric Block13 h only",
+    "decisions": {
+      "BASE": false,
+      "MANUAL_V": false,
+      "MODULE_V": false
+    },
+    "coverage": true
+  },
+  {
+    "task": "square_N_W2",
+    "judgment": {
+      "logit": -21.110687864312204,
+      "p": 6.788045599069022e-10,
+      "enabled": false,
+      "threshold": 0.5
+    },
+    "manual_is_label_based_upper_bound": true,
+    "module_input": "numeric Block13 h only",
+    "decisions": {
+      "BASE": false,
+      "MANUAL_V": false,
+      "MODULE_V": false
+    },
+    "coverage": true
+  },
+  {
+    "task": "strip_E_W1",
+    "judgment": {
+      "logit": 15.968610113061127,
+      "p": 0.9999998838763459,
+      "enabled": true,
+      "threshold": 0.5
+    },
+    "manual_is_label_based_upper_bound": true,
+    "module_input": "numeric Block13 h only",
+    "decisions": {
+      "BASE": false,
+      "MANUAL_V": true,
+      "MODULE_V": true
+    },
+    "coverage": true
+  },
+  {
+    "task": "strip_E_W2",
+    "judgment": {
+      "logit": 11.55398838482407,
+      "p": 0.9999904024047194,
+      "enabled": true,
+      "threshold": 0.5
+    },
+    "manual_is_label_based_upper_bound": true,
+    "module_input": "numeric Block13 h only",
+    "decisions": {
+      "BASE": false,
+      "MANUAL_V": true,
+      "MODULE_V": true
+    },
+    "coverage": true
+  },
+  {
+    "task": "strip_N_W1",
+    "judgment": {
+      "logit": -28.242706043610745,
+      "p": 5.424361330022301e-13,
+      "enabled": false,
+      "threshold": 0.5
+    },
+    "manual_is_label_based_upper_bound": true,
+    "module_input": "numeric Block13 h only",
+    "decisions": {
+      "BASE": false,
+      "MANUAL_V": false,
+      "MODULE_V": false
+    },
+    "coverage": true
+  },
+  {
+    "task": "strip_N_W2",
+    "judgment": {
+      "logit": -19.251582743714124,
+      "p": 4.35656145403502e-09,
+      "enabled": false,
+      "threshold": 0.5
+    },
+    "manual_is_label_based_upper_bound": true,
+    "module_input": "numeric Block13 h only",
+    "decisions": {
+      "BASE": false,
+      "MANUAL_V": false,
+      "MODULE_V": false
+    },
+    "coverage": true
+  }
+]

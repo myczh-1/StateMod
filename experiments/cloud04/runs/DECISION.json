@@ -1,0 +1,11 @@
+{
+  "status": "ENGINEERING_COMPLETE_PENDING_EXECUTION_SCORING",
+  "model_sha_unchanged": true,
+  "judgment_sha_unchanged": true,
+  "bank_sha_unchanged": true,
+  "bank_compiled": false,
+  "judge_trained": false,
+  "planned_conditions": 128,
+  "completed_conditions": 128,
+  "covered": 32
+}

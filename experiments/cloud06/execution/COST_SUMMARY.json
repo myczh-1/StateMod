@@ -1,0 +1,12 @@
+{
+  "model_wall_seconds": 537.6733124256134,
+  "job_wall_seconds": 557.9541938304901,
+  "launch_to_shutdown_seconds": 1165.1930549144745,
+  "job_end_to_verification_seconds": 606.4715235233307,
+  "archive_bytes": 3638886400,
+  "peak_allocated_GiB": 30.772826671600342,
+  "peak_reserved_GiB": 30.841796875,
+  "output_tokens": 1797,
+  "conditions": 64,
+  "actual_bill_verified": false
+}

@@ -1,0 +1,19 @@
+{
+  "id": "double_E_CLEAR__BASE",
+  "hidden": {
+    "max_abs": 1.0,
+    "rms": 0.019439832559276463,
+    "relative_l2": 0.015857134737417452,
+    "exact": false
+  },
+  "logits": {
+    "max_abs": 0.4375,
+    "rms": 0.08673400058558658,
+    "relative_l2": 0.016466683536974842,
+    "exact": false
+  },
+  "top1_changed": false,
+  "selected_logp_error": 0.08823939170663725,
+  "behavior_gate": false,
+  "finite": true
+}

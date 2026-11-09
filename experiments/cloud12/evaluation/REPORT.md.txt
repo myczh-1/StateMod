@@ -1,0 +1,22 @@
+# Cloud12 措辞与代码格式交叉诊断
+
+固定前缀诊断；不是自然生成或独立确认。旧模块与 0.5 阈值不变。
+
+|题目|措辞|格式|模块分数|是否启用|
+|---|---|---|---:|---|
+|boolean_complement|train|bare|0.000002131|False|
+|boolean_complement|train|fenced|0.000012998|False|
+|boolean_complement|heldout|bare|0.959215121|True|
+|boolean_complement|heldout|fenced|0.857910163|True|
+|lower|train|bare|0.000000000|False|
+|lower|train|fenced|0.000000000|False|
+|lower|heldout|bare|0.076782395|False|
+|lower|heldout|fenced|0.001767890|False|
+
+## 因素效应（模块输出 logit）
+
+{'family': 'boolean_complement', 'wording_bare': 16.216506667025975, 'wording_fenced': 13.04875764603982, 'format_train': 1.8079849297618171, 'format_heldout': -1.3597640912243405, 'interaction': -3.1677490209861574, 'decisions': {'train__bare': False, 'train__fenced': False, 'heldout__bare': True, 'heldout__fenced': True}}
+{'family': 'lower', 'wording_bare': 20.139338027423783, 'wording_fenced': 17.202956324729726, 'format_train': -0.9129279212287287, 'format_heldout': -3.849309623922787, 'interaction': -2.93638170269406, 'decisions': {'train__bare': False, 'train__fenced': False, 'heldout__bare': False, 'heldout__fenced': False}}
+
+围栏同时改变格式、Token 数和位置；措辞也改变内容与长度。本设计不声称分离纯长度或纯位置作用。
+8维分量贡献仅为固定读出算术分解，不是模型语义或神经元因果消融。

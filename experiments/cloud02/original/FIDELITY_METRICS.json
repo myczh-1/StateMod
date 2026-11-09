@@ -1,0 +1,80 @@
+{
+  "train": {
+    "total": 8,
+    "agreement": 8,
+    "teacher_enable": 4,
+    "enable_reproduced": 4,
+    "teacher_off": 4,
+    "off_reproduced": 4,
+    "additional_N_enables": 0,
+    "teacher_contract_correct": 8,
+    "student_contract_correct": 8,
+    "always_off_agreement": 4,
+    "score_MAE": 1.4424252297241404e-05
+  },
+  "wording_only": {
+    "total": 8,
+    "agreement": 8,
+    "teacher_enable": 4,
+    "enable_reproduced": 4,
+    "teacher_off": 4,
+    "off_reproduced": 4,
+    "additional_N_enables": 0,
+    "teacher_contract_correct": 8,
+    "student_contract_correct": 8,
+    "always_off_agreement": 4,
+    "score_MAE": 0.005335673231235488
+  },
+  "family_only": {
+    "total": 4,
+    "agreement": 4,
+    "teacher_enable": 2,
+    "enable_reproduced": 2,
+    "teacher_off": 2,
+    "off_reproduced": 2,
+    "additional_N_enables": 0,
+    "teacher_contract_correct": 4,
+    "student_contract_correct": 4,
+    "always_off_agreement": 2,
+    "score_MAE": 0.002064929238921112
+  },
+  "family_and_wording": {
+    "total": 4,
+    "agreement": 4,
+    "teacher_enable": 2,
+    "enable_reproduced": 2,
+    "teacher_off": 2,
+    "off_reproduced": 2,
+    "additional_N_enables": 0,
+    "teacher_contract_correct": 4,
+    "student_contract_correct": 4,
+    "always_off_agreement": 2,
+    "score_MAE": 0.015712221752386783
+  },
+  "heldout": {
+    "total": 16,
+    "agreement": 16,
+    "teacher_enable": 8,
+    "enable_reproduced": 8,
+    "teacher_off": 8,
+    "off_reproduced": 8,
+    "additional_N_enables": 0,
+    "teacher_contract_correct": 16,
+    "student_contract_correct": 16,
+    "always_off_agreement": 8,
+    "score_MAE": 0.007112124363444718
+  },
+  "all": {
+    "total": 24,
+    "agreement": 24,
+    "teacher_enable": 12,
+    "enable_reproduced": 12,
+    "teacher_off": 12,
+    "off_reproduced": 12,
+    "additional_N_enables": 0,
+    "teacher_contract_correct": 24,
+    "student_contract_correct": 24,
+    "always_off_agreement": 12,
+    "score_MAE": 0.004746224326395559
+  }
+}

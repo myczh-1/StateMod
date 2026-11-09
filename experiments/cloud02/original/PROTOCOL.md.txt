@@ -1,0 +1,35 @@
+# Cloud02：固定FS文字教师的8B判断模块迁移
+
+2026-11-04。用户明确选用Cloud01 RULE_FS（frozenset先列出）的24/24文字老师继续开发。Cloud01双顺序未通过状态保持不变，RULE_SF不作为本轮前置门槛。本轮研究相对该固定教师的迁移忠实度，不训练主模型、不注入V、不编译Bank。
+
+## 冻结对象
+
+沿用Qwen3-8B revision b968826d9c46dd6066d109eabc6255188de91218，FP32/CUDA/eager，非思考、greedy、96新Token。24个原开发任务与同一两句条件规则，教师使用已保存的RULE_FS完整候选logP和自然答案，不再运行教师、不重新选提示。
+
+教师软目标p=exp(logP(frozenset)-logaddexp(logP(frozenset),logP(set)))，不作Token长度归一化。自然答案与p>.5须一致；否则记录接口不一致停下，不替换标签。这个分数不是校准后的适用性概率。
+
+## 只读状态采集
+
+在原无规则代码Prompt下自然生成24条；沿用原FIRST_DECISION_ONLY使用的inspect_return检测器，读取零编号Block13末Token输出4096维，即处理已生成return Token、预测后续表达式时。检测器只读已生成代码，探针不改输出、不补正确前缀。原始16条Cloud01 BASE逐Token与Logits校验；另8条训练侧BASE此前未在8B生成。
+
+在该位置独立复制原生缓存，比较只读Hook与NoHook，Logits/KV逐元素一致；Cached/Fresh隐藏状态和Logits RMS<=.001，选中Token logP差<=.01。原缓存不得被试算污染。保存该位置完整Logits、hidden、位置、实际缓存hash与生成前缀；其他自然生成位置保存全部Token、Top1 logP/间隔及cache长度。无需为未使用的全位置激活创建巨量留档。失败位置的原始数组先保存。无Gate或边界无效保留，不筛选功能成功子集；不足24覆盖则标COVERAGE_LIMITED，不拟合当前矩阵。
+
+## 新判断模块
+
+沿用L21：4096→8 GELU→1，有bias，float64 CPU；隐藏态RMS归一化eps1e-6，训练集均值中心化和单一全局RMS缩放。AdamW lr.003、weight_decay.01、256次full-batch、seed42916，固定最后一步。损失为teacher||student二元KL，只有训练侧教师软目标进入损失，不用E/N正确标签或执行结果。
+
+沿用原划分：double/increment/lower/negative W1共8项训练；这些族W2为措辞留出8项；square/strip W1为族留出4项；square/strip W2为联合留出4项。全部都是研究中已见开发题，只是未参与本次拟合，不称独立确认。
+
+最终checkpoint先保存并冻结，再评价16条留出。固定p>.5启用，否则拒绝；不调阈值、不多seed、不搜索层或架构。独立numpy+erf重算logit误差<=1e-8。新模块只输出判断，不执行旧残差修正。线上输入只有数值hidden，不能读取Prompt、教师答案、正确标签或未来结果。
+
+## 冻结验收
+
+训练与教师一致>=7/8；全部16条留出一致>=15/16，教师启用与拒绝各复现>=7/8。分别报告启用、拒绝、误启用、漏启用、Always-OFF/Always-ON（本轮均8/16）和各留出分组，不用总分掩盖某一侧。报告软分数MAE/KL，实际功能仅作描述，不用于选样。
+
+通过为DEVELOPMENT_8B_TEACHER_FIDELITY_SUPPORTED；否则TEACHER_FIDELITY_NOT_ESTABLISHED。任一工程/数值失败按原原因停，不改条件重试。不以本轮忠实度代替实际V收益；1.7B旧Bank不可直接加载8B。
+
+## 计算与关机
+
+云端只负责主模型状态采集；取回全部所需数据并逐文件SHA验证后，如无剩余GPU工作，按用户明确授权关闭原实例，不删除实例或数据盘。本地完成小模块训练、评价和报告。关机请求与后续SSH状态均留档，不能仅凭SSH断开声称平台账单已核实。
+
+新目录写入，旧源码、模型、Bank和结果SHA保护。源码、任务、训练超参、教师目标与判定在新增主模型前向和优化之前冻结。

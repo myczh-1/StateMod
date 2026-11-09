@@ -1,0 +1,103 @@
+{
+  "status": "TEXT_ONLY_ENGINEERING_PASSED",
+  "steps": [
+    {
+      "step": 0,
+      "repeat_logits_exact": true,
+      "repeat_cache_exact": true,
+      "independent_cache": true,
+      "fresh": {
+        "max_abs": 0.0,
+        "rms": 0.0,
+        "relative_l2": 0.0,
+        "exact": true
+      }
+    },
+    {
+      "step": 1,
+      "repeat_logits_exact": true,
+      "repeat_cache_exact": true,
+      "independent_cache": true,
+      "fresh": {
+        "max_abs": 3.4332275390625e-05,
+        "rms": 7.748954076027162e-06,
+        "relative_l2": 9.070834680093961e-07,
+        "exact": false
+      }
+    },
+    {
+      "step": 2,
+      "repeat_logits_exact": true,
+      "repeat_cache_exact": true,
+      "independent_cache": true,
+      "fresh": {
+        "max_abs": 2.6702880859375e-05,
+        "rms": 5.189574561050249e-06,
+        "relative_l2": 9.571226064689826e-07,
+        "exact": false
+      }
+    },
+    {
+      "step": 3,
+      "repeat_logits_exact": true,
+      "repeat_cache_exact": true,
+      "independent_cache": true,
+      "fresh": {
+        "max_abs": 3.24249267578125e-05,
+        "rms": 5.826465690573332e-06,
+        "relative_l2": 1.2266380473513252e-06,
+        "exact": false
+      }
+    },
+    {
+      "step": 4,
+      "repeat_logits_exact": true,
+      "repeat_cache_exact": true,
+      "independent_cache": true,
+      "fresh": {
+        "max_abs": 2.8133392333984375e-05,
+        "rms": 5.385634847039099e-06,
+        "relative_l2": 7.134685734519366e-07,
+        "exact": false
+      }
+    },
+    {
+      "step": 5,
+      "repeat_logits_exact": true,
+      "repeat_cache_exact": true,
+      "independent_cache": true,
+      "fresh": {
+        "max_abs": 2.8133392333984375e-05,
+        "rms": 5.344423457701679e-06,
+        "relative_l2": 7.621823882366852e-07,
+        "exact": false
+      }
+    },
+    {
+      "step": 6,
+      "repeat_logits_exact": true,
+      "repeat_cache_exact": true,
+      "independent_cache": true,
+      "fresh": {
+        "max_abs": 3.1948089599609375e-05,
+        "rms": 7.401522234136158e-06,
+        "relative_l2": 9.989572371105955e-07,
+        "exact": false
+      }
+    },
+    {
+      "step": 7,
+      "repeat_logits_exact": true,
+      "repeat_cache_exact": true,
+      "independent_cache": true,
+      "fresh": {
+        "max_abs": 3.4809112548828125e-05,
+        "rms": 8.180273425726431e-06,
+        "relative_l2": 1.4230215555034725e-06,
+        "exact": false
+      }
+    }
+  ],
+  "bank_loaded": false,
+  "judge_loaded": false
+}

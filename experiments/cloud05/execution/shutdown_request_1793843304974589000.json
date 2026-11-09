@@ -1,0 +1,8 @@
+{
+  "time": 1793843304.338584,
+  "reason": "Recovered all frozen experiment evidence; archive and every file SHA verified before shutdown",
+  "delete_or_release": false,
+  "returncode": 0,
+  "stdout": "",
+  "stderr": ""
+}

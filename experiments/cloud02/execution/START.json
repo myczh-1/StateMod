@@ -1,0 +1,12 @@
+{
+  "time": 1793778896.8495831,
+  "argv": [
+    "src/capture.py",
+    "--model",
+    "[REMOTE_PATH]",
+    "--previous-run",
+    "[REMOTE_PATH]",
+    "--output",
+    "capture"
+  ]
+}

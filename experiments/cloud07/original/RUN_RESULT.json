@@ -1,0 +1,13 @@
+{
+  "status": "BOUNDED_DIAGNOSTICS_COMPLETE",
+  "A": "WORDING_DISAMBIGUATION_EFFECT_OBSERVED",
+  "B": "MATCHER_WORDING_SENSITIVITY_OBSERVED",
+  "C": "TOKEN_HISTORY_EFFECT_CONSISTENT",
+  "independent_confirmation": false,
+  "module_and_bank_unchanged": true,
+  "report": "analysis/REPORT.md",
+  "transfer_verified": true,
+  "shutdown_returncode": 0,
+  "ssh_after_shutdown": 255,
+  "analysis_manifest_sha": "6a5258ed2c70686f0573bb5b6746e3cfb6cdb2649fa715895f418e4b68586a32"
+}

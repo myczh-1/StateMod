@@ -1,0 +1,82 @@
+{
+  "historical_sha_changed": [],
+  "cached_engineering": {
+    "status": "CACHED_ENGINEERING_PASSED",
+    "steps": [
+      {
+        "step": 0,
+        "repeat_logits_exact": true,
+        "repeat_cache_exact": true,
+        "independent_cache": true,
+        "length": 148,
+        "expected_length": 148
+      },
+      {
+        "step": 1,
+        "repeat_logits_exact": true,
+        "repeat_cache_exact": true,
+        "independent_cache": true,
+        "length": 149,
+        "expected_length": 149
+      },
+      {
+        "step": 2,
+        "repeat_logits_exact": true,
+        "repeat_cache_exact": true,
+        "independent_cache": true,
+        "length": 150,
+        "expected_length": 150
+      },
+      {
+        "step": 3,
+        "repeat_logits_exact": true,
+        "repeat_cache_exact": true,
+        "independent_cache": true,
+        "length": 151,
+        "expected_length": 151
+      },
+      {
+        "step": 4,
+        "repeat_logits_exact": true,
+        "repeat_cache_exact": true,
+        "independent_cache": true,
+        "length": 152,
+        "expected_length": 152
+      },
+      {
+        "step": 5,
+        "repeat_logits_exact": true,
+        "repeat_cache_exact": true,
+        "independent_cache": true,
+        "length": 153,
+        "expected_length": 153
+      },
+      {
+        "step": 6,
+        "repeat_logits_exact": true,
+        "repeat_cache_exact": true,
+        "independent_cache": true,
+        "length": 154,
+        "expected_length": 154
+      },
+      {
+        "step": 7,
+        "repeat_logits_exact": true,
+        "repeat_cache_exact": true,
+        "independent_cache": true,
+        "length": 155,
+        "expected_length": 155
+      }
+    ]
+  },
+  "integrity": {
+    "passed": true,
+    "model_sha_verified": true,
+    "model_parameters_checked": true,
+    "bank_loaded": false,
+    "judgment_loaded": false
+  },
+  "bank_loaded": false,
+  "module_loaded": false,
+  "scorer_sha": "a06eaf6cc034f29a8826d262fab847ee70ae18054b677d7aab38e614a656d983"
+}

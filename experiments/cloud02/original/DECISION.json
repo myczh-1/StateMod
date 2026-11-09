@@ -1,0 +1,8 @@
+{
+  "status": "DEVELOPMENT_8B_TEACHER_FIDELITY_SUPPORTED",
+  "fidelity_passed": true,
+  "loop_eligible": false,
+  "loop_executed": false,
+  "teacher_accuracy_improved": false,
+  "independent_confirmation": false
+}

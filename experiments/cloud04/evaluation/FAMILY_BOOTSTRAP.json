@@ -1,0 +1,116 @@
+{
+  "TEXT_CODE/E/joint": {
+    "family_values": [
+      0.0,
+      1.0,
+      0.0,
+      0.5,
+      0.5,
+      1.0,
+      0.5,
+      1.0
+    ],
+    "mean": 0.5625,
+    "interval95": [
+      0.3125,
+      0.8125
+    ],
+    "unit": "family with both wordings",
+    "descriptive_only": true
+  },
+  "TEXT_CODE/N/functional": {
+    "family_values": [
+      0.0,
+      0.0,
+      0.0,
+      -0.5,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mean": -0.0625,
+    "interval95": [
+      -0.1875,
+      0.0
+    ],
+    "unit": "family with both wordings",
+    "descriptive_only": true
+  },
+  "MANUAL_V/E/joint": {
+    "family_values": [
+      0.5,
+      0.0,
+      0.0,
+      0.0,
+      0.5,
+      0.5,
+      0.0,
+      0.0
+    ],
+    "mean": 0.1875,
+    "interval95": [
+      0.0625,
+      0.375
+    ],
+    "unit": "family with both wordings",
+    "descriptive_only": true
+  },
+  "MANUAL_V/N/functional": {
+    "family_values": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mean": 0.0,
+    "interval95": [
+      0.0,
+      0.0
+    ],
+    "unit": "family with both wordings",
+    "descriptive_only": true
+  },
+  "MODULE_V/E/joint": {
+    "family_values": [
+      0.5,
+      0.0,
+      0.0,
+      0.0,
+      0.5,
+      0.5,
+      0.0,
+      0.0
+    ],
+    "mean": 0.1875,
+    "interval95": [
+      0.0625,
+      0.375
+    ],
+    "unit": "family with both wordings",
+    "descriptive_only": true
+  },
+  "MODULE_V/N/functional": {
+    "family_values": [
+      0.0,
+      0.5,
+      0.0,
+      -0.5,
+      0.5,
+      0.0,
+      0.5,
+      0.0
+    ],
+    "mean": 0.125,
+    "interval95": [
+      -0.125,
+      0.3125
+    ],
+    "unit": "family with both wordings",
+    "descriptive_only": true
+  }
+}

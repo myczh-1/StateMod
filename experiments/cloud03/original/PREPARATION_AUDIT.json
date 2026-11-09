@@ -1,0 +1,21 @@
+{
+  "status": "PREPARED_NOT_RUN",
+  "backend_unit_tests": 7,
+  "pipeline_tests": 3,
+  "synthetic_tests_only": true,
+  "main_model_forward": false,
+  "old_files_changed": [],
+  "protected_count": 2842,
+  "judge_unchanged": true,
+  "threshold_unchanged": true,
+  "bank_compiled": false,
+  "server_connected": false,
+  "local_python": "3.11.15",
+  "archive": {
+    "sha256": "88d0b6b7221a45c2ef8a2b4ff10465050ce378bbdc77dd1acbb7878ceda854c5",
+    "bytes": 695544,
+    "file_count": 30,
+    "contains_model_weights": false,
+    "contains_old_V_payload": false
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "event": "LEGAL_RETURN_READY",
+  "line": 2,
+  "column": 4,
+  "code_characters": 45,
+  "fenced": true,
+  "detector": "tokenize+AST+compile of generated prefix; no execution",
+  "generated_prefix": "```python\ndef collect_inverted_flags(flags):\n    return",
+  "prediction_step": 12,
+  "absolute_position": 175,
+  "prefix_valid": true
+}

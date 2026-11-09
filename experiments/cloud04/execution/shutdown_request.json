@@ -1,0 +1,8 @@
+{
+  "time": 1793797782.767728,
+  "reason": "All raw Cloud04 results retrieved; immutable archive SHA and every file SHA verified",
+  "returncode": 0,
+  "stdout": "",
+  "stderr": "",
+  "delete_or_release": false
+}

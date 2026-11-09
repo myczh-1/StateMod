@@ -1,0 +1,78 @@
+{
+  "status": "WORDING_DISAMBIGUATION_EFFECT_OBSERVED",
+  "rows": [
+    {
+      "family": "integer_octal_text",
+      "old": {
+        "functional": false,
+        "mutation_calls": [
+          "remove",
+          "add"
+        ],
+        "code": "def collect_octal_strings(numbers): return set(oct(n) for n in numbers).add('').remove('')"
+      },
+      "clear": {
+        "functional": true,
+        "mutation_calls": [],
+        "code": "def collect_octal_strings(numbers): return set(oct(n) for n in numbers)"
+      }
+    },
+    {
+      "family": "literal_a_occurrences",
+      "old": {
+        "functional": false,
+        "mutation_calls": [
+          "remove",
+          "add"
+        ],
+        "code": "def collect_a_counts(words): return reduce(lambda s, w: s.add(w.count('a')) or s, words, set()).remove(0)"
+      },
+      "clear": {
+        "functional": true,
+        "mutation_calls": [],
+        "code": "def collect_a_counts(words): return set((s.count('a') for s in words))"
+      }
+    },
+    {
+      "family": "ascii_text_predicate",
+      "old": {
+        "functional": false,
+        "mutation_calls": [
+          "remove",
+          "add"
+        ],
+        "code": "def collect_ascii_flags(words): return set().add(*map(str.isascii, words)).remove('') or set()"
+      },
+      "clear": {
+        "functional": false,
+        "mutation_calls": [],
+        "code": "def collect_ascii_flags(words): return set(isascii(s) for s in words)"
+      }
+    },
+    {
+      "family": "boolean_complement",
+      "old": {
+        "functional": false,
+        "mutation_calls": [
+          "remove",
+          "add"
+        ],
+        "code": "def collect_inverted_flags(flags): return set().add(*[not f for f in flags]).remove(*[not f for f in flags]) or set()"
+      },
+      "clear": {
+        "functional": true,
+        "mutation_calls": [],
+        "code": "def collect_inverted_flags(flags): return set([not flag for flag in flags])"
+      }
+    }
+  ],
+  "recovered": 3,
+  "regressions": 0,
+  "references": {
+    "integer_octal_text_N_W_INTERFACE": true,
+    "literal_a_occurrences_N_W_INTERFACE": true,
+    "ascii_text_predicate_N_W_INTERFACE": true,
+    "boolean_complement_N_W_INTERFACE": true
+  },
+  "note": "AST counts are descriptive; inspect code for legitimate computation vs misplaced acceptance actions"
+}

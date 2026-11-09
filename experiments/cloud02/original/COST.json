@@ -1,0 +1,9 @@
+{
+  "wall_seconds": 4.558900833129883,
+  "main_model_forward": 0,
+  "bank_access": 0,
+  "optimizer_steps": 256,
+  "train_count": 8,
+  "heldout_count": 16,
+  "checkpoint_bytes": 283323
+}

@@ -1,0 +1,133 @@
+{
+  "code": {
+    "BASE": {
+      "E": {
+        "planned": 4,
+        "completed": 4,
+        "functional": 4,
+        "joint": 0,
+        "format_ok": 4,
+        "covered": 4
+      },
+      "N": {
+        "planned": 4,
+        "completed": 4,
+        "functional": 2,
+        "joint": 2,
+        "format_ok": 4,
+        "covered": 4
+      }
+    },
+    "TEXT_CODE": {
+      "E": {
+        "planned": 4,
+        "completed": 4,
+        "functional": 4,
+        "joint": 4,
+        "format_ok": 4,
+        "covered": 4
+      },
+      "N": {
+        "planned": 4,
+        "completed": 4,
+        "functional": 4,
+        "joint": 4,
+        "format_ok": 4,
+        "covered": 4
+      }
+    }
+  },
+  "select": {
+    "completed": 8,
+    "valid": 8,
+    "correct": 8,
+    "N_correct": 4,
+    "E_correct": 4,
+    "natural_candidate_disagreement": [],
+    "invalid": []
+  },
+  "pairs": [
+    {
+      "id": "double_E_CLEAR",
+      "category": "E",
+      "base_functional": true,
+      "text_functional": true,
+      "base_joint": false,
+      "text_joint": true,
+      "regression": false,
+      "new_E_joint": true
+    },
+    {
+      "id": "double_N_CLEAR",
+      "category": "N",
+      "base_functional": false,
+      "text_functional": true,
+      "base_joint": false,
+      "text_joint": true,
+      "regression": false,
+      "new_E_joint": false
+    },
+    {
+      "id": "lower_E_CLEAR",
+      "category": "E",
+      "base_functional": true,
+      "text_functional": true,
+      "base_joint": false,
+      "text_joint": true,
+      "regression": false,
+      "new_E_joint": true
+    },
+    {
+      "id": "lower_N_CLEAR",
+      "category": "N",
+      "base_functional": true,
+      "text_functional": true,
+      "base_joint": true,
+      "text_joint": true,
+      "regression": false,
+      "new_E_joint": false
+    },
+    {
+      "id": "integer_octal_text_E_CLEAR",
+      "category": "E",
+      "base_functional": true,
+      "text_functional": true,
+      "base_joint": false,
+      "text_joint": true,
+      "regression": false,
+      "new_E_joint": true
+    },
+    {
+      "id": "integer_octal_text_N_CLEAR",
+      "category": "N",
+      "base_functional": false,
+      "text_functional": true,
+      "base_joint": false,
+      "text_joint": true,
+      "regression": false,
+      "new_E_joint": false
+    },
+    {
+      "id": "boolean_complement_E_CLEAR",
+      "category": "E",
+      "base_functional": true,
+      "text_functional": true,
+      "base_joint": false,
+      "text_joint": true,
+      "regression": false,
+      "new_E_joint": true
+    },
+    {
+      "id": "boolean_complement_N_CLEAR",
+      "category": "N",
+      "base_functional": true,
+      "text_functional": true,
+      "base_joint": true,
+      "text_joint": true,
+      "regression": false,
+      "new_E_joint": false
+    }
+  ],
+  "N_new_regressions": [],
+  "new_E_joint": 4
+}

@@ -1,0 +1,9 @@
+{
+  "reconstruction_max_logit_error": 7.105427357601002e-15,
+  "finite_weights": true,
+  "finite_losses": true,
+  "train_preprocessing_only": true,
+  "checkpoint_written_before_holdout": true,
+  "main_model_forward": 0,
+  "bank_access": 0
+}

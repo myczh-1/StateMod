@@ -1,0 +1,7 @@
+{
+  "natural_top1_flips": [],
+  "candidate_rank_flips": [],
+  "no_observed_ranking_flips": true,
+  "path_robust": false,
+  "interpretation": "Only same-history comparisons; no independently generated Fresh trajectory. Never replace Cached behavior or revise Cloud09."
+}

@@ -1,0 +1,50 @@
+{
+  "token_ids": [
+    746,
+    151645
+  ],
+  "name_token_count": 1,
+  "total_token_count": 2,
+  "type_logp": -0.742810910140192,
+  "fresh_type_logp": -0.742810910140192,
+  "type_eos_logp": -0.7428110184379813,
+  "fresh_type_eos_logp": -0.7428110184379084,
+  "steps": [
+    {
+      "token": 746,
+      "cached_top1": 69,
+      "fresh_top1": 69,
+      "cached_logp": -0.742810910140192,
+      "fresh_logp": -0.742810910140192,
+      "metrics": {
+        "max_abs": 0.0,
+        "rms": 0.0,
+        "relative_l2": 0.0,
+        "exact": true
+      },
+      "native_length": 291,
+      "fresh_length": 291,
+      "bank_calls": 0,
+      "logp_error": 0.0,
+      "rank": 2
+    },
+    {
+      "token": 151645,
+      "cached_top1": 151645,
+      "fresh_top1": 151645,
+      "cached_logp": -1.0829778931186529e-07,
+      "fresh_logp": -1.0829771648124276e-07,
+      "metrics": {
+        "max_abs": 2.384185791015625e-05,
+        "rms": 5.412540431301686e-06,
+        "relative_l2": 1.4274635478083857e-06,
+        "exact": false
+      },
+      "native_length": 292,
+      "fresh_length": 292,
+      "bank_calls": 0,
+      "logp_error": 7.283062252741595e-14,
+      "rank": 1
+    }
+  ]
+}

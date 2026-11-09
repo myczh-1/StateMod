@@ -1,0 +1,412 @@
+[
+  {
+    "family": "double",
+    "category": "E",
+    "function_name": "collect_doubles",
+    "member_type": "int",
+    "gold": "def collect_doubles(numbers):\n    return frozenset(2*x for x in numbers)\n",
+    "tests": [
+      {
+        "role": "empty",
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "role": "duplicates",
+        "args": [
+          [
+            -2,
+            2,
+            2
+          ]
+        ],
+        "expected": [
+          -4,
+          4
+        ]
+      },
+      {
+        "role": "boundary",
+        "args": [
+          [
+            0,
+            -1,
+            100
+          ]
+        ],
+        "expected": [
+          0,
+          -2,
+          200
+        ]
+      }
+    ],
+    "id": "double_E_CLEAR__TRAIN_USAGE",
+    "prompt": "编写 Python 函数 collect_doubles(numbers)，numbers 是整数列表，返回各整数乘以二后的不同值。\n返回之后，调用方仅检查哪些成员在结果中，不会改变结果成员；不要求返回对象可以增删。函数内部只完成计算并返回，不执行调用方的检查。\n结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。",
+    "source_id": "double_E_CLEAR",
+    "split": "teacher_distillation_train_same_families",
+    "wording": "USAGE_REPHRASE_V1",
+    "expected_choice": "frozenset"
+  },
+  {
+    "family": "double",
+    "category": "N",
+    "function_name": "collect_doubles",
+    "member_type": "int",
+    "gold": "def collect_doubles(numbers):\n    return set(2*x for x in numbers)\n",
+    "tests": [
+      {
+        "role": "empty",
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "role": "duplicates",
+        "args": [
+          [
+            -2,
+            2,
+            2
+          ]
+        ],
+        "expected": [
+          -4,
+          4
+        ]
+      },
+      {
+        "role": "boundary",
+        "args": [
+          [
+            0,
+            -1,
+            100
+          ]
+        ],
+        "expected": [
+          0,
+          -2,
+          200
+        ]
+      }
+    ],
+    "id": "double_N_CLEAR__TRAIN_USAGE",
+    "prompt": "编写 Python 函数 collect_doubles(numbers)，numbers 是整数列表，返回各整数乘以二后的不同值。\n返回之后，调用方需要改变结果成员：对返回对象调用 .add() 加入一个新成员，再调用 .remove() 删除该成员，原对象应恢复原来的内容。函数内部只完成计算并返回，不执行调用方的这些操作。\n结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。",
+    "source_id": "double_N_CLEAR",
+    "split": "teacher_distillation_train_same_families",
+    "wording": "USAGE_REPHRASE_V1",
+    "expected_choice": "set"
+  },
+  {
+    "family": "lower",
+    "category": "E",
+    "function_name": "collect_lowercase",
+    "member_type": "str",
+    "gold": "def collect_lowercase(words):\n    return frozenset(x.lower() for x in words)\n",
+    "tests": [
+      {
+        "role": "empty",
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "role": "duplicates",
+        "args": [
+          [
+            "Aa",
+            "BB",
+            "aa",
+            ""
+          ]
+        ],
+        "expected": [
+          "aa",
+          "bb",
+          ""
+        ]
+      },
+      {
+        "role": "boundary",
+        "args": [
+          [
+            "XyZ",
+            "中文",
+            "ABC"
+          ]
+        ],
+        "expected": [
+          "xyz",
+          "中文",
+          "abc"
+        ]
+      }
+    ],
+    "id": "lower_E_CLEAR__TRAIN_USAGE",
+    "prompt": "编写 Python 函数 collect_lowercase(words)，words 是字符串列表，返回各字符串转为小写后的不同字符串。\n返回之后，调用方仅检查哪些成员在结果中，不会改变结果成员；不要求返回对象可以增删。函数内部只完成计算并返回，不执行调用方的检查。\n结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。",
+    "source_id": "lower_E_CLEAR",
+    "split": "teacher_distillation_train_same_families",
+    "wording": "USAGE_REPHRASE_V1",
+    "expected_choice": "frozenset"
+  },
+  {
+    "family": "lower",
+    "category": "N",
+    "function_name": "collect_lowercase",
+    "member_type": "str",
+    "gold": "def collect_lowercase(words):\n    return set(x.lower() for x in words)\n",
+    "tests": [
+      {
+        "role": "empty",
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "role": "duplicates",
+        "args": [
+          [
+            "Aa",
+            "BB",
+            "aa",
+            ""
+          ]
+        ],
+        "expected": [
+          "aa",
+          "bb",
+          ""
+        ]
+      },
+      {
+        "role": "boundary",
+        "args": [
+          [
+            "XyZ",
+            "中文",
+            "ABC"
+          ]
+        ],
+        "expected": [
+          "xyz",
+          "中文",
+          "abc"
+        ]
+      }
+    ],
+    "id": "lower_N_CLEAR__TRAIN_USAGE",
+    "prompt": "编写 Python 函数 collect_lowercase(words)，words 是字符串列表，返回各字符串转为小写后的不同字符串。\n返回之后，调用方需要改变结果成员：对返回对象调用 .add() 加入一个新成员，再调用 .remove() 删除该成员，原对象应恢复原来的内容。函数内部只完成计算并返回，不执行调用方的这些操作。\n结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。",
+    "source_id": "lower_N_CLEAR",
+    "split": "teacher_distillation_train_same_families",
+    "wording": "USAGE_REPHRASE_V1",
+    "expected_choice": "set"
+  },
+  {
+    "family": "integer_octal_text",
+    "category": "E",
+    "function_name": "collect_octal_strings",
+    "member_type": "str",
+    "gold": "def collect_octal_strings(numbers):\n    return frozenset(oct(x) for x in numbers)\n",
+    "tests": [
+      {
+        "role": "empty",
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "role": "duplicates",
+        "args": [
+          [
+            0,
+            8,
+            8,
+            15
+          ]
+        ],
+        "expected": [
+          "0o0",
+          "0o10",
+          "0o17"
+        ]
+      },
+      {
+        "role": "boundary",
+        "args": [
+          [
+            1,
+            7,
+            64
+          ]
+        ],
+        "expected": [
+          "0o1",
+          "0o7",
+          "0o100"
+        ]
+      }
+    ],
+    "id": "integer_octal_text_E_CLEAR__TRAIN_USAGE",
+    "prompt": "编写 Python 函数 collect_octal_strings(numbers)，numbers 是非负整数列表。对每个整数调用 Python 内置 oct，返回带 0o 前缀的八进制字符串。\n返回之后，调用方仅检查哪些成员在结果中，不会改变结果成员；不要求返回对象可以增删。函数内部只完成计算并返回，不执行调用方的检查。\n结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。",
+    "source_id": "integer_octal_text_E_CLEAR",
+    "split": "teacher_distillation_train_same_families",
+    "wording": "USAGE_REPHRASE_V1",
+    "expected_choice": "frozenset"
+  },
+  {
+    "family": "integer_octal_text",
+    "category": "N",
+    "function_name": "collect_octal_strings",
+    "member_type": "str",
+    "gold": "def collect_octal_strings(numbers):\n    return set(oct(x) for x in numbers)\n",
+    "tests": [
+      {
+        "role": "empty",
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "role": "duplicates",
+        "args": [
+          [
+            0,
+            8,
+            8,
+            15
+          ]
+        ],
+        "expected": [
+          "0o0",
+          "0o10",
+          "0o17"
+        ]
+      },
+      {
+        "role": "boundary",
+        "args": [
+          [
+            1,
+            7,
+            64
+          ]
+        ],
+        "expected": [
+          "0o1",
+          "0o7",
+          "0o100"
+        ]
+      }
+    ],
+    "id": "integer_octal_text_N_CLEAR__TRAIN_USAGE",
+    "prompt": "编写 Python 函数 collect_octal_strings(numbers)，numbers 是非负整数列表。对每个整数调用 Python 内置 oct，返回带 0o 前缀的八进制字符串。\n返回之后，调用方需要改变结果成员：对返回对象调用 .add() 加入一个新成员，再调用 .remove() 删除该成员，原对象应恢复原来的内容。函数内部只完成计算并返回，不执行调用方的这些操作。\n结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。",
+    "source_id": "integer_octal_text_N_CLEAR",
+    "split": "teacher_distillation_train_same_families",
+    "wording": "USAGE_REPHRASE_V1",
+    "expected_choice": "set"
+  },
+  {
+    "family": "boolean_complement",
+    "category": "E",
+    "function_name": "collect_inverted_flags",
+    "member_type": "bool",
+    "gold": "def collect_inverted_flags(flags):\n    return frozenset(not x for x in flags)\n",
+    "tests": [
+      {
+        "role": "empty",
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "role": "duplicates",
+        "args": [
+          [
+            true,
+            true,
+            false
+          ]
+        ],
+        "expected": [
+          false,
+          true
+        ]
+      },
+      {
+        "role": "boundary",
+        "args": [
+          [
+            false,
+            false
+          ]
+        ],
+        "expected": [
+          true
+        ]
+      }
+    ],
+    "id": "boolean_complement_E_CLEAR__TRAIN_USAGE",
+    "prompt": "编写 Python 函数 collect_inverted_flags(flags)，flags 是布尔值列表。对每个元素做逻辑取反：True 变为 False，False 变为 True，保留布尔类型。\n返回之后，调用方仅检查哪些成员在结果中，不会改变结果成员；不要求返回对象可以增删。函数内部只完成计算并返回，不执行调用方的检查。\n结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。",
+    "source_id": "boolean_complement_E_CLEAR",
+    "split": "teacher_distillation_train_same_families",
+    "wording": "USAGE_REPHRASE_V1",
+    "expected_choice": "frozenset"
+  },
+  {
+    "family": "boolean_complement",
+    "category": "N",
+    "function_name": "collect_inverted_flags",
+    "member_type": "bool",
+    "gold": "def collect_inverted_flags(flags):\n    return set(not x for x in flags)\n",
+    "tests": [
+      {
+        "role": "empty",
+        "args": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "role": "duplicates",
+        "args": [
+          [
+            true,
+            true,
+            false
+          ]
+        ],
+        "expected": [
+          false,
+          true
+        ]
+      },
+      {
+        "role": "boundary",
+        "args": [
+          [
+            false,
+            false
+          ]
+        ],
+        "expected": [
+          true
+        ]
+      }
+    ],
+    "id": "boolean_complement_N_CLEAR__TRAIN_USAGE",
+    "prompt": "编写 Python 函数 collect_inverted_flags(flags)，flags 是布尔值列表。对每个元素做逻辑取反：True 变为 False，False 变为 True，保留布尔类型。\n返回之后，调用方需要改变结果成员：对返回对象调用 .add() 加入一个新成员，再调用 .remove() 删除该成员，原对象应恢复原来的内容。函数内部只完成计算并返回，不执行调用方的这些操作。\n结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。",
+    "source_id": "boolean_complement_N_CLEAR",
+    "split": "teacher_distillation_train_same_families",
+    "wording": "USAGE_REPHRASE_V1",
+    "expected_choice": "set"
+  }
+]

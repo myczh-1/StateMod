@@ -1,0 +1,27 @@
+{
+  "capture_tasks": 24,
+  "coverage": 24,
+  "readonly_logits_exact": true,
+  "readonly_cache_exact": true,
+  "checkpoint_unchanged": true,
+  "independent_cache": true,
+  "hooks_clean": true,
+  "token_boundary_valid": true,
+  "max_logits_rms": 1.0914609819026757e-05,
+  "max_hidden_rms": 1.0703141209610024e-06,
+  "max_selected_logp_error": 7.915491996968171e-06,
+  "original_baseline_verified": 16,
+  "reference_max_logits_rms": 0,
+  "fresh_vs_cached_student_logit_max_error": 9.303262641680021e-05,
+  "fresh_vs_cached_student_probability_max_error": 1.3732459613891024e-09,
+  "fresh_vs_cached_student_action_changes": 0,
+  "checkpoint_arithmetic": {
+    "reconstruction_max_logit_error": 7.105427357601002e-15,
+    "finite_weights": true,
+    "finite_losses": true,
+    "train_preprocessing_only": true,
+    "checkpoint_written_before_holdout": true,
+    "main_model_forward": 0,
+    "bank_access": 0
+  }
+}

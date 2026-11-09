@@ -1,0 +1,4024 @@
+[
+  {
+    "id": "centered_text_padding_E_W3",
+    "family": "centered_text_padding",
+    "wording": "W3",
+    "category": "E",
+    "condition": "BASE",
+    "functional": true,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "```python\ndef collect_centered_views(texts): return list(set(text.center(6, \".\") if len(text) < 6 else text for text in texts))\n```",
+    "failures": []
+  },
+  {
+    "id": "centered_text_padding_E_W3",
+    "family": "centered_text_padding",
+    "wording": "W3",
+    "category": "E",
+    "condition": "TEXT_CODE",
+    "functional": false,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_centered_views(texts): return frozenset(centered_view.center(6, \".\") if len(texted) < 6 else texted for texted in texts)",
+    "failures": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'centered_view' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'centered_view' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 3,
+        "detail": "NameError(\"name 'centered_view' is not defined\")"
+      }
+    ]
+  },
+  {
+    "id": "centered_text_padding_E_W4",
+    "family": "centered_text_padding",
+    "wording": "W4",
+    "category": "E",
+    "condition": "BASE",
+    "functional": true,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_centered_views(texts): return list(set(text.center(6, \".\") if len(text) < 6 else text for text in texts))",
+    "failures": []
+  },
+  {
+    "id": "centered_text_padding_E_W4",
+    "family": "centered_text_padding",
+    "wording": "W4",
+    "category": "E",
+    "condition": "MANUAL_V",
+    "functional": false,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": true,
+    "bank_calls": 14,
+    "p": null,
+    "text": "def collect_centered_views(texts): return set(center(t, 6, \".\") for t in texts)",
+    "failures": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'center' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'center' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 3,
+        "detail": "NameError(\"name 'center' is not defined\")"
+      }
+    ]
+  },
+  {
+    "id": "centered_text_padding_E_W4",
+    "family": "centered_text_padding",
+    "wording": "W4",
+    "category": "E",
+    "condition": "MODULE_V",
+    "functional": false,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": true,
+    "bank_calls": 14,
+    "p": 0.9983580379149204,
+    "text": "def collect_centered_views(texts): return set(center(t, 6, \".\") for t in texts)",
+    "failures": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'center' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'center' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 3,
+        "detail": "NameError(\"name 'center' is not defined\")"
+      }
+    ]
+  },
+  {
+    "id": "centered_text_padding_E_W4",
+    "family": "centered_text_padding",
+    "wording": "W4",
+    "category": "E",
+    "condition": "TEXT_CODE",
+    "functional": false,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_centered_views(texts): return frozenset(centered_view(text) for text in texts if (centered_view := text.center(6, \".\")) != text)",
+    "failures": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "TypeError(\"'str' object is not callable\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "TypeError(\"'str' object is not callable\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 3,
+        "detail": "TypeError(\"'str' object is not callable\")"
+      }
+    ]
+  },
+  {
+    "id": "centered_text_padding_N_W3",
+    "family": "centered_text_padding",
+    "wording": "W3",
+    "category": "N",
+    "condition": "BASE",
+    "functional": false,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "```python\ndef collect_centered_views(texts):\n    return list({center(s, 6, \".\") for s in texts if len(s) < 6})\n```",
+    "failures": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'center' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'center' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 3,
+        "detail": "NameError(\"name 'center' is not defined\")"
+      }
+    ]
+  },
+  {
+    "id": "centered_text_padding_N_W3",
+    "family": "centered_text_padding",
+    "wording": "W3",
+    "category": "N",
+    "condition": "MANUAL_V",
+    "functional": false,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "```python\ndef collect_centered_views(texts):\n    return list({center(s, 6, \".\") for s in texts if len(s) < 6})\n```",
+    "failures": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'center' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'center' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 3,
+        "detail": "NameError(\"name 'center' is not defined\")"
+      }
+    ]
+  },
+  {
+    "id": "centered_text_padding_N_W3",
+    "family": "centered_text_padding",
+    "wording": "W3",
+    "category": "N",
+    "condition": "MODULE_V",
+    "functional": false,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": 0.0007396088781999065,
+    "text": "```python\ndef collect_centered_views(texts):\n    return list({center(s, 6, \".\") for s in texts if len(s) < 6})\n```",
+    "failures": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'center' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'center' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 3,
+        "detail": "NameError(\"name 'center' is not defined\")"
+      }
+    ]
+  },
+  {
+    "id": "centered_text_padding_N_W3",
+    "family": "centered_text_padding",
+    "wording": "W3",
+    "category": "N",
+    "condition": "TEXT_CODE",
+    "functional": false,
+    "joint": false,
+    "exact_type": true,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_centered_views(texts): return frozenset(centered for centered in (text.center(6, \".\") if len(text) < 6 else text for text in texts))",
+    "failures": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ]
+  },
+  {
+    "id": "centered_text_padding_N_W4",
+    "family": "centered_text_padding",
+    "wording": "W4",
+    "category": "N",
+    "condition": "BASE",
+    "functional": false,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_centered_views(texts): return list({center(t, 6, \".\") for t in texts if len(t) < 6})",
+    "failures": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'center' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'center' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 3,
+        "detail": "NameError(\"name 'center' is not defined\")"
+      }
+    ]
+  },
+  {
+    "id": "centered_text_padding_N_W4",
+    "family": "centered_text_padding",
+    "wording": "W4",
+    "category": "N",
+    "condition": "MANUAL_V",
+    "functional": false,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_centered_views(texts): return list({center(t, 6, \".\") for t in texts if len(t) < 6})",
+    "failures": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'center' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'center' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 3,
+        "detail": "NameError(\"name 'center' is not defined\")"
+      }
+    ]
+  },
+  {
+    "id": "centered_text_padding_N_W4",
+    "family": "centered_text_padding",
+    "wording": "W4",
+    "category": "N",
+    "condition": "MODULE_V",
+    "functional": false,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": true,
+    "bank_calls": 14,
+    "p": 0.8822287962455253,
+    "text": "def collect_centered_views(texts): return set(center(t, 6, \".\") for t in texts)",
+    "failures": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'center' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'center' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 3,
+        "detail": "NameError(\"name 'center' is not defined\")"
+      }
+    ]
+  },
+  {
+    "id": "centered_text_padding_N_W4",
+    "family": "centered_text_padding",
+    "wording": "W4",
+    "category": "N",
+    "condition": "TEXT_CODE",
+    "functional": false,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_centered_views(texts): return frozenset(centered_view(text) for text in texts if (centered_view := text.center(6, \".\")) != text)",
+    "failures": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "TypeError(\"'str' object is not callable\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "TypeError(\"'str' object is not callable\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 3,
+        "detail": "TypeError(\"'str' object is not callable\")"
+      }
+    ]
+  },
+  {
+    "id": "dna_reverse_complement_E_W3",
+    "family": "dna_reverse_complement",
+    "wording": "W3",
+    "category": "E",
+    "condition": "BASE",
+    "functional": true,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_reverse_complements(sequences): return list({seq[::-1].translate(str.maketrans('ACGT','TGCA')) for seq in sequences})",
+    "failures": []
+  },
+  {
+    "id": "dna_reverse_complement_E_W3",
+    "family": "dna_reverse_complement",
+    "wording": "W3",
+    "category": "E",
+    "condition": "MANUAL_V",
+    "functional": true,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": true,
+    "bank_calls": 14,
+    "p": null,
+    "text": "def collect_reverse_complements(sequences): return set(seq[::-1].translate(str.maketrans('ACGT','TGCA')) for seq in sequences)",
+    "failures": []
+  },
+  {
+    "id": "dna_reverse_complement_E_W3",
+    "family": "dna_reverse_complement",
+    "wording": "W3",
+    "category": "E",
+    "condition": "MODULE_V",
+    "functional": true,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": true,
+    "bank_calls": 14,
+    "p": 0.9996316953424049,
+    "text": "def collect_reverse_complements(sequences): return set(seq[::-1].translate(str.maketrans('ACGT','TGCA')) for seq in sequences)",
+    "failures": []
+  },
+  {
+    "id": "dna_reverse_complement_E_W4",
+    "family": "dna_reverse_complement",
+    "wording": "W4",
+    "category": "E",
+    "condition": "BASE",
+    "functional": true,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "```python\ndef collect_reverse_complements(sequences):\n    return list({seq[::-1].translate(str.maketrans('ACGT', 'TGCA')) for seq in sequences})\n```",
+    "failures": []
+  },
+  {
+    "id": "dna_reverse_complement_E_W4",
+    "family": "dna_reverse_complement",
+    "wording": "W4",
+    "category": "E",
+    "condition": "MANUAL_V",
+    "functional": true,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": true,
+    "bank_calls": 14,
+    "p": null,
+    "text": "```python\ndef collect_reverse_complements(sequences):\n    return set(seq[::-1].translate(str.maketrans('ACGT', 'TGCA')) for seq in sequences)\n```",
+    "failures": []
+  },
+  {
+    "id": "dna_reverse_complement_E_W4",
+    "family": "dna_reverse_complement",
+    "wording": "W4",
+    "category": "E",
+    "condition": "MODULE_V",
+    "functional": true,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": true,
+    "bank_calls": 14,
+    "p": 0.9999999996804397,
+    "text": "```python\ndef collect_reverse_complements(sequences):\n    return set(seq[::-1].translate(str.maketrans('ACGT', 'TGCA')) for seq in sequences)\n```",
+    "failures": []
+  },
+  {
+    "id": "dna_reverse_complement_N_W3",
+    "family": "dna_reverse_complement",
+    "wording": "W3",
+    "category": "N",
+    "condition": "BASE",
+    "functional": false,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_reverse_complements(sequences): return list({seq[::-1].translate(str.maketrans('ACGT','TGCA')) for seq in sequences})",
+    "failures": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      }
+    ]
+  },
+  {
+    "id": "dna_reverse_complement_N_W3",
+    "family": "dna_reverse_complement",
+    "wording": "W3",
+    "category": "N",
+    "condition": "MANUAL_V",
+    "functional": false,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_reverse_complements(sequences): return list({seq[::-1].translate(str.maketrans('ACGT','TGCA')) for seq in sequences})",
+    "failures": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      }
+    ]
+  },
+  {
+    "id": "dna_reverse_complement_N_W3",
+    "family": "dna_reverse_complement",
+    "wording": "W3",
+    "category": "N",
+    "condition": "MODULE_V",
+    "functional": false,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": 2.0885577190796988e-12,
+    "text": "def collect_reverse_complements(sequences): return list({seq[::-1].translate(str.maketrans('ACGT','TGCA')) for seq in sequences})",
+    "failures": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      }
+    ]
+  },
+  {
+    "id": "dna_reverse_complement_N_W3",
+    "family": "dna_reverse_complement",
+    "wording": "W3",
+    "category": "N",
+    "condition": "TEXT_CODE",
+    "functional": false,
+    "joint": false,
+    "exact_type": true,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_reverse_complements(sequences): return frozenset({s[::-1].translate(str.maketrans('ACGT','TGCA')) for s in sequences})",
+    "failures": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ]
+  },
+  {
+    "id": "dna_reverse_complement_N_W4",
+    "family": "dna_reverse_complement",
+    "wording": "W4",
+    "category": "N",
+    "condition": "BASE",
+    "functional": false,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_reverse_complements(sequences): return list({seq[::-1].translate(str.maketrans('ACGT','TGCA')) for seq in sequences})",
+    "failures": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      }
+    ]
+  },
+  {
+    "id": "dna_reverse_complement_N_W4",
+    "family": "dna_reverse_complement",
+    "wording": "W4",
+    "category": "N",
+    "condition": "MANUAL_V",
+    "functional": false,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_reverse_complements(sequences): return list({seq[::-1].translate(str.maketrans('ACGT','TGCA')) for seq in sequences})",
+    "failures": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      }
+    ]
+  },
+  {
+    "id": "dna_reverse_complement_N_W4",
+    "family": "dna_reverse_complement",
+    "wording": "W4",
+    "category": "N",
+    "condition": "TEXT_CODE",
+    "functional": false,
+    "joint": false,
+    "exact_type": true,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_reverse_complements(sequences): return frozenset(s[::-1].translate(str.maketrans('ACGT','TGCA')) for s in sequences)",
+    "failures": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ]
+  },
+  {
+    "id": "integral_float_predicate_E_W3",
+    "family": "integral_float_predicate",
+    "wording": "W3",
+    "category": "E",
+    "condition": "BASE",
+    "functional": true,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_integrality_flags(values): return list({v.is_integer() for v in values})",
+    "failures": []
+  },
+  {
+    "id": "integral_float_predicate_E_W3",
+    "family": "integral_float_predicate",
+    "wording": "W3",
+    "category": "E",
+    "condition": "MANUAL_V",
+    "functional": false,
+    "joint": false,
+    "exact_type": null,
+    "coverage": true,
+    "enabled": true,
+    "bank_calls": 14,
+    "p": null,
+    "text": "def collect_integrality_flags(values): return frozenset(is_integer() for value in values if (value := value) != 0 or (value := 0.0) == 0.0)",
+    "failures": [
+      {
+        "kind": "EXECUTION_OR_SUPPORT",
+        "reason": "DEFINITION_EXECUTION_ERROR",
+        "detail": "SyntaxError(\"assignment expression cannot rebind comprehension iteration variable 'value'\")"
+      }
+    ]
+  },
+  {
+    "id": "integral_float_predicate_E_W3",
+    "family": "integral_float_predicate",
+    "wording": "W3",
+    "category": "E",
+    "condition": "MODULE_V",
+    "functional": false,
+    "joint": false,
+    "exact_type": null,
+    "coverage": true,
+    "enabled": true,
+    "bank_calls": 14,
+    "p": 0.9999489711475894,
+    "text": "def collect_integrality_flags(values): return frozenset(is_integer() for value in values if (value := value) != 0 or (value := 0.0) == 0.0)",
+    "failures": [
+      {
+        "kind": "EXECUTION_OR_SUPPORT",
+        "reason": "DEFINITION_EXECUTION_ERROR",
+        "detail": "SyntaxError(\"assignment expression cannot rebind comprehension iteration variable 'value'\")"
+      }
+    ]
+  },
+  {
+    "id": "integral_float_predicate_E_W3",
+    "family": "integral_float_predicate",
+    "wording": "W3",
+    "category": "E",
+    "condition": "TEXT_CODE",
+    "functional": false,
+    "joint": false,
+    "exact_type": null,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_integrality_flags(values): return frozenset(is_integer() for value in values if (value := value) != 0 or (value := 0.0) == 0.0)",
+    "failures": [
+      {
+        "kind": "EXECUTION_OR_SUPPORT",
+        "reason": "DEFINITION_EXECUTION_ERROR",
+        "detail": "SyntaxError(\"assignment expression cannot rebind comprehension iteration variable 'value'\")"
+      }
+    ]
+  },
+  {
+    "id": "integral_float_predicate_E_W4",
+    "family": "integral_float_predicate",
+    "wording": "W4",
+    "category": "E",
+    "condition": "BASE",
+    "functional": true,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_integrality_flags(values): return list({v.is_integer() for v in values})",
+    "failures": []
+  },
+  {
+    "id": "integral_float_predicate_E_W4",
+    "family": "integral_float_predicate",
+    "wording": "W4",
+    "category": "E",
+    "condition": "MANUAL_V",
+    "functional": false,
+    "joint": false,
+    "exact_type": null,
+    "coverage": true,
+    "enabled": true,
+    "bank_calls": 14,
+    "p": null,
+    "text": "def collect_integrality_flags(values): return frozenset(is_integer() for value in values if (value := value) != 0 or (value := 0.0) == 0.0)",
+    "failures": [
+      {
+        "kind": "EXECUTION_OR_SUPPORT",
+        "reason": "DEFINITION_EXECUTION_ERROR",
+        "detail": "SyntaxError(\"assignment expression cannot rebind comprehension iteration variable 'value'\")"
+      }
+    ]
+  },
+  {
+    "id": "integral_float_predicate_E_W4",
+    "family": "integral_float_predicate",
+    "wording": "W4",
+    "category": "E",
+    "condition": "MODULE_V",
+    "functional": false,
+    "joint": false,
+    "exact_type": null,
+    "coverage": true,
+    "enabled": true,
+    "bank_calls": 14,
+    "p": 0.9996067486884197,
+    "text": "def collect_integrality_flags(values): return frozenset(is_integer() for value in values if (value := value) != 0 or (value := 0.0) == 0.0)",
+    "failures": [
+      {
+        "kind": "EXECUTION_OR_SUPPORT",
+        "reason": "DEFINITION_EXECUTION_ERROR",
+        "detail": "SyntaxError(\"assignment expression cannot rebind comprehension iteration variable 'value'\")"
+      }
+    ]
+  },
+  {
+    "id": "integral_float_predicate_E_W4",
+    "family": "integral_float_predicate",
+    "wording": "W4",
+    "category": "E",
+    "condition": "TEXT_CODE",
+    "functional": false,
+    "joint": false,
+    "exact_type": null,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_integrality_flags(values): return frozenset(is_integer() for value in values if (value := value) != 0 or (value := 0.0) == 0.0)",
+    "failures": [
+      {
+        "kind": "EXECUTION_OR_SUPPORT",
+        "reason": "DEFINITION_EXECUTION_ERROR",
+        "detail": "SyntaxError(\"assignment expression cannot rebind comprehension iteration variable 'value'\")"
+      }
+    ]
+  },
+  {
+    "id": "integral_float_predicate_N_W3",
+    "family": "integral_float_predicate",
+    "wording": "W3",
+    "category": "N",
+    "condition": "BASE",
+    "functional": false,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_integrality_flags(values): return list({v.is_integer() for v in values})",
+    "failures": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      }
+    ]
+  },
+  {
+    "id": "integral_float_predicate_N_W3",
+    "family": "integral_float_predicate",
+    "wording": "W3",
+    "category": "N",
+    "condition": "MANUAL_V",
+    "functional": false,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_integrality_flags(values): return list({v.is_integer() for v in values})",
+    "failures": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      }
+    ]
+  },
+  {
+    "id": "integral_float_predicate_N_W3",
+    "family": "integral_float_predicate",
+    "wording": "W3",
+    "category": "N",
+    "condition": "MODULE_V",
+    "functional": false,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": 1.2829984726940859e-08,
+    "text": "def collect_integrality_flags(values): return list({v.is_integer() for v in values})",
+    "failures": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      }
+    ]
+  },
+  {
+    "id": "integral_float_predicate_N_W3",
+    "family": "integral_float_predicate",
+    "wording": "W3",
+    "category": "N",
+    "condition": "TEXT_CODE",
+    "functional": false,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_integrality_flags(values): return frozenset( (v.is_integer() for v in values) ) if all(v == 0 or v == 0.0 for v in values) else set( (v.is_integer() for v in values) )",
+    "failures": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ]
+  },
+  {
+    "id": "integral_float_predicate_N_W4",
+    "family": "integral_float_predicate",
+    "wording": "W4",
+    "category": "N",
+    "condition": "BASE",
+    "functional": false,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_integrality_flags(values): return set(is_integer() for value in values)",
+    "failures": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'is_integer' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'is_integer' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 3,
+        "detail": "NameError(\"name 'is_integer' is not defined\")"
+      }
+    ]
+  },
+  {
+    "id": "integral_float_predicate_N_W4",
+    "family": "integral_float_predicate",
+    "wording": "W4",
+    "category": "N",
+    "condition": "MANUAL_V",
+    "functional": false,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_integrality_flags(values): return set(is_integer() for value in values)",
+    "failures": [
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'is_integer' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'is_integer' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 3,
+        "detail": "NameError(\"name 'is_integer' is not defined\")"
+      }
+    ]
+  },
+  {
+    "id": "integral_float_predicate_N_W4",
+    "family": "integral_float_predicate",
+    "wording": "W4",
+    "category": "N",
+    "condition": "MODULE_V",
+    "functional": false,
+    "joint": false,
+    "exact_type": null,
+    "coverage": true,
+    "enabled": true,
+    "bank_calls": 14,
+    "p": 0.9697076674225587,
+    "text": "def collect_integrality_flags(values): return frozenset(is_integer() for value in values if (value := value) != 0 or (value := 0.0) == 0.0)",
+    "failures": [
+      {
+        "kind": "EXECUTION_OR_SUPPORT",
+        "reason": "DEFINITION_EXECUTION_ERROR",
+        "detail": "SyntaxError(\"assignment expression cannot rebind comprehension iteration variable 'value'\")"
+      }
+    ]
+  },
+  {
+    "id": "integral_float_predicate_N_W4",
+    "family": "integral_float_predicate",
+    "wording": "W4",
+    "category": "N",
+    "condition": "TEXT_CODE",
+    "functional": false,
+    "joint": false,
+    "exact_type": null,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_integrality_flags(values): return frozenset(is_integer() for value in values if (value := value) != 0 or (value := 0.0) == 0.0)",
+    "failures": [
+      {
+        "kind": "EXECUTION_OR_SUPPORT",
+        "reason": "DEFINITION_EXECUTION_ERROR",
+        "detail": "SyntaxError(\"assignment expression cannot rebind comprehension iteration variable 'value'\")"
+      }
+    ]
+  },
+  {
+    "id": "least_significant_one_value_E_W3",
+    "family": "least_significant_one_value",
+    "wording": "W3",
+    "category": "E",
+    "condition": "BASE",
+    "functional": true,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "```python\ndef collect_lowbit_values(numbers): return list({n & -n for n in numbers if n != 0} | {0} if 0 in numbers else {n & -n for n in numbers})\n```",
+    "failures": []
+  },
+  {
+    "id": "least_significant_one_value_E_W3",
+    "family": "least_significant_one_value",
+    "wording": "W3",
+    "category": "E",
+    "condition": "MANUAL_V",
+    "functional": false,
+    "joint": false,
+    "exact_type": true,
+    "coverage": true,
+    "enabled": true,
+    "bank_calls": 14,
+    "p": null,
+    "text": "```python\ndef collect_lowbit_values(numbers): return frozenset(n & -n for n in numbers if n)\n```",
+    "failures": [
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "frozenset({16, 1, 128})",
+        "expected": [
+          0,
+          1,
+          16,
+          128
+        ]
+      }
+    ]
+  },
+  {
+    "id": "least_significant_one_value_E_W3",
+    "family": "least_significant_one_value",
+    "wording": "W3",
+    "category": "E",
+    "condition": "MODULE_V",
+    "functional": false,
+    "joint": false,
+    "exact_type": true,
+    "coverage": true,
+    "enabled": true,
+    "bank_calls": 14,
+    "p": 0.9999998224881497,
+    "text": "```python\ndef collect_lowbit_values(numbers): return frozenset(n & -n for n in numbers if n)\n```",
+    "failures": [
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "frozenset({16, 1, 128})",
+        "expected": [
+          0,
+          1,
+          16,
+          128
+        ]
+      }
+    ]
+  },
+  {
+    "id": "least_significant_one_value_E_W3",
+    "family": "least_significant_one_value",
+    "wording": "W3",
+    "category": "E",
+    "condition": "TEXT_CODE",
+    "functional": false,
+    "joint": false,
+    "exact_type": true,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_lowbit_values(numbers): return frozenset(n & -n for n in numbers if n)",
+    "failures": [
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "frozenset({16, 1, 128})",
+        "expected": [
+          0,
+          1,
+          16,
+          128
+        ]
+      }
+    ]
+  },
+  {
+    "id": "least_significant_one_value_E_W4",
+    "family": "least_significant_one_value",
+    "wording": "W4",
+    "category": "E",
+    "condition": "BASE",
+    "functional": true,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "```python\ndef collect_lowbit_values(numbers):\n    return list({n & -n for n in numbers if n != 0} | {0} if 0 in numbers else {n & -n for n in numbers})\n```",
+    "failures": []
+  },
+  {
+    "id": "least_significant_one_value_E_W4",
+    "family": "least_significant_one_value",
+    "wording": "W4",
+    "category": "E",
+    "condition": "MANUAL_V",
+    "functional": true,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": true,
+    "bank_calls": 14,
+    "p": null,
+    "text": "```python\ndef collect_lowbit_values(numbers):\n    return set(n & -n for n in numbers if n != 0) | {0} if 0 in numbers else set(n & -n for n in numbers)\n```",
+    "failures": []
+  },
+  {
+    "id": "least_significant_one_value_E_W4",
+    "family": "least_significant_one_value",
+    "wording": "W4",
+    "category": "E",
+    "condition": "MODULE_V",
+    "functional": true,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": true,
+    "bank_calls": 14,
+    "p": 0.999999999999865,
+    "text": "```python\ndef collect_lowbit_values(numbers):\n    return set(n & -n for n in numbers if n != 0) | {0} if 0 in numbers else set(n & -n for n in numbers)\n```",
+    "failures": []
+  },
+  {
+    "id": "least_significant_one_value_N_W3",
+    "family": "least_significant_one_value",
+    "wording": "W3",
+    "category": "N",
+    "condition": "BASE",
+    "functional": false,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "```python\ndef collect_lowbit_values(numbers):\n    return {n & -n for n in numbers if n != 0}\n```",
+    "failures": [
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "{16, 1, 128}",
+        "expected": [
+          0,
+          1,
+          16,
+          128
+        ]
+      }
+    ]
+  },
+  {
+    "id": "least_significant_one_value_N_W3",
+    "family": "least_significant_one_value",
+    "wording": "W3",
+    "category": "N",
+    "condition": "MANUAL_V",
+    "functional": false,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "```python\ndef collect_lowbit_values(numbers):\n    return {n & -n for n in numbers if n != 0}\n```",
+    "failures": [
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "{16, 1, 128}",
+        "expected": [
+          0,
+          1,
+          16,
+          128
+        ]
+      }
+    ]
+  },
+  {
+    "id": "least_significant_one_value_N_W3",
+    "family": "least_significant_one_value",
+    "wording": "W3",
+    "category": "N",
+    "condition": "MODULE_V",
+    "functional": false,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": true,
+    "bank_calls": 14,
+    "p": 0.9823373464891575,
+    "text": "```python\ndef collect_lowbit_values(numbers):\n    return set(n & -n for n in numbers if n != 0)\n```",
+    "failures": [
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "{16, 1, 128}",
+        "expected": [
+          0,
+          1,
+          16,
+          128
+        ]
+      }
+    ]
+  },
+  {
+    "id": "least_significant_one_value_N_W3",
+    "family": "least_significant_one_value",
+    "wording": "W3",
+    "category": "N",
+    "condition": "TEXT_CODE",
+    "functional": false,
+    "joint": false,
+    "exact_type": true,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_lowbit_values(numbers): return frozenset(n & -n for n in numbers) if numbers else frozenset()",
+    "failures": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ]
+  },
+  {
+    "id": "least_significant_one_value_N_W4",
+    "family": "least_significant_one_value",
+    "wording": "W4",
+    "category": "N",
+    "condition": "MODULE_V",
+    "functional": false,
+    "joint": false,
+    "exact_type": true,
+    "coverage": true,
+    "enabled": true,
+    "bank_calls": 14,
+    "p": 0.9999880717627094,
+    "text": "def collect_lowbit_values(numbers): return frozenset(n & -n for n in numbers if n)",
+    "failures": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "frozenset({16, 1, 128})",
+        "expected": [
+          0,
+          1,
+          16,
+          128
+        ]
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ]
+  },
+  {
+    "id": "least_significant_one_value_N_W4",
+    "family": "least_significant_one_value",
+    "wording": "W4",
+    "category": "N",
+    "condition": "TEXT_CODE",
+    "functional": false,
+    "joint": false,
+    "exact_type": true,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_lowbit_values(numbers): return frozenset(n & -n for n in numbers if n) | frozenset([0] if 0 in numbers else [])",
+    "failures": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ]
+  },
+  {
+    "id": "modal_member_selection_E_W3",
+    "family": "modal_member_selection",
+    "wording": "W3",
+    "category": "E",
+    "condition": "BASE",
+    "functional": true,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "```python\ndef collect_modal_members(numbers): return list({n for n in numbers if numbers.count(n) == max(numbers.count(x) for x in numbers)}) if numbers else []\n```",
+    "failures": []
+  },
+  {
+    "id": "modal_member_selection_E_W3",
+    "family": "modal_member_selection",
+    "wording": "W3",
+    "category": "E",
+    "condition": "MANUAL_V",
+    "functional": true,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": true,
+    "bank_calls": 14,
+    "p": null,
+    "text": "```python\ndef collect_modal_members(numbers): return set(n for n in numbers if numbers.count(n) == max(numbers.count(x) for x in numbers)) if numbers else set()\n```",
+    "failures": []
+  },
+  {
+    "id": "modal_member_selection_E_W3",
+    "family": "modal_member_selection",
+    "wording": "W3",
+    "category": "E",
+    "condition": "MODULE_V",
+    "functional": true,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": true,
+    "bank_calls": 14,
+    "p": 0.9999987923999331,
+    "text": "```python\ndef collect_modal_members(numbers): return set(n for n in numbers if numbers.count(n) == max(numbers.count(x) for x in numbers)) if numbers else set()\n```",
+    "failures": []
+  },
+  {
+    "id": "modal_member_selection_E_W3",
+    "family": "modal_member_selection",
+    "wording": "W3",
+    "category": "E",
+    "condition": "TEXT_CODE",
+    "functional": true,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_modal_members(numbers): return set(n for n in set(numbers) if numbers.count(n) == max(numbers.count(x) for x in set(numbers))) if numbers else set()",
+    "failures": []
+  },
+  {
+    "id": "modal_member_selection_E_W4",
+    "family": "modal_member_selection",
+    "wording": "W4",
+    "category": "E",
+    "condition": "BASE",
+    "functional": false,
+    "joint": false,
+    "exact_type": null,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_modal_members(numbers): return list({k for k, v in dict((v, [k for k, v in ((cnt, [k for k, v in ((cnt, [k for k, v in ((cnt, [k for k, v in ((cnt, [k for k, v in ((cnt, [k for k, v in ((cnt, [k for k, v in ((cnt, [k for k, v in",
+    "failures": [
+      {
+        "kind": "FORMAT",
+        "reason": "TRUNCATED",
+        "detail": null
+      }
+    ]
+  },
+  {
+    "id": "modal_member_selection_N_W3",
+    "family": "modal_member_selection",
+    "wording": "W3",
+    "category": "N",
+    "condition": "BASE",
+    "functional": false,
+    "joint": false,
+    "exact_type": null,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "```python\ndef collect_modal_members(numbers):\n    return list({k for k, v in dict((v, [k for k, v in ((v, len([x for x in numbers if x == k])) for k in set(numbers)) for k, v in ((v, len([x for x in numbers if x == k])) for k in set(numbers)))).items() if v == max(dict((v, [k for k, v in ((",
+    "failures": [
+      {
+        "kind": "FORMAT",
+        "reason": "TRUNCATED",
+        "detail": null
+      }
+    ]
+  },
+  {
+    "id": "modal_member_selection_N_W3",
+    "family": "modal_member_selection",
+    "wording": "W3",
+    "category": "N",
+    "condition": "MANUAL_V",
+    "functional": false,
+    "joint": false,
+    "exact_type": null,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "```python\ndef collect_modal_members(numbers):\n    return list({k for k, v in dict((v, [k for k, v in ((v, len([x for x in numbers if x == k])) for k in set(numbers)) for k, v in ((v, len([x for x in numbers if x == k])) for k in set(numbers)))).items() if v == max(dict((v, [k for k, v in ((",
+    "failures": [
+      {
+        "kind": "FORMAT",
+        "reason": "TRUNCATED",
+        "detail": null
+      }
+    ]
+  },
+  {
+    "id": "modal_member_selection_N_W3",
+    "family": "modal_member_selection",
+    "wording": "W3",
+    "category": "N",
+    "condition": "TEXT_CODE",
+    "functional": false,
+    "joint": false,
+    "exact_type": true,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_modal_members(numbers): return frozenset({x for x in (numbers or []) if (numbers.count(x) == max(numbers.count(y) for y in numbers))}) if numbers else frozenset()",
+    "failures": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ]
+  },
+  {
+    "id": "modal_member_selection_N_W4",
+    "family": "modal_member_selection",
+    "wording": "W4",
+    "category": "N",
+    "condition": "BASE",
+    "functional": false,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_modal_members(numbers): return list({n for n in numbers if numbers.count(n) == max(numbers.count(x) for x in numbers)}) if numbers else []",
+    "failures": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      }
+    ]
+  },
+  {
+    "id": "modal_member_selection_N_W4",
+    "family": "modal_member_selection",
+    "wording": "W4",
+    "category": "N",
+    "condition": "MANUAL_V",
+    "functional": false,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_modal_members(numbers): return list({n for n in numbers if numbers.count(n) == max(numbers.count(x) for x in numbers)}) if numbers else []",
+    "failures": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      }
+    ]
+  },
+  {
+    "id": "modal_member_selection_N_W4",
+    "family": "modal_member_selection",
+    "wording": "W4",
+    "category": "N",
+    "condition": "MODULE_V",
+    "functional": false,
+    "joint": false,
+    "exact_type": true,
+    "coverage": true,
+    "enabled": true,
+    "bank_calls": 14,
+    "p": 0.9998436146092824,
+    "text": "def collect_modal_members(numbers): return frozenset(num for num in numbers if numbers.count(num) == max(numbers.count(x) for x in numbers)) if numbers else frozenset()",
+    "failures": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ]
+  },
+  {
+    "id": "modal_member_selection_N_W4",
+    "family": "modal_member_selection",
+    "wording": "W4",
+    "category": "N",
+    "condition": "TEXT_CODE",
+    "functional": false,
+    "joint": false,
+    "exact_type": true,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_modal_members(numbers): return frozenset({x for x in numbers if numbers.count(x) == max(numbers.count(i) for i in numbers)}) if numbers else frozenset()",
+    "failures": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": 987654321,
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ]
+  },
+  {
+    "id": "python_literal_representation_E_W3",
+    "family": "python_literal_representation",
+    "wording": "W3",
+    "category": "E",
+    "condition": "BASE",
+    "functional": true,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_literal_views(texts): return list({repr(t) for t in texts})",
+    "failures": []
+  },
+  {
+    "id": "python_literal_representation_E_W4",
+    "family": "python_literal_representation",
+    "wording": "W4",
+    "category": "E",
+    "condition": "BASE",
+    "functional": true,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_literal_views(texts): return list({repr(t) for t in texts})",
+    "failures": []
+  },
+  {
+    "id": "python_literal_representation_E_W4",
+    "family": "python_literal_representation",
+    "wording": "W4",
+    "category": "E",
+    "condition": "MANUAL_V",
+    "functional": true,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": true,
+    "bank_calls": 14,
+    "p": null,
+    "text": "def collect_literal_views(texts): return set(repr(text) for text in texts)",
+    "failures": []
+  },
+  {
+    "id": "python_literal_representation_E_W4",
+    "family": "python_literal_representation",
+    "wording": "W4",
+    "category": "E",
+    "condition": "MODULE_V",
+    "functional": true,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": true,
+    "bank_calls": 14,
+    "p": 0.9998610014129222,
+    "text": "def collect_literal_views(texts): return set(repr(text) for text in texts)",
+    "failures": []
+  },
+  {
+    "id": "python_literal_representation_N_W3",
+    "family": "python_literal_representation",
+    "wording": "W3",
+    "category": "N",
+    "condition": "BASE",
+    "functional": false,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_literal_views(texts): return list({repr(t) for t in texts})",
+    "failures": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      }
+    ]
+  },
+  {
+    "id": "python_literal_representation_N_W3",
+    "family": "python_literal_representation",
+    "wording": "W3",
+    "category": "N",
+    "condition": "MANUAL_V",
+    "functional": false,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_literal_views(texts): return list({repr(t) for t in texts})",
+    "failures": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      }
+    ]
+  },
+  {
+    "id": "python_literal_representation_N_W3",
+    "family": "python_literal_representation",
+    "wording": "W3",
+    "category": "N",
+    "condition": "MODULE_V",
+    "functional": false,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": 6.563315664801014e-12,
+    "text": "def collect_literal_views(texts): return list({repr(t) for t in texts})",
+    "failures": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      }
+    ]
+  },
+  {
+    "id": "python_literal_representation_N_W3",
+    "family": "python_literal_representation",
+    "wording": "W3",
+    "category": "N",
+    "condition": "TEXT_CODE",
+    "functional": false,
+    "joint": false,
+    "exact_type": true,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_literal_views(texts): return frozenset(repr(text) for text in texts)",
+    "failures": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ]
+  },
+  {
+    "id": "python_literal_representation_N_W4",
+    "family": "python_literal_representation",
+    "wording": "W4",
+    "category": "N",
+    "condition": "BASE",
+    "functional": false,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_literal_views(texts): return list({repr(t) for t in texts})",
+    "failures": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      }
+    ]
+  },
+  {
+    "id": "python_literal_representation_N_W4",
+    "family": "python_literal_representation",
+    "wording": "W4",
+    "category": "N",
+    "condition": "MANUAL_V",
+    "functional": false,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_literal_views(texts): return list({repr(t) for t in texts})",
+    "failures": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      }
+    ]
+  },
+  {
+    "id": "python_literal_representation_N_W4",
+    "family": "python_literal_representation",
+    "wording": "W4",
+    "category": "N",
+    "condition": "MODULE_V",
+    "functional": false,
+    "joint": false,
+    "exact_type": true,
+    "coverage": true,
+    "enabled": true,
+    "bank_calls": 14,
+    "p": 0.9815839791506046,
+    "text": "def collect_literal_views(texts): return frozenset(repr(text) for text in texts)",
+    "failures": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ]
+  },
+  {
+    "id": "python_literal_representation_N_W4",
+    "family": "python_literal_representation",
+    "wording": "W4",
+    "category": "N",
+    "condition": "TEXT_CODE",
+    "functional": false,
+    "joint": false,
+    "exact_type": true,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_literal_views(texts): return frozenset(repr(text) for text in texts)",
+    "failures": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ]
+  },
+  {
+    "id": "run_length_expansion_E_W3",
+    "family": "run_length_expansion",
+    "wording": "W3",
+    "category": "E",
+    "condition": "BASE",
+    "functional": false,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "```python\ndef collect_expanded_runs(records):\n    return ''.join({ ''.join(c * n for c, n in record) for record in records if record })\n```",
+    "failures": [
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 0,
+        "actual": "''",
+        "expected": []
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 1,
+        "actual": "'caab'",
+        "expected": [
+          "aab",
+          "c"
+        ]
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "'zzz'",
+        "expected": [
+          "",
+          "zzz"
+        ]
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 3,
+        "actual": "'112aaa'",
+        "expected": [
+          "aaa",
+          "112"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "run_length_expansion_E_W3",
+    "family": "run_length_expansion",
+    "wording": "W3",
+    "category": "E",
+    "condition": "MANUAL_V",
+    "functional": true,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": true,
+    "bank_calls": 14,
+    "p": null,
+    "text": "```python\ndef collect_expanded_runs(records):\n    return set(''.join(c * n for c, n in record) for record in records if record)\n```",
+    "failures": []
+  },
+  {
+    "id": "run_length_expansion_E_W3",
+    "family": "run_length_expansion",
+    "wording": "W3",
+    "category": "E",
+    "condition": "MODULE_V",
+    "functional": true,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": true,
+    "bank_calls": 14,
+    "p": 0.9999999999957033,
+    "text": "```python\ndef collect_expanded_runs(records):\n    return set(''.join(c * n for c, n in record) for record in records if record)\n```",
+    "failures": []
+  },
+  {
+    "id": "run_length_expansion_E_W3",
+    "family": "run_length_expansion",
+    "wording": "W3",
+    "category": "E",
+    "condition": "TEXT_CODE",
+    "functional": true,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_expanded_runs(records): return set(''.join(c * n for c, n in run) for run in records if run)",
+    "failures": []
+  },
+  {
+    "id": "run_length_expansion_E_W4",
+    "family": "run_length_expansion",
+    "wording": "W4",
+    "category": "E",
+    "condition": "BASE",
+    "functional": false,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_expanded_runs(records): return ''.join(set(''.join(c * n for c, n in record) for record in records))",
+    "failures": [
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 0,
+        "actual": "''",
+        "expected": []
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 1,
+        "actual": "'caab'",
+        "expected": [
+          "aab",
+          "c"
+        ]
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "'zzz'",
+        "expected": [
+          "",
+          "zzz"
+        ]
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 3,
+        "actual": "'112aaa'",
+        "expected": [
+          "aaa",
+          "112"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "run_length_expansion_E_W4",
+    "family": "run_length_expansion",
+    "wording": "W4",
+    "category": "E",
+    "condition": "MANUAL_V",
+    "functional": true,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": true,
+    "bank_calls": 14,
+    "p": null,
+    "text": "def collect_expanded_runs(records): return set(''.join(c * n for c, n in record) for record in records if record)",
+    "failures": []
+  },
+  {
+    "id": "run_length_expansion_E_W4",
+    "family": "run_length_expansion",
+    "wording": "W4",
+    "category": "E",
+    "condition": "MODULE_V",
+    "functional": true,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": true,
+    "bank_calls": 14,
+    "p": 0.9999999229255283,
+    "text": "def collect_expanded_runs(records): return set(''.join(c * n for c, n in record) for record in records if record)",
+    "failures": []
+  },
+  {
+    "id": "run_length_expansion_N_W3",
+    "family": "run_length_expansion",
+    "wording": "W3",
+    "category": "N",
+    "condition": "BASE",
+    "functional": false,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "```python\ndef collect_expanded_runs(records):\n    return ''.join(''.join(c * cnt for c, cnt in run) for run in records if run) if records else ''\n```",
+    "failures": [
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 0,
+        "actual": "''",
+        "expected": []
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'str' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 1,
+        "actual": "'aabaabc'",
+        "expected": [
+          "aab",
+          "c"
+        ]
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'str' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "'zzz'",
+        "expected": [
+          "",
+          "zzz"
+        ]
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'str' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 3,
+        "actual": "'aaa112'",
+        "expected": [
+          "aaa",
+          "112"
+        ]
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'str' object has no attribute 'add'\")"
+        }
+      }
+    ]
+  },
+  {
+    "id": "run_length_expansion_N_W3",
+    "family": "run_length_expansion",
+    "wording": "W3",
+    "category": "N",
+    "condition": "MANUAL_V",
+    "functional": false,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "```python\ndef collect_expanded_runs(records):\n    return ''.join(''.join(c * cnt for c, cnt in run) for run in records if run) if records else ''\n```",
+    "failures": [
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 0,
+        "actual": "''",
+        "expected": []
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'str' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 1,
+        "actual": "'aabaabc'",
+        "expected": [
+          "aab",
+          "c"
+        ]
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'str' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "'zzz'",
+        "expected": [
+          "",
+          "zzz"
+        ]
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'str' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 3,
+        "actual": "'aaa112'",
+        "expected": [
+          "aaa",
+          "112"
+        ]
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'str' object has no attribute 'add'\")"
+        }
+      }
+    ]
+  },
+  {
+    "id": "run_length_expansion_N_W3",
+    "family": "run_length_expansion",
+    "wording": "W3",
+    "category": "N",
+    "condition": "MODULE_V",
+    "functional": false,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": 0.24268562843279928,
+    "text": "```python\ndef collect_expanded_runs(records):\n    return ''.join(''.join(c * cnt for c, cnt in run) for run in records if run) if records else ''\n```",
+    "failures": [
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 0,
+        "actual": "''",
+        "expected": []
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'str' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 1,
+        "actual": "'aabaabc'",
+        "expected": [
+          "aab",
+          "c"
+        ]
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'str' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "'zzz'",
+        "expected": [
+          "",
+          "zzz"
+        ]
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'str' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 3,
+        "actual": "'aaa112'",
+        "expected": [
+          "aaa",
+          "112"
+        ]
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'str' object has no attribute 'add'\")"
+        }
+      }
+    ]
+  },
+  {
+    "id": "run_length_expansion_N_W3",
+    "family": "run_length_expansion",
+    "wording": "W3",
+    "category": "N",
+    "condition": "TEXT_CODE",
+    "functional": false,
+    "joint": false,
+    "exact_type": true,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_expanded_runs(records): return frozenset(''.join(c * n for c, n in run) for run in records if run)",
+    "failures": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ]
+  },
+  {
+    "id": "run_length_expansion_N_W4",
+    "family": "run_length_expansion",
+    "wording": "W4",
+    "category": "N",
+    "condition": "BASE",
+    "functional": false,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_expanded_runs(records): return ''.join(set(''.join(c * n for c, n in r) for r in records))",
+    "failures": [
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 0,
+        "actual": "''",
+        "expected": []
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'str' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 1,
+        "actual": "'caab'",
+        "expected": [
+          "aab",
+          "c"
+        ]
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'str' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "'zzz'",
+        "expected": [
+          "",
+          "zzz"
+        ]
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'str' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 3,
+        "actual": "'112aaa'",
+        "expected": [
+          "aaa",
+          "112"
+        ]
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'str' object has no attribute 'add'\")"
+        }
+      }
+    ]
+  },
+  {
+    "id": "run_length_expansion_N_W4",
+    "family": "run_length_expansion",
+    "wording": "W4",
+    "category": "N",
+    "condition": "MANUAL_V",
+    "functional": false,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_expanded_runs(records): return ''.join(set(''.join(c * n for c, n in r) for r in records))",
+    "failures": [
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 0,
+        "actual": "''",
+        "expected": []
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'str' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 1,
+        "actual": "'caab'",
+        "expected": [
+          "aab",
+          "c"
+        ]
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'str' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "'zzz'",
+        "expected": [
+          "",
+          "zzz"
+        ]
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'str' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 3,
+        "actual": "'112aaa'",
+        "expected": [
+          "aaa",
+          "112"
+        ]
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'str' object has no attribute 'add'\")"
+        }
+      }
+    ]
+  },
+  {
+    "id": "run_length_expansion_N_W4",
+    "family": "run_length_expansion",
+    "wording": "W4",
+    "category": "N",
+    "condition": "TEXT_CODE",
+    "functional": false,
+    "joint": false,
+    "exact_type": true,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_expanded_runs(records): return frozenset(''.join(c * n for c, n in run) for run in records if run)",
+    "failures": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tab_stop_expansion_E_W3",
+    "family": "tab_stop_expansion",
+    "wording": "W3",
+    "category": "E",
+    "condition": "BASE",
+    "functional": false,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_tab_views(texts): return set('\\n'.join(text.expandtabs(4) for text in texts))",
+    "failures": [
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 1,
+        "actual": "{' ', '\\n', 'b', 'c', 'a'}",
+        "expected": [
+          "a   b",
+          "ab  c"
+        ]
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "{' ', 'd', '\\n', 'X', 'b', 'c', 'a'}",
+        "expected": [
+          "    ",
+          "abcd    X",
+          "a\n    b",
+          ""
+        ]
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 3,
+        "actual": "{' ', 'y', '\\n', 'x', 'n', 'z', 'i', 'a', 'p', 'l'}",
+        "expected": [
+          "plain",
+          "xy  z"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tab_stop_expansion_E_W3",
+    "family": "tab_stop_expansion",
+    "wording": "W3",
+    "category": "E",
+    "condition": "MANUAL_V",
+    "functional": false,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": true,
+    "bank_calls": 14,
+    "p": null,
+    "text": "def collect_tab_views(texts): return set('\\n'.join(text.expandtabs(4) for text in texts))",
+    "failures": [
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 1,
+        "actual": "{' ', '\\n', 'b', 'c', 'a'}",
+        "expected": [
+          "a   b",
+          "ab  c"
+        ]
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "{' ', 'd', '\\n', 'X', 'b', 'c', 'a'}",
+        "expected": [
+          "    ",
+          "abcd    X",
+          "a\n    b",
+          ""
+        ]
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 3,
+        "actual": "{' ', 'y', '\\n', 'x', 'n', 'z', 'i', 'a', 'p', 'l'}",
+        "expected": [
+          "plain",
+          "xy  z"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tab_stop_expansion_E_W3",
+    "family": "tab_stop_expansion",
+    "wording": "W3",
+    "category": "E",
+    "condition": "MODULE_V",
+    "functional": false,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": true,
+    "bank_calls": 14,
+    "p": 0.9999920072978389,
+    "text": "def collect_tab_views(texts): return set('\\n'.join(text.expandtabs(4) for text in texts))",
+    "failures": [
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 1,
+        "actual": "{' ', '\\n', 'b', 'c', 'a'}",
+        "expected": [
+          "a   b",
+          "ab  c"
+        ]
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "{' ', 'd', '\\n', 'X', 'b', 'c', 'a'}",
+        "expected": [
+          "    ",
+          "abcd    X",
+          "a\n    b",
+          ""
+        ]
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 3,
+        "actual": "{' ', 'y', '\\n', 'x', 'n', 'z', 'i', 'a', 'p', 'l'}",
+        "expected": [
+          "plain",
+          "xy  z"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tab_stop_expansion_E_W4",
+    "family": "tab_stop_expansion",
+    "wording": "W4",
+    "category": "E",
+    "condition": "BASE",
+    "functional": true,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_tab_views(texts): return list({text.expandtabs(4) for text in texts})",
+    "failures": []
+  },
+  {
+    "id": "tab_stop_expansion_E_W4",
+    "family": "tab_stop_expansion",
+    "wording": "W4",
+    "category": "E",
+    "condition": "MANUAL_V",
+    "functional": false,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": true,
+    "bank_calls": 14,
+    "p": null,
+    "text": "def collect_tab_views(texts): return set('\\n'.join(text.expandtabs(4) for text in texts))",
+    "failures": [
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 1,
+        "actual": "{' ', '\\n', 'b', 'c', 'a'}",
+        "expected": [
+          "a   b",
+          "ab  c"
+        ]
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "{' ', 'd', '\\n', 'X', 'b', 'c', 'a'}",
+        "expected": [
+          "    ",
+          "abcd    X",
+          "a\n    b",
+          ""
+        ]
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 3,
+        "actual": "{' ', 'y', '\\n', 'x', 'n', 'z', 'i', 'a', 'p', 'l'}",
+        "expected": [
+          "plain",
+          "xy  z"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tab_stop_expansion_E_W4",
+    "family": "tab_stop_expansion",
+    "wording": "W4",
+    "category": "E",
+    "condition": "MODULE_V",
+    "functional": false,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": true,
+    "bank_calls": 14,
+    "p": 0.9999711542711213,
+    "text": "def collect_tab_views(texts): return set('\\n'.join(text.expandtabs(4) for text in texts))",
+    "failures": [
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 1,
+        "actual": "{' ', '\\n', 'b', 'c', 'a'}",
+        "expected": [
+          "a   b",
+          "ab  c"
+        ]
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "{' ', 'd', '\\n', 'X', 'b', 'c', 'a'}",
+        "expected": [
+          "    ",
+          "abcd    X",
+          "a\n    b",
+          ""
+        ]
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 3,
+        "actual": "{' ', 'y', '\\n', 'x', 'n', 'z', 'i', 'a', 'p', 'l'}",
+        "expected": [
+          "plain",
+          "xy  z"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tab_stop_expansion_N_W3",
+    "family": "tab_stop_expansion",
+    "wording": "W3",
+    "category": "N",
+    "condition": "BASE",
+    "functional": false,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_tab_views(texts): return set('\\n'.join(text.expandtabs(4) for text in texts))",
+    "failures": [
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 1,
+        "actual": "{' ', '\\n', 'b', 'c', 'a'}",
+        "expected": [
+          "a   b",
+          "ab  c"
+        ]
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "{' ', 'd', '\\n', 'X', 'b', 'c', 'a'}",
+        "expected": [
+          "    ",
+          "abcd    X",
+          "a\n    b",
+          ""
+        ]
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 3,
+        "actual": "{' ', 'y', '\\n', 'x', 'n', 'z', 'i', 'a', 'p', 'l'}",
+        "expected": [
+          "plain",
+          "xy  z"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tab_stop_expansion_N_W3",
+    "family": "tab_stop_expansion",
+    "wording": "W3",
+    "category": "N",
+    "condition": "MANUAL_V",
+    "functional": false,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_tab_views(texts): return set('\\n'.join(text.expandtabs(4) for text in texts))",
+    "failures": [
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 1,
+        "actual": "{' ', '\\n', 'b', 'c', 'a'}",
+        "expected": [
+          "a   b",
+          "ab  c"
+        ]
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "{' ', 'd', '\\n', 'X', 'b', 'c', 'a'}",
+        "expected": [
+          "    ",
+          "abcd    X",
+          "a\n    b",
+          ""
+        ]
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 3,
+        "actual": "{' ', 'y', '\\n', 'x', 'n', 'z', 'i', 'a', 'p', 'l'}",
+        "expected": [
+          "plain",
+          "xy  z"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tab_stop_expansion_N_W3",
+    "family": "tab_stop_expansion",
+    "wording": "W3",
+    "category": "N",
+    "condition": "MODULE_V",
+    "functional": false,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": 2.4281909459458414e-08,
+    "text": "def collect_tab_views(texts): return set('\\n'.join(text.expandtabs(4) for text in texts))",
+    "failures": [
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 1,
+        "actual": "{' ', '\\n', 'b', 'c', 'a'}",
+        "expected": [
+          "a   b",
+          "ab  c"
+        ]
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "{' ', 'd', '\\n', 'X', 'b', 'c', 'a'}",
+        "expected": [
+          "    ",
+          "abcd    X",
+          "a\n    b",
+          ""
+        ]
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 3,
+        "actual": "{' ', 'y', '\\n', 'x', 'n', 'z', 'i', 'a', 'p', 'l'}",
+        "expected": [
+          "plain",
+          "xy  z"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tab_stop_expansion_N_W3",
+    "family": "tab_stop_expansion",
+    "wording": "W3",
+    "category": "N",
+    "condition": "TEXT_CODE",
+    "functional": false,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_tab_views(texts): return frozenset(expandtabs(4) for text in texts)",
+    "failures": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'expandtabs' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'expandtabs' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 3,
+        "detail": "NameError(\"name 'expandtabs' is not defined\")"
+      }
+    ]
+  },
+  {
+    "id": "tab_stop_expansion_N_W4",
+    "family": "tab_stop_expansion",
+    "wording": "W4",
+    "category": "N",
+    "condition": "BASE",
+    "functional": false,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_tab_views(texts): return list({expandtabs(t, 4) for t in texts})",
+    "failures": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'expandtabs' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'expandtabs' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 3,
+        "detail": "NameError(\"name 'expandtabs' is not defined\")"
+      }
+    ]
+  },
+  {
+    "id": "tab_stop_expansion_N_W4",
+    "family": "tab_stop_expansion",
+    "wording": "W4",
+    "category": "N",
+    "condition": "MANUAL_V",
+    "functional": false,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_tab_views(texts): return list({expandtabs(t, 4) for t in texts})",
+    "failures": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'list' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 1,
+        "detail": "NameError(\"name 'expandtabs' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 2,
+        "detail": "NameError(\"name 'expandtabs' is not defined\")"
+      },
+      {
+        "kind": "CALL_EXECUTION_ERROR",
+        "case": 3,
+        "detail": "NameError(\"name 'expandtabs' is not defined\")"
+      }
+    ]
+  },
+  {
+    "id": "tab_stop_expansion_N_W4",
+    "family": "tab_stop_expansion",
+    "wording": "W4",
+    "category": "N",
+    "condition": "MODULE_V",
+    "functional": false,
+    "joint": false,
+    "exact_type": false,
+    "coverage": true,
+    "enabled": true,
+    "bank_calls": 14,
+    "p": 0.9887724731262635,
+    "text": "def collect_tab_views(texts): return set('\\n'.join([t.expandtabs(4) for t in texts]) for _ in texts)",
+    "failures": [
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 1,
+        "actual": "{'a   b\\na   b\\nab  c'}",
+        "expected": [
+          "a   b",
+          "ab  c"
+        ]
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 2,
+        "actual": "{'    \\nabcd    X\\na\\n    b\\n'}",
+        "expected": [
+          "    ",
+          "abcd    X",
+          "a\n    b",
+          ""
+        ]
+      },
+      {
+        "kind": "MEMBER_COMPUTATION_OR_TYPE",
+        "case": 3,
+        "actual": "{'plain\\nxy  z'}",
+        "expected": [
+          "plain",
+          "xy  z"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tab_stop_expansion_N_W4",
+    "family": "tab_stop_expansion",
+    "wording": "W4",
+    "category": "N",
+    "condition": "TEXT_CODE",
+    "functional": false,
+    "joint": false,
+    "exact_type": true,
+    "coverage": true,
+    "enabled": false,
+    "bank_calls": 0,
+    "p": null,
+    "text": "def collect_tab_views(texts): return frozenset('\\n'.join(line.expandtabs(4).split('\\n')) for line in texts)",
+    "failures": [
+      {
+        "kind": "MUTABILITY",
+        "case": 0,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 1,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 2,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      },
+      {
+        "kind": "MUTABILITY",
+        "case": 3,
+        "detail": {
+          "passed": false,
+          "marker": "__new_member__",
+          "error": "AttributeError(\"'frozenset' object has no attribute 'add'\")"
+        }
+      }
+    ]
+  }
+]

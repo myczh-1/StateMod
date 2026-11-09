@@ -1,0 +1,12 @@
+{
+  "files": {
+    "FAILURE.json": "34c960fe24c31499486caa4f63946b3cea41ff6f5fe44d198ea5befdd73a74f3",
+    "START.json": "382acb48cdc7f9e7064e107f47c24af6e41dbce7eada9f4c5b05ac960ffab786",
+    "engineering/000.json": "7ddf5db0aa3f7813b26c00fb37f5ab2931e36e4b5958508794526ff187e8be67",
+    "engineering/000.npz": "be32351581b0f47726640aa2581e6d7364b75ec419a24b7d6b99d7d853361029",
+    "engineering/001.json": "d083947a4a4f0454046250637d3b9517171a3fca238ef1d9018750bfd1c185a8",
+    "engineering/001.npz": "3babd8e3e9d7622da1fe0e81528d64b7340bc9fedb31320e12d7771c49da9afb",
+    "engineering/001_failed_cached.npz": "5dcb48ab32ab34718c26fe1a2ff904ea44230dccda0a138f7c30b42b8d4e87bd",
+    "engineering/001_failed_fresh.npz": "d081dd383d827bdcc1ed8339a5c49be0ba4bb9c7b8880af527677747d8c3b682"
+  }
+}

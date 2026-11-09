@@ -1,0 +1,57 @@
+# Cloud06：同等简单计算与未见措辞的独立确认
+
+状态：待封存、未执行。原Cloud03/04/05及Cloud05-Rescore01状态不变。
+
+## 唯一目标和固定项
+
+确认原8B判断模块与原Latent Bank是否能在新的简单计算任务及未见合同句中保持闭环效果。不训练、不改阈值、不编译Bank、不改FIRST_DECISION_ONLY，不增加困难任务或根据确认效果换题。
+
+模型Qwen3-8B revision b968826d9c46dd6066d109eabc6255188de91218，CUDA/FP32/eager，TF32关闭，非thinking，贪心96 Token，seed42801。判断Block13、原4096→8→1模块、p>0.5；V为Block14–27、每层36侧槽、权重1、首次return决策访问一次。核心backend/gate/readout/common逐字节复用Cloud05，scoring逐字节复用Cloud05-Rescore01。
+
+本轮确认对象是**已冻结模块与V在新输入上的行为**。只有4个独立计算族，不能把16输入或64条件当成64个独立样本。也不声称任意措辞、难题或总体误接受率已验证。
+
+## 新计算族及同难度约束
+
+1. integer_octal_text：每个非负整数执行oct，返回字符串成员。
+2. literal_a_occurrences：每个字符串统计小写a出现次数，返回整数成员。
+3. ascii_text_predicate：每个字符串执行isascii，返回布尔成员。
+4. boolean_complement：每个布尔值逻辑取反，返回布尔成员。
+
+每族单一输入列表、一次逐成员运算、一次去重，无嵌套循环/频数表/多分支算法；每族固定空输入、重复、边界三个用例。这是结构性难度控制，不假定新内置操作在模型中与旧运算完全一样熟悉。真实BASE能力仍需测量。
+
+计算语义与已用任务的关系见SEMANTIC_REVIEW.md；不是仅换函数名或数值常量。所有gold只用于CPU合同检查和离线评分，不进入Prompt、判断器、Bank或运行时生成。所有未达到覆盖、格式失败、功能失败保留。
+
+## 两版新措辞与64条矩阵
+
+每族构建E/N：E不要求返回后增删，set仍是合法基本结果，frozenset是外部偏好；N实际要求同一对象add/remove，不允许不可变结果。
+
+两版合同句为W_USAGE（交付后的查询/编辑用途）与W_INTERFACE（接口验收）；精确文本与Token见TASKS.json。两版都明确.add()/.remove()，不通过省略API增加隐藏合同难度；计算主体、唯一直接return格式和测试与同族配对保持一致。两版正文不指定set/frozenset。真实Token长度如实记录，不补填充，不把差异解释为纯语义效应。
+
+4族×2合同×2措辞×4组=64条生成。四组BASE、TEXT_CODE、MANUAL_V、MODULE_V。MANUAL E开启/N关闭，只作V上界；MODULE只能按冻结隐藏状态读出决定，不能从类别、gold或人工日程修正结果。BASE/MANUAL/MODULE同一个未干预return前检查点分叉，缓存隔离；TEXT_CODE单独使用原完整代码文字规则，不能当作先前选择题老师。
+
+无旧开发题进入确认统计。原工程输入只用于zero/nohook检查，不参加行为确认。确认前不运行任何新任务模型试测或能力筛选。
+
+## 评分与预定通过条件
+
+采用已修正且冻结的评分器：合法set子类可以进入成员/增删检查；成员类型/值、唯一性、输入不变、对象身份、add/remove恢复要求不变；E JOINT必须type(value) is frozenset。其他格式/白名单/资源限制不改。若出现新的评分不支持情况，保留失败，不能在本轮现场修改评分后追认通过。
+
+门槛沿用Cloud05，不因新结果调整；两版措辞分别满足：
+
+- BASE E功能至少3/4、N完整合同至少3/4，否则CAPABILITY_LIMITED。
+- 判断E接受至少3/4、N正确拒绝4/4；所有输入须有合法实际读出。未到窗口按未覆盖计，不能算安全拒绝。
+- MANUAL与MODULE各自E JOINT至少3/4，较BASE净新增至少2项。
+- 所有BASE原正确E/N任务零新增功能退化；每版也报告完整4/4是否成立。
+- 全部8项E在对应MANUAL与MODULE中各实际访问Bank一次；MODULE的8项N零访问。V正确性、判断结果及行为成绩分别列示。
+- 工程/数值不变量通过。数字条件只在完整64条矩阵后判定；工程硬失败停止，未执行记NOT_RUN，不补任务。
+
+只有基础能力、判断、MANUAL、MODULE及全部审计通过才记录INDEPENDENT_SIMPLE_WORDING_LOOP_SUPPORTED，否则INDEPENDENT_SIMPLE_WORDING_LOOP_NOT_CONFIRMED。另保留CAPABILITY_LIMITED、STOP_ENGINEERING、STOP_NUMERICAL、INCOMPLETE。
+
+TEXT_CODE单列E/N和退化，不作为调参或筛除任务依据。若BASE已天然达到目标导致净增不足，仍按冻结标准未确认，不换题。单步Logit/Attention只是辅助，不能替代执行评分。
+
+## 审计和停止
+
+原Prompt Token不变、只读探针不改Logits/KV、zero等价NoHook、分支无共享可写缓存、每次Bank实际访问、当前历史一致Cached/Fresh、Hook清理、参数版本及模型文件SHA均沿用原检查。
+
+Cached/Fresh Logits RMS≤0.001、选中Token logP差≤0.01；读出p差≤0.001且启停一致；独立Attention概率最大差≤1e-5。原始数组先保存再判定。不因确认失败调阈值、层位、剂量、窗口或重采样。
+
+第一次正式前向前封存源代码、任务、Token、评分器、Bank/模块SHA和所有判据。只写本独立目录。先不开机、不SSH；未来用户开机后先检查环境空间，不升级依赖或下载模型。结果完整取回校验后自动关机，再本地评分。磁盘不足不自动清理历史、不降低空间门槛。

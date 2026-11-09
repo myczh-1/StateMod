@@ -1,0 +1,11 @@
+{
+  "model_wall_seconds": 156.4873399734497,
+  "peak_allocated": 33071023104,
+  "natural_records": 24,
+  "code_records": 16,
+  "select_records": 8,
+  "candidate_paths": 16,
+  "natural_output_tokens": 354,
+  "bank_loaded": false,
+  "judgment_loaded": false
+}

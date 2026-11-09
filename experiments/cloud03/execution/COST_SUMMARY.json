@@ -1,0 +1,19 @@
+{
+  "gpu_run": {
+    "wall_seconds": 277.171669960022,
+    "peak_allocated": 32995339264,
+    "peak_reserved": 33065795584,
+    "condition_output_tokens": 844,
+    "condition_records": 48,
+    "archived_text_reference_count": 16,
+    "payload_bytes": 9877016,
+    "active_side_slots_per_layer": 36,
+    "active_layers": 14,
+    "judgment_bytes": 283323
+  },
+  "transfer_seconds": 257.3818371295929,
+  "transfer_bytes": 1997332480,
+  "shutdown_requested": "2026-11-04T17:34:34.896340+08:00",
+  "ssh_rejected": "2026-11-04T17:34:49.954491+08:00",
+  "production_latency_benchmark": false
+}

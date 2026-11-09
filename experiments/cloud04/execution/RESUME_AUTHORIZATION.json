@@ -1,0 +1,9 @@
+{
+  "time": 1793794479.865314,
+  "previous_attempt": "[LOCAL_PATH]",
+  "previous_model_forwards": 0,
+  "source_freeze_sha": "2d3196b7e68bd69a136aa2ae4a38850b652718ca726c55dd3573205f65487276",
+  "source_changed": false,
+  "operation": "User-authorized exact duplicate cleanup then first formal model run",
+  "remote": "[REMOTE_PATH]"
+}

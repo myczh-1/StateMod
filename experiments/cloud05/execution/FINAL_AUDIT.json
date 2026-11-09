@@ -1,0 +1,28 @@
+{
+  "frozen_package_verified": true,
+  "historical_files_verified": 11575,
+  "changed_files": [],
+  "conditions": 64,
+  "all_EOS": true,
+  "valid_decision_prefixes": 64,
+  "anchor_comparisons": 24,
+  "anchor_all_passed": true,
+  "anchor_max_step_logits_rms": 0.0,
+  "module_sha": "3a35f380d49fdbf9d76832d252554c8f9c55b715ed1fc7a3ad3d47ccda6bace7",
+  "bank_sha": "19fd69d23b1bc164ff7e548499a96b507fe7e8f0084487abe55e2a15686db11e",
+  "threshold": 0.5,
+  "transfer_verified": {
+    "time": 1793843304.338028,
+    "archive_sha": "ac43562806493bf645884e021e839a77dcc704b412e434b278892066215b06b0",
+    "bytes": 3134945280,
+    "files_verified": 2687,
+    "all_collected_files_verified": true,
+    "transport_handoff": true
+  },
+  "shutdown_returncode": 0,
+  "post_shutdown_ssh_returncode": 255,
+  "transfer_verified_before_shutdown": true,
+  "billing_verified": false,
+  "execution_deviation": "Local transfer controller handed off after incomplete chunks; workers 64 to 16. No model retry or frozen source change.",
+  "formal_status": "SIMPLE_BASELINE_NOT_STABLE"
+}

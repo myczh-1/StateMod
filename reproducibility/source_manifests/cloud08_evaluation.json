@@ -1,0 +1,11 @@
+{
+  "files": {
+    "DECISION.json": "9872a1439176c8987f6b465199984cc31aaecc28dbddc6972aa256cf7be395ce",
+    "MISSING.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "NUMERICAL_AUDIT.json": "2f9913e8196e856c1a7ca4bdac4cc4dcb25469b4ab2cb5ba5eb333c368c3e2b3",
+    "REPORT.md": "48486b88783da793a308b52daa3f20ccde6de1f22cdcd1632d7afa267727dcf5",
+    "SCORED_RESULTS.json": "f22ab9d2f814c33f7c5da8cf95c1443ef8d858f6b1702a789701bea96a2cfa3a",
+    "SUMMARY.json": "b05f211b58e43331b87d3e0c15302573553d97dbd0d6955e11693c72736cf98b",
+    "audit.json": "dddbe18d9561ae25c3eaca403af086ce17d30749cf16d61a4f20f4dc35c4f85e"
+  }
+}

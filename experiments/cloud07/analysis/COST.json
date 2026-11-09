@@ -1,0 +1,15 @@
+{
+  "model_report": {
+    "wall_seconds": 293.7673499584198,
+    "peak_allocated": 33060782592,
+    "condition_records": 28,
+    "output_tokens": 713,
+    "controlled_readouts": 8
+  },
+  "job_seconds": 312.7063822746277,
+  "job_end_to_verified_retrieval_seconds": 461.0708553791046,
+  "launch_to_shutdown_request_seconds": 774.5812790393829,
+  "archive_bytes": 2053754880,
+  "billing_verified": false,
+  "excludes_time_before_launch": true
+}

@@ -1,0 +1,17 @@
+{
+  "natural_top1_flips": [],
+  "candidate_rank_flips": [],
+  "path_robust": true,
+  "behavioral_decision": {
+    "status": "STOP_NUMERICAL",
+    "complete": false,
+    "baseline_coverage_ready": false,
+    "selection_reference": "SELECT_REFERENCE_NOT_READY",
+    "code_reference": "CODE_REFERENCE_NOT_READY",
+    "bank_tested": false,
+    "module_tested": false,
+    "independent_confirmation": false,
+    "automatic_next_stage": false
+  },
+  "interpretation": "A behavioral pass with any flip is not a path-robust pass; do not fit new tolerances."
+}

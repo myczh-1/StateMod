@@ -1,0 +1,19 @@
+{
+  "id": "integer_octal_text_E_CLEAR__TRAIN_USAGE__BASE",
+  "hidden": {
+    "max_abs": 0.25,
+    "rms": 0.012394626572037572,
+    "relative_l2": 0.010230576332270178,
+    "exact": false
+  },
+  "logits": {
+    "max_abs": 0.75,
+    "rms": 0.10268110576326048,
+    "relative_l2": 0.02024527863627827,
+    "exact": false
+  },
+  "top1_changed": false,
+  "selected_logp_error": 0.16006692283456608,
+  "behavior_gate": false,
+  "finite": true
+}

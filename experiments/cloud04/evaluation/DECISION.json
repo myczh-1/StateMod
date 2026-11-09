@@ -1,0 +1,19 @@
+{
+  "status": "CAPABILITY_OR_COVERAGE_LIMITED",
+  "engineering_complete": true,
+  "complete_matrix": true,
+  "capability_coverage": false,
+  "matcher_supported": false,
+  "manual_V_supported": false,
+  "module_V_loop_supported": false,
+  "both_wordings_E_joint_families": {
+    "MANUAL_V": [],
+    "MODULE_V": []
+  },
+  "statistical_units": 8,
+  "independent_confirmation": true,
+  "threshold_changed": false,
+  "bank_compiled": false,
+  "judge_trained": false,
+  "old_results_unchanged": true
+}

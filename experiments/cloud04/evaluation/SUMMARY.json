@@ -1,0 +1,473 @@
+{
+  "BASE": {
+    "ALL": {
+      "E": {
+        "planned": 16,
+        "completed": 16,
+        "not_run": 0,
+        "functional": 12,
+        "joint": 0,
+        "exact_frozenset": 0,
+        "regression": [],
+        "new_joint": [],
+        "lost_joint": [],
+        "net_joint": 0,
+        "covered": 16,
+        "actual_bank_tasks": 0
+      },
+      "N": {
+        "planned": 16,
+        "completed": 16,
+        "not_run": 0,
+        "functional": 1,
+        "joint": 1,
+        "exact_frozenset": 0,
+        "regression": [],
+        "new_joint": [],
+        "lost_joint": [],
+        "net_joint": 0,
+        "covered": 16,
+        "actual_bank_tasks": 0
+      }
+    },
+    "W3": {
+      "E": {
+        "planned": 8,
+        "completed": 8,
+        "not_run": 0,
+        "functional": 6,
+        "joint": 0,
+        "exact_frozenset": 0,
+        "regression": [],
+        "new_joint": [],
+        "lost_joint": [],
+        "net_joint": 0,
+        "covered": 8,
+        "actual_bank_tasks": 0
+      },
+      "N": {
+        "planned": 8,
+        "completed": 8,
+        "not_run": 0,
+        "functional": 0,
+        "joint": 0,
+        "exact_frozenset": 0,
+        "regression": [],
+        "new_joint": [],
+        "lost_joint": [],
+        "net_joint": 0,
+        "covered": 8,
+        "actual_bank_tasks": 0
+      }
+    },
+    "W4": {
+      "E": {
+        "planned": 8,
+        "completed": 8,
+        "not_run": 0,
+        "functional": 6,
+        "joint": 0,
+        "exact_frozenset": 0,
+        "regression": [],
+        "new_joint": [],
+        "lost_joint": [],
+        "net_joint": 0,
+        "covered": 8,
+        "actual_bank_tasks": 0
+      },
+      "N": {
+        "planned": 8,
+        "completed": 8,
+        "not_run": 0,
+        "functional": 1,
+        "joint": 1,
+        "exact_frozenset": 0,
+        "regression": [],
+        "new_joint": [],
+        "lost_joint": [],
+        "net_joint": 0,
+        "covered": 8,
+        "actual_bank_tasks": 0
+      }
+    }
+  },
+  "TEXT_CODE": {
+    "ALL": {
+      "E": {
+        "planned": 16,
+        "completed": 16,
+        "not_run": 0,
+        "functional": 11,
+        "joint": 9,
+        "exact_frozenset": 10,
+        "regression": [
+          "centered_text_padding_E_W3",
+          "centered_text_padding_E_W4",
+          "integral_float_predicate_E_W3",
+          "integral_float_predicate_E_W4",
+          "least_significant_one_value_E_W3"
+        ],
+        "new_joint": [
+          "tab_stop_expansion_E_W3",
+          "tab_stop_expansion_E_W4",
+          "python_literal_representation_E_W3",
+          "python_literal_representation_E_W4",
+          "least_significant_one_value_E_W4",
+          "modal_member_selection_E_W4",
+          "run_length_expansion_E_W4",
+          "dna_reverse_complement_E_W3",
+          "dna_reverse_complement_E_W4"
+        ],
+        "lost_joint": [],
+        "net_joint": 9,
+        "covered": 16,
+        "actual_bank_tasks": 0
+      },
+      "N": {
+        "planned": 16,
+        "completed": 16,
+        "not_run": 0,
+        "functional": 0,
+        "joint": 0,
+        "exact_frozenset": 12,
+        "regression": [
+          "least_significant_one_value_N_W4"
+        ],
+        "new_joint": [],
+        "lost_joint": [
+          "least_significant_one_value_N_W4"
+        ],
+        "net_joint": -1,
+        "covered": 16,
+        "actual_bank_tasks": 0
+      }
+    },
+    "W3": {
+      "E": {
+        "planned": 8,
+        "completed": 8,
+        "not_run": 0,
+        "functional": 5,
+        "joint": 3,
+        "exact_frozenset": 4,
+        "regression": [
+          "centered_text_padding_E_W3",
+          "integral_float_predicate_E_W3",
+          "least_significant_one_value_E_W3"
+        ],
+        "new_joint": [
+          "tab_stop_expansion_E_W3",
+          "python_literal_representation_E_W3",
+          "dna_reverse_complement_E_W3"
+        ],
+        "lost_joint": [],
+        "net_joint": 3,
+        "covered": 8,
+        "actual_bank_tasks": 0
+      },
+      "N": {
+        "planned": 8,
+        "completed": 8,
+        "not_run": 0,
+        "functional": 0,
+        "joint": 0,
+        "exact_frozenset": 6,
+        "regression": [],
+        "new_joint": [],
+        "lost_joint": [],
+        "net_joint": 0,
+        "covered": 8,
+        "actual_bank_tasks": 0
+      }
+    },
+    "W4": {
+      "E": {
+        "planned": 8,
+        "completed": 8,
+        "not_run": 0,
+        "functional": 6,
+        "joint": 6,
+        "exact_frozenset": 6,
+        "regression": [
+          "centered_text_padding_E_W4",
+          "integral_float_predicate_E_W4"
+        ],
+        "new_joint": [
+          "tab_stop_expansion_E_W4",
+          "python_literal_representation_E_W4",
+          "least_significant_one_value_E_W4",
+          "modal_member_selection_E_W4",
+          "run_length_expansion_E_W4",
+          "dna_reverse_complement_E_W4"
+        ],
+        "lost_joint": [],
+        "net_joint": 6,
+        "covered": 8,
+        "actual_bank_tasks": 0
+      },
+      "N": {
+        "planned": 8,
+        "completed": 8,
+        "not_run": 0,
+        "functional": 0,
+        "joint": 0,
+        "exact_frozenset": 6,
+        "regression": [
+          "least_significant_one_value_N_W4"
+        ],
+        "new_joint": [],
+        "lost_joint": [
+          "least_significant_one_value_N_W4"
+        ],
+        "net_joint": -1,
+        "covered": 8,
+        "actual_bank_tasks": 0
+      }
+    }
+  },
+  "MANUAL_V": {
+    "ALL": {
+      "E": {
+        "planned": 16,
+        "completed": 16,
+        "not_run": 0,
+        "functional": 10,
+        "joint": 3,
+        "exact_frozenset": 4,
+        "regression": [
+          "tab_stop_expansion_E_W4",
+          "centered_text_padding_E_W4",
+          "integral_float_predicate_E_W3",
+          "integral_float_predicate_E_W4",
+          "least_significant_one_value_E_W3"
+        ],
+        "new_joint": [
+          "python_literal_representation_E_W3",
+          "centered_text_padding_E_W3",
+          "modal_member_selection_E_W4"
+        ],
+        "lost_joint": [],
+        "net_joint": 3,
+        "covered": 16,
+        "actual_bank_tasks": 16
+      },
+      "N": {
+        "planned": 16,
+        "completed": 16,
+        "not_run": 0,
+        "functional": 1,
+        "joint": 1,
+        "exact_frozenset": 0,
+        "regression": [],
+        "new_joint": [],
+        "lost_joint": [],
+        "net_joint": 0,
+        "covered": 16,
+        "actual_bank_tasks": 0
+      }
+    },
+    "W3": {
+      "E": {
+        "planned": 8,
+        "completed": 8,
+        "not_run": 0,
+        "functional": 5,
+        "joint": 2,
+        "exact_frozenset": 3,
+        "regression": [
+          "integral_float_predicate_E_W3",
+          "least_significant_one_value_E_W3"
+        ],
+        "new_joint": [
+          "python_literal_representation_E_W3",
+          "centered_text_padding_E_W3"
+        ],
+        "lost_joint": [],
+        "net_joint": 2,
+        "covered": 8,
+        "actual_bank_tasks": 8
+      },
+      "N": {
+        "planned": 8,
+        "completed": 8,
+        "not_run": 0,
+        "functional": 0,
+        "joint": 0,
+        "exact_frozenset": 0,
+        "regression": [],
+        "new_joint": [],
+        "lost_joint": [],
+        "net_joint": 0,
+        "covered": 8,
+        "actual_bank_tasks": 0
+      }
+    },
+    "W4": {
+      "E": {
+        "planned": 8,
+        "completed": 8,
+        "not_run": 0,
+        "functional": 5,
+        "joint": 1,
+        "exact_frozenset": 1,
+        "regression": [
+          "tab_stop_expansion_E_W4",
+          "centered_text_padding_E_W4",
+          "integral_float_predicate_E_W4"
+        ],
+        "new_joint": [
+          "modal_member_selection_E_W4"
+        ],
+        "lost_joint": [],
+        "net_joint": 1,
+        "covered": 8,
+        "actual_bank_tasks": 8
+      },
+      "N": {
+        "planned": 8,
+        "completed": 8,
+        "not_run": 0,
+        "functional": 1,
+        "joint": 1,
+        "exact_frozenset": 0,
+        "regression": [],
+        "new_joint": [],
+        "lost_joint": [],
+        "net_joint": 0,
+        "covered": 8,
+        "actual_bank_tasks": 0
+      }
+    }
+  },
+  "MODULE_V": {
+    "ALL": {
+      "E": {
+        "planned": 16,
+        "completed": 16,
+        "not_run": 0,
+        "functional": 10,
+        "joint": 3,
+        "exact_frozenset": 4,
+        "regression": [
+          "tab_stop_expansion_E_W4",
+          "centered_text_padding_E_W4",
+          "integral_float_predicate_E_W3",
+          "integral_float_predicate_E_W4",
+          "least_significant_one_value_E_W3"
+        ],
+        "new_joint": [
+          "python_literal_representation_E_W3",
+          "centered_text_padding_E_W3",
+          "modal_member_selection_E_W4"
+        ],
+        "lost_joint": [],
+        "net_joint": 3,
+        "covered": 16,
+        "actual_bank_tasks": 16
+      },
+      "N": {
+        "planned": 16,
+        "completed": 16,
+        "not_run": 0,
+        "functional": 3,
+        "joint": 3,
+        "exact_frozenset": 3,
+        "regression": [
+          "least_significant_one_value_N_W4"
+        ],
+        "new_joint": [
+          "modal_member_selection_N_W3",
+          "run_length_expansion_N_W4",
+          "dna_reverse_complement_N_W4"
+        ],
+        "lost_joint": [
+          "least_significant_one_value_N_W4"
+        ],
+        "net_joint": 2,
+        "covered": 16,
+        "actual_bank_tasks": 10
+      }
+    },
+    "W3": {
+      "E": {
+        "planned": 8,
+        "completed": 8,
+        "not_run": 0,
+        "functional": 5,
+        "joint": 2,
+        "exact_frozenset": 3,
+        "regression": [
+          "integral_float_predicate_E_W3",
+          "least_significant_one_value_E_W3"
+        ],
+        "new_joint": [
+          "python_literal_representation_E_W3",
+          "centered_text_padding_E_W3"
+        ],
+        "lost_joint": [],
+        "net_joint": 2,
+        "covered": 8,
+        "actual_bank_tasks": 8
+      },
+      "N": {
+        "planned": 8,
+        "completed": 8,
+        "not_run": 0,
+        "functional": 1,
+        "joint": 1,
+        "exact_frozenset": 0,
+        "regression": [],
+        "new_joint": [
+          "modal_member_selection_N_W3"
+        ],
+        "lost_joint": [],
+        "net_joint": 1,
+        "covered": 8,
+        "actual_bank_tasks": 2
+      }
+    },
+    "W4": {
+      "E": {
+        "planned": 8,
+        "completed": 8,
+        "not_run": 0,
+        "functional": 5,
+        "joint": 1,
+        "exact_frozenset": 1,
+        "regression": [
+          "tab_stop_expansion_E_W4",
+          "centered_text_padding_E_W4",
+          "integral_float_predicate_E_W4"
+        ],
+        "new_joint": [
+          "modal_member_selection_E_W4"
+        ],
+        "lost_joint": [],
+        "net_joint": 1,
+        "covered": 8,
+        "actual_bank_tasks": 8
+      },
+      "N": {
+        "planned": 8,
+        "completed": 8,
+        "not_run": 0,
+        "functional": 2,
+        "joint": 2,
+        "exact_frozenset": 3,
+        "regression": [
+          "least_significant_one_value_N_W4"
+        ],
+        "new_joint": [
+          "run_length_expansion_N_W4",
+          "dna_reverse_complement_N_W4"
+        ],
+        "lost_joint": [
+          "least_significant_one_value_N_W4"
+        ],
+        "net_joint": 1,
+        "covered": 8,
+        "actual_bank_tasks": 8
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "time": 1793784265.098994,
+  "reason": "Initial launch SSH command timed out after 20s while nohup remote job remained active. Verified JOB_ARMED and active original process. Resume monitoring only; no model restart, no frozen source changes.",
+  "source_launch_log_sha": "a2b7a9fbc2cc61093f8603150e5a55ae9d9bff78fe0bf1598773c6fdc4edca71",
+  "script_sha": "6a27047e114e75317a03aaf596973d504d09646dbc69f01e4b36ebbb568cf272",
+  "model_restarted": false
+}

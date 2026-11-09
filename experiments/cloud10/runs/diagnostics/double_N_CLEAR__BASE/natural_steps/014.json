@@ -1,0 +1,20 @@
+{
+  "status": "RECORDED",
+  "token": 353,
+  "cached_top1": 353,
+  "fresh_top1": 353,
+  "cached_logp": -3.927864654839209e-07,
+  "fresh_logp": -3.927865247698071e-07,
+  "logp_error": 5.928588622157731e-14,
+  "metrics": {
+    "max_abs": 0.5234375,
+    "rms": 0.08510306666225108,
+    "relative_l2": 0.02003003042351883,
+    "exact": false
+  },
+  "input_length": 173,
+  "fresh_length": 173,
+  "reference_exceeded": true,
+  "top1_changed": false,
+  "behavior_gate": false
+}

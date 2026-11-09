@@ -1,0 +1,34 @@
+Cloud08 八题文字预检：TEXT_REFERENCE_NOT_READY
+
+按冻结方案完成24条自然输出及16条完整候选概率路径。四个计算族均为已见开发族。本轮未加载或调用判断模块及Bank，没有训练、调阈值或重采样。
+
+直接选类型：8/8答案格式有效，正确6/8，其中E为4/4、N为2/4；自然答案与完整候选名称加EOS概率排序8/8一致。未达到正确至少7/8且N必须4/4的冻结门槛。
+
+完整代码：BASE基本功能8/8，E-JOINT为0/4、N合同4/4。TEXT_CODE成员计算8/8正确，E-JOINT为4/4，但N合同0/4，新增4个可变性退化。16条代码全部合法、可执行、正常EOS结束；没有格式失败、截断或成员计算错误。未达到N零新增退化的冻结门槛。
+
+|任务|直接选型|预期选型|BASE功能|文字代码功能|文字代码实际类型|
+|---|---|---|---|---|---|
+|double_E_CLEAR|frozenset|frozenset|True|True|frozenset|
+|double_N_CLEAR|frozenset|set|True|False|frozenset|
+|lower_E_CLEAR|frozenset|frozenset|True|True|frozenset|
+|lower_N_CLEAR|frozenset|set|True|False|frozenset|
+|integer_octal_text_E_CLEAR|frozenset|frozenset|True|True|frozenset|
+|integer_octal_text_N_CLEAR|set|set|True|False|frozenset|
+|boolean_complement_E_CLEAR|frozenset|frozenset|True|True|frozenset|
+|boolean_complement_N_CLEAR|set|set|True|False|frozenset|
+
+直接选型误判为double_N_CLEAR和lower_N_CLEAR。八进制和布尔取反N在直接选择时正确回答set，完整代码却返回frozenset；两个接口的文字能力不能合并。
+
+八进制N的文字代码额外生成了与合同无关的条件：所有整数非负时用frozenset，否则用set。冻结的非负整数用例全部进入不可变分支，三项用例均在.add()处失败。其余三个N也均因返回frozenset而无法.add()；没有把合法set子类拒绝的问题。未修改任何代码或用例。
+
+可确认的结论是：这组简单计算本身已具备能力，但当前固定文字规则/问法仍不能稳定落实条件选择。直接选型存在两次合同判断错误，完整代码还存在选型正确但最终行为错误的情况。不能据此把所有失效归因于模型规模，也不能证明是选项顺序或某个具体词造成；本轮未做这些因果对照。模块和V未参与，因此本轮不改写它们的历史成绩。
+
+工程与数值通过：8个重复Cached工程步骤的Logits/KV逐元素一致且缓存独立；正式410个预测检查的最大Cached/Fresh Logits RMS为3.784583317880036e-05，最大Token logP误差为1.05317197980348e-05。完整候选总logP最大误差为3.4511875132876846e-09，低于冻结门槛。模型文件前后SHA一致，30项受保护本地来源文件SHA不变。
+
+成本：模型工作段156.4873399734497秒；峰值GPU分配33071023104字节；自然输出354 Token。含每步Fresh重算及保存原始数组，不应视作普通推理吞吐基准。
+
+结果归档466298880字节，910个文件逐项SHA验证通过，归档SHA256为`d48567a6965044cae1158d90c058f0aa28ed0bf96d76037bb4e3de4d58f4a058`。取回校验后关机命令返回0，15秒后SSH拒绝连接；未通过云控制台独立核查账单状态。
+
+最终状态：SELECT_REFERENCE_NOT_READY；CODE_REFERENCE_NOT_READY；整体TEXT_REFERENCE_NOT_READY。全部失败保留，本轮结束，不启动后续确认或编译Bank。
+
+证据：../evaluation/SCORED_RESULTS.json、../evaluation/SUMMARY.json、../evaluation/NUMERICAL_AUDIT.json、../evaluation/audit.json、../TRANSFER_VERIFIED.json；完整Prompt及输入Token见冻结data/inputs.json，逐步原始数组见../runs。

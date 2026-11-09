@@ -1,0 +1,16 @@
+{
+  "judgment": {
+    "logit": -17.53353420625989,
+    "p": 2.4281909459458414e-08,
+    "enabled": false,
+    "threshold": 0.5
+  },
+  "manual_is_label_based_upper_bound": true,
+  "module_input": "numeric Block13 h only",
+  "decisions": {
+    "BASE": false,
+    "MANUAL_V": false,
+    "MODULE_V": false
+  },
+  "coverage": true
+}

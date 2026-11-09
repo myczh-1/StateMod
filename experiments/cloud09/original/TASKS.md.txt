@@ -1,0 +1,405 @@
+# Cloud08 八题任务与合同
+
+四个已见开发族，八题同一合同表述；没有使用模型输出筛选。
+
+## double_E_CLEAR
+
+```text
+编写 Python 函数 collect_doubles(numbers)，numbers 是整数列表，返回各整数乘以二后的不同值。
+调用者在函数返回后只查询其中的成员，不会添加或移除成员。返回对象无需提供增删接口。函数只计算并返回结果，不在函数内部执行验收。
+结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。
+```
+
+预期类型选择：frozenset；功能用例：
+```json
+[
+  {
+    "role": "empty",
+    "args": [
+      []
+    ],
+    "expected": []
+  },
+  {
+    "role": "duplicates",
+    "args": [
+      [
+        -2,
+        2,
+        2
+      ]
+    ],
+    "expected": [
+      -4,
+      4
+    ]
+  },
+  {
+    "role": "boundary",
+    "args": [
+      [
+        0,
+        -1,
+        100
+      ]
+    ],
+    "expected": [
+      0,
+      -2,
+      200
+    ]
+  }
+]
+```
+
+## double_N_CLEAR
+
+```text
+编写 Python 函数 collect_doubles(numbers)，numbers 是整数列表，返回各整数乘以二后的不同值。
+调用者在函数返回后，会通过返回对象的 .add() 添加一个成员，再通过 .remove() 移除它，并检查同一对象恢复原成员。函数只计算并返回结果，不在函数内部执行这些验收操作。
+结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。
+```
+
+预期类型选择：set；功能用例：
+```json
+[
+  {
+    "role": "empty",
+    "args": [
+      []
+    ],
+    "expected": []
+  },
+  {
+    "role": "duplicates",
+    "args": [
+      [
+        -2,
+        2,
+        2
+      ]
+    ],
+    "expected": [
+      -4,
+      4
+    ]
+  },
+  {
+    "role": "boundary",
+    "args": [
+      [
+        0,
+        -1,
+        100
+      ]
+    ],
+    "expected": [
+      0,
+      -2,
+      200
+    ]
+  }
+]
+```
+
+## lower_E_CLEAR
+
+```text
+编写 Python 函数 collect_lowercase(words)，words 是字符串列表，返回各字符串转为小写后的不同字符串。
+调用者在函数返回后只查询其中的成员，不会添加或移除成员。返回对象无需提供增删接口。函数只计算并返回结果，不在函数内部执行验收。
+结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。
+```
+
+预期类型选择：frozenset；功能用例：
+```json
+[
+  {
+    "role": "empty",
+    "args": [
+      []
+    ],
+    "expected": []
+  },
+  {
+    "role": "duplicates",
+    "args": [
+      [
+        "Aa",
+        "BB",
+        "aa",
+        ""
+      ]
+    ],
+    "expected": [
+      "aa",
+      "bb",
+      ""
+    ]
+  },
+  {
+    "role": "boundary",
+    "args": [
+      [
+        "XyZ",
+        "中文",
+        "ABC"
+      ]
+    ],
+    "expected": [
+      "xyz",
+      "中文",
+      "abc"
+    ]
+  }
+]
+```
+
+## lower_N_CLEAR
+
+```text
+编写 Python 函数 collect_lowercase(words)，words 是字符串列表，返回各字符串转为小写后的不同字符串。
+调用者在函数返回后，会通过返回对象的 .add() 添加一个成员，再通过 .remove() 移除它，并检查同一对象恢复原成员。函数只计算并返回结果，不在函数内部执行这些验收操作。
+结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。
+```
+
+预期类型选择：set；功能用例：
+```json
+[
+  {
+    "role": "empty",
+    "args": [
+      []
+    ],
+    "expected": []
+  },
+  {
+    "role": "duplicates",
+    "args": [
+      [
+        "Aa",
+        "BB",
+        "aa",
+        ""
+      ]
+    ],
+    "expected": [
+      "aa",
+      "bb",
+      ""
+    ]
+  },
+  {
+    "role": "boundary",
+    "args": [
+      [
+        "XyZ",
+        "中文",
+        "ABC"
+      ]
+    ],
+    "expected": [
+      "xyz",
+      "中文",
+      "abc"
+    ]
+  }
+]
+```
+
+## integer_octal_text_E_CLEAR
+
+```text
+编写 Python 函数 collect_octal_strings(numbers)，numbers 是非负整数列表。对每个整数调用 Python 内置 oct，返回带 0o 前缀的八进制字符串。
+调用者在函数返回后只查询其中的成员，不会添加或移除成员。返回对象无需提供增删接口。函数只计算并返回结果，不在函数内部执行验收。
+结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。
+```
+
+预期类型选择：frozenset；功能用例：
+```json
+[
+  {
+    "role": "empty",
+    "args": [
+      []
+    ],
+    "expected": []
+  },
+  {
+    "role": "duplicates",
+    "args": [
+      [
+        0,
+        8,
+        8,
+        15
+      ]
+    ],
+    "expected": [
+      "0o0",
+      "0o10",
+      "0o17"
+    ]
+  },
+  {
+    "role": "boundary",
+    "args": [
+      [
+        1,
+        7,
+        64
+      ]
+    ],
+    "expected": [
+      "0o1",
+      "0o7",
+      "0o100"
+    ]
+  }
+]
+```
+
+## integer_octal_text_N_CLEAR
+
+```text
+编写 Python 函数 collect_octal_strings(numbers)，numbers 是非负整数列表。对每个整数调用 Python 内置 oct，返回带 0o 前缀的八进制字符串。
+调用者在函数返回后，会通过返回对象的 .add() 添加一个成员，再通过 .remove() 移除它，并检查同一对象恢复原成员。函数只计算并返回结果，不在函数内部执行这些验收操作。
+结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。
+```
+
+预期类型选择：set；功能用例：
+```json
+[
+  {
+    "role": "empty",
+    "args": [
+      []
+    ],
+    "expected": []
+  },
+  {
+    "role": "duplicates",
+    "args": [
+      [
+        0,
+        8,
+        8,
+        15
+      ]
+    ],
+    "expected": [
+      "0o0",
+      "0o10",
+      "0o17"
+    ]
+  },
+  {
+    "role": "boundary",
+    "args": [
+      [
+        1,
+        7,
+        64
+      ]
+    ],
+    "expected": [
+      "0o1",
+      "0o7",
+      "0o100"
+    ]
+  }
+]
+```
+
+## boolean_complement_E_CLEAR
+
+```text
+编写 Python 函数 collect_inverted_flags(flags)，flags 是布尔值列表。对每个元素做逻辑取反：True 变为 False，False 变为 True，保留布尔类型。
+调用者在函数返回后只查询其中的成员，不会添加或移除成员。返回对象无需提供增删接口。函数只计算并返回结果，不在函数内部执行验收。
+结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。
+```
+
+预期类型选择：frozenset；功能用例：
+```json
+[
+  {
+    "role": "empty",
+    "args": [
+      []
+    ],
+    "expected": []
+  },
+  {
+    "role": "duplicates",
+    "args": [
+      [
+        true,
+        true,
+        false
+      ]
+    ],
+    "expected": [
+      false,
+      true
+    ]
+  },
+  {
+    "role": "boundary",
+    "args": [
+      [
+        false,
+        false
+      ]
+    ],
+    "expected": [
+      true
+    ]
+  }
+]
+```
+
+## boolean_complement_N_CLEAR
+
+```text
+编写 Python 函数 collect_inverted_flags(flags)，flags 是布尔值列表。对每个元素做逻辑取反：True 变为 False，False 变为 True，保留布尔类型。
+调用者在函数返回后，会通过返回对象的 .add() 添加一个成员，再通过 .remove() 移除它，并检查同一对象恢复原成员。函数只计算并返回结果，不在函数内部执行这些验收操作。
+结果中不保留重复成员，成员顺序不限。不要修改输入。请将每个成员的计算和去重直接写在唯一的 return 表达式中，不要先创建结果变量再返回。只输出完整函数代码，不写注释、解释或辅助函数。
+```
+
+预期类型选择：set；功能用例：
+```json
+[
+  {
+    "role": "empty",
+    "args": [
+      []
+    ],
+    "expected": []
+  },
+  {
+    "role": "duplicates",
+    "args": [
+      [
+        true,
+        true,
+        false
+      ]
+    ],
+    "expected": [
+      false,
+      true
+    ]
+  },
+  {
+    "role": "boundary",
+    "args": [
+      [
+        false,
+        false
+      ]
+    ],
+    "expected": [
+      true
+    ]
+  }
+]
+```

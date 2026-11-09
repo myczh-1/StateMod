@@ -1,0 +1,36 @@
+{
+  "historical_sources_checked": 35,
+  "historical_sources_changed": [],
+  "frozen_runtime_files_checked": 29,
+  "frozen_runtime_changed": [],
+  "transfer": {
+    "time": 1793938020.474879,
+    "archive_sha": "c348edfda35e17d2c36bac29c976a851a31e8422bc47f0ea2e9251b36d4ddcbf",
+    "bytes": 2053754880,
+    "files_verified": 1647,
+    "all_collected_files_verified": true
+  },
+  "shutdown": {
+    "time": 1793938020.477848,
+    "reason": "All collected evidence and archive SHA verified; scoring runs locally after shutdown",
+    "delete_or_release": false,
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "shutdown_observation": {
+    "time": 1793938036.138249,
+    "billing_verified": false,
+    "returncode": 255,
+    "stdout": "",
+    "stderr": "ssh: connect to host [PRIVATE_HOST] port 30012: Connection refused\n"
+  },
+  "module_sha": "3a35f380d49fdbf9d76832d252554c8f9c55b715ed1fc7a3ad3d47ccda6bace7",
+  "bank_sha": "19fd69d23b1bc164ff7e548499a96b507fe7e8f0084487abe55e2a15686db11e",
+  "model_sha_verified_before_after": true,
+  "score_source_sha": "a06eaf6cc034f29a8826d262fab847ee70ae18054b677d7aab38e614a656d983",
+  "raw_results_not_rewritten": true,
+  "planned_trajectories": 28,
+  "completed_trajectories": 28,
+  "model_rerun": false
+}

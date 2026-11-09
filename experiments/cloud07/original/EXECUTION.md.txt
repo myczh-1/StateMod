@@ -1,0 +1,21 @@
+# Cloud07 执行登记
+
+用户已授权执行本轮。沿用 Cloud07-plan 已冻结矩阵，不新增任务或效果条件。原计划保存在 PROTOCOL.md、TASKS.json、MATRIX.json 与 PLAN_FREEZE.json；本目录 freeze.json 是首次模型前向前的执行源码冻结。
+
+复用 Cloud06 的 common/backend/gate/readout/scoring，字节不变。legacy_run 仅复用数值准入、只读 probe、版本检查；不调用其原64条实验。
+
+执行顺序：A/B去重后的22条自然生成 → 8项统一前缀只读 → C的2条自然复现 → 仅复现成立时4条固定构造器诊断。无需依据A/B功能分数决定C，C任务早已固定。
+
+相同历史 Cached/Fresh 检查在每个生成步执行。C强制Token另检查实际所给Token的logP误差；四个诊断分支在处理完构造器末Token后保存原生完整缓存和下一步Logits。Bank只在原return预测步参与一次，后续Fresh诊断重放不计作正式生成的再次注入。
+
+原评分器在取回并关机后于本地独立子进程执行。诊断强制Token不混入自然生成指标。旧记录不重评分、不覆盖。
+
+资源：矩阵由64缩为28条输出轨迹；本轮结果盘准入6 GiB（含原始数组及归档），本地8 GiB，属资源规划，非效果/数值阈值变更。不开新实例、不安装依赖、不清理旧数据。若空间或环境不满足，保存失败证据后停止。
+
+运行方式：
+
+```sh
+.venv/bin/python -B v-conditional-cloud07/tools/launch_collect_shutdown.py --execute-after-user-start
+```
+
+控制器只使用既有 [HOST_ALIAS] SSH实例；启动前检查独占GPU及冻结环境，取回全部文件并校验归档与逐文件SHA后关闭实例。异常保留持久盘证据，安全独占时保留限时关机保护。不得重启同一模型矩阵。

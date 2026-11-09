@@ -1,0 +1,106 @@
+[
+  {
+    "id": "boolean_complement__train__bare",
+    "argmax": 314,
+    "reference": {
+      "hidden": {
+        "max_abs": 0.0,
+        "rms": 0.0,
+        "relative_l2": 0.0,
+        "exact": true
+      },
+      "logits": {
+        "max_abs": 0.0,
+        "rms": 0.0,
+        "relative_l2": 0.0,
+        "exact": true
+      },
+      "kv_exact": true
+    },
+    "primary_passed": true
+  },
+  {
+    "id": "boolean_complement__heldout__fenced",
+    "argmax": 738,
+    "reference": {
+      "hidden": {
+        "max_abs": 0.0,
+        "rms": 0.0,
+        "relative_l2": 0.0,
+        "exact": true
+      },
+      "logits": {
+        "max_abs": 0.0,
+        "rms": 0.0,
+        "relative_l2": 0.0,
+        "exact": true
+      },
+      "kv_exact": true
+    },
+    "primary_passed": true
+  },
+  {
+    "id": "lower__train__fenced",
+    "argmax": 738,
+    "reference": {
+      "hidden": {
+        "max_abs": 0.0,
+        "rms": 0.0,
+        "relative_l2": 0.0,
+        "exact": true
+      },
+      "logits": {
+        "max_abs": 0.0,
+        "rms": 0.0,
+        "relative_l2": 0.0,
+        "exact": true
+      },
+      "kv_exact": true
+    },
+    "primary_passed": true
+  },
+  {
+    "id": "lower__heldout__fenced",
+    "argmax": 738,
+    "reference": {
+      "hidden": {
+        "max_abs": 0.0,
+        "rms": 0.0,
+        "relative_l2": 0.0,
+        "exact": true
+      },
+      "logits": {
+        "max_abs": 0.0,
+        "rms": 0.0,
+        "relative_l2": 0.0,
+        "exact": true
+      },
+      "kv_exact": true
+    },
+    "primary_passed": true
+  },
+  {
+    "id": "boolean_complement__train__fenced",
+    "argmax": 314,
+    "reference": null,
+    "primary_passed": true
+  },
+  {
+    "id": "boolean_complement__heldout__bare",
+    "argmax": 738,
+    "reference": null,
+    "primary_passed": true
+  },
+  {
+    "id": "lower__train__bare",
+    "argmax": 738,
+    "reference": null,
+    "primary_passed": true
+  },
+  {
+    "id": "lower__heldout__bare",
+    "argmax": 738,
+    "reference": null,
+    "primary_passed": true
+  }
+]

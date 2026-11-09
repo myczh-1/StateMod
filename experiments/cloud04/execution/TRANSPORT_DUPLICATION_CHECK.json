@@ -1,0 +1,5 @@
+{
+  "returncode": 0,
+  "stdout": "{\"files\": 7366, \"unique_files\": 5480, \"bytes\": 8758359991, \"unique_bytes\": 6775474976, \"zstandard_available\": true}\n",
+  "stderr": ""
+}

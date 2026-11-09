@@ -1,0 +1,33 @@
+{
+  "first_token_only": true,
+  "wording_groups": {
+    "W_ANCHOR": {
+      "n": 4,
+      "mean_delta_fro_set": 26.277555465698242,
+      "mean_delta_fro_list": 36.686386585235596,
+      "manual_fro_rank_1": 4,
+      "manual_fro_set_margins": [
+        8.872730255126953,
+        7.866436004638672,
+        7.944629669189453,
+        9.077491760253906
+      ],
+      "mean_bank_mass": 0.1663275671777618
+    },
+    "W_LIFECYCLE": {
+      "n": 4,
+      "mean_delta_fro_set": 28.801706314086914,
+      "mean_delta_fro_list": 36.40467882156372,
+      "manual_fro_rank_1": 4,
+      "manual_fro_set_margins": [
+        11.113945007324219,
+        10.760231018066406,
+        10.119735717773438,
+        11.539619445800781
+      ],
+      "mean_bank_mass": 0.1705093219131868
+    }
+  },
+  "E_manual_full_tokens_same_across_wordings": 4,
+  "module_manual_full_tokens_equal": 16
+}

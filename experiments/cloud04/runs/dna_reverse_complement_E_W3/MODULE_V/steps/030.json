@@ -1,0 +1,15 @@
+{
+  "numerical": {
+    "max_abs": 3.528594970703125e-05,
+    "rms": 7.785919906514535e-06,
+    "relative_l2": 1.256623394367033e-06,
+    "exact": false
+  },
+  "selected_logp_error": 3.2640556778395814e-14,
+  "token": 23700,
+  "fresh_token": 23700,
+  "bank_calls": 0,
+  "trace": [],
+  "native_length": 220,
+  "fresh_length": 220
+}

@@ -1,0 +1,4 @@
+{
+  "time": 1793794479.8655722,
+  "launch": "import os,sys,subprocess;from pathlib import Path;r=Path(sys.argv[1]);assert not (r/\"runs\").exists() and not (r/\"JOB.json\").exists() and not (r/\"JOB_ARMED.json\").exists();fd=os.open(r/\"RESUME_CLAIM\",os.O_CREAT|os.O_EXCL|os.O_WRONLY);os.close(fd);f=open(r/\"resume_launcher.log\",\"xb\");p=subprocess.Popen([sys.executable,\"-B\",str(r/\"tools/remote_job.py\"),\"--execute-after-user-start\"],cwd=r,stdin=subprocess.DEVNULL,stdout=f,stderr=subprocess.STDOUT,start_new_session=True);(r/\"RESUME_PID\").write_text(str(p.pid));print(p.pid)"
+}

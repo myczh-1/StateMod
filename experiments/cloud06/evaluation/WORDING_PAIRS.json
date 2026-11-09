@@ -1,0 +1,658 @@
+[
+  {
+    "family": "ascii_text_predicate",
+    "category": "E",
+    "condition": "BASE",
+    "usage_id": "ascii_text_predicate_E_W_USAGE",
+    "interface_id": "ascii_text_predicate_E_W_INTERFACE",
+    "complete": true,
+    "usage": {
+      "functional": false,
+      "joint": false,
+      "judgment": null
+    },
+    "interface": {
+      "functional": false,
+      "joint": false,
+      "judgment": null
+    }
+  },
+  {
+    "family": "ascii_text_predicate",
+    "category": "E",
+    "condition": "TEXT_CODE",
+    "usage_id": "ascii_text_predicate_E_W_USAGE",
+    "interface_id": "ascii_text_predicate_E_W_INTERFACE",
+    "complete": true,
+    "usage": {
+      "functional": false,
+      "joint": false,
+      "judgment": null
+    },
+    "interface": {
+      "functional": false,
+      "joint": false,
+      "judgment": null
+    }
+  },
+  {
+    "family": "ascii_text_predicate",
+    "category": "E",
+    "condition": "MANUAL_V",
+    "usage_id": "ascii_text_predicate_E_W_USAGE",
+    "interface_id": "ascii_text_predicate_E_W_INTERFACE",
+    "complete": true,
+    "usage": {
+      "functional": false,
+      "joint": false,
+      "judgment": null
+    },
+    "interface": {
+      "functional": false,
+      "joint": false,
+      "judgment": null
+    }
+  },
+  {
+    "family": "ascii_text_predicate",
+    "category": "E",
+    "condition": "MODULE_V",
+    "usage_id": "ascii_text_predicate_E_W_USAGE",
+    "interface_id": "ascii_text_predicate_E_W_INTERFACE",
+    "complete": true,
+    "usage": {
+      "functional": false,
+      "joint": false,
+      "judgment": {
+        "logit": 8.781451983120293,
+        "p": 0.9998464686114688,
+        "enabled": true,
+        "threshold": 0.5
+      }
+    },
+    "interface": {
+      "functional": false,
+      "joint": false,
+      "judgment": {
+        "logit": 4.600717143592903,
+        "p": 0.9900552614967014,
+        "enabled": true,
+        "threshold": 0.5
+      }
+    }
+  },
+  {
+    "family": "ascii_text_predicate",
+    "category": "N",
+    "condition": "BASE",
+    "usage_id": "ascii_text_predicate_N_W_USAGE",
+    "interface_id": "ascii_text_predicate_N_W_INTERFACE",
+    "complete": true,
+    "usage": {
+      "functional": false,
+      "joint": false,
+      "judgment": null
+    },
+    "interface": {
+      "functional": false,
+      "joint": false,
+      "judgment": null
+    }
+  },
+  {
+    "family": "ascii_text_predicate",
+    "category": "N",
+    "condition": "TEXT_CODE",
+    "usage_id": "ascii_text_predicate_N_W_USAGE",
+    "interface_id": "ascii_text_predicate_N_W_INTERFACE",
+    "complete": true,
+    "usage": {
+      "functional": false,
+      "joint": false,
+      "judgment": null
+    },
+    "interface": {
+      "functional": false,
+      "joint": false,
+      "judgment": null
+    }
+  },
+  {
+    "family": "ascii_text_predicate",
+    "category": "N",
+    "condition": "MANUAL_V",
+    "usage_id": "ascii_text_predicate_N_W_USAGE",
+    "interface_id": "ascii_text_predicate_N_W_INTERFACE",
+    "complete": true,
+    "usage": {
+      "functional": false,
+      "joint": false,
+      "judgment": null
+    },
+    "interface": {
+      "functional": false,
+      "joint": false,
+      "judgment": null
+    }
+  },
+  {
+    "family": "ascii_text_predicate",
+    "category": "N",
+    "condition": "MODULE_V",
+    "usage_id": "ascii_text_predicate_N_W_USAGE",
+    "interface_id": "ascii_text_predicate_N_W_INTERFACE",
+    "complete": true,
+    "usage": {
+      "functional": false,
+      "joint": false,
+      "judgment": {
+        "logit": -0.40403149524021814,
+        "p": 0.4003441163623346,
+        "enabled": false,
+        "threshold": 0.5
+      }
+    },
+    "interface": {
+      "functional": false,
+      "joint": false,
+      "judgment": {
+        "logit": -15.967916651142218,
+        "p": 1.1620420944241115e-07,
+        "enabled": false,
+        "threshold": 0.5
+      }
+    }
+  },
+  {
+    "family": "boolean_complement",
+    "category": "E",
+    "condition": "BASE",
+    "usage_id": "boolean_complement_E_W_USAGE",
+    "interface_id": "boolean_complement_E_W_INTERFACE",
+    "complete": true,
+    "usage": {
+      "functional": true,
+      "joint": false,
+      "judgment": null
+    },
+    "interface": {
+      "functional": true,
+      "joint": false,
+      "judgment": null
+    }
+  },
+  {
+    "family": "boolean_complement",
+    "category": "E",
+    "condition": "TEXT_CODE",
+    "usage_id": "boolean_complement_E_W_USAGE",
+    "interface_id": "boolean_complement_E_W_INTERFACE",
+    "complete": true,
+    "usage": {
+      "functional": true,
+      "joint": true,
+      "judgment": null
+    },
+    "interface": {
+      "functional": true,
+      "joint": true,
+      "judgment": null
+    }
+  },
+  {
+    "family": "boolean_complement",
+    "category": "E",
+    "condition": "MANUAL_V",
+    "usage_id": "boolean_complement_E_W_USAGE",
+    "interface_id": "boolean_complement_E_W_INTERFACE",
+    "complete": true,
+    "usage": {
+      "functional": true,
+      "joint": true,
+      "judgment": null
+    },
+    "interface": {
+      "functional": true,
+      "joint": true,
+      "judgment": null
+    }
+  },
+  {
+    "family": "boolean_complement",
+    "category": "E",
+    "condition": "MODULE_V",
+    "usage_id": "boolean_complement_E_W_USAGE",
+    "interface_id": "boolean_complement_E_W_INTERFACE",
+    "complete": true,
+    "usage": {
+      "functional": true,
+      "joint": true,
+      "judgment": {
+        "logit": 13.34076685830994,
+        "p": 0.9999983924004687,
+        "enabled": true,
+        "threshold": 0.5
+      }
+    },
+    "interface": {
+      "functional": true,
+      "joint": true,
+      "judgment": {
+        "logit": 6.378816923630766,
+        "p": 0.9983057457657063,
+        "enabled": true,
+        "threshold": 0.5
+      }
+    }
+  },
+  {
+    "family": "boolean_complement",
+    "category": "N",
+    "condition": "BASE",
+    "usage_id": "boolean_complement_N_W_USAGE",
+    "interface_id": "boolean_complement_N_W_INTERFACE",
+    "complete": true,
+    "usage": {
+      "functional": true,
+      "joint": true,
+      "judgment": null
+    },
+    "interface": {
+      "functional": false,
+      "joint": false,
+      "judgment": null
+    }
+  },
+  {
+    "family": "boolean_complement",
+    "category": "N",
+    "condition": "TEXT_CODE",
+    "usage_id": "boolean_complement_N_W_USAGE",
+    "interface_id": "boolean_complement_N_W_INTERFACE",
+    "complete": true,
+    "usage": {
+      "functional": false,
+      "joint": false,
+      "judgment": null
+    },
+    "interface": {
+      "functional": false,
+      "joint": false,
+      "judgment": null
+    }
+  },
+  {
+    "family": "boolean_complement",
+    "category": "N",
+    "condition": "MANUAL_V",
+    "usage_id": "boolean_complement_N_W_USAGE",
+    "interface_id": "boolean_complement_N_W_INTERFACE",
+    "complete": true,
+    "usage": {
+      "functional": true,
+      "joint": true,
+      "judgment": null
+    },
+    "interface": {
+      "functional": false,
+      "joint": false,
+      "judgment": null
+    }
+  },
+  {
+    "family": "boolean_complement",
+    "category": "N",
+    "condition": "MODULE_V",
+    "usage_id": "boolean_complement_N_W_USAGE",
+    "interface_id": "boolean_complement_N_W_INTERFACE",
+    "complete": true,
+    "usage": {
+      "functional": false,
+      "joint": false,
+      "judgment": {
+        "logit": 3.025472279409243,
+        "p": 0.9537117037199376,
+        "enabled": true,
+        "threshold": 0.5
+      }
+    },
+    "interface": {
+      "functional": false,
+      "joint": false,
+      "judgment": {
+        "logit": -14.775592437953417,
+        "p": 3.8286138941035113e-07,
+        "enabled": false,
+        "threshold": 0.5
+      }
+    }
+  },
+  {
+    "family": "integer_octal_text",
+    "category": "E",
+    "condition": "BASE",
+    "usage_id": "integer_octal_text_E_W_USAGE",
+    "interface_id": "integer_octal_text_E_W_INTERFACE",
+    "complete": true,
+    "usage": {
+      "functional": true,
+      "joint": false,
+      "judgment": null
+    },
+    "interface": {
+      "functional": true,
+      "joint": false,
+      "judgment": null
+    }
+  },
+  {
+    "family": "integer_octal_text",
+    "category": "E",
+    "condition": "TEXT_CODE",
+    "usage_id": "integer_octal_text_E_W_USAGE",
+    "interface_id": "integer_octal_text_E_W_INTERFACE",
+    "complete": true,
+    "usage": {
+      "functional": true,
+      "joint": true,
+      "judgment": null
+    },
+    "interface": {
+      "functional": true,
+      "joint": true,
+      "judgment": null
+    }
+  },
+  {
+    "family": "integer_octal_text",
+    "category": "E",
+    "condition": "MANUAL_V",
+    "usage_id": "integer_octal_text_E_W_USAGE",
+    "interface_id": "integer_octal_text_E_W_INTERFACE",
+    "complete": true,
+    "usage": {
+      "functional": true,
+      "joint": true,
+      "judgment": null
+    },
+    "interface": {
+      "functional": true,
+      "joint": true,
+      "judgment": null
+    }
+  },
+  {
+    "family": "integer_octal_text",
+    "category": "E",
+    "condition": "MODULE_V",
+    "usage_id": "integer_octal_text_E_W_USAGE",
+    "interface_id": "integer_octal_text_E_W_INTERFACE",
+    "complete": true,
+    "usage": {
+      "functional": true,
+      "joint": true,
+      "judgment": {
+        "logit": 17.17950743545949,
+        "p": 0.9999999654032977,
+        "enabled": true,
+        "threshold": 0.5
+      }
+    },
+    "interface": {
+      "functional": true,
+      "joint": true,
+      "judgment": {
+        "logit": 14.487842442874998,
+        "p": 0.9999994894835382,
+        "enabled": true,
+        "threshold": 0.5
+      }
+    }
+  },
+  {
+    "family": "integer_octal_text",
+    "category": "N",
+    "condition": "BASE",
+    "usage_id": "integer_octal_text_N_W_USAGE",
+    "interface_id": "integer_octal_text_N_W_INTERFACE",
+    "complete": true,
+    "usage": {
+      "functional": true,
+      "joint": true,
+      "judgment": null
+    },
+    "interface": {
+      "functional": false,
+      "joint": false,
+      "judgment": null
+    }
+  },
+  {
+    "family": "integer_octal_text",
+    "category": "N",
+    "condition": "TEXT_CODE",
+    "usage_id": "integer_octal_text_N_W_USAGE",
+    "interface_id": "integer_octal_text_N_W_INTERFACE",
+    "complete": true,
+    "usage": {
+      "functional": true,
+      "joint": true,
+      "judgment": null
+    },
+    "interface": {
+      "functional": false,
+      "joint": false,
+      "judgment": null
+    }
+  },
+  {
+    "family": "integer_octal_text",
+    "category": "N",
+    "condition": "MANUAL_V",
+    "usage_id": "integer_octal_text_N_W_USAGE",
+    "interface_id": "integer_octal_text_N_W_INTERFACE",
+    "complete": true,
+    "usage": {
+      "functional": true,
+      "joint": true,
+      "judgment": null
+    },
+    "interface": {
+      "functional": false,
+      "joint": false,
+      "judgment": null
+    }
+  },
+  {
+    "family": "integer_octal_text",
+    "category": "N",
+    "condition": "MODULE_V",
+    "usage_id": "integer_octal_text_N_W_USAGE",
+    "interface_id": "integer_octal_text_N_W_INTERFACE",
+    "complete": true,
+    "usage": {
+      "functional": false,
+      "joint": false,
+      "judgment": {
+        "logit": 7.646052277283399,
+        "p": 0.9995223011716428,
+        "enabled": true,
+        "threshold": 0.5
+      }
+    },
+    "interface": {
+      "functional": false,
+      "joint": false,
+      "judgment": {
+        "logit": -1.4173556374001686,
+        "p": 0.1950764709703469,
+        "enabled": false,
+        "threshold": 0.5
+      }
+    }
+  },
+  {
+    "family": "literal_a_occurrences",
+    "category": "E",
+    "condition": "BASE",
+    "usage_id": "literal_a_occurrences_E_W_USAGE",
+    "interface_id": "literal_a_occurrences_E_W_INTERFACE",
+    "complete": true,
+    "usage": {
+      "functional": false,
+      "joint": false,
+      "judgment": null
+    },
+    "interface": {
+      "functional": true,
+      "joint": false,
+      "judgment": null
+    }
+  },
+  {
+    "family": "literal_a_occurrences",
+    "category": "E",
+    "condition": "TEXT_CODE",
+    "usage_id": "literal_a_occurrences_E_W_USAGE",
+    "interface_id": "literal_a_occurrences_E_W_INTERFACE",
+    "complete": true,
+    "usage": {
+      "functional": true,
+      "joint": true,
+      "judgment": null
+    },
+    "interface": {
+      "functional": true,
+      "joint": true,
+      "judgment": null
+    }
+  },
+  {
+    "family": "literal_a_occurrences",
+    "category": "E",
+    "condition": "MANUAL_V",
+    "usage_id": "literal_a_occurrences_E_W_USAGE",
+    "interface_id": "literal_a_occurrences_E_W_INTERFACE",
+    "complete": true,
+    "usage": {
+      "functional": false,
+      "joint": false,
+      "judgment": null
+    },
+    "interface": {
+      "functional": false,
+      "joint": false,
+      "judgment": null
+    }
+  },
+  {
+    "family": "literal_a_occurrences",
+    "category": "E",
+    "condition": "MODULE_V",
+    "usage_id": "literal_a_occurrences_E_W_USAGE",
+    "interface_id": "literal_a_occurrences_E_W_INTERFACE",
+    "complete": true,
+    "usage": {
+      "functional": false,
+      "joint": false,
+      "judgment": {
+        "logit": 10.256461778805823,
+        "p": 0.9999648714689747,
+        "enabled": true,
+        "threshold": 0.5
+      }
+    },
+    "interface": {
+      "functional": false,
+      "joint": false,
+      "judgment": {
+        "logit": 3.498268190166127,
+        "p": 0.9706384538353605,
+        "enabled": true,
+        "threshold": 0.5
+      }
+    }
+  },
+  {
+    "family": "literal_a_occurrences",
+    "category": "N",
+    "condition": "BASE",
+    "usage_id": "literal_a_occurrences_N_W_USAGE",
+    "interface_id": "literal_a_occurrences_N_W_INTERFACE",
+    "complete": true,
+    "usage": {
+      "functional": false,
+      "joint": false,
+      "judgment": null
+    },
+    "interface": {
+      "functional": false,
+      "joint": false,
+      "judgment": null
+    }
+  },
+  {
+    "family": "literal_a_occurrences",
+    "category": "N",
+    "condition": "TEXT_CODE",
+    "usage_id": "literal_a_occurrences_N_W_USAGE",
+    "interface_id": "literal_a_occurrences_N_W_INTERFACE",
+    "complete": true,
+    "usage": {
+      "functional": true,
+      "joint": true,
+      "judgment": null
+    },
+    "interface": {
+      "functional": false,
+      "joint": false,
+      "judgment": null
+    }
+  },
+  {
+    "family": "literal_a_occurrences",
+    "category": "N",
+    "condition": "MANUAL_V",
+    "usage_id": "literal_a_occurrences_N_W_USAGE",
+    "interface_id": "literal_a_occurrences_N_W_INTERFACE",
+    "complete": true,
+    "usage": {
+      "functional": false,
+      "joint": false,
+      "judgment": null
+    },
+    "interface": {
+      "functional": false,
+      "joint": false,
+      "judgment": null
+    }
+  },
+  {
+    "family": "literal_a_occurrences",
+    "category": "N",
+    "condition": "MODULE_V",
+    "usage_id": "literal_a_occurrences_N_W_USAGE",
+    "interface_id": "literal_a_occurrences_N_W_INTERFACE",
+    "complete": true,
+    "usage": {
+      "functional": false,
+      "joint": false,
+      "judgment": {
+        "logit": -2.4992843199092563,
+        "p": 0.07590836708759666,
+        "enabled": false,
+        "threshold": 0.5
+      }
+    },
+    "interface": {
+      "functional": false,
+      "joint": false,
+      "judgment": {
+        "logit": -23.618559668219227,
+        "p": 5.528277889564321e-11,
+        "enabled": false,
+        "threshold": 0.5
+      }
+    }
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "step": 0,
+  "repeat_logits_exact": true,
+  "repeat_cache_exact": true,
+  "independent_cache": true,
+  "length": 148,
+  "expected_length": 148
+}

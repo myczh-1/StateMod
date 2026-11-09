@@ -1,0 +1,22 @@
+# 冻结输入长度
+
+仅使用本地冻结Tokenizer，未运行模型。两版合同不强行凑长，长度与位置差异一并报告。
+
+|输入|BASE Token|TEXT_CODE Token|
+|---|---:|---:|
+|integer_octal_text_E_W_USAGE|154|173|
+|integer_octal_text_E_W_INTERFACE|151|170|
+|integer_octal_text_N_W_USAGE|155|174|
+|integer_octal_text_N_W_INTERFACE|158|177|
+|literal_a_occurrences_E_W_USAGE|143|162|
+|literal_a_occurrences_E_W_INTERFACE|140|159|
+|literal_a_occurrences_N_W_USAGE|144|163|
+|literal_a_occurrences_N_W_INTERFACE|147|166|
+|ascii_text_predicate_E_W_USAGE|144|163|
+|ascii_text_predicate_E_W_INTERFACE|141|160|
+|ascii_text_predicate_N_W_USAGE|145|164|
+|ascii_text_predicate_N_W_INTERFACE|148|167|
+|boolean_complement_E_W_USAGE|149|168|
+|boolean_complement_E_W_INTERFACE|146|165|
+|boolean_complement_N_W_USAGE|150|169|
+|boolean_complement_N_W_INTERFACE|153|172|

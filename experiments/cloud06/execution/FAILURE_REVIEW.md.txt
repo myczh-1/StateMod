@@ -1,0 +1,56 @@
+# Cloud06 失败归因：全部为已保存结果复核
+
+正式状态CAPABILITY_LIMITED；64条全部保留。没有重评分、代码修复、额外模型前向或参数调整。
+
+## 1. 判断误接受：两个清晰反例
+
+|任务|p|BASE|MANUAL关闭|MODULE开启|
+|---|---:|---|---|---|
+|integer_octal_text_N_W_USAGE|0.999522301|可变合同通过|可变合同通过|frozenset，增删失败|
+|boolean_complement_N_W_USAGE|0.953711704|可变合同通过|可变合同通过|frozenset，增删失败|
+
+这两题的W_USAGE均明确说明“结果交付后还用于成员编辑，会实际增加和移除成员；需要提供.add()和.remove()”。BASE已正确，MODULE有真实Bank访问且产生退化，不能归咎于能力门槛或只在难题上失效。p不接近0.5；本轮不据此选新阈值。
+
+## 2. V自身功能退化：一个同检查点反例
+
+literal_a_occurrences_E_W_INTERFACE：人工V已知正确开启，BASE成员计算通过；Bank后产生Python编译错误，MODULE同样失败。
+
+BASE：
+```python
+def collect_a_counts(words): return set({sum(1 for c in word if c == 'a') for word in words})
+```
+人工V：
+```python
+def collect_a_counts(words): return frozenset(count := 0 for word in words for count in (count + 1 if c == 'a' else 0 for c in word))
+```
+
+赋值表达式重新绑定了推导式迭代变量count，是真实语言错误。单次预测访问后，后续自然生成的参数公式也发生变化；现有证据不能把细节继续归因于某个层或纯Token/KV因素。不能因为构造器文字是frozenset就算规则执行成功。
+
+## 3. 基础生成/接口能力与覆盖
+
+ASCII族：E的BASE、TEXT和V均多次把字符串方法写为不存在的全局isascii(s)，非空输入NameError。Python本身没有该内置全局函数；str.isascii方法存在且已在冻结评分器ATTRS内允许，gold合同检查也通过。这不是合法方法被评分器漏放行。
+
+字符计数W_USAGE的E：把整数计数交给以空tuple或list为初值的sum，类型相加失败。该N的BASE/MANUAL/MODULE均在96 Token处截断，是同一任务的三条条件记录，不是三个独立失败族。不能判定未完成代码的最终数学功能，也不能补代码或延长预算。
+
+## 4. 接口措辞存在执行主体/时间歧义
+
+W_INTERFACE N写为“必须在同一个返回对象上调用.add()与.remove()，先加入一个新成员再移除，验证成员恢复”，没有像原合同一样明确由调用方在函数返回后执行。四个N BASE都在return表达式内执行增删：
+
+|族|可见错误|
+|---|---|
+|八进制|set(...).add('').remove('')，add返回None导致属性错误|
+|字符计数|未定义的reduce，随后remove(0)；缺失导入并不能靠修改评分白名单解决|
+|ASCII|set().add(*map(...)).remove(...)，空输入参数个数错误|
+|布尔取反|同样在return中调用add/remove，参数及返回值错误|
+
+这支持“把验收操作当成函数应执行步骤”的解释，是本次措辞设计的潜在混杂，需要承认准备审核不足。没有新的消歧对照，不能将其当作唯一已证实原因，也不能把4题全解释为模型不知道可变集合。全部原题和0/4成绩保留，不剔除W_INTERFACE追认通过。
+
+## 5. 评分限制检查
+
+本轮未发现类似Cloud05合法set子类的已证实误拒。isascii是调用方式错误，reduce并非Python3内置，赋值表达式编译错误与add返回None均是真实Python行为。截断单独归类。未修改评分器、增加白名单或重算正式成绩。
+
+## 6. 保留的正面证据与边界
+
+八进制与布尔取反的E在两版措辞下，人工与自动V均保持功能并成功返回frozenset，共4/4重复条件观察；这不是4个新独立族，而是2族×2措辞。
+
+独立总体未通过。结构上一次逐成员操作，并不保证8B对新接口的基础能力与旧任务相当；本轮BASE覆盖不足，且另有明确的判断和V退化反例。不能由此宣称全部V失效，也不能用成功子集替代冻结矩阵。

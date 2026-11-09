@@ -1,0 +1,19 @@
+{
+  "id": "boolean_complement_E_CLEAR__TRAIN_USAGE__BASE",
+  "hidden": {
+    "max_abs": 0.25,
+    "rms": 0.011103832905178123,
+    "relative_l2": 0.009203576492078433,
+    "exact": false
+  },
+  "logits": {
+    "max_abs": 0.5625,
+    "rms": 0.0997607715460415,
+    "relative_l2": 0.019468674006863997,
+    "exact": false
+  },
+  "top1_changed": false,
+  "selected_logp_error": 1.1562445862756988e-07,
+  "behavior_gate": false,
+  "finite": true
+}

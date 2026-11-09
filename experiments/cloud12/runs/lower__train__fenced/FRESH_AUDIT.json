@@ -1,0 +1,17 @@
+{
+  "hidden": {
+    "max_abs": 0.25,
+    "rms": 0.011109098900990728,
+    "relative_l2": 0.009089614236687946,
+    "exact": false
+  },
+  "logits": {
+    "max_abs": 0.53125,
+    "rms": 0.09892934650284267,
+    "relative_l2": 0.020101914744155857,
+    "exact": false
+  },
+  "argmax_flip": false,
+  "primary_gate": false,
+  "finite": true
+}

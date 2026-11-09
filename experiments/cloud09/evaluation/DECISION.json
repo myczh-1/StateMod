@@ -1,0 +1,11 @@
+{
+  "status": "STOP_NUMERICAL",
+  "complete": false,
+  "baseline_coverage_ready": false,
+  "selection_reference": "SELECT_REFERENCE_NOT_READY",
+  "code_reference": "CODE_REFERENCE_NOT_READY",
+  "bank_tested": false,
+  "module_tested": false,
+  "independent_confirmation": false,
+  "automatic_next_stage": false
+}

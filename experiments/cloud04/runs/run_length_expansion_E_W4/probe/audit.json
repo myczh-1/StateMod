@@ -1,0 +1,34 @@
+{
+  "judgment": {
+    "logit": 16.37849364014769,
+    "p": 0.9999999229255283,
+    "enabled": true,
+    "threshold": 0.5
+  },
+  "readonly_logits_exact": true,
+  "readonly_cache_exact": true,
+  "checkpoint_unchanged": true,
+  "disjoint": true,
+  "clean": true,
+  "logits": {
+    "max_abs": 3.0040740966796875e-05,
+    "rms": 5.8986996306707905e-06,
+    "relative_l2": 1.1658898922946382e-06,
+    "exact": false
+  },
+  "hidden": {
+    "max_abs": 3.814697265625e-06,
+    "rms": 7.614037395206653e-07,
+    "relative_l2": 6.936903146857814e-07,
+    "exact": false
+  },
+  "p_error": 2.1460611066004276e-13,
+  "same_action": true,
+  "fresh_judgment": {
+    "logit": 16.378496425550857,
+    "p": 0.9999999229257429,
+    "enabled": true,
+    "threshold": 0.5
+  },
+  "boundary": true
+}

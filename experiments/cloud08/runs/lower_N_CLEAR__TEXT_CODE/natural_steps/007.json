@@ -1,0 +1,17 @@
+{
+  "token": 18549,
+  "cached_top1": 18549,
+  "fresh_top1": 18549,
+  "cached_logp": -5.9721281075312495e-09,
+  "fresh_logp": -5.972082366342908e-09,
+  "metrics": {
+    "max_abs": 4.673004150390625e-05,
+    "rms": 8.35351975144458e-06,
+    "relative_l2": 2.1687243096401075e-06,
+    "exact": false
+  },
+  "native_length": 183,
+  "fresh_length": 183,
+  "bank_calls": 0,
+  "logp_error": 4.574118834158685e-14
+}

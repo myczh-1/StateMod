@@ -1,0 +1,15 @@
+{
+  "execution": "DIAGNOSTIC_CAPTURE_COMPLETE",
+  "conclusions": [
+    "Heldout wording flips boolean N decision in both code formats.",
+    "Adding a fence alone does not flip any of the four fixed-wording decisions.",
+    "Both N tasks shift toward activation under heldout wording; lower remains below the fixed threshold.",
+    "Wording/content/length/position remain coupled. No claim of pure lexical cause or absent semantic information."
+  ],
+  "original_cloud11_status": "TEACHER_FIDELITY_NOT_ESTABLISHED",
+  "module_fixed": true,
+  "threshold_fixed": true,
+  "natural_generation": false,
+  "independent_confirmation": false,
+  "bank_tested": false
+}

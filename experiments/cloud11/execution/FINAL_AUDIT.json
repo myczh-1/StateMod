@@ -1,0 +1,22 @@
+{
+  "status": "STOP_ENGINEERING",
+  "reason": "REMOTE_DISK_BELOW_FROZEN_MINIMUM",
+  "available_bytes": 5524303872,
+  "required_bytes": 8589934592,
+  "shortfall_bytes": 3065630720,
+  "model_forward": 0,
+  "training_executed": false,
+  "teacher_fidelity": "NOT_RUN",
+  "old_module_changed": false,
+  "old_threshold_changed": false,
+  "bank_loaded": false,
+  "protected_files_verified": 208,
+  "returned_archive_verified": true,
+  "shutdown_observation": {
+    "time": 1794152035.833164,
+    "billing_verified": false,
+    "returncode": 255,
+    "stdout": "",
+    "stderr": "ssh: connect to host [PRIVATE_HOST] port 30012: Connection refused\n"
+  }
+}

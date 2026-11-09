@@ -1,0 +1,14 @@
+{
+  "status": "TEXT_REFERENCE_NOT_READY",
+  "complete": true,
+  "baseline_coverage_ready": false,
+  "selection_reference": "SELECT_REFERENCE_READY",
+  "code_reference": "CODE_REFERENCE_NOT_READY",
+  "bank_tested": false,
+  "module_tested": false,
+  "independent_confirmation": false,
+  "automatic_next_stage": false,
+  "primary_path": "CACHED",
+  "fresh_is_behavior_gate": false,
+  "old_cloud09_status": "STOP_NUMERICAL"
+}

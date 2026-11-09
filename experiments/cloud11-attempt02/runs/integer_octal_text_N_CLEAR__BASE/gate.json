@@ -1,0 +1,12 @@
+{
+  "event": "LEGAL_RETURN_READY",
+  "line": 2,
+  "column": 4,
+  "code_characters": 46,
+  "fenced": true,
+  "detector": "tokenize+AST+compile of generated prefix; no execution",
+  "generated_prefix": "```python\ndef collect_octal_strings(numbers):\n    return",
+  "prediction_step": 12,
+  "absolute_position": 189,
+  "prefix_valid": true
+}

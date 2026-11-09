@@ -1,0 +1,73 @@
+# Cloud03：8B判断模块接回静态V——实际生成结果
+
+判定：`DEVELOPMENT_8B_MODULE_V_LOOP_SUPPORTED`。开发闭环通过，非新任务独立确认。
+
+冻结判断模块读取无规则自然生成的决策状态后，8条E全部启用新8B静态V，8条N全部拒绝。E全部执行成功并精确返回frozenset；N全部保持可变集合合同。原先正确的16条基础功能没有新增退化。
+
+| 条件 | E精确frozenset | E功能正确 | E联合正确 | N可变合同正确 | E/N新增功能退化 |
+|---|---:|---:|---:|---:|---:|
+|BASE|0/8|8/8|0/8|8/8|0/0|
+|TEXT_CODE|8/8|8/8|8/8|2/8|0/6|
+|MANUAL_V|8/8|8/8|8/8|8/8|0/0|
+|MODULE_V|8/8|8/8|8/8|8/8|0/0|
+
+## 判断与执行的分离
+
+本轮没有训练判断模块、调整0.5阈值、修改规则或搜索V参数。MAIN模型Prompt未追加规则。MODULE只有数值h输入；人工适用标签只用于MANUAL上界，未纠正MODULE动作。8B载荷只由固定静态规则system正文编译，不含目标任务或PF Oracle。
+
+MODULE与MANUAL的启停和完整生成Token均16/16一致；实际启用的8条E每条只在一次预测中访问14层×36槽，MODULE的8条N访问均为0。两组共16次活跃预测、224个层调用，不能把层调用计为独立任务。
+
+这支持“判断模块决定是否启用，静态V负责改变行为”的当前开发实现。它不证明Bank自己执行了if/else，也不证明输出侧不需要代价：每次启用仍访问14层×36个侧KV槽。
+
+## 逐任务结果
+
+|任务|拟合留出分组|模块启用|BASE E联合/N合同|MODULE E联合/N合同|功能退化|与人工输出相同|
+|---|---|---|---|---|---|---|
+|double_E_W2|wording_only|True|False|True|False|True|
+|double_N_W2|wording_only|False|True|True|False|True|
+|increment_E_W2|wording_only|True|False|True|False|True|
+|increment_N_W2|wording_only|False|True|True|False|True|
+|lower_E_W2|wording_only|True|False|True|False|True|
+|lower_N_W2|wording_only|False|True|True|False|True|
+|negative_E_W2|wording_only|True|False|True|False|True|
+|negative_N_W2|wording_only|False|True|True|False|True|
+|square_E_W1|family_only|True|False|True|False|True|
+|square_E_W2|family_and_wording|True|False|True|False|True|
+|square_N_W1|family_only|False|True|True|False|True|
+|square_N_W2|family_and_wording|False|True|True|False|True|
+|strip_E_W1|family_only|True|False|True|False|True|
+|strip_E_W2|family_and_wording|True|False|True|False|True|
+|strip_N_W1|family_only|False|True|True|False|True|
+|strip_N_W2|family_and_wording|False|True|True|False|True|
+
+## 文字参照与边界
+
+TEXT_CODE是Cloud01已保存的同任务完整代码生成参照，本轮没有重跑或挑选。它与用于训练判断模块的“frozenset在前”直接选择题老师是两种不同输出接口：直接选择老师24/24正确，不意味着完整代码生成的条件行为也全对。原TEXT_CODE的6条N失败完整保留，分别见evaluation/SCORED_RESULTS.json。
+
+这16条仅从Cloud02的8条拟合任务中留出；函数族和措辞都是历史已见开发内容。没有增加新确认题，也没有独立随机/错误载荷正式组。因此不能据此宣布总体泛化、任意规则、跨模型载荷通用或历史R2独立确认成立。
+
+## 工程及数值
+
+48/48新生成完成，全部EOS；64条条件记录包含16条归档文字参照。16/16当前判断分数与原checkpoint重放一致，最大概率误差1.11022302e-16。只读探针Logits/KV严格一致，所有检查点与分支隔离通过。
+
+508个同历史步骤Cached/Fresh Logits RMS最大1.12234412e-05（门槛.001）；实际选择Token logP差最大7.915492e-06（门槛.01）。独立Attention输出RMS最大3.11889411e-07，概率最大误差8.19071376e-07。源K的RoPE重建最大差为0。
+
+新8B Bank SHA：`19fd69d23b1bc164ff7e548499a96b507fe7e8f0084487abe55e2a15686db11e`，保存形状[36, 8, 36, 128]，实际固定Block14–27。8B有36层，该范围不是最后14层；未因结果调整层位。旧1.7B Bank保持只读，未跨模型直接载入。
+
+判断checkpoint SHA：`3a35f380d49fdbf9d76832d252554c8f9c55b715ed1fc7a3ad3d47ccda6bace7`。模型12项文件前后SHA一致；2842项本地历史保护文件无变化。主模型无训练/梯度，参数version counter不变。
+
+## 执行偏差与完整证据
+
+初始SSH启动连接超时，但原nohup模型作业及关机看门狗已运行。已确认原进程后只接管监控，没有重启模型任务。原冻结源码和配置未改。
+
+模型结束后，为减少空闲计费，将结果归档传输从8路改为16路，保留已传数据与中断分片；只变更传输控制器。完整归档及逐文件SHA验证后才请求关机。没有调整任何实验条件、重复推理或替换失败结果。CONTROLLER_RECOVERY、TRANSFER_ACCELERATION与FAST_TRANSFER_START保留实际执行记录。
+
+回收归档1,997,332,480字节，1290个远端留档文件验证通过；传输加速阶段约257.4秒，复用65个已传完整分片。
+
+## 成本与关机
+
+主模型运行及留档约277.2秒，峰值分配显存30.729GiB。48条条件输出共844Token，该数包含共享前缀的重复记账；运行耗时包含大量审计重算与磁盘保存，不是生产延迟/吞吐基准。新载荷文件9,877,016字节，判断模块283,323字节。
+
+关机请求：2026-11-04T17:34:34.896340+08:00，返回码0。随后2026-11-04T17:34:49.954491+08:00 SSH拒绝连接。未删除实例或磁盘，未直接查询平台计费状态。后续执行评分、来源审计和报告均在本地进行。
+
+实验到此停止；没有自动新增任务、重训模块或继续独立确认。

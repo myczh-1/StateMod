@@ -1,0 +1,10 @@
+{
+  "tokens_equal": true,
+  "logit_shape_equal": true,
+  "logits": {
+    "max_abs": 0.0,
+    "rms": 0.0,
+    "relative_l2": 0.0,
+    "exact": true
+  }
+}

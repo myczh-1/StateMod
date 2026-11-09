@@ -1,0 +1,52 @@
+{
+  "code": {
+    "BASE": {
+      "E": {
+        "planned": 4,
+        "completed": 0,
+        "functional": 0,
+        "joint": 0,
+        "format_ok": 0,
+        "covered": 0
+      },
+      "N": {
+        "planned": 4,
+        "completed": 0,
+        "functional": 0,
+        "joint": 0,
+        "format_ok": 0,
+        "covered": 0
+      }
+    },
+    "TEXT_CODE": {
+      "E": {
+        "planned": 4,
+        "completed": 0,
+        "functional": 0,
+        "joint": 0,
+        "format_ok": 0,
+        "covered": 0
+      },
+      "N": {
+        "planned": 4,
+        "completed": 0,
+        "functional": 0,
+        "joint": 0,
+        "format_ok": 0,
+        "covered": 0
+      }
+    }
+  },
+  "select": {
+    "completed": 0,
+    "valid": 0,
+    "correct": 0,
+    "N_correct": 0,
+    "E_correct": 0,
+    "natural_candidate_disagreement": [],
+    "invalid": []
+  },
+  "pairs": [],
+  "N_new_regressions": [],
+  "new_E_joint": 0
+}

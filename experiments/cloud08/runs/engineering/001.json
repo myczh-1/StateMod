@@ -1,0 +1,12 @@
+{
+  "step": 1,
+  "repeat_logits_exact": true,
+  "repeat_cache_exact": true,
+  "independent_cache": true,
+  "fresh": {
+    "max_abs": 3.4332275390625e-05,
+    "rms": 7.748954076027162e-06,
+    "relative_l2": 9.070834680093961e-07,
+    "exact": false
+  }
+}

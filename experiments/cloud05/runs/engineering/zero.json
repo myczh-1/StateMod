@@ -1,0 +1,7 @@
+{
+  "logits_exact": true,
+  "cache_exact": true,
+  "cache_disjoint": true,
+  "hooks_clean": true,
+  "zero_calls": 0
+}

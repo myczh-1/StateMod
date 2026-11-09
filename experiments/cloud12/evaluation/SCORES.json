@@ -1,0 +1,318 @@
+[
+  {
+    "id": "boolean_complement__train__bare",
+    "family": "boolean_complement",
+    "wording": "train",
+    "format": "bare",
+    "absolute_position": 188,
+    "prompt_tokens": 180,
+    "prefix_tokens": 9,
+    "logit": -13.058702697604508,
+    "probability": 2.131456883766642e-06,
+    "enable": false,
+    "contributions": [
+      0.0,
+      -1.6968989609241636,
+      -0.0,
+      -0.0,
+      0.0,
+      -1.8498887352645534,
+      -0.0,
+      -9.684731211180418
+    ],
+    "preactivation": [
+      -35.64508129662607,
+      14.73112232817448,
+      -37.33023814445872,
+      -17.704745779632184,
+      -17.930854672589312,
+      33.40185415922915,
+      -17.829528538506672,
+      32.81734914136755
+    ],
+    "threshold": 0.5,
+    "forced_prefix": true,
+    "old_score_error": 0.0,
+    "fresh": {
+      "logit": -12.558585673872644,
+      "probability": 3.5145847070320995e-06,
+      "decision_flip": false
+    }
+  },
+  {
+    "id": "boolean_complement__train__fenced",
+    "family": "boolean_complement",
+    "wording": "train",
+    "format": "fenced",
+    "absolute_position": 191,
+    "prompt_tokens": 180,
+    "prefix_tokens": 12,
+    "logit": -11.25071776784269,
+    "probability": 1.2997795839016359e-05,
+    "enable": false,
+    "contributions": [
+      0.0,
+      -2.0779004988489684,
+      -0.0,
+      -0.0,
+      0.0,
+      -1.3125869374785986,
+      -0.0,
+      -8.03304654127975
+    ],
+    "preactivation": [
+      -18.48090129225079,
+      18.038673568194213,
+      -32.14777048367679,
+      -28.2365264373711,
+      -13.437814401726271,
+      23.700256464721594,
+      -15.8932992454055,
+      27.22050692637664
+    ],
+    "threshold": 0.5,
+    "forced_prefix": true,
+    "fresh": {
+      "logit": -11.055470304534424,
+      "probability": 1.5800229307740156e-05,
+      "decision_flip": false
+    }
+  },
+  {
+    "id": "boolean_complement__heldout__bare",
+    "family": "boolean_complement",
+    "wording": "heldout",
+    "format": "bare",
+    "absolute_position": 181,
+    "prompt_tokens": 173,
+    "prefix_tokens": 9,
+    "logit": 3.1578039694214683,
+    "probability": 0.9592151210635754,
+    "enable": true,
+    "contributions": [
+      0.0,
+      0.0,
+      -0.0,
+      2.563613941772551,
+      0.0,
+      -0.16404033154962086,
+      1.406292009758614,
+      -0.8208778603247041
+    ],
+    "preactivation": [
+      -53.449730900838986,
+      -13.388327089915508,
+      -11.143589560960992,
+      7.903952226793572,
+      -38.71610497846771,
+      2.9664045083652772,
+      5.23657692644129,
+      2.7889720901068866
+    ],
+    "threshold": 0.5,
+    "forced_prefix": true,
+    "fresh": {
+      "logit": 3.256316569368396,
+      "probability": 0.9628994275157763,
+      "decision_flip": false
+    }
+  },
+  {
+    "id": "boolean_complement__heldout__fenced",
+    "family": "boolean_complement",
+    "wording": "heldout",
+    "format": "fenced",
+    "absolute_position": 184,
+    "prompt_tokens": 173,
+    "prefix_tokens": 12,
+    "logit": 1.7980398781971278,
+    "probability": 0.8579101632204458,
+    "enable": true,
+    "contributions": [
+      0.0,
+      3.038193805515163e-15,
+      -6.147984503409554e-16,
+      -6.423043727625657e-07,
+      0.0,
+      2.166489413798069e-06,
+      1.5759500071064816,
+      0.049272137140974726
+    ],
+    "preactivation": [
+      -34.82397455438727,
+      -7.789063725261962,
+      -8.108416054179235,
+      -4.934734335287347,
+      -32.81445904439622,
+      -4.285200298912448,
+      5.868328007518411,
+      -0.8745062136909779
+    ],
+    "threshold": 0.5,
+    "forced_prefix": true,
+    "old_score_error": 0.0,
+    "fresh": {
+      "logit": 1.8048685212105018,
+      "probability": 0.8587405442434412,
+      "decision_flip": false
+    }
+  },
+  {
+    "id": "lower__train__bare",
+    "family": "lower",
+    "wording": "train",
+    "format": "bare",
+    "absolute_position": 170,
+    "prompt_tokens": 164,
+    "prefix_tokens": 7,
+    "logit": -22.626227605736833,
+    "probability": 1.4912628689830772e-10,
+    "enable": false,
+    "contributions": [
+      -3.2650656092366823,
+      -3.624020975744739,
+      -0.0,
+      -0.0,
+      -4.284556440306275,
+      -2.1085543659705426,
+      -0.0,
+      -9.516846424243223
+    ],
+    "preactivation": [
+      32.6069915402068,
+      31.460857448160034,
+      -23.323923770794885,
+      -22.45359010785315,
+      33.06123981348297,
+      38.072357583647744,
+      -25.524986569493787,
+      32.248460490944126
+    ],
+    "threshold": 0.5,
+    "forced_prefix": true,
+    "fresh": {
+      "logit": -22.391422671291767,
+      "probability": 1.8859435608777852e-10,
+      "decision_flip": false
+    }
+  },
+  {
+    "id": "lower__train__fenced",
+    "family": "lower",
+    "wording": "train",
+    "format": "fenced",
+    "absolute_position": 173,
+    "prompt_tokens": 164,
+    "prefix_tokens": 10,
+    "logit": -23.539155526965562,
+    "probability": 5.985144580787727e-11,
+    "enable": false,
+    "contributions": [
+      -4.8064727151963265,
+      -3.9927635779454054,
+      -0.0,
+      -0.0,
+      -4.767024034048467,
+      -1.7454764609319728,
+      -0.0,
+      -8.40023494860802
+    ],
+    "preactivation": [
+      48.000448970849625,
+      34.66198639320284,
+      -20.308513742278656,
+      -33.01259159599951,
+      36.78414019796348,
+      31.51657128074753,
+      -23.661672960941182,
+      28.464749012315313
+    ],
+    "threshold": 0.5,
+    "forced_prefix": true,
+    "old_score_error": 0.0,
+    "fresh": {
+      "logit": -23.610394945488327,
+      "probability": 5.573599513183228e-11,
+      "decision_flip": false
+    }
+  },
+  {
+    "id": "lower__heldout__bare",
+    "family": "lower",
+    "wording": "heldout",
+    "format": "bare",
+    "absolute_position": 163,
+    "prompt_tokens": 157,
+    "prefix_tokens": 7,
+    "logit": -2.4868895783130496,
+    "probability": 0.07678239533277957,
+    "enable": false,
+    "contributions": [
+      -1.141890140338795,
+      -0.22141337677183773,
+      0.3519145590753287,
+      1.4622614294068057,
+      -1.455484516589766,
+      -0.5959978835089146,
+      -0.04166841494335068,
+      -1.0174274444071476
+    ],
+    "preactivation": [
+      11.403630616346861,
+      1.9702204972184671,
+      1.17192744648181,
+      4.508355196229661,
+      11.231062845876712,
+      10.761422568113018,
+      -1.039751615431315,
+      3.4485915331510237
+    ],
+    "threshold": 0.5,
+    "forced_prefix": true,
+    "fresh": {
+      "logit": -2.9397003798338472,
+      "probability": 0.050225564032131804,
+      "decision_flip": false
+    }
+  },
+  {
+    "id": "lower__heldout__fenced",
+    "family": "lower",
+    "wording": "heldout",
+    "format": "fenced",
+    "absolute_position": 166,
+    "prompt_tokens": 157,
+    "prefix_tokens": 10,
+    "logit": -6.336199202235837,
+    "probability": 0.0017678897831090526,
+    "enable": false,
+    "contributions": [
+      -2.7171698268496964,
+      -0.8221411024107937,
+      0.4636416742530769,
+      -4.6324667607118105e-12,
+      -2.2131256322174293,
+      -0.4165036410337222,
+      -0.03635425839025502,
+      -0.7673626253470127
+    ],
+    "preactivation": [
+      27.13536086587434,
+      7.13717282497685,
+      1.4627479541455741,
+      -6.932998439464955,
+      17.077305033441498,
+      7.520448992088781,
+      -1.2227639976402092,
+      2.612014199699808
+    ],
+    "threshold": 0.5,
+    "forced_prefix": true,
+    "old_score_error": 0.0,
+    "fresh": {
+      "logit": -6.900180354408189,
+      "probability": 0.0010065894436587465,
+      "decision_flip": false
+    }
+  }
+]

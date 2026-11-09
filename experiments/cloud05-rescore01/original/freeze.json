@@ -1,0 +1,32 @@
+{
+  "scope": "REVISED_OFFLINE_SCORING_ONLY",
+  "files": {
+    "OLD_FILES_BEFORE.json": "cd9960d851b477092bca35654a229f674c06c0abb684a1e049ee17dcc1c79caf",
+    "PROTOCOL.md": "74a2276a88b90d9e72306de351f4558ed6cecd34946df87d98accb4aa58a7fce",
+    "SCORER_DIFF.patch": "2bff60139a73965fcb3591bc695f3701c0cc1130412d64e42ab875da14aa4bb6",
+    "TEST_RESULTS.txt": "c22ca09e5ba7d39fa18c1cd2d97de20983d413bf0246a15cb6f97dc08338fffe",
+    "src/rescore.py": "0c459c559c291f6607b52fa3b88a22a55b91850149aac5f03ca64f59de18d8c0",
+    "src/scoring.py": "a06eaf6cc034f29a8826d262fab847ee70ae18054b677d7aab38e614a656d983",
+    "src/summary.py": "741866ecc5479685ce1ed63540287ab3ac7b5d1ec1354b12bbdea82f84a34c4d",
+    "src/test_scoring.py": "8ae1f60e19466f78b976097b15bfd5a6cece9a1df8337cd2a6376cf3d65a4a30"
+  },
+  "python": "3.11.15",
+  "original_status": "SIMPLE_BASELINE_NOT_STABLE",
+  "old_source_root": "[LOCAL_PATH]",
+  "planned_records": 64,
+  "model_forwards": 0,
+  "remote_connections": 0,
+  "semantic_changes": [
+    "accept set subclasses through unchanged value/mutation checks",
+    "exact frozenset checked by type identity"
+  ],
+  "no_changes": [
+    "generated code",
+    "tasks",
+    "tests",
+    "module",
+    "threshold",
+    "Bank",
+    "aggregation criteria"
+  ]
+}

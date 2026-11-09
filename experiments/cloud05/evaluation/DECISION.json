@@ -1,0 +1,16 @@
+{
+  "status": "SIMPLE_BASELINE_NOT_STABLE",
+  "engineering_complete": true,
+  "complete_matrix": true,
+  "anchor_reproduced": true,
+  "simple_baseline_stable": false,
+  "matcher_stable": true,
+  "manual_V_stable": false,
+  "module_V_stable": false,
+  "statistical_units": 4,
+  "independent_confirmation": false,
+  "threshold_changed": false,
+  "bank_compiled": false,
+  "module_trained": false,
+  "all_historical_statuses_preserved": true
+}

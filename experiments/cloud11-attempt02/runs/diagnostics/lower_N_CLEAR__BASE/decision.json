@@ -1,0 +1,19 @@
+{
+  "id": "lower_N_CLEAR__BASE",
+  "hidden": {
+    "max_abs": 0.125,
+    "rms": 0.01128918728712541,
+    "relative_l2": 0.00923585788097737,
+    "exact": false
+  },
+  "logits": {
+    "max_abs": 0.75,
+    "rms": 0.08754217732531297,
+    "relative_l2": 0.017191111215074394,
+    "exact": false
+  },
+  "top1_changed": false,
+  "selected_logp_error": 0.010978365694518086,
+  "behavior_gate": false,
+  "finite": true
+}

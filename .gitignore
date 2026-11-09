@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+reproduction-output/
+.env
+.env.*
+*.pem
+*.key
+*.safetensors
+*.tar
+*.tar.gz

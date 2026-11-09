@@ -1,0 +1,12 @@
+{
+  "event": "LEGAL_RETURN_READY",
+  "line": 2,
+  "column": 4,
+  "code_characters": 40,
+  "fenced": true,
+  "detector": "tokenize+AST+compile of generated prefix; no execution",
+  "generated_prefix": "```python\ndef collect_lowercase(words):\n    return",
+  "prediction_step": 10,
+  "absolute_position": 166,
+  "prefix_valid": true
+}

@@ -1,0 +1,6 @@
+{
+  "root_result_file": "../RUN_RESULT.json",
+  "root_result_sha256": "67fe336fe0a8b87a1ecaea4350537414d607a0baa420fbb2484caf88d7d7d2c7",
+  "frozen_source_verified_after_run": true,
+  "frozen_package_sha256": "3e8e8765f1107cf39baa7e578f9daa6e07ca47c0b83d4f235e66c90d6b4f85ef"
+}

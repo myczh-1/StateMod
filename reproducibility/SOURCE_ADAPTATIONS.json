@@ -1,0 +1,18 @@
+[
+  {
+    "public": "src/statemod/backend.py",
+    "source": "v-conditional-cloud03/src/backend.py",
+    "source_sha256": "fdb6e1861da14a39cd851e29041943952fef49fec980e95bcc0bcf42cf8166d6",
+    "changes": [
+      "relative import of runtime_helpers only; attention implementation unchanged"
+    ]
+  },
+  {
+    "public": "src/statemod/runtime_helpers.py",
+    "source": "v-conditional-cloud03/src/common.py",
+    "source_sha256": "361cd37be3cbcece84aa048678f3e25db3129a73bd65efd842c467083bb38cbe",
+    "changes": [
+      "AST-extracted write/save/metrics/logp/forward/cache_hash functions; deployment/model-loading helpers omitted"
+    ]
+  }
+]

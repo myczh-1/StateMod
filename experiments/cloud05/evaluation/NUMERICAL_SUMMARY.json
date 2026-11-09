@@ -1,0 +1,450 @@
+[
+  {
+    "id": "double_E_W_ANCHOR",
+    "condition": "BASE",
+    "active_predictions": 0,
+    "max_logits_rms": 8.3186206125178e-06,
+    "max_selected_logp_error": 2.3346829826215165e-06
+  },
+  {
+    "id": "double_E_W_ANCHOR",
+    "condition": "MANUAL_V",
+    "active_predictions": 1,
+    "max_logits_rms": 8.888227757423788e-06,
+    "max_selected_logp_error": 2.9681362878619666e-07
+  },
+  {
+    "id": "double_E_W_ANCHOR",
+    "condition": "MODULE_V",
+    "active_predictions": 1,
+    "max_logits_rms": 8.888227757423788e-06,
+    "max_selected_logp_error": 2.9681362878619666e-07
+  },
+  {
+    "id": "double_E_W_ANCHOR",
+    "condition": "TEXT_CODE",
+    "active_predictions": 0,
+    "max_logits_rms": 9.470292719582784e-06,
+    "max_selected_logp_error": 6.827624951855071e-06
+  },
+  {
+    "id": "double_E_W_LIFECYCLE",
+    "condition": "BASE",
+    "active_predictions": 0,
+    "max_logits_rms": 1.1870350582788958e-05,
+    "max_selected_logp_error": 1.0172393857366124e-05
+  },
+  {
+    "id": "double_E_W_LIFECYCLE",
+    "condition": "MANUAL_V",
+    "active_predictions": 1,
+    "max_logits_rms": 8.529190528815861e-06,
+    "max_selected_logp_error": 1.8866791677840666e-06
+  },
+  {
+    "id": "double_E_W_LIFECYCLE",
+    "condition": "MODULE_V",
+    "active_predictions": 1,
+    "max_logits_rms": 8.529190528815861e-06,
+    "max_selected_logp_error": 1.8866791677840666e-06
+  },
+  {
+    "id": "double_E_W_LIFECYCLE",
+    "condition": "TEXT_CODE",
+    "active_predictions": 0,
+    "max_logits_rms": 9.420457825766582e-06,
+    "max_selected_logp_error": 9.113275205474558e-06
+  },
+  {
+    "id": "double_N_W_ANCHOR",
+    "condition": "BASE",
+    "active_predictions": 0,
+    "max_logits_rms": 9.377267843139766e-06,
+    "max_selected_logp_error": 3.0346175802220543e-06
+  },
+  {
+    "id": "double_N_W_ANCHOR",
+    "condition": "MANUAL_V",
+    "active_predictions": 0,
+    "max_logits_rms": 9.377267843139766e-06,
+    "max_selected_logp_error": 3.0346175802220543e-06
+  },
+  {
+    "id": "double_N_W_ANCHOR",
+    "condition": "MODULE_V",
+    "active_predictions": 0,
+    "max_logits_rms": 9.377267843139766e-06,
+    "max_selected_logp_error": 3.0346175802220543e-06
+  },
+  {
+    "id": "double_N_W_ANCHOR",
+    "condition": "TEXT_CODE",
+    "active_predictions": 0,
+    "max_logits_rms": 8.98388936539014e-06,
+    "max_selected_logp_error": 1.815609596000911e-06
+  },
+  {
+    "id": "double_N_W_LIFECYCLE",
+    "condition": "BASE",
+    "active_predictions": 0,
+    "max_logits_rms": 1.2453431394021772e-05,
+    "max_selected_logp_error": 1.2883950339048766e-05
+  },
+  {
+    "id": "double_N_W_LIFECYCLE",
+    "condition": "MANUAL_V",
+    "active_predictions": 0,
+    "max_logits_rms": 1.2453431394021772e-05,
+    "max_selected_logp_error": 1.2883950339048766e-05
+  },
+  {
+    "id": "double_N_W_LIFECYCLE",
+    "condition": "MODULE_V",
+    "active_predictions": 0,
+    "max_logits_rms": 1.2453431394021772e-05,
+    "max_selected_logp_error": 1.2883950339048766e-05
+  },
+  {
+    "id": "double_N_W_LIFECYCLE",
+    "condition": "TEXT_CODE",
+    "active_predictions": 0,
+    "max_logits_rms": 1.0917235443223197e-05,
+    "max_selected_logp_error": 1.796375025342467e-06
+  },
+  {
+    "id": "increment_E_W_ANCHOR",
+    "condition": "BASE",
+    "active_predictions": 0,
+    "max_logits_rms": 8.319481477366292e-06,
+    "max_selected_logp_error": 2.2600274772049955e-06
+  },
+  {
+    "id": "increment_E_W_ANCHOR",
+    "condition": "MANUAL_V",
+    "active_predictions": 1,
+    "max_logits_rms": 8.954908283135e-06,
+    "max_selected_logp_error": 5.693472771794994e-06
+  },
+  {
+    "id": "increment_E_W_ANCHOR",
+    "condition": "MODULE_V",
+    "active_predictions": 1,
+    "max_logits_rms": 8.954908283135e-06,
+    "max_selected_logp_error": 5.693472771794994e-06
+  },
+  {
+    "id": "increment_E_W_ANCHOR",
+    "condition": "TEXT_CODE",
+    "active_predictions": 0,
+    "max_logits_rms": 1.069685854695417e-05,
+    "max_selected_logp_error": 8.589245018175706e-06
+  },
+  {
+    "id": "increment_E_W_LIFECYCLE",
+    "condition": "BASE",
+    "active_predictions": 0,
+    "max_logits_rms": 9.629315559245269e-06,
+    "max_selected_logp_error": 3.7874490732558996e-06
+  },
+  {
+    "id": "increment_E_W_LIFECYCLE",
+    "condition": "MANUAL_V",
+    "active_predictions": 1,
+    "max_logits_rms": 6.982819093969123e-06,
+    "max_selected_logp_error": 3.326454325658368e-06
+  },
+  {
+    "id": "increment_E_W_LIFECYCLE",
+    "condition": "MODULE_V",
+    "active_predictions": 1,
+    "max_logits_rms": 6.982819093969123e-06,
+    "max_selected_logp_error": 3.326454325658368e-06
+  },
+  {
+    "id": "increment_E_W_LIFECYCLE",
+    "condition": "TEXT_CODE",
+    "active_predictions": 0,
+    "max_logits_rms": 1.2367293493207919e-05,
+    "max_selected_logp_error": 6.25524847375214e-06
+  },
+  {
+    "id": "increment_N_W_ANCHOR",
+    "condition": "BASE",
+    "active_predictions": 0,
+    "max_logits_rms": 9.828081231513123e-06,
+    "max_selected_logp_error": 1.1490176071585548e-07
+  },
+  {
+    "id": "increment_N_W_ANCHOR",
+    "condition": "MANUAL_V",
+    "active_predictions": 0,
+    "max_logits_rms": 9.828081231513123e-06,
+    "max_selected_logp_error": 1.1490176071585548e-07
+  },
+  {
+    "id": "increment_N_W_ANCHOR",
+    "condition": "MODULE_V",
+    "active_predictions": 0,
+    "max_logits_rms": 9.828081231513123e-06,
+    "max_selected_logp_error": 1.1490176071585548e-07
+  },
+  {
+    "id": "increment_N_W_ANCHOR",
+    "condition": "TEXT_CODE",
+    "active_predictions": 0,
+    "max_logits_rms": 1.2906562810908202e-05,
+    "max_selected_logp_error": 5.1272591827800085e-06
+  },
+  {
+    "id": "increment_N_W_LIFECYCLE",
+    "condition": "BASE",
+    "active_predictions": 0,
+    "max_logits_rms": 1.141033032872312e-05,
+    "max_selected_logp_error": 8.484871133696004e-06
+  },
+  {
+    "id": "increment_N_W_LIFECYCLE",
+    "condition": "MANUAL_V",
+    "active_predictions": 0,
+    "max_logits_rms": 1.141033032872312e-05,
+    "max_selected_logp_error": 8.484871133696004e-06
+  },
+  {
+    "id": "increment_N_W_LIFECYCLE",
+    "condition": "MODULE_V",
+    "active_predictions": 0,
+    "max_logits_rms": 1.141033032872312e-05,
+    "max_selected_logp_error": 8.484871133696004e-06
+  },
+  {
+    "id": "increment_N_W_LIFECYCLE",
+    "condition": "TEXT_CODE",
+    "active_predictions": 0,
+    "max_logits_rms": 2.1822106872145206e-05,
+    "max_selected_logp_error": 5.0278040630014065e-06
+  },
+  {
+    "id": "lower_E_W_ANCHOR",
+    "condition": "BASE",
+    "active_predictions": 0,
+    "max_logits_rms": 7.26110362150301e-06,
+    "max_selected_logp_error": 2.1768930244178697e-07
+  },
+  {
+    "id": "lower_E_W_ANCHOR",
+    "condition": "MANUAL_V",
+    "active_predictions": 1,
+    "max_logits_rms": 1.0233865619543751e-05,
+    "max_selected_logp_error": 4.660700346546896e-09
+  },
+  {
+    "id": "lower_E_W_ANCHOR",
+    "condition": "MODULE_V",
+    "active_predictions": 1,
+    "max_logits_rms": 1.0233865619543751e-05,
+    "max_selected_logp_error": 4.660700346546896e-09
+  },
+  {
+    "id": "lower_E_W_ANCHOR",
+    "condition": "TEXT_CODE",
+    "active_predictions": 0,
+    "max_logits_rms": 1.1670362057449178e-05,
+    "max_selected_logp_error": 2.4618068176986314e-10
+  },
+  {
+    "id": "lower_E_W_LIFECYCLE",
+    "condition": "BASE",
+    "active_predictions": 0,
+    "max_logits_rms": 9.411204083697412e-06,
+    "max_selected_logp_error": 4.3175666926886444e-08
+  },
+  {
+    "id": "lower_E_W_LIFECYCLE",
+    "condition": "MANUAL_V",
+    "active_predictions": 1,
+    "max_logits_rms": 7.410059496340024e-06,
+    "max_selected_logp_error": 4.026360224938276e-09
+  },
+  {
+    "id": "lower_E_W_LIFECYCLE",
+    "condition": "MODULE_V",
+    "active_predictions": 1,
+    "max_logits_rms": 7.410059496340024e-06,
+    "max_selected_logp_error": 4.026360224938276e-09
+  },
+  {
+    "id": "lower_E_W_LIFECYCLE",
+    "condition": "TEXT_CODE",
+    "active_predictions": 0,
+    "max_logits_rms": 8.081286689389052e-06,
+    "max_selected_logp_error": 8.188593118461582e-10
+  },
+  {
+    "id": "lower_N_W_ANCHOR",
+    "condition": "BASE",
+    "active_predictions": 0,
+    "max_logits_rms": 8.614242524041147e-06,
+    "max_selected_logp_error": 1.3413805678621354e-08
+  },
+  {
+    "id": "lower_N_W_ANCHOR",
+    "condition": "MANUAL_V",
+    "active_predictions": 0,
+    "max_logits_rms": 8.614242524041147e-06,
+    "max_selected_logp_error": 1.3413805678621354e-08
+  },
+  {
+    "id": "lower_N_W_ANCHOR",
+    "condition": "MODULE_V",
+    "active_predictions": 0,
+    "max_logits_rms": 8.614242524041147e-06,
+    "max_selected_logp_error": 1.3413805678621354e-08
+  },
+  {
+    "id": "lower_N_W_ANCHOR",
+    "condition": "TEXT_CODE",
+    "active_predictions": 0,
+    "max_logits_rms": 7.789137556734088e-06,
+    "max_selected_logp_error": 6.6225189698787545e-06
+  },
+  {
+    "id": "lower_N_W_LIFECYCLE",
+    "condition": "BASE",
+    "active_predictions": 0,
+    "max_logits_rms": 1.184707973934587e-05,
+    "max_selected_logp_error": 7.244279099760664e-06
+  },
+  {
+    "id": "lower_N_W_LIFECYCLE",
+    "condition": "MANUAL_V",
+    "active_predictions": 0,
+    "max_logits_rms": 1.184707973934587e-05,
+    "max_selected_logp_error": 7.244279099760664e-06
+  },
+  {
+    "id": "lower_N_W_LIFECYCLE",
+    "condition": "MODULE_V",
+    "active_predictions": 0,
+    "max_logits_rms": 1.184707973934587e-05,
+    "max_selected_logp_error": 7.244279099760664e-06
+  },
+  {
+    "id": "lower_N_W_LIFECYCLE",
+    "condition": "TEXT_CODE",
+    "active_predictions": 0,
+    "max_logits_rms": 1.0116425014554061e-05,
+    "max_selected_logp_error": 8.348450746126224e-06
+  },
+  {
+    "id": "negative_E_W_ANCHOR",
+    "condition": "BASE",
+    "active_predictions": 0,
+    "max_logits_rms": 8.965840741255582e-06,
+    "max_selected_logp_error": 1.2743471304310638e-06
+  },
+  {
+    "id": "negative_E_W_ANCHOR",
+    "condition": "MANUAL_V",
+    "active_predictions": 1,
+    "max_logits_rms": 6.789263709290407e-06,
+    "max_selected_logp_error": 7.401910250351418e-08
+  },
+  {
+    "id": "negative_E_W_ANCHOR",
+    "condition": "MODULE_V",
+    "active_predictions": 1,
+    "max_logits_rms": 6.789263709290407e-06,
+    "max_selected_logp_error": 7.401910250351418e-08
+  },
+  {
+    "id": "negative_E_W_ANCHOR",
+    "condition": "TEXT_CODE",
+    "active_predictions": 0,
+    "max_logits_rms": 9.69153512320771e-06,
+    "max_selected_logp_error": 2.118128916983597e-07
+  },
+  {
+    "id": "negative_E_W_LIFECYCLE",
+    "condition": "BASE",
+    "active_predictions": 0,
+    "max_logits_rms": 8.386542922945568e-06,
+    "max_selected_logp_error": 3.1598106306623963e-06
+  },
+  {
+    "id": "negative_E_W_LIFECYCLE",
+    "condition": "MANUAL_V",
+    "active_predictions": 1,
+    "max_logits_rms": 8.366332797855355e-06,
+    "max_selected_logp_error": 3.2383797279184057e-07
+  },
+  {
+    "id": "negative_E_W_LIFECYCLE",
+    "condition": "MODULE_V",
+    "active_predictions": 1,
+    "max_logits_rms": 8.366332797855355e-06,
+    "max_selected_logp_error": 3.2383797279184057e-07
+  },
+  {
+    "id": "negative_E_W_LIFECYCLE",
+    "condition": "TEXT_CODE",
+    "active_predictions": 0,
+    "max_logits_rms": 8.174559194857404e-06,
+    "max_selected_logp_error": 2.1924519126581554e-07
+  },
+  {
+    "id": "negative_N_W_ANCHOR",
+    "condition": "BASE",
+    "active_predictions": 0,
+    "max_logits_rms": 8.802907647754578e-06,
+    "max_selected_logp_error": 9.047852338739393e-07
+  },
+  {
+    "id": "negative_N_W_ANCHOR",
+    "condition": "MANUAL_V",
+    "active_predictions": 0,
+    "max_logits_rms": 8.802907647754578e-06,
+    "max_selected_logp_error": 9.047852338739393e-07
+  },
+  {
+    "id": "negative_N_W_ANCHOR",
+    "condition": "MODULE_V",
+    "active_predictions": 0,
+    "max_logits_rms": 8.802907647754578e-06,
+    "max_selected_logp_error": 9.047852338739393e-07
+  },
+  {
+    "id": "negative_N_W_ANCHOR",
+    "condition": "TEXT_CODE",
+    "active_predictions": 0,
+    "max_logits_rms": 1.1782809408889373e-05,
+    "max_selected_logp_error": 1.0951231843581155e-06
+  },
+  {
+    "id": "negative_N_W_LIFECYCLE",
+    "condition": "BASE",
+    "active_predictions": 0,
+    "max_logits_rms": 1.1452637775662086e-05,
+    "max_selected_logp_error": 1.2014546563798856e-05
+  },
+  {
+    "id": "negative_N_W_LIFECYCLE",
+    "condition": "MANUAL_V",
+    "active_predictions": 0,
+    "max_logits_rms": 1.1452637775662086e-05,
+    "max_selected_logp_error": 1.2014546563798856e-05
+  },
+  {
+    "id": "negative_N_W_LIFECYCLE",
+    "condition": "MODULE_V",
+    "active_predictions": 0,
+    "max_logits_rms": 1.1452637775662086e-05,
+    "max_selected_logp_error": 1.2014546563798856e-05
+  },
+  {
+    "id": "negative_N_W_LIFECYCLE",
+    "condition": "TEXT_CODE",
+    "active_predictions": 0,
+    "max_logits_rms": 9.082866662305467e-06,
+    "max_selected_logp_error": 7.182722181364731e-06
+  }
+]

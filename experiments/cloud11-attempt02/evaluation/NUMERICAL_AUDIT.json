@@ -1,0 +1,151 @@
+{
+  "independent_checkpoint_logit_error": 3.552713678800501e-15,
+  "cross_path": [
+    {
+      "task_id": "double_E_CLEAR__TRAIN_USAGE",
+      "status": "RECORDED",
+      "cached": 0.9999999999997914,
+      "fresh": 0.9999999999997878,
+      "absolute_shift": 3.552713678800501e-15,
+      "decision_flip": false,
+      "behavior_gate": false
+    },
+    {
+      "task_id": "double_N_CLEAR__TRAIN_USAGE",
+      "status": "RECORDED",
+      "cached": 6.611769123642946e-11,
+      "fresh": 5.347180033828836e-11,
+      "absolute_shift": 1.2645890898141098e-11,
+      "decision_flip": false,
+      "behavior_gate": false
+    },
+    {
+      "task_id": "lower_E_CLEAR__TRAIN_USAGE",
+      "status": "RECORDED",
+      "cached": 0.999999999923322,
+      "fresh": 0.9999999998771211,
+      "absolute_shift": 4.620093196905373e-11,
+      "decision_flip": false,
+      "behavior_gate": false
+    },
+    {
+      "task_id": "lower_N_CLEAR__TRAIN_USAGE",
+      "status": "RECORDED",
+      "cached": 5.985144580787727e-11,
+      "fresh": 5.573599513183228e-11,
+      "absolute_shift": 4.1154506760449934e-12,
+      "decision_flip": false,
+      "behavior_gate": false
+    },
+    {
+      "task_id": "integer_octal_text_E_CLEAR__TRAIN_USAGE",
+      "status": "RECORDED",
+      "cached": 0.9999999989115561,
+      "fresh": 0.9999999983319547,
+      "absolute_shift": 5.796013669012723e-10,
+      "decision_flip": false,
+      "behavior_gate": false
+    },
+    {
+      "task_id": "integer_octal_text_N_CLEAR__TRAIN_USAGE",
+      "status": "RECORDED",
+      "cached": 2.234316616099582e-09,
+      "fresh": 2.8016689097263796e-09,
+      "absolute_shift": 5.673522936267976e-10,
+      "decision_flip": false,
+      "behavior_gate": false
+    },
+    {
+      "task_id": "boolean_complement_E_CLEAR__TRAIN_USAGE",
+      "status": "RECORDED",
+      "cached": 0.9999999885903377,
+      "fresh": 0.9999999851396613,
+      "absolute_shift": 3.4506764112762767e-09,
+      "decision_flip": false,
+      "behavior_gate": false
+    },
+    {
+      "task_id": "boolean_complement_N_CLEAR__TRAIN_USAGE",
+      "status": "RECORDED",
+      "cached": 2.131456883766642e-06,
+      "fresh": 3.5145847070320995e-06,
+      "absolute_shift": 1.3831278232654573e-06,
+      "decision_flip": false,
+      "behavior_gate": false
+    },
+    {
+      "task_id": "double_E_CLEAR",
+      "status": "RECORDED",
+      "cached": 0.9999999999999838,
+      "fresh": 0.9999999999999922,
+      "absolute_shift": 8.43769498715119e-15,
+      "decision_flip": false,
+      "behavior_gate": false
+    },
+    {
+      "task_id": "double_N_CLEAR",
+      "status": "RECORDED",
+      "cached": 0.0340918051717278,
+      "fresh": 0.030207237200499306,
+      "absolute_shift": 0.0038845679712284954,
+      "decision_flip": false,
+      "behavior_gate": false
+    },
+    {
+      "task_id": "lower_E_CLEAR",
+      "status": "RECORDED",
+      "cached": 0.9999999999889552,
+      "fresh": 0.9999999999894944,
+      "absolute_shift": 5.392353230604385e-13,
+      "decision_flip": false,
+      "behavior_gate": false
+    },
+    {
+      "task_id": "lower_N_CLEAR",
+      "status": "RECORDED",
+      "cached": 0.0017678897831090526,
+      "fresh": 0.0010065894436587465,
+      "absolute_shift": 0.0007613003394503061,
+      "decision_flip": false,
+      "behavior_gate": false
+    },
+    {
+      "task_id": "integer_octal_text_E_CLEAR",
+      "status": "RECORDED",
+      "cached": 0.9999999931364321,
+      "fresh": 0.9999999942496531,
+      "absolute_shift": 1.1132210708808543e-09,
+      "decision_flip": false,
+      "behavior_gate": false
+    },
+    {
+      "task_id": "integer_octal_text_N_CLEAR",
+      "status": "RECORDED",
+      "cached": 0.10515694393837932,
+      "fresh": 0.06290472973373122,
+      "absolute_shift": 0.0422522142046481,
+      "decision_flip": false,
+      "behavior_gate": false
+    },
+    {
+      "task_id": "boolean_complement_E_CLEAR",
+      "status": "RECORDED",
+      "cached": 0.9999999996641201,
+      "fresh": 0.9999999992243488,
+      "absolute_shift": 4.3977133046269046e-10,
+      "decision_flip": false,
+      "behavior_gate": false
+    },
+    {
+      "task_id": "boolean_complement_N_CLEAR",
+      "status": "RECORDED",
+      "cached": 0.8579101632204458,
+      "fresh": 0.8587405442434412,
+      "absolute_shift": 0.0008303810229953745,
+      "decision_flip": false,
+      "behavior_gate": false
+    }
+  ],
+  "fit_uses_cached_only": true,
+  "bank_accesses": 0
+}

@@ -1,0 +1,26 @@
+{
+  "train": {
+    "total": 8,
+    "teacher_student_binary_kl_mean": 6.923131552755854e-05
+  },
+  "wording_only": {
+    "total": 8,
+    "teacher_student_binary_kl_mean": 0.03652664871916333
+  },
+  "family_only": {
+    "total": 4,
+    "teacher_student_binary_kl_mean": 0.020960590706559708
+  },
+  "family_and_wording": {
+    "total": 4,
+    "teacher_student_binary_kl_mean": 0.11147818016747042
+  },
+  "heldout": {
+    "total": 16,
+    "teacher_student_binary_kl_mean": 0.05137301707808919
+  },
+  "all": {
+    "total": 24,
+    "teacher_student_binary_kl_mean": 0.034271755157235316
+  }
+}

@@ -1,0 +1,13 @@
+# Cloud09 execution: numerical gate stopped the run
+
+Status: STOP_NUMERICAL. All formal task outputs are NOT_RUN, not zero-success results.
+
+Environment preflight passed. The initial full prefill was exactly equal across cached/repeated/fresh paths. At engineering step 1 (after the first fixed diagnostic token), Cached versus Fresh whole-vocabulary RMS was 0.097291425, exceeding the frozen 0.050000000 bound. Maximum absolute difference was 0.75, relative L2 0.011861717. Repeated Cached logits and KV remained bitwise equal, with independent cache storage.
+
+At the failing step, Cached and Fresh top-1 agreement: True; Cached top-1: {'id': 6530, 'token': 'Ġcollect', 'margin': 24.875}; Fresh top-1: {'id': 6530, 'token': 'Ġcollect', 'margin': 24.875}. Same top-1 does not waive the frozen whole-vocabulary gate.
+
+No direct type answers (planned 8), full-code outputs (planned 16), or candidate scoring paths (planned 16) were executed. These results cannot answer whether 14B follows the rule better than 8B. The generated evaluator NUMERICAL_AUDIT summarizes completed formal rows only and therefore has zero formal steps; this supplementary report provides the actual engineering failure values instead. Historical reports, frozen thresholds, and evaluator artifacts remain unchanged.
+
+Raw logits plus both failed cache arrays were preserved before stopping. Archive 48,117,760 bytes and 13 collected evidence files passed SHA verification. Automatic shutdown was issued only after local verification; subsequent SSH observation was connection refused. Module and Bank were not loaded, and no training or injection occurred.
+
+This offline analysis reads saved arrays only. It does not establish whether the root cause is expected BF16 path rounding or another implementation difference, does not relax tolerances, and does not rerun the model.

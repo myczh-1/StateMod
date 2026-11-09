@@ -1,0 +1,19 @@
+{
+  "wall_seconds": 1332.2085416316986,
+  "peak_allocated": 33080222720,
+  "peak_reserved": 33214693376,
+  "condition_output_tokens": 4298,
+  "condition_records": 128,
+  "archived_text_reference_count": 0,
+  "payload_bytes": 9877016,
+  "active_side_slots_per_layer": 36,
+  "active_layers": 14,
+  "judgment_bytes": 283323,
+  "actual_bank_prediction_count": 42,
+  "actual_bank_layer_calls": 588,
+  "transfer_bytes": 8772864000,
+  "raw_retained_files": 7366,
+  "billing_verified": false,
+  "archive_transfer_total_seconds": 1925.6641778945923,
+  "remote_job_seconds": 1357.9778852462769
+}

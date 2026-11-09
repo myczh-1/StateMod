@@ -1,0 +1,92 @@
+{
+  "frozenset": {
+    "token_ids": [
+      69,
+      299,
+      18549,
+      295,
+      151645
+    ],
+    "name_token_count": 4,
+    "total_token_count": 5,
+    "type_logp": -2.6776498172669947e-08,
+    "type_eos_logp": -3.3913465824263497e-07,
+    "steps": [
+      {
+        "token": 69,
+        "cached_top1": 69,
+        "cached_logp": -8.800480971871486e-09,
+        "native_length": 282,
+        "input_length": 282,
+        "bank_calls": 0,
+        "rank": 1
+      },
+      {
+        "token": 299,
+        "cached_top1": 299,
+        "cached_logp": -1.2413099429520875e-09,
+        "native_length": 283,
+        "input_length": 283,
+        "bank_calls": 0,
+        "rank": 1
+      },
+      {
+        "token": 18549,
+        "cached_top1": 18549,
+        "cached_logp": -1.671865321086582e-08,
+        "native_length": 284,
+        "input_length": 284,
+        "bank_calls": 0,
+        "rank": 1
+      },
+      {
+        "token": 295,
+        "cached_top1": 295,
+        "cached_logp": -1.6054046980555823e-11,
+        "native_length": 285,
+        "input_length": 285,
+        "bank_calls": 0,
+        "rank": 1
+      },
+      {
+        "token": 151645,
+        "cached_top1": 151645,
+        "cached_logp": -3.1235816006996505e-07,
+        "native_length": 286,
+        "input_length": 286,
+        "bank_calls": 0,
+        "rank": 1
+      }
+    ]
+  },
+  "set": {
+    "token_ids": [
+      746,
+      151645
+    ],
+    "name_token_count": 1,
+    "total_token_count": 2,
+    "type_logp": -19.37500000880048,
+    "type_eos_logp": -19.375002131100185,
+    "steps": [
+      {
+        "token": 746,
+        "cached_top1": 69,
+        "cached_logp": -19.37500000880048,
+        "native_length": 282,
+        "input_length": 282,
+        "bank_calls": 0,
+        "rank": 3
+      },
+      {
+        "token": 151645,
+        "cached_top1": 151645,
+        "cached_logp": -2.1222997034298335e-06,
+        "native_length": 283,
+        "input_length": 283,
+        "bank_calls": 0,
+        "rank": 1
+      }
+    ]
+  }
+}
